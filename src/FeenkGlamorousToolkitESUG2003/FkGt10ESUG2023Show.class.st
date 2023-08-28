@@ -18,7 +18,7 @@ FkGt10ESUG2023Show >> slide001Title: aSlide [
 			thin;
 			in: [:t | (t from: 'glamorous' size + 1 to: t size) bold]; yourself);
 		subtitleWithFormat: ('@girba' asRopedText 
-			fontSize: 40;
+			fontSize: 30;
 			glamorousRegularFont;
 			bold)
 ]
@@ -70,8 +70,7 @@ FkGt10ESUG2023Show >> slide022Title: aSlide [
 	<gtSlideNote: 'Private knowledge management.'>
 	^ aSlide lepiterPage
 		priority: 22;
-		pageNamed: 'ESUG 2023 BlueSky thread' from: 'default';
-		maximized: true
+		pageNamed: 'ESUG 2023 BlueSky thread' from: 'default'
 ]
 
 { #category : #accessing }
@@ -140,11 +139,19 @@ FkGt10ESUG2023Show >> slide202Title: aSlide [
 ]
 
 { #category : #accessing }
+FkGt10ESUG2023Show >> slide203Title: aSlide [
+	<gtSlide>
+	<text: 'It also works across languages.'>
+	^ aSlide lepiterPage
+		priority: 203;
+		pageNamed: 'Inspecting wrapped Rust objects' from: 'default'
+]
+
+{ #category : #accessing }
 FkGt10ESUG2023Show >> slide211Title: aSlide [
 	<gtSlide>
 	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
-	^ aSlide lepiterPage
+	^ aSlide element
 		priority: 211;
-		pageNamed: 'About this version of Glamorous Toolkit' from: 'Glamorous Toolkit Book';
-		maximized: true
+		element: [ GtImage treemapWithAllExtensions ]
 ]
