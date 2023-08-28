@@ -7,16 +7,6 @@ Class {
 }
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> gtLiveSlideshowFor: aView [
-	<gtView>
-	<gtClassView>
-	^ aView explicit 
-		title: 'Slideshow';
-		stencil: [ GtPresenterSlideShow create: self ];
-		actionUpdateButton
-]
-
-{ #category : #accessing }
 FkGt10ESUG2023Show >> slide001Title: aSlide [
 	<gtSlide>
 	<text: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
