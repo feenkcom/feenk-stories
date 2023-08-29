@@ -8,6 +8,7 @@ Class {
 BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadDependencies [
 	self loadGt4AtProto.
 	self loadZooniverseSources.
+	self loadWhitehallSources.
 	self loadGt4Twitter.
 	self loadRustLspModel.
 	self loadMapper
@@ -42,6 +43,16 @@ BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadMapper [
 { #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadRustLspModel [
 	GtLSPRustModel downloadExecutable.
+]
+
+{ #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadWhitehallSources [
+	| rootDirectory |
+	rootDirectory := 'whitehall' asFileReference.
+	rootDirectory ensureDeleteAll.
+	IceRepositoryCreator
+		fromUrl: 'git@github.com:alphagov/whitehall.git'
+		to: rootDirectory.
 ]
 
 { #category : #accessing }

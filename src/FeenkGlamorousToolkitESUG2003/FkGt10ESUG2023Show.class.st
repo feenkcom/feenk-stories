@@ -95,6 +95,16 @@ FkGt10ESUG2023Show >> slide051SoftwareAssessment: aSlide [
 ]
 
 { #category : #accessing }
+FkGt10ESUG2023Show >> slide061GraphicalEnvironment: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Smalltalk syntax'>
+	^ aSlide lepiterPage
+		priority: 61;
+		pageNamed: 'Smalltalk method syntax on a postcard' from: 'Glamorous Toolkit Book';
+		beMaximized
+]
+
+{ #category : #accessing }
 FkGt10ESUG2023Show >> slide071Gemstone: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Gemstone'>
@@ -144,10 +154,22 @@ FkGt10ESUG2023Show >> slide202EditorSelection: aSlide [
 { #category : #accessing }
 FkGt10ESUG2023Show >> slide203RustInspector: aSlide [
 	<gtSlide>
-	<text: 'It also works across languages.'>
+	<text: 'The same applies to the lowest level of a system'>
 	^ aSlide lepiterPage
 		priority: 203;
 		pageNamed: 'Inspecting wrapped Rust objects' from: 'default'
+]
+
+{ #category : #accessing }
+FkGt10ESUG2023Show >> slide204GraphicalEnvironment: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'You can use it for teaching'>
+	^ aSlide element
+		priority: 204;
+		element: [ | aPager |
+			aPager := GtPager
+					createWrappedOn: (GtCoder forMethod: BrTextEditorSelecterExamples >> #select_moveOneRight_at_6).
+			aPager addAptitude: BrShadowAptitude new beLarge ]
 ]
 
 { #category : #accessing }
