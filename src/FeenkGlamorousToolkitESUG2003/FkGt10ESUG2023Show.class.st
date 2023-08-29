@@ -87,7 +87,7 @@ FkGt10ESUG2023Show >> slide051SoftwareAssessment: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment'>
 	^ aSlide element
-		priority: 11;
+		priority: 51;
 		element: [ | aPager |
 			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
 			aPager maximized.
