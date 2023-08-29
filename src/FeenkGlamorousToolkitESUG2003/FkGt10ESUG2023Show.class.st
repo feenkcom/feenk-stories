@@ -18,7 +18,7 @@ FkGt10ESUG2023Show >> slide001Title: aSlide [
 			thin;
 			in: [:t | (t from: 'glamorous' size + 1 to: t size) bold]; yourself);
 		subtitleWithFormat: ('@girba' asRopedText 
-			fontSize: 30;
+			fontSize: 60;
 			glamorousRegularFont;
 			bold)
 ]
@@ -70,7 +70,7 @@ FkGt10ESUG2023Show >> slide022Title: aSlide [
 	<gtSlideNote: 'Private knowledge management.'>
 	^ aSlide lepiterPage
 		priority: 22;
-		pageNamed: 'ESUG 2023 BlueSky thread' from: 'default'
+		pageNamed: 'Glamorous Toolkit v1.0 @ ESUG ''23' from: 'default'
 ]
 
 { #category : #accessing }
@@ -86,9 +86,12 @@ FkGt10ESUG2023Show >> slide031Title: aSlide [
 FkGt10ESUG2023Show >> slide051Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment'>
-	^ aSlide lepiterPage
-		priority: 51;
-		pageNamed: 'Analyzing JavaScript React Native: the Zooniverse case study' from: 'Glamorous Toolkit Book'
+	^ aSlide element
+		priority: 11;
+		element: [ | aPager |
+			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
+			aPager maximized.
+			aPager addAptitude: BrShadowAptitude new beLarge ]
 ]
 
 { #category : #accessing }

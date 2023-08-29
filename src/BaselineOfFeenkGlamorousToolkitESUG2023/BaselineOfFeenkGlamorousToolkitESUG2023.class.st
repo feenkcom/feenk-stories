@@ -9,7 +9,8 @@ BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadDependencies [
 	self loadGt4AtProto.
 	self loadZooniverseSources.
 	self loadGt4Twitter.
-	self loadRustLspModel
+	self loadRustLspModel.
+	self loadMapper
 ]
 
 { #category : #accessing }
@@ -28,6 +29,14 @@ BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadGt4Twitter [
 		baseline: #GToolkit4Twitter;
 		load.
 	#BaselineOfGToolkit4Twitter asClass loadLepiter
+]
+
+{ #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2023 class >> loadMapper [
+	Metacello new
+		baseline: 'GToolkitMapperWithoutGT';
+		repository: 'github://feenkcom/gtoolkit-mapper:master/src';
+		load
 ]
 
 { #category : #accessing }
