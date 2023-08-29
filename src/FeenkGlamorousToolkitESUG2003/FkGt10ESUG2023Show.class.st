@@ -42,7 +42,7 @@ FkGt10ESUG2023Show >> slide002Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide011Title: aSlide [
+FkGt10ESUG2023Show >> slide011Pharo: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Pharo development.'>
 	^ aSlide element
@@ -55,7 +55,7 @@ FkGt10ESUG2023Show >> slide011Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide021Title: aSlide [
+FkGt10ESUG2023Show >> slide021KMSystemDocumentation: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Knowledge management. System documentation.'>
 	^ aSlide lepiterPage
@@ -65,7 +65,7 @@ FkGt10ESUG2023Show >> slide021Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide022Title: aSlide [
+FkGt10ESUG2023Show >> slide022PKM: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Private knowledge management.'>
 	^ aSlide lepiterPage
@@ -74,7 +74,7 @@ FkGt10ESUG2023Show >> slide022Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide031Title: aSlide [
+FkGt10ESUG2023Show >> slide031APIBrowsing: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'API browser'>
 	^ aSlide lepiterPage
@@ -83,7 +83,7 @@ FkGt10ESUG2023Show >> slide031Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide051Title: aSlide [
+FkGt10ESUG2023Show >> slide051SoftwareAssessment: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment'>
 	^ aSlide element
@@ -95,7 +95,7 @@ FkGt10ESUG2023Show >> slide051Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide071Title: aSlide [
+FkGt10ESUG2023Show >> slide071Gemstone: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Gemstone'>
 	^ aSlide lepiterPage
@@ -104,7 +104,7 @@ FkGt10ESUG2023Show >> slide071Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide081Title: aSlide [
+FkGt10ESUG2023Show >> slide081Rust: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Development environment for other languages.'>
 	^ aSlide element
@@ -118,7 +118,7 @@ FkGt10ESUG2023Show >> slide081Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide201Title: aSlide [
+FkGt10ESUG2023Show >> slide201Empty: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'All these perspectives are correct. And they are all wrong.
 
@@ -129,7 +129,7 @@ Molding the environment to every single problem transforms everything, starting 
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide202Title: aSlide [
+FkGt10ESUG2023Show >> slide202EditorSelection: aSlide [
 	<gtSlide>
 	<text: 'It touches everything at all levels of abstraction. For example, here we look at an example of selecting a piece of text.'>
 	^ aSlide element
@@ -142,7 +142,7 @@ FkGt10ESUG2023Show >> slide202Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide203Title: aSlide [
+FkGt10ESUG2023Show >> slide203RustInspector: aSlide [
 	<gtSlide>
 	<text: 'It also works across languages.'>
 	^ aSlide lepiterPage
@@ -151,7 +151,7 @@ FkGt10ESUG2023Show >> slide203Title: aSlide [
 ]
 
 { #category : #accessing }
-FkGt10ESUG2023Show >> slide211Title: aSlide [
+FkGt10ESUG2023Show >> slide211TreemapOfExtensionsAndExamples: aSlide [
 	<gtSlide>
 	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
 	^ aSlide element
