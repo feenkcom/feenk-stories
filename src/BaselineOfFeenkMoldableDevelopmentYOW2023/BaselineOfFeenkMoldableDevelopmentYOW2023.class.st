@@ -1,0 +1,39 @@
+Class {
+	#name : #BaselineOfFeenkMoldableDevelopmentYOW2023,
+	#superclass : #BaselineOf,
+	#category : #BaselineOfFeenkMoldableDevelopmentYOW2023
+}
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadDependencies [
+	self loadGt4AtProto.
+	self loadWhitehallSources.
+]
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadGt4AtProto [
+	Metacello new
+		repository: 'github://feenkcom/gt4atproto:main/src';
+		baseline: 'Gt4AtProto';
+		load.
+	#BaselineOfGt4AtProto asClass loadLepiter
+]
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadWhitehallSources [
+	| rootDirectory |
+	rootDirectory := 'whitehall' asFileReference.
+	rootDirectory ensureDeleteAll.
+	IceRepositoryCreator
+		fromUrl: 'git@github.com:alphagov/whitehall.git'
+		to: rootDirectory.
+]
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 >> baseline: spec [
+	<baseline>
+	spec
+		for: #common
+		do: [ spec
+				package: 'FeenkMoldableDevelopmentYOW2023' ]
+]
