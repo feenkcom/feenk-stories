@@ -5,8 +5,20 @@ Class {
 }
 
 { #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadAtProtoSources [
+	| atprotoDirectory |
+	atprotoDirectory := 'atproto' asFileReference.
+	atprotoDirectory ensureDeleteAll.
+	atprotoDirectory ensureDeleteAll.
+	^ IceRepositoryCreator
+		fromUrl: 'git@github.com:bluesky-social/atproto.git'
+		to: atprotoDirectory.
+]
+
+{ #category : #accessing }
 BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadDependencies [
 	self loadGt4AtProto.
+	self loadAtProtoSources.
 	self loadZooniverseSources.
 	self loadWhitehallSources.
 ]
