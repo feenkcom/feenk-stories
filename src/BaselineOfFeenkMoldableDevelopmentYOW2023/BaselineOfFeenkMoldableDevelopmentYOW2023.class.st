@@ -21,6 +21,7 @@ BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadDependencies [
 	self loadAtProtoSources.
 	self loadZooniverseSources.
 	self loadWhitehallSources.
+	self loadLepiterServer.
 ]
 
 { #category : #accessing }
@@ -30,6 +31,15 @@ BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadGt4AtProto [
 		baseline: 'Gt4AtProto';
 		load.
 	#BaselineOfGt4AtProto asClass loadLepiter
+]
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadLepiterServer [
+	Metacello new
+		repository: 'github://feenkcom/lepiter-server:main/src';
+		baseline: 'LepiterServer';
+		load.
+	#BaselineOfLepiterServer asClass loadLepiter
 ]
 
 { #category : #accessing }
