@@ -95,6 +95,29 @@ FkMoldableDevelopmentYOW2023Show >> slide031SoftwareAssessment: aSlide [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide032SoftwareAssessment: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Software assessment: Rails'>
+	^ aSlide lepiterPage
+		priority: 32;
+		pageNamed: 'Analyzing Ruby on Rails: the Whitehall case study' from: 'Glamorous Toolkit Book';
+		maximized: false
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide035DependenciesBaseline: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Software assessment: Baselines'>
+	^ aSlide element
+		priority: 35;
+		element: [ | aPager |
+			aPager := GtPager
+					createWrappedOn: (GtCoder forMethod: BaselineOfGToolkit >> #baseline:).
+			aPager maximized.
+			aPager addAptitude: BrShadowAptitude new beLarge ]
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentYOW2023Show >> slide041KMSystemDocumentation: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
