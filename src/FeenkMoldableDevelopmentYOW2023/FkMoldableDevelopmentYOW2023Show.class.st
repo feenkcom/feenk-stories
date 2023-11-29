@@ -19,43 +19,75 @@ FkMoldableDevelopmentYOW2023Show >> slide001Title: aSlide [
 			in: [:t | (t from: 'glamorous' size + 1 to: t size) bold]; yourself);
 		subtitleWithFormat: ('@girba' asRopedText 
 			fontSize: 50;
+			foreground: Color gray;
 			fontName: 'Desyrel')
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide021KMSystemDocumentation: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide002FeenkSlideFor: aSlide [
 	<gtSlide>
-	<gtSlideNote: 'Knowledge management. System documentation.'>
-	^ aSlide lepiterPage
-		priority: 21;
-		pageNamed: 'Documenting the domain: the Ludo game case study' from: 'Glamorous Toolkit Book';
-		maximized: true
+	^ aSlide element
+		priority: 2;
+		element: [ | form |
+			form := PNGReadWriter
+					formFromFileNamed: (GtResourceReference path: Path * 'feenkcom' / 'gtoolkit' / 'doc' / 'feenk.png')
+							fullName.
+			BlElement new
+				constraintsDo: [ :c | 
+					c horizontal matchParent.
+					c vertical matchParent ];
+				layout: BlLinearLayout horizontal;
+				addChild: (BlElement new
+						constraintsDo: [ :c | 
+							c horizontal matchParent.
+							c vertical fitContent.
+							c linear vertical alignCenter ];
+						layout: BlLinearLayout vertical;
+						addChild: (BrVerticalPane new
+								constraintsDo: [ :c | c linear horizontal alignCenter ];
+								addChild: (form asElement asScalableElement
+										maxScale: 0.2;
+										constraintsDo: [ :c | 
+											c horizontal matchParent.
+											c vertical matchParent ]);
+								hExact: 200;
+								vExact: 200)) ]
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide022PKM: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide003GTSlideFor: aSlide [
 	<gtSlide>
-	<gtSlideNote: 'Private knowledge management.'>
+	^ aSlide title
+		priority: 3;
+		titleWithFormat: ('glamoroustoolkit' asRopedText 
+			fontSize: 70;
+			glamorousRegularFont;
+			thin;
+			in: [:t | (t from: 'glamorous' size + 1 to: t size) bold]; yourself)
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide011GitHubAPiSlideFor: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		priority: 11;
+		pageNamed: 'Working with a REST API: the GitHub case study' from: 'Glamorous Toolkit Book'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
+	<gtSlide>
 	^ aSlide lepiterPage
 		priority: 22;
-		pageNamed: 'Moldable Development @ YOW 2023' from: 'default'
+		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide031APIBrowsing: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'API browser'>
-	^ aSlide lepiterPage
-		priority: 31;
-		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide051SoftwareAssessment: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide031SoftwareAssessment: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment'>
 	^ aSlide element
-		priority: 51;
+		priority: 31;
 		element: [ | aPager |
 			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
 			aPager maximized.
@@ -63,17 +95,25 @@ FkMoldableDevelopmentYOW2023Show >> slide051SoftwareAssessment: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide061GraphicalEnvironment: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide041KMSystemDocumentation: aSlide [
 	<gtSlide>
-	<gtSlideNote: 'Smalltalk syntax'>
 	^ aSlide lepiterPage
-		priority: 61;
-		pageNamed: 'Smalltalk method syntax on a postcard' from: 'Glamorous Toolkit Book';
-		beMaximized
+		priority: 41;
+		pageNamed: 'Documenting the domain: the Ludo game case study' from: 'Glamorous Toolkit Book';
+		maximized: true
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide201Empty: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide045PKM: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Private knowledge management.'>
+	^ aSlide lepiterPage
+		priority: 45;
+		pageNamed: 'Moldable Development @ YOW 2023' from: 'default'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide100Empty: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'All these perspectives are correct. And they are all wrong.
 
@@ -81,31 +121,16 @@ These perspectives are not distinct tools. There are no tools. There is just a f
 
 Molding the environment to every single problem transforms everything, starting with the very act of programming.'>
 	^ aSlide empty
+		priority: 100
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide202EditorSelection: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide101ATProto: aSlide [
 	<gtSlide>
-	<text: 'It touches everything at all levels of abstraction. For example, here we look at an example of selecting a piece of text.'>
-	^ aSlide element
-		priority: 202;
-		element: [ | aPager |
-			aPager := GtPager
-					createWrappedOn: (GtCoder forMethod: BrTextEditorSelecterExamples >> #select_moveOneRight_at_6).
-			aPager maximized.
-			aPager addAptitude: BrShadowAptitude new beLarge ]
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide204GraphicalEnvironment: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'You can use it for teaching'>
-	^ aSlide element
-		priority: 204;
-		element: [ | aPager |
-			aPager := GtPager
-					createWrappedOn: (GtCoder forMethod: BrTextEditorSelecterExamples >> #select_moveOneRight_at_6).
-			aPager addAptitude: BrShadowAptitude new beLarge ]
+	<gtSlideNote: 'AT Proto'>
+	^ aSlide lepiterPage
+		priority: 101;
+		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
 ]
 
 { #category : #accessing }

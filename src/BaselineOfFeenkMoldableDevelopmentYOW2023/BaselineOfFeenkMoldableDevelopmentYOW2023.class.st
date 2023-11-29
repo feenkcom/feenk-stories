@@ -7,6 +7,7 @@ Class {
 { #category : #accessing }
 BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadDependencies [
 	self loadGt4AtProto.
+	self loadZooniverseSources.
 	self loadWhitehallSources.
 ]
 
@@ -27,6 +28,16 @@ BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadWhitehallSources [
 	IceRepositoryCreator
 		fromUrl: 'git@github.com:alphagov/whitehall.git'
 		to: rootDirectory.
+]
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentYOW2023 class >> loadZooniverseSources [
+	| rootDirectory |
+	rootDirectory := 'zooniverse' asFileReference.
+	rootDirectory ensureDeleteAll.
+	^ IceRepositoryCreator
+		fromUrl: 'git@github.com:zooniverse/mobile.git'
+		to: rootDirectory
 ]
 
 { #category : #accessing }
