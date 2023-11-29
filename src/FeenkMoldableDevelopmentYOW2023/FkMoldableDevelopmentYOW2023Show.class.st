@@ -136,6 +136,18 @@ FkMoldableDevelopmentYOW2023Show >> slide045PKM: aSlide [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide051PKM: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Docker'>
+	^ aSlide element
+		priority: 51;
+		element: [ | aPager |
+			aPager := GtPager
+					createWrappedOn: (GtCoder forMethod: LeServerInDockerExamples>>#server).
+			aPager addAptitude: BrShadowAptitude new beLarge ]
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentYOW2023Show >> slide100Empty: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'All these perspectives are correct. And they are all wrong.
