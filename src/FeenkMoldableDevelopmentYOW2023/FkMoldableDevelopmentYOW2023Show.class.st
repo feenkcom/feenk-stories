@@ -67,10 +67,61 @@ FkMoldableDevelopmentYOW2023Show >> slide003GTSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide011GitHubAPiSlideFor: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide011PackageJson: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Software assessment'>
+	^ aSlide element
+		priority: 11;
+		element: [ | aPager |
+			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
+			aPager maximized.
+			aPager addAptitude: BrShadowAptitude new beLarge ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide012Mold1: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Mold 1'>
+	^ aSlide filePicture
+		priority: 12;
+		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-1.png')
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide013Mold1: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Mold 2'>
+	^ aSlide filePicture
+		priority: 13;
+		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-2.png')
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide014Mold1: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Mold 3'>
+	^ aSlide filePicture
+		priority: 14;
+		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-3.png')
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide015React: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Software assessment'>
+	^ aSlide element
+		priority: 15;
+		element: [ | aPager |
+			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
+			aPager maximized.
+			aPager addAptitude: BrShadowAptitude new beLarge ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide021GitHubAPiSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
-		priority: 11;
+		priority: 21;
 		pageNamed: 'Working with a REST API: the GitHub case study' from: 'Glamorous Toolkit Book'
 ]
 
@@ -80,28 +131,6 @@ FkMoldableDevelopmentYOW2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
 	^ aSlide lepiterPage
 		priority: 22;
 		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide031SoftwareAssessment: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Software assessment'>
-	^ aSlide element
-		priority: 31;
-		element: [ | aPager |
-			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
-			aPager maximized.
-			aPager addAptitude: BrShadowAptitude new beLarge ]
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide032SoftwareAssessment: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Software assessment: Rails'>
-	^ aSlide lepiterPage
-		priority: 32;
-		pageNamed: 'Analyzing Ruby on Rails: the Whitehall case study' from: 'Glamorous Toolkit Book';
-		maximized: false
 ]
 
 { #category : #accessing }
@@ -132,11 +161,11 @@ FkMoldableDevelopmentYOW2023Show >> slide045PKM: aSlide [
 	<gtSlideNote: 'Private knowledge management.'>
 	^ aSlide lepiterPage
 		priority: 45;
-		pageNamed: 'Moldable Development @ YOW 2023' from: 'default'
+		pageNamed: 'Moldable Development @ YOW ''23' from: 'default'
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide051PKM: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide051Docker: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Docker'>
 	^ aSlide element
@@ -184,6 +213,18 @@ FkMoldableDevelopmentYOW2023Show >> slide152WardleyMapFullWithRoles: aSlide [
 	^ aSlide element
 		priority: 152;
 		element: [ self wardleyMapElementFullWithRoles ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide201GTSlideFor: aSlide [
+	<gtSlide>
+	^ aSlide title
+		priority: 201;
+		titleWithFormat: ('gtoolkit.com' asRopedText 
+			fontSize: 70;
+			glamorousRegularFont;
+			thin;
+			in: [:t | (t from: 'g' size + 1 to: t size) bold]; yourself)
 ]
 
 { #category : #accessing }
