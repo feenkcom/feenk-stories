@@ -88,16 +88,19 @@ FkMoldableDevelopmentYOW2023Show >> slide012Mold1: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide013Mold1: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide013Mold2: arg1 [
 	<gtSlide>
 	<gtSlideNote: 'Mold 2'>
-	^ aSlide filePicture
-		priority: 13;
-		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-2.png')
+	| tmp2 |
+	tmp2 := arg1 filePicture.
+	tmp2 priority: 13.
+	^ tmp2
+		fileReference: (GtResourcesUtility
+				resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-2.png')
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide014Mold1: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide014Mold3: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Mold 3'>
 	^ aSlide filePicture
@@ -131,6 +134,14 @@ FkMoldableDevelopmentYOW2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
 	^ aSlide lepiterPage
 		priority: 22;
 		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide028PythonSlideFor: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		priority: 28;
+		pageNamed: 'Working with Python' from: 'default'
 ]
 
 { #category : #accessing }
@@ -195,6 +206,33 @@ FkMoldableDevelopmentYOW2023Show >> slide101ATProto: aSlide [
 	^ aSlide lepiterPage
 		priority: 101;
 		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide12150percent1: aSlide [
+	<gtSlide>
+	<gtSlideNote: '50 percent 1'>
+	^ aSlide filePicture
+		priority: 121;
+		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/50percent-1.png')
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide12250percent1: aSlide [
+	<gtSlide>
+	<gtSlideNote: '50 percent 2'>
+	^ aSlide filePicture
+		priority: 122;
+		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/50percent-2.png')
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> slide12350percent1: aSlide [
+	<gtSlide>
+	<gtSlideNote: '50 percent 3'>
+	^ aSlide filePicture
+		priority: 123;
+		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/50percent-3.png')
 ]
 
 { #category : #accessing }
