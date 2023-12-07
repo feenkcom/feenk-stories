@@ -1,5 +1,5 @@
 Class {
-	#name : #FkMoldableDevelopmentYOW2023Show,
+	#name : #FkMoldableDevelopmentYOWSydney2023Show,
 	#superclass : #Object,
 	#traits : 'TGtSlideShow',
 	#classTraits : 'TGtSlideShow classTrait',
@@ -7,7 +7,7 @@ Class {
 }
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide001Title: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide001Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
 	^ aSlide title
@@ -24,7 +24,7 @@ FkMoldableDevelopmentYOW2023Show >> slide001Title: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide002FeenkSlideFor: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide002FeenkSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide element
 		priority: 2;
@@ -55,7 +55,7 @@ FkMoldableDevelopmentYOW2023Show >> slide002FeenkSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide003GTSlideFor: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide003GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: 3;
@@ -67,7 +67,7 @@ FkMoldableDevelopmentYOW2023Show >> slide003GTSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide011PackageJson: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide011PackageJson: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment'>
 	^ aSlide element
@@ -79,7 +79,7 @@ FkMoldableDevelopmentYOW2023Show >> slide011PackageJson: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide012Mold1: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide012Mold1: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Mold 1'>
 	^ aSlide filePicture
@@ -88,7 +88,7 @@ FkMoldableDevelopmentYOW2023Show >> slide012Mold1: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide013Mold2: arg1 [
+FkMoldableDevelopmentYOWSydney2023Show >> slide013Mold2: arg1 [
 	<gtSlide>
 	<gtSlideNote: 'Mold 2'>
 	| tmp1 |
@@ -100,7 +100,7 @@ FkMoldableDevelopmentYOW2023Show >> slide013Mold2: arg1 [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide014Mold3: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide014Mold3: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Mold 3'>
 	^ aSlide filePicture
@@ -109,7 +109,7 @@ FkMoldableDevelopmentYOW2023Show >> slide014Mold3: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide015React: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide015React: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment'>
 	^ aSlide element
@@ -121,7 +121,7 @@ FkMoldableDevelopmentYOW2023Show >> slide015React: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide021GitHubAPiSlideFor: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide021GitHubAPiSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: 21;
@@ -129,7 +129,7 @@ FkMoldableDevelopmentYOW2023Show >> slide021GitHubAPiSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: 22;
@@ -137,7 +137,7 @@ FkMoldableDevelopmentYOW2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide028PythonSlideFor: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide028PythonSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: 28;
@@ -145,7 +145,7 @@ FkMoldableDevelopmentYOW2023Show >> slide028PythonSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide035DependenciesBaseline: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide035DependenciesBaseline: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Software assessment: Baselines'>
 	^ aSlide element
@@ -158,7 +158,7 @@ FkMoldableDevelopmentYOW2023Show >> slide035DependenciesBaseline: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide041KMSystemDocumentation: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide041KMSystemDocumentation: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: 41;
@@ -167,7 +167,7 @@ FkMoldableDevelopmentYOW2023Show >> slide041KMSystemDocumentation: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide045PKM: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide045PKM: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Private knowledge management.'>
 	^ aSlide lepiterPage
@@ -176,7 +176,16 @@ FkMoldableDevelopmentYOW2023Show >> slide045PKM: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide100Empty: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide061Jenkins: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Jenkins'>
+	^ aSlide lepiterPage
+		priority: 61;
+		pageNamed: 'Glamorous Toolkit Jenkins Server' from: 'default'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOWSydney2023Show >> slide100Empty: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'All these perspectives are correct. And they are all wrong.
 
@@ -188,7 +197,7 @@ Molding the environment to every single problem transforms everything, starting 
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide101ATProto: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide101ATProto: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'AT Proto'>
 	^ aSlide lepiterPage
@@ -197,7 +206,7 @@ FkMoldableDevelopmentYOW2023Show >> slide101ATProto: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide12150percent1: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide12150percent1: aSlide [
 	<gtSlide>
 	<gtSlideNote: '50 percent 1'>
 	^ aSlide filePicture
@@ -206,7 +215,7 @@ FkMoldableDevelopmentYOW2023Show >> slide12150percent1: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide12250percent1: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide12250percent1: aSlide [
 	<gtSlide>
 	<gtSlideNote: '50 percent 2'>
 	^ aSlide filePicture
@@ -215,7 +224,7 @@ FkMoldableDevelopmentYOW2023Show >> slide12250percent1: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide12350percent1: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide12350percent1: aSlide [
 	<gtSlide>
 	<gtSlideNote: '50 percent 3'>
 	^ aSlide filePicture
@@ -224,7 +233,7 @@ FkMoldableDevelopmentYOW2023Show >> slide12350percent1: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide151WardleyMapFullWithoutRoles: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide151WardleyMapFullWithoutRoles: aSlide [
 	<gtSlide>
 	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
 	^ aSlide element
@@ -233,7 +242,7 @@ FkMoldableDevelopmentYOW2023Show >> slide151WardleyMapFullWithoutRoles: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide152WardleyMapFullWithRoles: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide152WardleyMapFullWithRoles: aSlide [
 	<gtSlide>
 	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
 	^ aSlide element
@@ -242,7 +251,7 @@ FkMoldableDevelopmentYOW2023Show >> slide152WardleyMapFullWithRoles: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide201GTSlideFor: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide201GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: 201;
@@ -254,7 +263,7 @@ FkMoldableDevelopmentYOW2023Show >> slide201GTSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide211TreemapOfExtensionsAndExamples: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide211TreemapOfExtensionsAndExamples: aSlide [
 	<gtSlide>
 	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
 	^ aSlide element
@@ -263,7 +272,7 @@ FkMoldableDevelopmentYOW2023Show >> slide211TreemapOfExtensionsAndExamples: aSli
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> wardleyMapElementForJson: json [
+FkMoldableDevelopmentYOWSydney2023Show >> wardleyMapElementForJson: json [
 	| model aWardleyMapElement aWardleyMapViewModel |
 	model := GtWardleyMapFromDictionaryImporter importMapFromJSONString: json.
 	aWardleyMapViewModel := GtWardleyMapViewModel new.
@@ -279,7 +288,7 @@ FkMoldableDevelopmentYOW2023Show >> wardleyMapElementForJson: json [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> wardleyMapElementFullWithRoles [
+FkMoldableDevelopmentYOWSydney2023Show >> wardleyMapElementFullWithRoles [
 	<gtExample>
 	| json |
 	json := self wardleyMapJsonFullWithRoles.
@@ -287,7 +296,7 @@ FkMoldableDevelopmentYOW2023Show >> wardleyMapElementFullWithRoles [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> wardleyMapElementFullWithoutRoles [
+FkMoldableDevelopmentYOWSydney2023Show >> wardleyMapElementFullWithoutRoles [
 	<gtExample>
 	| json |
 	json := self wardleyMapJsonFullWithoutRoles.
@@ -295,7 +304,7 @@ FkMoldableDevelopmentYOW2023Show >> wardleyMapElementFullWithoutRoles [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> wardleyMapJsonFullWithRoles [
+FkMoldableDevelopmentYOWSydney2023Show >> wardleyMapJsonFullWithRoles [
 	<gtExample>
 	^ '{
 	"nodes" : [
@@ -798,7 +807,7 @@ FkMoldableDevelopmentYOW2023Show >> wardleyMapJsonFullWithRoles [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> wardleyMapJsonFullWithoutRoles [
+FkMoldableDevelopmentYOWSydney2023Show >> wardleyMapJsonFullWithoutRoles [
 	<gtExample>
 	^ '{
 	"nodes" : [
@@ -1301,7 +1310,7 @@ FkMoldableDevelopmentYOW2023Show >> wardleyMapJsonFullWithoutRoles [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> x_slide051Docker: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> x_slide051Docker: aSlide [
 	"<gtSlide>"
 	<gtSlideNote: 'Docker'>
 	^ aSlide element
