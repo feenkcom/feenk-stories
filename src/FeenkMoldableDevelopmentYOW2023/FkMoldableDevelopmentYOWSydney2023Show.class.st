@@ -129,14 +129,6 @@ FkMoldableDevelopmentYOWSydney2023Show >> slide021GitHubAPiSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOWSydney2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		priority: 22;
-		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
-]
-
-{ #category : #accessing }
 FkMoldableDevelopmentYOWSydney2023Show >> slide028PythonSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -167,21 +159,21 @@ FkMoldableDevelopmentYOWSydney2023Show >> slide041KMSystemDocumentation: aSlide 
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOWSydney2023Show >> slide045PKM: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Private knowledge management.'>
-	^ aSlide lepiterPage
-		priority: 45;
-		pageNamed: 'Moldable Development @ YOW ''23' from: 'default'
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOWSydney2023Show >> slide061Jenkins: aSlide [
+FkMoldableDevelopmentYOWSydney2023Show >> slide051Jenkins: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Jenkins'>
 	^ aSlide lepiterPage
-		priority: 61;
+		priority: 51;
 		pageNamed: 'Glamorous Toolkit Jenkins Server' from: 'default'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOWSydney2023Show >> slide061PKM: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Private knowledge management.'>
+	^ aSlide lepiterPage
+		priority: 61;
+		pageNamed: 'Moldable Development @ YOW ''23' from: 'default'
 ]
 
 { #category : #accessing }
@@ -194,15 +186,6 @@ These perspectives are not distinct tools. There are no tools. There is just a f
 Molding the environment to every single problem transforms everything, starting with the very act of programming.'>
 	^ aSlide empty
 		priority: 100
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOWSydney2023Show >> slide101ATProto: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'AT Proto'>
-	^ aSlide lepiterPage
-		priority: 101;
-		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
 ]
 
 { #category : #accessing }
@@ -1310,6 +1293,14 @@ FkMoldableDevelopmentYOWSydney2023Show >> wardleyMapJsonFullWithoutRoles [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentYOWSydney2023Show >> x_slide022GitHubGraphQLSlideFor: aSlide [
+	"<gtSlide>"
+	^ aSlide lepiterPage
+		priority: 22;
+		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentYOWSydney2023Show >> x_slide051Docker: aSlide [
 	"<gtSlide>"
 	<gtSlideNote: 'Docker'>
@@ -1319,4 +1310,13 @@ FkMoldableDevelopmentYOWSydney2023Show >> x_slide051Docker: aSlide [
 			aPager := GtPager
 					createWrappedOn: (GtCoder forMethod: LeServerInDockerExamples>>#server).
 			aPager addAptitude: BrShadowAptitude new beLarge ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOWSydney2023Show >> x_slide101ATProto: aSlide [
+"	<gtSlide>"
+	<gtSlideNote: 'AT Proto'>
+	^ aSlide lepiterPage
+		priority: 101;
+		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
 ]

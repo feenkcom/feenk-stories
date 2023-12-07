@@ -129,14 +129,6 @@ FkMoldableDevelopmentYOW2023Show >> slide021GitHubAPiSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide022GitHubGraphQLSlideFor: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		priority: 22;
-		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
-]
-
-{ #category : #accessing }
 FkMoldableDevelopmentYOW2023Show >> slide028PythonSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -167,7 +159,7 @@ FkMoldableDevelopmentYOW2023Show >> slide041KMSystemDocumentation: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide045PKM: aSlide [
+FkMoldableDevelopmentYOW2023Show >> slide061PKM: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Private knowledge management.'>
 	^ aSlide lepiterPage
@@ -185,15 +177,6 @@ These perspectives are not distinct tools. There are no tools. There is just a f
 Molding the environment to every single problem transforms everything, starting with the very act of programming.'>
 	^ aSlide empty
 		priority: 100
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentYOW2023Show >> slide101ATProto: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'AT Proto'>
-	^ aSlide lepiterPage
-		priority: 101;
-		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
 ]
 
 { #category : #accessing }
@@ -1301,6 +1284,14 @@ FkMoldableDevelopmentYOW2023Show >> wardleyMapJsonFullWithoutRoles [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> x_slide022GitHubGraphQLSlideFor: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		priority: 22;
+		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentYOW2023Show >> x_slide051Docker: aSlide [
 	"<gtSlide>"
 	<gtSlideNote: 'Docker'>
@@ -1310,4 +1301,13 @@ FkMoldableDevelopmentYOW2023Show >> x_slide051Docker: aSlide [
 			aPager := GtPager
 					createWrappedOn: (GtCoder forMethod: LeServerInDockerExamples>>#server).
 			aPager addAptitude: BrShadowAptitude new beLarge ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentYOW2023Show >> x_slide101ATProto: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'AT Proto'>
+	^ aSlide lepiterPage
+		priority: 101;
+		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
 ]
