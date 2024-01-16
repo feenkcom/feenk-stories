@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:12:33.158068+01:00"
+						"dateAndTimeString" : "2024-01-16T09:26:27.934662+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:13:57.08299+01:00"
+						"dateAndTimeString" : "2024-01-16T09:30:50.23595+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "4ufpbW3LDQCNu9OJA1p5Fg=="
+					"uidString" : "9pWrn23LDQCE9T0NC3HARg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "This repo contains several packages with stories for various conferences, including slideshows."
+				"string" : "Slideshows presented at [YOW 2023](https://yowcon.com/) in [Melbourne](https://yowcon.com/melbourne-2023) and [Sydney](https://yowcon.com/sydney-2023)."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-16T09:26:36.705627+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-16T09:27:25.439132+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qWQxoG3LDQCE+PxzC3HARg=="
+				},
+				"code" : "Metacello new\n\t\trepository: 'github://feenkcom/feenk-stories:main/src';\n\t\tbaseline: 'FeenkMoldableDevelopmentYOW2023';\n\t\tload."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:31:45.776576+01:00"
+						"dateAndTimeString" : "2024-01-16T09:27:09.643876+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,20 +100,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:31:51.977057+01:00"
+						"dateAndTimeString" : "2024-01-16T09:29:33.693722+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "l3Gdsm3LDQCg21+FD9kBhQ=="
+					"uidString" : "YP4nom3LDQCFHKtkC3HARg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[IDE Summit 2020]] "
+				"string" : "# Slideshows"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -92,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:13:59.916512+01:00"
+						"dateAndTimeString" : "2024-01-16T09:27:52.071469+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,20 +137,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:14:05.497394+01:00"
+						"dateAndTimeString" : "2024-01-16T09:28:25.139867+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cbYVc23LDQCP8sjFA1p5Fg=="
+					"uidString" : "lGWvpG3LDQCFPxbyC3HARg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[ESUG 2023]]"
+				"code" : "GtPresenterSlideShow openInSpace: #FkMoldableDevelopmentYOW2023Show asClass."
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -129,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:26:22.091606+01:00"
+						"dateAndTimeString" : "2024-01-16T09:30:55.879886+01:00"
 					}
 				},
 				"editEmail" : {
@@ -140,128 +171,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:26:26.007377+01:00"
+						"dateAndTimeString" : "2024-01-16T09:31:03.819103+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "vWZSn23LDQCErunwC3HARg=="
+					"uidString" : "Vxmkr23LDQCHuNObC3HARg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[YOW 2023]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:00:36.721507+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:00:44.447445+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ffM1Q23LDQC7vhHlC/Nq2g=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[VAMOS 2024]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:25:37.744919+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:25:37.744919+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "s72tnG3LDQCVKZBRA1p5Fg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:00:28.559814+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:00:28.559814+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "3Wm5Qm3LDQC7vTnCC/Nq2g=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "GtPresenterSlideShow openInSpace: #FkMoldableDevelopmentYOWSydney2023Show asClass."
 			}
 		]
 	},
@@ -273,7 +190,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-01-16T09:00:28.508888+01:00"
+			"dateAndTimeString" : "2024-01-16T09:26:27.879791+01:00"
 		}
 	},
 	"editEmail" : {
@@ -284,15 +201,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-01-16T09:00:36.715881+01:00"
+			"dateAndTimeString" : "2024-01-16T09:26:27.879791+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "feenk stories TOC"
+		"title" : "YOW 2023"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "caa1b842-6dcb-0d00-bbbc-b85a0bf36ada"
+		"uuid" : "bcbeaa9f-6dcb-0d00-84f4-2f9a0b71c046"
 	}
 }
