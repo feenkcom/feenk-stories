@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T11:49:30.849672+01:00"
+						"dateAndTimeString" : "2024-01-17T11:39:15.192556+01:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# EmbracingVariability  \n  \nEmbracing Software Variability to build Explainable Systems  \n## Unexplainable Systems  (need better term\n  \n* Running system  \n    * Can only see GUI interactions  \n    * Running Ludo Game  \n* Source code  \n    * Can only see static source  \n    * Ludo source code  \n* Tests  \n    * Only useful if they fail  \n    * Ludo tests  \n        * Just show examples running  \n* Explainable system  \n    * Explore and query  \n    * …  \n  \n## Explainable Systems  \n  \n* Ludo game  \n    * Multiple views  \n    * Examples of questions to answer  \n        * ...  \n* Want examples for searches and actions  \n  \n## Variability in Moldable Tools  \n  \n* Inspector  \n    * Views, Actions, Searches  \n* Coder  \n    * Views  \n* Lepiter  \n    * Annotations  \n    * Snippets  \n        * Refactoring  \n        * Python  \n* Debugger  \n    * Exceptions  \n  \n## Birds-eye view  \n  \n* Plugins, but dynamic  \n    * Objects bring their custom extensions  \n* Fine-grained  \n    * Most tools are tiny  \n* Compositional  \n    * Navigate flow of objects  \n  \n## Conclusion?  \n  \n* …  \n"
+				"string" : "# EmbracingVariability  \n  \nEmbracing Software Variability to build Explainable Systems  \n## Opaque systems\n  \n* Running system  \n    * Can only see GUI interactions  \n    * Running Ludo Game  \n* Source code  \n    * Can only see static source  \n    * Ludo source code  \n* Tests  \n    * Only useful if they fail  \n    * Ludo tests  \n        * Just show examples running  \n* Explainable system  \n    * Explore and query  \n    * …  \n  \n## Explainable Systems  \n  \n* Ludo game  \n    * Multiple views  \n    * Examples of questions to answer  \n        * ...  \n* Want examples for searches and actions  \n  \n## Variability in Moldable Tools  \n  \n* Inspector  \n    * Views, Actions, Searches  \n* Coder  \n    * Views  \n* Lepiter  \n    * Annotations  \n    * Snippets  \n        * Refactoring  \n        * Python  \n* Debugger  \n    * Exceptions  \n  \n## Birds-eye view  \n  \n* Plugins, but dynamic  \n    * Objects bring their custom extensions  \n* Fine-grained  \n    * Most tools are tiny  \n* Compositional  \n    * Navigate flow of objects  \n  \n## Conclusion?  \n  \n* …  \n"
 			}
 		]
 	},

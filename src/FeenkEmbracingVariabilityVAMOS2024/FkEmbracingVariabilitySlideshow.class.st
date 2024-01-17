@@ -41,6 +41,20 @@ Explainable systems expose their insides ....
 ]
 
 { #category : #slides }
+FkEmbracingVariabilitySlideshow >> moldableTools: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+Moldable tools and variability
+'>
+	^ aSlide title
+		setPriority;
+		titleBottomPadding: 20;
+		titleWithFormat: (self asTitle: 'Moldable tools');
+		subtitleWithFormat: (self asBigText: 'placeholder text')
+]
+
+{ #category : #slides }
 FkEmbracingVariabilitySlideshow >> opaqueSystems: aSlide [
 	<gtSlide>
 	<text:
@@ -87,8 +101,6 @@ Running tests won''t tell you much
 
 { #category : #accessing }
 FkEmbracingVariabilitySlideshow >> slidePriorities [
-	"This method defines the slide priorities implicitly by their order instead of by fixed numbers.
-	See also: PrioritySlideshow>>#priorityFor:"
 	<gtExample>
 	^ #( 
 		titleSlide:
@@ -100,6 +112,15 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 		
 		explainableSystems:
 			explainableLudo:
+			"More examples here"
+		
+		moldableTools:
+			"Dimensions of variability
+			views
+			actions
+			searches
+			
+			"
 		
 			
 	)
