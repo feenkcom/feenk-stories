@@ -94,7 +94,8 @@ FkEmbracingVariabilitySlideshow >> explainableSystems: aSlide [
 	<gtSlide>
 	<text: '# Explainable Systems
 
-Explainable systems expose their inner workings in such a way that you can query them and explore them.'>
+Explainable systems expose their inner workings in such a way that you can query them and explore them.
+Let''s have a look at two examples.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Explainable systems');
@@ -113,6 +114,9 @@ As the Overview tells us, the website hasn''t been cloned yet.
 We can do this by clicking on a custom action button.
 
 This will take a few moments, but then we have a refreshed Overview, as well as a number of other views.
+
+If we just look at the source code of the pages of the website, or if we browse the live website, it is just another opaque system.
+But by adding a few custom tools, it becomes an explainable system.
 
 The Overview shows us some statistics about the number of pages as well as internal and external links.
 
@@ -247,7 +251,6 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 		explainableSystems:
 			explainableLudo:
 			explainableWebsite:
-			"More examples here"
 		
 		moldableTools:
 			"Dimensions of variability
@@ -286,7 +289,7 @@ FkEmbracingVariabilitySlideshow >> titleSlide: aSlide [
 Hi. My name is Oscar Nierstrasz.
 
 Today I''d like to tell you about a form of software variability that we use to make software systems *explainable*.
-We do this by exposing the internal domain concepts of the system and augmenting them with lots and lots of small, custom tools that can be used to answer questions  and fulfil various tasks.
+We do this by exposing the internal domain concepts of the system and augmenting them with lots and lots of small, custom tools (or “features”) that can be used to answer questions  and fulfil various tasks.
 
 The secret to making these tools cheap and easy to build is a form of variability that we call *moldability*.
 The standard tools  ofthe IDE are opened up so that they can be *molded* to the needs of an arbitrary application.
