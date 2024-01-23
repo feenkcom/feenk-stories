@@ -593,14 +593,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-01-23T11:14:47.060655+01:00"
+												"dateAndTimeString" : "2024-01-23T11:15:00.906995+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "xVmb8/vLDQC67yz7CDn78w=="
 										},
-										"code" : "FileLocator '"
+										"code" : "FileLocator imageDirectory."
 									},
 									{
 										"__type" : "textSnippet",
@@ -664,7 +664,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-01-23T10:03:38.534696+01:00"
+												"dateAndTimeString" : "2024-01-23T14:19:42.076548+01:00"
 											}
 										},
 										"uid" : {
@@ -674,7 +674,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : ""
+										"string" : "NB: show how we can create a new "
 									},
 									{
 										"__type" : "textSnippet",

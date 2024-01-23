@@ -6,6 +6,7 @@ Class {
 
 { #category : #page }
 FkEmbracingVariabilitySlideshow >> abstractPage [
+	<lePage>
 	<gtExample>
 	<noTest>
 	^ (LePage named: 'Embracing Software Variability to build Explainable Systems')
@@ -22,12 +23,18 @@ FkEmbracingVariabilitySlideshow >> abstractPage [
 ]
 
 { #category : #slides }
-FkEmbracingVariabilitySlideshow >> abstractPage: aSlide [
-	"<gtSlide>"
-	<text: 'TODO'>
+FkEmbracingVariabilitySlideshow >> customViews: aSlide [
+	<gtSlide>
+	<text:
+'## Custom  views
+
+There are literally thousands of custom views defined in the GT environment.
+Most of these are implemented in just a few lines of code.
+
+The Metrics view shows us there are currently over 3000 custom views, on average under 12 lines of code.'>
 	^ aSlide lepiterPage
 		"setPriority;"
-		startPage: (self db pageNamed: 'Embracing Software Variability to build Explainable Systems')
+		startPage: (self db pageNamed: 'Custom Views')
 ]
 
 { #category : #slides }
@@ -158,9 +165,43 @@ We find one page with the keyword “VAMOS.”'>
 				maximized ]
 ]
 
-{ #category : #initialization }
-FkEmbracingVariabilitySlideshow >> initializeDb [
-	self db addPage: self abstractPage.
+{ #category : #page }
+FkEmbracingVariabilitySlideshow >> gtViewPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Custom Views')
+	addSnippet: (LeTextSnippet new
+			string: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: '#gtView gtPragmas.';
+			yourself);
+	yourself
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> ludoViews: aSlide [
+	<gtSlide>
+	<text: '## Custom Ludo Views
+
+Each custom Inspector view is created by a dedicated method of the inspected object.
+The Inspector recognizes it by the `<gtView>` annotation, just like a JUnit test runner recognizes test methods with an `@Test` annotation.
+
+We can see the implementation of any view by Option-clicking on on its heading.
+Here we see the Players view is implemented as a method with a `gtView` annotation.
+It creates a “columned list” view, with one row for each player, in a straightforward way.
+
+As we can see, each view is implemented in just a few lines of code, making it cheap and easy to create new views, even while exploring a system.'>
+	<demo: '## Custom Ludo Views
+
+- OPT-Click on several views to show their code.'>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: 'Custom views are dynamic features provided by objects to moldable tools.';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector forObject: GtLudoRecordingGameExamples new gameShowingAllMoves2))
+				maximized ]
 ]
 
 { #category : #slides }
@@ -168,16 +209,17 @@ FkEmbracingVariabilitySlideshow >> moldableTools: aSlide [
 	<gtSlide>
 	<text: 'TODO
 
-Moldable tools and variability
+# Moldable tools and variability
 
-
+A moldable tool dynamically adopts features provided by the entities it operates on.
+Let''s see some examples.
 
 '>
 
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable tools');
-		paragraphWithFormat: (self asText: 'placeholder text')
+		paragraphWithFormat: (self asText: 'dynamically adapt themselves to the entities they work with.')
 ]
 
 { #category : #slides }
@@ -253,6 +295,9 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 			explainableWebsite:
 		
 		moldableTools:
+			ludoViews:
+			customViews:
+		
 			"Dimensions of variability
 			views
 			actions
