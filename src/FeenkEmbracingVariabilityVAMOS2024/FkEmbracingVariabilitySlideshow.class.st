@@ -94,7 +94,7 @@ FkEmbracingVariabilitySlideshow >> explainableSystems: aSlide [
 	<gtSlide>
 	<text: '# Explainable Systems
 
-Explainable systems expose their inner workings in such a way that you can query them and explore them.
+Explainable systems expose their inner workings in such a way that you can have a conversation with them.
 Let''s have a look at two examples.'>
 	^ aSlide paragraph
 		setPriority;
