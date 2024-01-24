@@ -23,6 +23,25 @@ FkEmbracingVariabilitySlideshow >> abstractPage [
 ]
 
 { #category : #slides }
+FkEmbracingVariabilitySlideshow >> customAction: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+Show the custom replay to here action?
+
+
+'>
+	<demo: ''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
+{ #category : #slides }
 FkEmbracingVariabilitySlideshow >> customViews: aSlide [
 	<gtSlide>
 	<text:
@@ -297,14 +316,15 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 		moldableTools:
 			ludoViews:
 			customViews:
+			
+			customAction:
 		
 			"Dimensions of variability
 			views
 			actions
 			searches
-			
 			"
-		
+
 		
 	)
 ]
