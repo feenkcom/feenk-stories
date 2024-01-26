@@ -51,24 +51,70 @@ What do we learn from this?
 		paragraphWithFormat: (self asText: '...')
 ]
 
+{ #category : #page }
+FkEmbracingVariabilitySlideshow >> coderViewPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Coder views')
+	addSnippet: (LeTextSnippet new
+			string: 'Classes can also provide dedicated views to the Coder.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '{{gtClass:name=BrGlamorousVectorIcons}} displays the icons it defines.';
+			yourself);
+	addSnippet: (LeElementSnippet new
+			code: '(GtCoderElement forClass: BrGlamorousVectorIcons) createInPager ';
+			codeVisible: false;
+			elementHeight: 586;
+			codeHeight: 50;
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '{{gtClass:name=Color}}  displays the color palette it provides.';
+			yourself);
+	addSnippet: (LeElementSnippet new
+			code: '(GtCoderElement forClass: Color) createInPager ';
+			codeVisible: false;
+			elementHeight: 594;
+			codeHeight: 50;
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'and {{gtClass:name=FkEmbracingVariabilitySlideshow}}  shows a list of the slides it defines.';
+			yourself);
+	addSnippet: (LeElementSnippet new
+			code: '(GtCoderElement forClass: FkEmbracingVariabilitySlideshow) createInPager ';
+			codeVisible: false;
+			elementHeight: 633;
+			codeHeight: 50;
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
+]
+
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> coderViews: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '## Custom Coder Views
 
-Coder Views -- example of dedicated views in the Coder
-could be Examples, Example Map, or ...
-'>
-<demo:
-''>
-	^ aSlide labelAndElement
+
+Not just the Object Inspector, but also other tools can be molded with custom views.
+
+The `BrGlamorousVectorIcons` class displays a handy list of all the icons next to the methods use to generate them
+
+The `Color` class displays the actual colors next to their method definitions.
+
+Slideshow classes, like the one used to prepare this presentation, can display live, explorable instances of the slides they define.'>
+	<demo: '## Custom Coder Views
+
+Scroll through the examples, showing the views and their definitions.'>
+	^ aSlide lepiterPage
 		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
+		startPage: (self db pageNamed: 'Coder views')
 ]
 
 { #category : #slides }
@@ -86,13 +132,11 @@ Example from Ludo where you navigate through the domain objects
 '>
 <demo:
 ''>
-	^ aSlide labelAndElement
+	^ aSlide paragraph
 		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
+		subtitleWithFormat: (self asSubtitle: 'Placeholder');
+		paragraphWithFormat: (self
+				asText: '...')
 ]
 
 { #category : #slides }
@@ -107,20 +151,32 @@ Conclusions?
 
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Birds-eye view');
-		paragraphWithFormat: (self asText: '...')
+		subtitleWithFormat: (self asSubtitle: 'Conclusions');
+		paragraphWithFormat: (self
+				asText: '...')
 ]
 
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> customAction: aSlide [
 	<gtSlide>
-	<text: 'TODO
+	<text: '## Custom actions
 
-Show the custom replay to here action?
+Whereas custom views present interesting information about our domain objects that we want to access quickly, custom actions encapsulate interesting actions that we want to easily access.
 
+These actions may update the current view, or lead us to new views.
 
-'>
-	<demo: ''>
+Here we see the last move of an example scenario of the Ludo game.
+
+While we can evaluate snippets in the playground, we can also encapsulate these actions as buttons.
+
+Back in the game, we could also evaluate the autoplay feature in the playground, or turn it into a custom action.'>
+	<demo: '## Custom actions
+
+- Lift the playground to show the code `self replayGameToHere.`
+- Hover over and click the replay button
+- Show `self autoPlay: 1.` in the game playground
+- Hover over and click the autoplay button
+- Click it a few times, showing each time the resulting move'>
 	^ aSlide labelAndElement
 		setPriority;
 		newText: '...';
@@ -133,18 +189,27 @@ Show the custom replay to here action?
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> customSearches: aSlide [
 	<gtSlide>
-	<text: 'TODO
+	<text:
+'## Custom searches
 
-Custom search in the web interface view?
+Custom searches, on the other hand, allow you to configure different ways to search through your domain objects.
+
+Here, for example, in the markdown website domain, we might want to search for pages either by title or by content.
+
+Here too, the custom search tools are defined using a dedicated annotation, in this case `<gtSearch>`.
 
 '>
-	<demo: ''>
+<demo: 
+'## Custom searches
+
+- Type "VAMOS" in the Spotter, showing both results for pages and contents
+- OPT-click to show the code'>
+	
 	^ aSlide labelAndElement
 		setPriority;
-		newText: '...';
+		newFadedText: 'An explainable website';
 		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				createWrappedOn: (GtInspector forObject: DemoMarkdownWebsite oscarHomePage))
 				maximized ]
 ]
 
@@ -156,35 +221,43 @@ FkEmbracingVariabilitySlideshow >> customViewMetrics: aSlide [
 
 Merge with fineGrained slide?
 
-## Custom  views
+## Custom views
 
 There are literally thousands of custom views defined in the GT environment.
 Most of these are implemented in just a few lines of code.
 
 The Metrics view shows us there are currently over 3000 custom views, on average under 12 lines of code.'>
-	^ aSlide lepiterPage
-		"setPriority;"
-		startPage: (self db pageNamed: 'Custom Views')
+	^ aSlide headingAndCode
+		setPriority;
+		heading: 'Custom views';
+		addTextSnippet: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
+		addCodeSnippet: '#gtView gtPragmas.'
 ]
 
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> debuggerViews: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '## Moldable exceptions
 
-Moldable exceptions -- Ludo exceptions?
-Need to improve the display.
+Many other kinds of tools can benefit from moldability.
+
+Just like the default `Raw` view of an object inspector may not help you to find what is important, the default stack views offered by a standard debugger can be intimidating and hard to work with.
+
+Here we have a scenario of a Ludo game in which player C rools a 6, but then Player B''s token is brought into play.
+
+A custom view can highlight the problem better than the standard debugger view.
+
+Custom debugger views for moldable exceptions are defined like other views, but with a `<gtExceptionDebuggingView>` pragma.'>
+	<demo: '## Moldable exceptions
+
+- Evaluate the faulty snippet
+- Explore the views, especially the last two moves
+- Switch to the default debugger view
+- Go back to the Ludo exception view and OPT-click to show the code
 '>
-<demo:
-''>
-	^ aSlide labelAndElement
+	^ aSlide lepiterPage
 		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
+		startPage: (self db pageNamed: 'Moldable Exceptions')
 ]
 
 { #category : #slides }
@@ -262,7 +335,7 @@ Let''s have a look at two examples.'>
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> explainableWebsite: aSlide [
 	<gtSlide>
-	<text: '## An explainable website
+	<text: '## An Explainable Website
 
 Here''s another example.
 
@@ -292,7 +365,7 @@ Most of these seem not to be problematic, but there are a couple that should be 
 
 Finally, we can perform a custom search over the web pages.
 We find one page with the keyword “VAMOS.”'>
-	<demo: '## An explainable website
+	<demo: '## An Explainable Website
 
 - Hover over the down button to see the tooltip before activating it.
 - Open the Missing status group and browse the Links
@@ -318,8 +391,7 @@ We find one page with the keyword “VAMOS.”'>
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> exploringGitHubRestAPI: aSlide [
 	<gtSlide>
-	<text:
-'## Working with a REST API
+	<text: '## Working with a REST API
 
 So far we have seen various examples of custom tools, but not how the process of adding new tools (or “features”) works.
 
@@ -379,8 +451,7 @@ If dive into the repositories, we can see events and contributors, and from ther
 Note that in this whole process we were able to work fluidly within the environment, without having to jump out and use different external tools.
 This is a key point.
 We extend the moldable tools of the environment as we need to, adding new features that help make the the software system explainable.'>
-<demo:
-'## Working with a REST API
+	<demo: '## Working with a REST API
 
 - Retrieve the data
 - Parse to obtain a dictionary
@@ -429,13 +500,11 @@ Objects bring their custom extensions
 '>
 <demo:
 ''>
-	^ aSlide labelAndElement
+	^ aSlide paragraph
 		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
+		subtitleWithFormat: (self asSubtitle: 'Placeholder');
+		paragraphWithFormat: (self
+				asText: '...')
 ]
 
 { #category : #slides }
@@ -450,34 +519,17 @@ show metrics (separate slide?)
 '>
 <demo:
 ''>
-	^ aSlide labelAndElement
+	^ aSlide paragraph
 		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
-]
-
-{ #category : #page }
-FkEmbracingVariabilitySlideshow >> gtViewPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Custom Views')
-	addSnippet: (LeTextSnippet new
-			string: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
-			yourself);
-	addSnippet: (LePharoSnippet new
-			code: '#gtView gtPragmas.';
-			yourself);
-	yourself
+		subtitleWithFormat: (self asSubtitle: 'Placeholder');
+		paragraphWithFormat: (self
+				asText: '...')
 ]
 
 { #category : #slides }
-FkEmbracingVariabilitySlideshow >> ludoViews: aSlide [
+FkEmbracingVariabilitySlideshow >> inspectorViews: aSlide [
 	<gtSlide>
-	<text: '## Custom Ludo Views
+	<text: '## Custom Inspector Views
 
 Each custom Inspector view is created by a dedicated method of the inspected object.
 The Inspector recognizes it by the `<gtView>` annotation, just like a JUnit test runner recognizes test methods with an `@Test` annotation.
@@ -487,7 +539,7 @@ Here we see the Players view is implemented as a method with a `gtView` annotati
 It creates a “columned list” view, with one row for each player, in a straightforward way.
 
 As we can see, each view is implemented in just a few lines of code, making it cheap and easy to create new views, even while exploring a system.'>
-	<demo: '## Custom Ludo Views
+	<demo: '## Custom Inspector Views
 
 - OPT-Click on several views to show their code.'>
 	^ aSlide labelAndElement
@@ -498,18 +550,43 @@ As we can see, each view is implemented in just a few lines of code, making it c
 				maximized ]
 ]
 
+{ #category : #page }
+FkEmbracingVariabilitySlideshow >> moldableExceptionPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Moldable Exceptions')
+	addSnippet: (LeTextSnippet new
+			string: 'Also the debugger can benefit from custom views.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: 'In this scenario, player C rolls a 6, but Player B tries to move its token.';
+			yourself);
+	addSnippet: (LeElementSnippet new
+			code: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead';
+			codeVisible: false;
+			elementHeight: 456;
+			codeHeight: 50;
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: 'GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead
+	roll: 6;
+	moveTokenNamed: ''B'';
+	yourself.';
+			yourself);
+	addSnippet: (LeTextSnippet new
+			string: '';
+			yourself);
+	yourself
+]
+
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> moldableTools: aSlide [
 	<gtSlide>
-	<text: 'TODO
-
-# Moldable tools and variability
+	<text: '# Moldable Tools and Variability
 
 A moldable tool dynamically adopts features provided by the entities it operates on.
-Let''s see some examples.
-
-'>
-
+Let''s see some examples.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable tools');
@@ -536,19 +613,17 @@ FkEmbracingVariabilitySlideshow >> pervasiveTools: aSlide [
 
 The custom tools are pervasive and work everywhere
 
-SHow the tree map
+Show the tree map
 
 
 '>
 <demo:
 ''>
-	^ aSlide labelAndElement
+	^ aSlide paragraph
 		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
+		subtitleWithFormat: (self asSubtitle: 'Placeholder');
+		paragraphWithFormat: (self
+				asText: '...')
 ]
 
 { #category : #slides }
@@ -571,8 +646,6 @@ Click on the die repeatedly, and make moves when possible.'>
 
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> runningTests: aSlide [
-	"NB: May need the scripter to queue this to the second view."
-
 	<gtSlide>
 	<text: '## Unit tests are opaque
 
@@ -613,11 +686,13 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 			exploringGitHubRestAPI:
 		
 		moldableTools:
-			ludoViews:
+			#inspectorViews:
 			coderViews:
 			debuggerViews:
 			customAction:
 			customSearches:
+			
+			"Skip lepiter extensions?"
 
 		birdsEye:
 			featurePlugins:
