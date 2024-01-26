@@ -319,9 +319,97 @@ We find one page with the keyword “VAMOS.”'>
 FkEmbracingVariabilitySlideshow >> exploringGitHubRestAPI: aSlide [
 	<gtSlide>
 	<text:
-'TODO'>
+'## Working with a REST API
+
+So far we have seen various examples of custom tools, but not how the process of adding new tools (or “features”) works.
+
+In this example  we explore the REST API of GitHub, starting with the data GitHub has about the feenk organization.
+
+Here is a page from the Glamorous Toolkit book, an integrated knowledge base of wiki pages containing various kinds of live snippets.
+
+We start by programmatically retrieving the JSON data from GitHub.
+This is just a string, but we can parse it and obtain a dictionary.
+
+This is already an improvement, but we are missing the fact that this represents an organization, so  let''s wrap this data as a domain object called `MyOrganization`.
+
+The class doesn''t exist, so we can create it by clicking on the “fixit” icon.
+We also create the `rawData:` setter method to initialize a slot, or instance variable, of the object.
+
+Now if we inspect this object, we get a default inspector view showing the `rawData` slot.
+If we explore this, we find the dictionary has all sorts of fields with URLs in them, like `repos_url`.
+
+Let''s explore this more closely, by pulling the repos URL out of the dictionary.
+Now let''s assign it to `url`.
+
+We''d like to retrieve the data behind the URL, but we already know how to do that, so let''s copy-paste that snippet.
+Now we see the result is also a JSON, so let''s parse it.
+
+That looks useful, so let''s turn it into a method.
+We evaluate an “Extract method” refactoring.
+
+Now note that we have a little triangle that allows us to explore the new method in place.
+
+What I''d like is to see this list  over here in the Organization view, because it captures important information about the organization.
+
+Now we''ll switch the Coder view that shows the methods of the object.
+We''now create a new view, `gtReposFor:` a view.
+It takes an argument `aView` which will be the view that we configure.
+It has an annotation `<gtView>` that allows it to be recognized by the tools as a view method.
+We tell the  view that we want a list view, with a title, and the list of items to display.
+That''s it!
+The view is already visible.
+
+This is nice, but it is showing me a list of Dictionaries, while what I want are objects representing the repositories.
+
+Let''s change the `repos` method to return a collection of Repos instead.
+As before, we create the new class, setter and slot using fixits.
+
+Now we have a list of repos instead of dictionaries, but we would like to improve how this looks.
+
+We inspect a repo and its data and see there are many different fields.
+Perhaps there is some kind of name.
+We search and see `full_name`.
+That looks good, so let''s extract it as a method `name`
+
+Now we can tell the object how to display itself.
+
+If we continue like this, after some steps we can arrive at a view like this, which shows `Repositories` and `Events`.
+If dive into the repositories, we can see events and contributors, and from there to the events that they participated in.
+
+Note that in this whole process we were able to work fluidly within the environment, without having to jump out and use different external tools.
+This is a key point.
+We extend the moldable tools of the environment as we need to, adding new features that help make the the software system explainable.'>
 <demo:
-''>
+'## Working with a REST API
+
+- Retrieve the data
+- Parse to obtain a dictionary
+- Add a snippet: `MyOrganization new rawData: dictionary`
+- Click the fixits to create the class, the method and the new slot
+- Inspect the object and the `rawData` slot
+- Open the playground and evaluate `rawData at: ''repos_url''.`
+- Rewrite as `url := ...`
+- Copy-paste the `json := ...` snippet and inspect the result
+- Copy-paste the `dictionary := ...` code and evaluate it
+- Extract the snippet as a `repos` method
+- Expand the code bubble to show the new code
+- Go to the Meta view
+- Create method
+	`gtReposFor: aView
+	<gtView>
+	^ aView list
+		title: ''Repos'';
+		items: [ self repos ]`
+- Show the new view
+- Go to the code bubble in the Playground to update the `repos` method
+- Wrap the result in `collect: [:dict | MyRepo new rawData: dict ]`
+- Evaluate the snippet to show the list of repos
+- Re-evaluate the `MyOrganization new rawData: dictionary` from the notebook page to regenerate the view
+- Inspect a repo and its rawData to see the dictionary, and search in spotter for "name"
+- Evaluate `rawData at: ''full_name''` and extract as `name`
+- Implement `gtDisplayOn: stream stream nextPutAll: self name`
+- Re-evaluate the `MyOrganization` snippet to regenerate the views
+- Navigate to `gtoolkit`, Contributors, onierstrasz and events.'>
 	^ aSlide element
 		setPriority;
 		element: [ (GtPager
@@ -580,7 +668,11 @@ FkEmbracingVariabilitySlideshow >> templateSlide: aSlide [
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> titleSlide: aSlide [
 	<gtSlide>
-	<text: '# Embracing Software Variability to build Explainable Systems
+	<text:
+'TODO: revise to clarify the message
+
+
+# Embracing Software Variability to build Explainable Systems
 
 Hi. My name is Oscar Nierstrasz.
 
