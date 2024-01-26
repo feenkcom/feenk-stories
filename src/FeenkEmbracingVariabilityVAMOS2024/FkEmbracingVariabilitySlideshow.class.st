@@ -23,6 +23,95 @@ FkEmbracingVariabilitySlideshow >> abstractPage [
 ]
 
 { #category : #slides }
+FkEmbracingVariabilitySlideshow >> birdsEye: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+# Birds eye view
+
+What do we learn from this?
+
+		Feature plugins, but dynamic
+			Objects bring their custom extensions
+		Compositional
+			Navigate flow of objects
+		Fine-grained
+			Most tools are tiny
+			Show statistics
+		Pervasive
+			Work for any problem
+			Capture any kind of variability in the problem domain
+			Also show the TreeMap
+
+'>
+
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Birds-eye view');
+		paragraphWithFormat: (self asText: '...')
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> coderViews: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Coder Views -- example of dedicated views in the Coder
+could be Examples, Example Map, or ...
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> composableTools: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Custom Tools are composable
+
+Instead of standalone tools
+You get a language of operators that can be composed
+Example from Ludo where you navigate through the domain objects
+
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> conclusion: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Conclusions?
+	
+'>
+
+	^ aSlide paragraph
+		setPriority;
+		subtitleWithFormat: (self asSubtitle: 'Birds-eye view');
+		paragraphWithFormat: (self asText: '...')
+]
+
+{ #category : #slides }
 FkEmbracingVariabilitySlideshow >> customAction: aSlide [
 	<gtSlide>
 	<text: 'TODO
@@ -42,10 +131,32 @@ Show the custom replay to here action?
 ]
 
 { #category : #slides }
-FkEmbracingVariabilitySlideshow >> customViews: aSlide [
+FkEmbracingVariabilitySlideshow >> customSearches: aSlide [
+	<gtSlide>
+	<text: 'TODO
+
+Custom search in the web interface view?
+
+'>
+	<demo: ''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> customViewMetrics: aSlide [
 	<gtSlide>
 	<text:
-'## Custom  views
+'TODO
+
+Merge with fineGrained slide?
+
+## Custom  views
 
 There are literally thousands of custom views defined in the GT environment.
 Most of these are implemented in just a few lines of code.
@@ -54,6 +165,26 @@ The Metrics view shows us there are currently over 3000 custom views, on average
 	^ aSlide lepiterPage
 		"setPriority;"
 		startPage: (self db pageNamed: 'Custom Views')
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> debuggerViews: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Moldable exceptions -- Ludo exceptions?
+Need to improve the display.
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
 ]
 
 { #category : #slides }
@@ -184,6 +315,62 @@ We find one page with the keyword “VAMOS.”'>
 				maximized ]
 ]
 
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> exploringGitHubRestAPI: aSlide [
+	<gtSlide>
+	<text:
+'TODO'>
+<demo:
+''>
+	^ aSlide element
+		setPriority;
+		element: [ (GtPager
+				createWrappedOn: (LePagePhlowTool
+						page: (self gtBook pageNamed: 'Working with a REST API: the GitHub case study')))
+				maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> featurePlugins: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Features are dynamic plugins
+Objects bring their custom extensions
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> fineGrained: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+Custom tools are very fine grained
+show metrics (separate slide?)
+
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
 { #category : #page }
 FkEmbracingVariabilitySlideshow >> gtViewPage [
 	<lePage>
@@ -254,6 +441,29 @@ The opposite of an explainable system is an *opaque* one, which makes it hard fo
 ]
 
 { #category : #slides }
+FkEmbracingVariabilitySlideshow >> pervasiveTools: aSlide [
+	<gtSlide>
+	<text:
+'TODO
+
+The custom tools are pervasive and work everywhere
+
+SHow the tree map
+
+
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
+]
+
+{ #category : #slides }
 FkEmbracingVariabilitySlideshow >> runningSystem: aSlide [
 	<gtSlide>
 	<text: '## Running systems are typically opaque
@@ -312,20 +522,24 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 		explainableSystems:
 			explainableLudo:
 			explainableWebsite:
+			exploringGitHubRestAPI:
 		
 		moldableTools:
 			ludoViews:
-			customViews:
-			
+			coderViews:
+			debuggerViews:
 			customAction:
-		
-			"Dimensions of variability
-			views
-			actions
-			searches
-			"
+			customSearches:
 
-		
+		birdsEye:
+			featurePlugins:
+			composableTools:
+			fineGrained:
+				customViewMetrics:
+			pervasiveTools:
+
+		conclusion: 
+			
 	)
 ]
 
@@ -344,6 +558,23 @@ Perhaps browse the `initialization` and `playing` protocols.'>
 		setPriority;
 		newText: 'Reading source code is not an effective way to understand a system.';
 		element: [ (GtCoderElement forClass: GtLudoGame) createInPager maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> templateSlide: aSlide [
+	"<gtSlide>"
+	<text:
+'TODO
+'>
+<demo:
+''>
+	^ aSlide labelAndElement
+		setPriority;
+		newText: '...';
+		element: [ (GtPager
+				createWrappedOn: (GtInspector
+						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
+				maximized ]
 ]
 
 { #category : #slides }

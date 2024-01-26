@@ -418,6 +418,81 @@
 											"__type" : "textStyle"
 										},
 										"string" : "Examples: Ludo game (views), Markdown website (views, actions and searches)"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-01-26T09:11:56.470704+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-01-26T09:12:00.793565+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "NtgjljbMDQCaRVEyC7nIgA=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "GitHub REST API"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-26T09:12:00.792346+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-26T09:12:00.792346+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "XcllljbMDQCaW2U1C7nIgA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Example of MD"
 									}
 								]
 							},
@@ -761,7 +836,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-01-23T09:59:22.160392+01:00"
+												"dateAndTimeString" : "2024-01-26T09:12:18.950893+01:00"
 											}
 										},
 										"editEmail" : {
@@ -772,7 +847,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-01-23T10:02:33.815599+01:00"
+												"dateAndTimeString" : "2024-01-26T09:12:18.954526+01:00"
 											}
 										},
 										"uid" : {
@@ -782,7 +857,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "* Inspector  \n    * Views, Actions, Searches  \n* Coder  \n    * Views  \n* Lepiter  \n    * Annotations  \n    * Snippets  \n        * Refactoring  \n        * Python  \n* Debugger  \n    * Exceptions  \n  "
+										"string" : "\t\tInspector\n\t\t\tViews, Actions, Searches\n\t\tCoder\n\t\t\tViews\n\t\tDebugger\n\t\t\tExceptions\n\t\tLepiter\n\t\t\tAnnotations\n\t\t\tSnippets\n\t\t\t\tRefactoring\n\t\t\t\tPython"
 									}
 								]
 							},
@@ -836,7 +911,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-01-23T09:59:27.548185+01:00"
+												"dateAndTimeString" : "2024-01-26T09:12:26.601836+01:00"
 											}
 										},
 										"editEmail" : {
@@ -847,7 +922,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-01-23T09:59:27.548185+01:00"
+												"dateAndTimeString" : "2024-01-26T09:12:26.606571+01:00"
 											}
 										},
 										"uid" : {
@@ -857,7 +932,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "  \n* Plugins, but dynamic  \n    * Objects bring their custom extensions  \n* Fine-grained  \n    * Most tools are tiny  \n* Compositional  \n    * Navigate flow of objects  \n  "
+										"string" : "\t\tFeature plugins, but dynamic\n\t\t\tObjects bring their custom extensions\n\t\tCompositional\n\t\t\tNavigate flow of objects\n\t\tFine-grained\n\t\t\tMost tools are tiny\n\t\t\tShow statistics\n\t\tPervasive\n\t\t\tWork for any problem\n\t\t\tCapture any kind of variability in the problem domain\n\t\t\tAlso show the TreeMap"
 									}
 								]
 							},

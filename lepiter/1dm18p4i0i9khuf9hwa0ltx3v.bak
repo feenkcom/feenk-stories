@@ -418,6 +418,80 @@
 											"__type" : "textStyle"
 										},
 										"string" : "Examples: Ludo game (views), Markdown website (views, actions and searches)"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-26T09:11:56.470704+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-26T09:11:56.470704+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "NtgjljbMDQCaRVEyC7nIgA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Example of MD\n"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-26T09:11:46.538404+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-26T09:11:56.471848+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "vkiMlTbMDQCaMdaPC7nIgA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "GitHub REST API"
 									}
 								]
 							},
@@ -675,6 +749,40 @@
 											"__type" : "textStyle"
 										},
 										"string" : "NB: show how we can create a new view dynamically."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-24T14:17:40.843274+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-24T14:17:48.506143+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "kffdnxLMDQCWGr/pABpUOA=="
+										},
+										"code" : "#gtAction gtPragmas"
 									},
 									{
 										"__type" : "textSnippet",
