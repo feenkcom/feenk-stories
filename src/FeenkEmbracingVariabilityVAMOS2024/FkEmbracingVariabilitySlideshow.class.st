@@ -25,30 +25,38 @@ FkEmbracingVariabilitySlideshow >> abstractPage [
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> birdsEye: aSlide [
 	<gtSlide>
-	<text: 'TODO
+	<text:
+'TODO
 
 # Birds eye view
 
+TG: in the Birds Eye View part of the presentation I would **emphasize the idea that the environment is a language made out of interactive and visual operators** that can be programmed and combined in many ways to **formulate many narratives.** 
+
 What do we learn from this?
 
-		Feature plugins, but dynamic
-			Objects bring their custom extensions
-		Compositional
-			Navigate flow of objects
-		Fine-grained
-			Most tools are tiny
-			Show statistics
-		Pervasive
-			Work for any problem
-			Capture any kind of variability in the problem domain
-			Also show the TreeMap
+Feature plugins, but dynamic
+	Objects bring their custom extensions
+Compositional
+	Navigate flow of objects
+Fine-grained
+	Most tools are tiny
+	Show statistics
+Pervasive
+	Work for any problem
+	Capture any kind of variability in the problem domain
+	Also show the TreeMap
 
+
+			
 '>
 
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Birds-eye view');
-		paragraphWithFormat: (self asText: '...')
+		subtitleWithFormat: (self asSubtitle: 'Birds-eye view:');
+		paragraphWithFormat: (self asText: '
+Moldable development treats custom tools (features)
+as a '),(self asText:'language') italic,(self asText:' of composable operators
+to support decision making')
 ]
 
 { #category : #page }
@@ -127,16 +135,24 @@ Custom Tools are composable
 
 Instead of standalone tools
 You get a language of operators that can be composed
+
 Example from Ludo where you navigate through the domain objects
+
+
+
+
+Example from Syntax highlighting in GT book reused to create a view for  methods
 
 '>
 <demo:
 ''>
-	^ aSlide paragraph
+	^ aSlide labelAndElement
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Placeholder');
-		paragraphWithFormat: (self
-				asText: '...')
+		newFadedText: 'PLACEHOLDER TEXT';
+		element: [ (GtPager
+				createWrappedOn: (LePagePhlowTool
+						page: (self gtBook pageNamed: 'Smalltalk method syntax on a postcard')))
+				maximized ]
 ]
 
 { #category : #slides }
@@ -179,7 +195,7 @@ Back in the game, we could also evaluate the autoplay feature in the playground,
 - Click it a few times, showing each time the resulting move'>
 	^ aSlide labelAndElement
 		setPriority;
-		newText: '...';
+		newText: 'Custom actions';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector
 						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
@@ -207,31 +223,10 @@ Here too, the custom search tools are defined using a dedicated annotation, in t
 	
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'An explainable website';
+		newFadedText: 'Custom searches';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: DemoMarkdownWebsite oscarHomePage))
 				maximized ]
-]
-
-{ #category : #slides }
-FkEmbracingVariabilitySlideshow >> customViewMetrics: aSlide [
-	<gtSlide>
-	<text:
-'TODO
-
-Merge with fineGrained slide?
-
-## Custom views
-
-There are literally thousands of custom views defined in the GT environment.
-Most of these are implemented in just a few lines of code.
-
-The Metrics view shows us there are currently over 3000 custom views, on average under 12 lines of code.'>
-	^ aSlide headingAndCode
-		setPriority;
-		heading: 'Custom views';
-		addTextSnippet: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
-		addCodeSnippet: '#gtView gtPragmas.'
 ]
 
 { #category : #slides }
@@ -320,6 +315,26 @@ The token little b landed on big B, was sent to the next square, landed on token
 ]
 
 { #category : #slides }
+FkEmbracingVariabilitySlideshow >> explainableLudoDocumentation: aSlide [
+	<gtSlide>
+	<text: 'TODO Need Label for slide
+## Explainable Ludo Documentation
+
+Once we have these examples, we can also use them to build live documentation.
+Here we see a page in the Glamorous Toolkit book that explains the various kinds of special situations that can arise in the Ludo game, by embedding the examples into notebook pages.'>
+	<demo: '## Explainable Ludo Documentation
+
+- Step through several moves, and navigate to the history of the game'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'PLACEHOLDER TEXT';
+		element: [ (GtPager
+				createWrappedOn: (LePagePhlowTool
+						page: (self gtBook pageNamed: 'Documenting the domain: the Ludo game case study')))
+				maximized ]
+]
+
+{ #category : #slides }
 FkEmbracingVariabilitySlideshow >> explainableSystems: aSlide [
 	<gtSlide>
 	<text: '# Explainable Systems
@@ -391,7 +406,8 @@ We find one page with the keyword “VAMOS.”'>
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> exploringGitHubRestAPI: aSlide [
 	<gtSlide>
-	<text: '## Working with a REST API
+	<text: 'TODO LABEL FOR SLIDE
+## Working with a REST API
 
 So far we have seen various examples of custom tools, but not how the process of adding new tools (or “features”) works.
 
@@ -481,8 +497,9 @@ We extend the moldable tools of the environment as we need to, adding new featur
 - Implement `gtDisplayOn: stream stream nextPutAll: self name`
 - Re-evaluate the `MyOrganization` snippet to regenerate the views
 - Navigate to `gtoolkit`, Contributors, onierstrasz and events.'>
-	^ aSlide element
+	^ aSlide labelAndElement
 		setPriority;
+		newFadedText: 'PLACEHOLDER TEXT';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Working with a REST API: the GitHub case study')))
@@ -497,6 +514,10 @@ FkEmbracingVariabilitySlideshow >> featurePlugins: aSlide [
 
 Features are dynamic plugins
 Objects bring their custom extensions
+
+WHAT EXAMPLES?
+
+
 '>
 <demo:
 ''>
@@ -510,20 +531,28 @@ Objects bring their custom extensions
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> fineGrained: aSlide [
 	<gtSlide>
+	
 	<text:
 'TODO
 
 Custom tools are very fine grained
 show metrics (separate slide?)
 
+
+## Custom views
+
+There are literally thousands of custom views defined in the GT environment.
+Most of these are implemented in just a few lines of code.
+
+The Metrics view shows us there are currently over 3000 custom views, on average under 12 lines of code.
 '>
 <demo:
 ''>
-	^ aSlide paragraph
+	^ aSlide headingAndCode
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Placeholder');
-		paragraphWithFormat: (self
-				asText: '...')
+		heading: 'Custom views';
+		addTextSnippet: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
+		addCodeSnippet: '#gtView gtPragmas.'
 ]
 
 { #category : #slides }
@@ -615,6 +644,10 @@ The custom tools are pervasive and work everywhere
 
 Show the tree map
 
+The visualization below shows a treemap of the classes and packages from the current image.
+Blue denotes classes that contain at least one custom view; green shows those that have an example.
+
+GtTour>>#treemapWithViewsAndExamples
 
 '>
 <demo:
@@ -682,6 +715,7 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 		
 		explainableSystems:
 			explainableLudo:
+			explainableLudoDocumentation:
 			explainableWebsite:
 			exploringGitHubRestAPI:
 		
@@ -698,7 +732,6 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 			featurePlugins:
 			composableTools:
 			fineGrained:
-				customViewMetrics:
 			pervasiveTools:
 
 		conclusion: 
