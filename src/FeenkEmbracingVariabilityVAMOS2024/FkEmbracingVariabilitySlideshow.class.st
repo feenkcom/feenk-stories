@@ -25,37 +25,20 @@ FkEmbracingVariabilitySlideshow >> abstractPage [
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> birdsEye: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '# The Birds eye view
 
-# Birds eye view
-
-TG: in the Birds Eye View part of the presentation I would **emphasize the idea that the environment is a language made out of interactive and visual operators** that can be programmed and combined in many ways to **formulate many narratives.** 
-
-What do we learn from this?
-
-Feature plugins, but dynamic
-	Objects bring their custom extensions
-Compositional
-	Navigate flow of objects
-Fine-grained
-	Most tools are tiny
-	Show statistics
-Pervasive
-	Work for any problem
-	Capture any kind of variability in the problem domain
-	Also show the TreeMap
-
-
-			
-'>
-
+In moldable development we have an environment consisting of a language of interactive and visual operators.
+These operators can be combined in many different ways to express a variety of narratives that answer questions we have about our software systems.'>
 	^ aSlide paragraph
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Birds-eye view:');
-		paragraphWithFormat: (self asText: '
-Moldable development treats custom tools (features)
-as a '),(self asText:'language') italic,(self asText:' of composable operators
+		subtitleWithFormat: (self asSubtitle: 'The Birds-eye view');
+		paragraphWithFormat: (self
+				asText: '
+
+Moldable development treats custom tools
+as a ') , (self asText: 'language') italic
+				, (self
+						asText: ' of composable operators
 to support decision making')
 ]
 
@@ -128,27 +111,34 @@ Scroll through the examples, showing the views and their definitions.'>
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> composableTools: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '## Custom Tools are composable
 
-Custom Tools are composable
+In a typical IDE with a plugin architecture, each new tool tends to be standalone, and is not designed to play nicely with other tools.
 
-Instead of standalone tools
-You get a language of operators that can be composed
+Instead, fine-grained custom tools in GT can be thought of as operators that can be combined to create new narratives.
 
-Example from Ludo where you navigate through the domain objects
+Here we see a custom tool that was designed to teach newcomers about the syntax of Smalltalk.
 
+As we mouse over the syntactic constructs, we see them connected to code examples.
 
+This particular tool could then easily be reused as a custom view for compiled methods.
 
+If we inspect any method in the system, we see a number of views, including the Git history, the bytecode, and the syntax Tree.
 
-Example from Syntax highlighting in GT book reused to create a view for  methods
+But we also have the Syntax explanation, which is exactly the same tool, reused as a view.
 
 '>
-<demo:
-''>
+	<demo: '## Custom Tools are composable
+
+- Mouse over the constructs
+- Click on the package name and select the GtPharo101 class
+- Inspect the first method (arrayExplanationSlideFor:)
+- Show several of the views
+- Go to the Syntax explanation view
+- Mouse around, then show the view code'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'PLACEHOLDER TEXT';
+		newFadedText: 'Custom Tools are composable';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Smalltalk method syntax on a postcard')))
@@ -195,7 +185,7 @@ Back in the game, we could also evaluate the autoplay feature in the playground,
 - Click it a few times, showing each time the resulting move'>
 	^ aSlide labelAndElement
 		setPriority;
-		newText: 'Custom actions';
+		newFadedText: 'Custom actions';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector
 						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
@@ -317,8 +307,7 @@ The token little b landed on big B, was sent to the next square, landed on token
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> explainableLudoDocumentation: aSlide [
 	<gtSlide>
-	<text: 'TODO Need Label for slide
-## Explainable Ludo Documentation
+	<text: '## Explainable Ludo Documentation
 
 Once we have these examples, we can also use them to build live documentation.
 Here we see a page in the Glamorous Toolkit book that explains the various kinds of special situations that can arise in the Ludo game, by embedding the examples into notebook pages.'>
@@ -327,7 +316,7 @@ Here we see a page in the Glamorous Toolkit book that explains the various kinds
 - Step through several moves, and navigate to the history of the game'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'PLACEHOLDER TEXT';
+		newFadedText: 'Embedding examples within live documentation';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Documenting the domain: the Ludo game case study')))
@@ -406,8 +395,7 @@ We find one page with the keyword “VAMOS.”'>
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> exploringGitHubRestAPI: aSlide [
 	<gtSlide>
-	<text: 'TODO LABEL FOR SLIDE
-## Working with a REST API
+	<text: '## Working with a REST API
 
 So far we have seen various examples of custom tools, but not how the process of adding new tools (or “features”) works.
 
@@ -499,7 +487,7 @@ We extend the moldable tools of the environment as we need to, adding new featur
 - Navigate to `gtoolkit`, Contributors, onierstrasz and events.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'PLACEHOLDER TEXT';
+		newFadedText: 'Adding custom views to API results';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Working with a REST API: the GitHub case study')))
@@ -510,53 +498,272 @@ We extend the moldable tools of the environment as we need to, adding new featur
 FkEmbracingVariabilitySlideshow >> featurePlugins: aSlide [
 	<gtSlide>
 	<text:
-'TODO
+'## Custom tools are dynamic plugins
 
+We can see a moldable development environment as a kind of Software Product Line of “moldable tools” that can be extended with dynamic features.
 
+Each moldable tool, in this case an Inspector, is extended by features that are provided by the objects they manipulate.
+These features are custom tools that are dynamically plugged in to the moldable tool.
 
-Features are dynamic plugins
-Objects bring their custom extensions
-
-WHAT EXAMPLES?
-
-
-'>
-<demo:
-''>
-	^ aSlide paragraph
+What is different from a classical software product line is that the set of features is open-ended, and is continuously extended to answer questions about the software under development.'>
+	<demo: ''>
+	^ aSlide labelAndElement
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Placeholder');
-		paragraphWithFormat: (self
-				asText: '...')
+		newFadedText: 'Custom tools are dynamic plugins';
+		element: [ self featureScenery ]
+]
+
+{ #category : #accessing }
+FkEmbracingVariabilitySlideshow >> featureScenery [
+	"The feature scenery after manual tweaking"
+
+	<gtExample>
+	| scenery item1 item2 item3 item4 item5 item6 item7 |
+	scenery := GtScenery new.
+	item1 := scenery
+			addItem: (GtSceneryItem new
+					stencil: (GtSceneryInspectorStencil new target: [ Object new ])).
+	item1 position: 0 @ 600.
+	item1 extent: 500.0 @ 500.0.
+	item2 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ (self ludoGame gtRawFor: GtPhlowProtoView new) asElement
+							border: Color veryLightGray;
+							yourself ] asStencil).
+	item2 position: 800 @ 650.
+	item2 extent: 400.0 @ 400.0.
+	item3 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ self ludoGame gtPositionsFor: GtPhlowProtoView new ] asStencil).
+	item3 position: 637 @ 344.
+	item3 extent: 200.0 @ 200.0.
+	item4 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ (self ludoGame gtMovesFor: GtPhlowProtoView new) asElement
+							border: Color veryLightGray;
+							yourself ] asStencil).
+	item4 position: 896 @ 302.
+	item4 extent: 200.0 @ 200.0.
+	item5 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ (self ludoGame gtAutoplayAction: GtPhlowNoAction new)
+							asElement: [ :x | x ]
+							withHostElement: nil ] asStencil).
+	item5 position: 1094 @ 530.
+	item5 extent: 200.0 @ 24.0.
+	item6 := scenery
+			addItem: (GtSceneryItem new
+					stencil: (GtSceneryTextStencil new
+							text: ((BlRunRopedText string: 'an Inspector')
+									attributeRuns: (BlRunTree basicNew
+											instVarAt: 1
+												put: (BlRunTreeLeafNode basicNew
+														instVarAt: 1 put: 13;
+														instVarAt: 2
+															put: ((Array new: 2)
+																	at: 1 put: (BlFontSizeAttribute new size: 20);
+																	at: 2
+																		put: (BlFontFamilyDefaultAttribute new beNotOverwritableByStyler
+																				name: 'Source Sans Pro');
+																	yourself);
+														yourself);
+											yourself)))).
+	item6 position: 190 @ 1115.
+	item6 extent: 250.0 @ 40.0.
+	item7 := scenery
+			addItem: (GtSceneryItem new
+					stencil: (GtSceneryTextStencil new
+							text: ((BlRunRopedText string: 'a Ludo game')
+									attributeRuns: (BlRunTree basicNew
+											instVarAt: 1
+												put: (BlRunTreeLeafNode basicNew
+														instVarAt: 1 put: 12;
+														instVarAt: 2
+															put: ((Array new: 2)
+																	at: 1 put: (BlFontSizeAttribute new size: 20);
+																	at: 2
+																		put: (BlFontFamilyDefaultAttribute new beNotOverwritableByStyler
+																				name: 'Source Sans Pro');
+																	yourself);
+														yourself);
+											yourself)))).
+	item7 position: 942 @ 1064.
+	item7 extent: 250.0 @ 40.0.
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				labelText: 'Dynamic context';
+				curvatureFraction: -0.2;
+				arrowLengthFraction: 10;
+				yourself)
+		from: item2
+		to: item1.
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				labelText: 'Board view';
+				curvatureFraction: 0;
+				arrowLengthFraction: 10;
+				yourself)
+		from: item2
+		to: item3.
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				labelText: 'Moves view';
+				curvatureFraction: 0;
+				arrowLengthFraction: 10;
+				yourself)
+		from: item2
+		to: item4.
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				labelText: 'Replay action';
+				curvatureFraction: 0;
+				arrowLengthFraction: 10;
+				yourself)
+		from: item2
+		to: item5.
+
+	^ scenery
+]
+
+{ #category : #accessing }
+FkEmbracingVariabilitySlideshow >> featureSceneryOriginal [
+	"Original feature scenery before tweaking."
+
+	<gtExample>
+	| scenery item1 item2 item3 item4 item5 item6 item7 |
+	scenery := GtScenery new.
+
+
+
+	item1 := scenery
+			addItem: (GtSceneryItem new
+					stencil: (GtSceneryInspectorStencil new target: [ Object new ])).
+	item1 extent: 500 @ 500.
+	item1 position: 0 @ 600.
+
+
+	item2 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ (self ludoGame gtRawFor: GtPhlowProtoView new) asElement
+							border: Color veryLightGray;
+							yourself ] asStencil).
+
+
+	item2 extent: 400 @ 400.
+	item2 position: 800 @ 650.
+
+	item3 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ self ludoGame gtPositionsFor: GtPhlowProtoView new ] asStencil).
+	item3 extent: 200 @ 200.
+	item3 position: 700 @ 300.
+
+
+	item4 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ (self ludoGame gtMovesFor: GtPhlowProtoView new) asElement
+							border: Color veryLightGray;
+							yourself ] asStencil).
+	item4 extent: 200 @ 200.
+	item4 position: 950 @ 250.
+
+
+	item5 := scenery
+			addItem: (GtSceneryItem new
+					stencil: [ (self ludoGame gtAutoplayAction: GtPhlowNoAction new)
+							asElement: [ :x | x ]
+							withHostElement: nil ] asStencil).
+	item5 extent: 200 @ 200.
+	item5 position: 1100 @ 500.
+
+	item6 := scenery
+			addItem: (GtSceneryItem new
+					stencil: (GtSceneryTextStencil new text: ('an Inspector' asRopedText fontSize: 20))).
+	item6 extent: 250 @ 40.
+	item6 position: 200 @ 1150.
+
+
+	item7 := scenery
+			addItem: (GtSceneryItem new
+					stencil: (GtSceneryTextStencil new text: ('a Ludo game' asRopedText fontSize: 20))).
+	item7 extent: 250 @ 40.
+	item7 position: 950 @ 1050.
+
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				curvatureFraction: -0.2;
+				labelText: 'Dynamic context';
+				yourself)
+		from: item2
+		to: item1.
+
+
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				curvatureFraction: 0;
+				labelText: 'Board view';
+				yourself)
+		from: item2
+		to: item3.
+
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				curvatureFraction: 0;
+				labelText: 'Moves view';
+				yourself)
+		from: item2
+		to: item4.
+
+	scenery
+		addConnectionWithStencil: (GtSceneryParabollaArcStencil new
+				curvatureFraction: 0;
+				labelText: 'Replay action';
+				yourself)
+		from: item2
+		to: item5.
+
+	^ scenery
 ]
 
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> fineGrained: aSlide [
 	<gtSlide>
-	
-	<text:
-'TODO
-
-Custom tools are very fine grained
-show metrics (separate slide?)
-
-Focus on solving small problems cheaply
-
-
-## Custom views
+	<text: '## Fine-grained custom views
 
 There are literally thousands of custom views defined in the GT environment.
 Most of these are implemented in just a few lines of code.
 
 The Metrics view shows us there are currently over 3000 custom views, on average under 12 lines of code.
+
+The key here is that it should be cheap to solve small problems by building a custom tool.
+The cost of building a tool should pay itself off after the first usage.
+
+This means it should be cheaper and faster to answer a question by building a small tool than trying to solve it with some existing generic tool, or simply not answering the question.'>
+	<demo: '## Fine-grained custom views
+
+- Evaluate the snippet
+- Open a few views and show they are very short (skip the firdst 2!)
+- Switch to the Inspector
+- Show the Metrics view
 '>
-<demo:
-''>
-	^ aSlide headingAndCode
+	^ aSlide lepiterPage
 		setPriority;
-		heading: 'Fine-grained custom views';
-		addTextSnippet: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
-		addCodeSnippet: '#gtView gtPragmas.'
+		startPage: (self db pageNamed: 'Fine-grained custom views')
+]
+
+{ #category : #page }
+FkEmbracingVariabilitySlideshow >> fineGrainedViewsPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Fine-grained custom views')
+	addSnippet: (LeTextSnippet new
+			string: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
+			yourself);
+	addSnippet: (LePharoSnippet new
+			code: '#gtView gtPragmas.';
+			yourself);
+	yourself
 ]
 
 { #category : #slides }
@@ -577,10 +784,17 @@ As we can see, each view is implemented in just a few lines of code, making it c
 - OPT-Click on several views to show their code.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newText: 'Custom views are dynamic features provided by objects to moldable tools.';
+		newFadedText: 'Custom views are dynamic features provided by objects to moldable tools.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: GtLudoRecordingGameExamples new gameShowingAllMoves2))
 				maximized ]
+]
+
+{ #category : #accessing }
+FkEmbracingVariabilitySlideshow >> ludoGame [
+	| ludoGame |
+	ludoGame := GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead.
+	^ ludoGame
 ]
 
 { #category : #page }
@@ -641,26 +855,41 @@ The opposite of an explainable system is an *opaque* one, which makes it hard fo
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> pervasiveTools: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '## Custom tools are pervasive
 
-The custom tools are pervasive and work everywhere
+This visualization shows a treemap of packages and classes in the current image.
 
-Show the tree map
+Blue classes have at least one custom view (i.e., a feature) and green ones have at least one example.
+This shows that custom tools were  heavily used to build the moldable development environment itself.
 
-The visualization below shows a treemap of the classes and packages from the current image.
-Blue denotes classes that contain at least one custom view; green shows those that have an example.
+Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
+	<demo: '## Custom tools are pervasive
 
-GtTour>>#treemapWithViewsAndExamples
+- Click on the top-left class (BlElement)'>
+	^ aSlide labelAndElement
+		setPriority;
+		newFadedText: 'Custom tools are pervasive';
+		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
+]
+
+{ #category : #slides }
+FkEmbracingVariabilitySlideshow >> rubySyntax: aSlide [
+	<gtSlide>
+	<text: '## Ruby syntax
+
+Of course this works for other programming languages as well, such as Ruby
 
 '>
 <demo:
-''>
-	^ aSlide paragraph
+'## Ruby syntax
+
+- Select one of the shorter `write` methods
+- Show the Syntax explanation'>
+	^ aSlide element
 		setPriority;
-		subtitleWithFormat: (self asSubtitle: 'Placeholder');
-		paragraphWithFormat: (self
-				asText: '...')
+		element: [ (GtPager
+				createWrappedOn: (GtInspector newOn: FileLocator gtResource / 'feenkcom' / 'gt4ruby' / 'ruby'))
+				maximized ]
 ]
 
 { #category : #slides }
@@ -677,7 +906,7 @@ Beyond observing the external behavior of the game, we can gain no insights into
 Click on the die repeatedly, and make moves when possible.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newText: 'You can interact with a live system, but you can''t ask it questions.';
+		newFadedText: 'You can interact with a live system, but you can''t ask it questions.';
 		element: [ GtLudoGame new asElement asScalableElement ]
 ]
 
@@ -700,7 +929,7 @@ Run the tests and see that they are all green.
 Click on the first test and see that a scenario is played.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newText: 'You can interact with a live system, but you can''t ask it questions.';
+		newFadedText: 'You can interact with a live system, but you can''t ask it questions.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: (SimpleTestRunner for: GtLudoGameExamples)))
 				maximized ]
@@ -736,6 +965,7 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 			featurePlugins:
 			fineGrained:
 			composableTools:
+			rubySyntax:
 			pervasiveTools:
 
 		conclusion: 
@@ -756,35 +986,14 @@ Open a few methods, such as the `initialize` method.
 Perhaps browse the `initialization` and `playing` protocols.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newText: 'Reading source code is not an effective way to understand a system.';
+		newFadedText: 'Reading source code is not an effective way to understand a system.';
 		element: [ (GtCoderElement forClass: GtLudoGame) createInPager maximized ]
-]
-
-{ #category : #slides }
-FkEmbracingVariabilitySlideshow >> templateSlide: aSlide [
-	"<gtSlide>"
-	<text:
-'TODO
-'>
-<demo:
-''>
-	^ aSlide labelAndElement
-		setPriority;
-		newText: '...';
-		element: [ (GtPager
-				createWrappedOn: (GtInspector
-						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
-				maximized ]
 ]
 
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> titleSlide: aSlide [
 	<gtSlide>
-	<text:
-'TODO: revise to clarify the message
-
-
-# Embracing Software Variability to build Explainable Systems
+	<text: '# Embracing Software Variability to build Explainable Systems
 
 Hi. My name is Oscar Nierstrasz.
 

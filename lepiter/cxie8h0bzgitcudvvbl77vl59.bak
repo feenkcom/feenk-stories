@@ -328,7 +328,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-24T14:52:14.210655+01:00"
+									"dateAndTimeString" : "2024-01-24T14:52:29.862916+01:00"
 								}
 							},
 							"uid" : {
@@ -338,7 +338,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Adapt {{gtClass:name=PrioritySlideshow}} to handle the cases where a slide method is not listed in slidePriorities, and vic"
+							"string" : "Adapt {{gtClass:name=PrioritySlideshow}} to handle the cases where a slide method is not listed in slidePriorities, and vice versa -- do something resonable and show an alert."
 						}
 					]
 				},
@@ -435,14 +435,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T10:01:36.01274+01:00"
+						"dateAndTimeString" : "2024-01-31T16:21:13.202026+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Ax7HHG7LDQCJZN7vA4CqJQ=="
 				},
-				"code" : "#FkEmbracingVariabilitySlideshow asClass new."
+				"code" : "FkEmbracingVariabilitySlideshow new."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:20:42.368374+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:20:45.46329+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Yb+6KKHMDQCAAfVCBI/kuQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Generate PDF"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -458,7 +495,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:54:15.546263+01:00"
+						"dateAndTimeString" : "2024-01-31T16:20:47.472238+01:00"
 					}
 				},
 				"editEmail" : {
@@ -469,14 +506,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:54:24.739475+01:00"
+						"dateAndTimeString" : "2024-01-31T16:21:04.612736+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SU4RA27LDQC0g7XJASpHFw=="
+					"uidString" : "wJoIKaHMDQCAQW8tBI/kuQ=="
 				},
-				"code" : "#FkEmbracingVariabilitySlideshow asClass show."
+				"code" : "FkEmbracingVariabilitySlideshow new slides\r\tcollect: [ :each | \r\t\t(BlScripter new element: each asElement) element\r\t\t\tsize: 1600 @ 1200;\r\t\t\texportAsPNG ]"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -492,7 +529,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-23T09:51:16.363615+01:00"
+						"dateAndTimeString" : "2024-01-31T16:23:18.946168+01:00"
 					}
 				},
 				"editEmail" : {
@@ -503,14 +540,193 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-23T09:51:21.371174+01:00"
+						"dateAndTimeString" : "2024-01-31T16:25:06.082217+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "pNNGyfrLDQCuCwzRCDn78w=="
+					"uidString" : "VvIPMqHMDQCBRtdeBI/kuQ=="
 				},
-				"code" : "#FkEmbracingVariabilitySlideshow asClassInEnvironment: Smalltalk globals"
+				"code" : "[ UIManager default\r\t\tinformUserDuring: [ :bar | \r\t\t\tbar label: 'Generating Images'.\r\t\t\t1\r\t\t\t\tto: 100\r\t\t\t\tdo: [ :v | \r\t\t\t\t\tbar current: v.\r\t\t\t\t\tFkEmbracingVariabilitySlideshow new slides\r\t\t\t\t\t\tcollect: [ :each | \r\t\t\t\t\t\t\t(BlScripter new element: each asElement) element\r\t\t\t\t\t\t\t\tsize: 1600 @ 1200;\r\t\t\t\t\t\t\t\texportAsPNG ] ] ] ] fork."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:24.1902+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:30:24.08135+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "u40aPaHMDQCB+xKbBI/kuQ=="
+				},
+				"code" : "slides := FkEmbracingVariabilitySlideshow new slides.\rdemoProcess := [ UIManager default\r\t\tinformUserDuring: [ :bar | \r\t\t\tbar label: 'Generating slide PNGs ...'.\r\t\t\tslides withIndexDo: [ :each :index | \r\t\t\t\r\t\t(BlScripter new element: each asElement) element\r\t\t\tsize: 1600 @ 1200;\r\t\t\texportAsPNG ] ] ] fork."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:19.208596+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:33:28.537998+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VorOPKHMDQCB39wqBI/kuQ=="
+				},
+				"code" : "slides := FkEmbracingVariabilitySlideshow new slides.\r[ [ :job | \rjob title: 'Generating slide PNGs ...'.\rslides\r\twithIndexDo: [ :each :index | \r\t\tjob\r\t\t\tprogress: index / slides size;\r\t\t\ttitle: 'Slide ' , index printString.\r\t\t(BlScripter new element: each asElement) element\r\t\t\tsize: 1600 @ 1200;\r\t\t\texportAsPNG ] ] asJob run ] fork"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:33.399823+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:33.399823+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FginPaHMDQCCADBMBI/kuQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:33.620232+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:33.620232+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mW+qPaHMDQCCBMLYBI/kuQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:33.889874+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T16:26:33.889874+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OYyuPaHMDQCCCBAeBI/kuQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},
