@@ -512,6 +512,8 @@ FkEmbracingVariabilitySlideshow >> featurePlugins: aSlide [
 	<text:
 'TODO
 
+
+
 Features are dynamic plugins
 Objects bring their custom extensions
 
@@ -538,6 +540,8 @@ FkEmbracingVariabilitySlideshow >> fineGrained: aSlide [
 Custom tools are very fine grained
 show metrics (separate slide?)
 
+Focus on solving small problems cheaply
+
 
 ## Custom views
 
@@ -550,7 +554,7 @@ The Metrics view shows us there are currently over 3000 custom views, on average
 ''>
 	^ aSlide headingAndCode
 		setPriority;
-		heading: 'Custom views';
+		heading: 'Fine-grained custom views';
 		addTextSnippet: 'There are thousands of custom views in the default environment, each consisting of just a few lines of  code.';
 		addCodeSnippet: '#gtView gtPragmas.'
 ]
@@ -730,8 +734,8 @@ FkEmbracingVariabilitySlideshow >> slidePriorities [
 
 		birdsEye:
 			featurePlugins:
-			composableTools:
 			fineGrained:
+			composableTools:
 			pervasiveTools:
 
 		conclusion: 
