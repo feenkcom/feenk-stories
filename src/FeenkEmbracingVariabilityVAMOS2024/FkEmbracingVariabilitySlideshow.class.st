@@ -55,29 +55,11 @@ FkEmbracingVariabilitySlideshow >> coderViewPage [
 	addSnippet: (LeTextSnippet new
 			string: '{{gtClass:name=BrGlamorousVectorIcons}} displays the icons it defines.';
 			yourself);
-	addSnippet: (LeElementSnippet new
-			code: '(GtCoderElement forClass: BrGlamorousVectorIcons) createInPager ';
-			codeVisible: false;
-			elementHeight: 586;
-			codeHeight: 50;
-			yourself);
 	addSnippet: (LeTextSnippet new
 			string: '{{gtClass:name=Color}}  displays the color palette it provides.';
 			yourself);
-	addSnippet: (LeElementSnippet new
-			code: '(GtCoderElement forClass: Color) createInPager ';
-			codeVisible: false;
-			elementHeight: 594;
-			codeHeight: 50;
-			yourself);
 	addSnippet: (LeTextSnippet new
 			string: 'and {{gtClass:name=FkEmbracingVariabilitySlideshow}}  shows a list of the slides it defines.';
-			yourself);
-	addSnippet: (LeElementSnippet new
-			code: '(GtCoderElement forClass: FkEmbracingVariabilitySlideshow) createInPager ';
-			codeVisible: false;
-			elementHeight: 633;
-			codeHeight: 50;
 			yourself);
 	addSnippet: (LeTextSnippet new
 			string: '';
@@ -139,7 +121,7 @@ But we also have the Syntax explanation, which is exactly the same tool, reused 
 - Mouse around, then show the view code'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Custom Tools are composable';
+		newFadedText: 'Custom Tools are composable.';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Smalltalk method syntax on a postcard')))
@@ -171,7 +153,7 @@ Custom tooling needs to be cheap, fine-grained and composable.
 
 • Dimensions of variability are driven by stakeholder needs.
 
-• Customization needs to be part of the (moldable) development process.')
+• Customization is an essential part of the (moldable) development process.')
 ]
 
 { #category : #slides }
@@ -179,7 +161,7 @@ FkEmbracingVariabilitySlideshow >> customAction: aSlide [
 	<gtSlide>
 	<text: '## Custom actions
 
-Whereas custom views present interesting information about our domain objects that we want to access quickly, custom actions encapsulate interesting actions that we want to easily access.
+Whereas custom views present interesting information about our domain objects that we want to access quickly, custom actions encapsulate interesting operations that we want to easily access.
 
 These actions may update the current view, or lead us to new views.
 
@@ -197,7 +179,7 @@ Back in the game, we could also evaluate the autoplay feature in the playground,
 - Click it a few times, showing each time the resulting move'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Custom actions';
+		newFadedText: 'Custom actions encapsulate interesting operations to perform.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector
 						forObject: GtLudoRecordingGameExamples new bEntersAndPlaysWithAahead moves last))
@@ -225,7 +207,7 @@ Here too, the custom search tools are defined using a dedicated annotation, in t
 	
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Custom searches';
+		newFadedText: 'Custom searches offer multiple ways to  search your domain space.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: DemoMarkdownWebsite oscarHomePage))
 				maximized ]
@@ -315,7 +297,7 @@ The token little b landed on big B, was sent to the next square, landed on token
 '>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'An explainable Ludo game lets you explore its inner workings';
+		newFadedText: 'An explainable Ludo game lets you explore its inner workings.';
 		element: [ (GtCoderElement forClass: GtLudoRecordingGameExamples) createInPager maximized ]
 ]
 
@@ -331,7 +313,7 @@ Here we see a page in the Glamorous Toolkit book that explains the various kinds
 - Step through several moves, and navigate to the history of the game'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Embedding examples within live documentation';
+		newFadedText: 'You can embed examples within live documentation.';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Documenting the domain: the Ludo game case study')))
@@ -403,7 +385,7 @@ We find one page with the keyword “VAMOS.”'>
 - Open the page in a web browser'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'An explainable website';
+		newFadedText: 'An explainable website lets you explore various narratives.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: DemoMarkdownWebsite oscarHomePage))
 				maximized ]
@@ -504,7 +486,7 @@ We extend the moldable tools of the environment as we need to, adding new featur
 - Navigate to `gtoolkit`, Contributors, onierstrasz and events.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Adding custom views to API results';
+		newFadedText: 'You can incrementally add custom views to API results.';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
 						page: (self gtBook pageNamed: 'Working with a REST API: the GitHub case study')))
@@ -526,7 +508,7 @@ What is different from a classical software product line is that the set of feat
 	<demo: ''>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Custom tools are dynamic plugins';
+		newFadedText: 'Custom tools are dynamic plugins.';
 		element: [ self featureScenery ]
 ]
 
@@ -821,7 +803,7 @@ FkEmbracingVariabilitySlideshow >> moldableExceptionPage [
 	<noTest>
 	^ (LePage named: 'Moldable Exceptions')
 	addSnippet: (LeTextSnippet new
-			string: 'Also the debugger can benefit from custom views.';
+			string: 'The debugger can also benefit from custom views.';
 			yourself);
 	addSnippet: (LeTextSnippet new
 			string: 'In this scenario, player C rolls a 6, but Player B tries to move its token.';
@@ -888,7 +870,7 @@ Here at the top left we see `BlElement`, the root of the graphical hierarchy.'>
 - Click on the top-left class (BlElement)'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'Custom tools are pervasive';
+		newFadedText: 'Custom tools are pervasive.';
 		element: [ (GtPager createWrappedOn: GtTour new treemapWithViewsAndExamples) maximized ]
 ]
 
@@ -905,8 +887,9 @@ Of course this works for other programming languages as well, such as Ruby
 
 - Select one of the shorter `write` methods
 - Show the Syntax explanation'>
-	^ aSlide element
+	^ aSlide labelAndElement
 		setPriority;
+		newFadedText: 'Moldable development is language-agnostic.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector newOn: FileLocator gtResource / 'feenkcom' / 'gt4ruby' / 'ruby'))
 				maximized ]
@@ -949,7 +932,7 @@ Run the tests and see that they are all green.
 Click on the first test and see that a scenario is played.'>
 	^ aSlide labelAndElement
 		setPriority;
-		newFadedText: 'You can interact with a live system, but you can''t ask it questions.';
+		newFadedText: 'You can only interact with unit tests if they fail.';
 		element: [ (GtPager
 				createWrappedOn: (GtInspector forObject: (SimpleTestRunner for: GtLudoGameExamples)))
 				maximized ]
