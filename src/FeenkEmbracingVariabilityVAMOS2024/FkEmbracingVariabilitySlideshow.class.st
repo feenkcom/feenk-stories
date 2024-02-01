@@ -28,6 +28,7 @@ FkEmbracingVariabilitySlideshow >> birdsEye: aSlide [
 	<text: '# The Birds eye view
 
 In moldable development we have an environment consisting of a language of interactive and visual operators.
+
 These operators can be combined in many different ways to express a variety of narratives that answer questions we have about our software systems.'>
 	^ aSlide paragraph
 		setPriority;
@@ -148,18 +149,29 @@ But we also have the Syntax explanation, which is exactly the same tool, reused 
 { #category : #slides }
 FkEmbracingVariabilitySlideshow >> conclusion: aSlide [
 	<gtSlide>
-	<text:
-'TODO
+	<text: '# Conclusions
 
-Conclusions?
-	
+Software systems become explainable by embracing variability in tools
+
+A effective software-intensive system must be explainable, that is, it must expose the inside of the system to querying and exploration.
+This is done by reifying domain concepts as objects, and augmenting them with cheap, custom tools.
+
+Dimensions of variability come from SE stakeholders: querying, exploration, searching, analysis, debugging ...
+
+Customization needs to be part of the moldable development process.
+Custom tooling needs to be cheap, fine-grained and composable.
 '>
-
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Conclusions');
 		paragraphWithFormat: (self
-				asText: '...')
+				asText: '
+
+• Software systems become explainable by embracing variability in tools.
+
+• Dimensions of variability are driven by stakeholder needs.
+
+• Customization needs to be part of the (moldable) development process.')
 ]
 
 { #category : #slides }
@@ -263,8 +275,11 @@ Normally we can only inspect the intermediate results of a unit test if the test
 With examples, however, we can also inspect the example resulting from a successful test.
 
 What we see here is a *moldable Inspector*.
+
 In a conventional Inspector we would just see this Raw view, which is not very interesting.
+
 Instead we have molded the Inspector to show us a number of dedicated custom views for a Ludo game.
+
 We can see the Board view, which is the same as the GUI we saw before.
 We can also browse the list of Players and navigate to an individual player.
 
@@ -329,11 +344,13 @@ FkEmbracingVariabilitySlideshow >> explainableSystems: aSlide [
 	<text: '# Explainable Systems
 
 Explainable systems expose their inner workings in such a way that you can have a conversation with them.
+
 Let''s have a look at two examples.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Explainable systems');
-		paragraphWithFormat: (self asText: 'make their domain concepts queryable and explorable.')
+		paragraphWithFormat: (self asText: '
+make their domain concepts queryable and explorable.')
 ]
 
 { #category : #slides }
@@ -837,7 +854,8 @@ Let''s see some examples.'>
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Moldable tools');
-		paragraphWithFormat: (self asText: 'dynamically adapt themselves to the entities they work with.')
+		paragraphWithFormat: (self asText: '
+dynamically adapt themselves to the entities they work with.')
 ]
 
 { #category : #slides }
@@ -849,7 +867,9 @@ The opposite of an explainable system is an *opaque* one, which makes it hard fo
 	^ aSlide paragraph
 		setPriority;
 		subtitleWithFormat: (self asSubtitle: 'Opaque systems');
-		paragraphWithFormat: (self asText: 'make it hard for you to understand how they work.')
+		paragraphWithFormat: (self
+				asText: '
+make it hard for you to understand how they work.')
 ]
 
 { #category : #slides }
@@ -1001,7 +1021,7 @@ Today I''d like to tell you about a form of software variability that we use to 
 We do this by exposing the internal domain concepts of the system and augmenting them with lots and lots of small, custom tools (or “features”) that can be used to answer questions  and fulfil various tasks.
 
 The secret to making these tools cheap and easy to build is a form of variability that we call *moldability*.
-The standard tools  ofthe IDE are opened up so that they can be *molded* to the needs of an arbitrary application.
+The standard tools  of the IDE are opened up so that they can be *molded* to the needs of an arbitrary application.
 
 I''ll show you some examples of explainable systems, and then we''ll see how variability in the IDE enables the creation of cheap, custom tools for explainable systems.'>
 	^ aSlide titleWithFooter
