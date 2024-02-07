@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:40:00.501467+01:00"
+						"dateAndTimeString" : "2024-01-16T10:01:26.891388+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:44:46.711944+01:00"
+						"dateAndTimeString" : "2024-01-31T16:21:13.202026+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "QFca0G3LDQCMKbHGDz6aLw=="
+					"uidString" : "Ax7HHG7LDQCJZN7vA4CqJQ=="
 				},
-				"code" : "Metacello new\n\t\trepository: 'github://feenkcom/feenk-stories:main/src';\n\t\tbaseline: 'FeenkEmbracingVariabilityVAMOS2024';\n\t\tload."
+				"code" : "FkEmbracingVariabilitySlideshow new."
 			},
 			{
 				"__type" : "textSnippet",
@@ -225,48 +225,10 @@
 				"string" : ""
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-01T10:55:54.66015+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-01T10:56:09.880967+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "7U8DvbDMDQC/QOHvBxmiIg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Fix all slide headings to be full sentences"
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -276,7 +238,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-01T10:55:52.484047+01:00"
+						"dateAndTimeString" : "2024-01-16T09:40:00.501467+01:00"
 					}
 				},
 				"editEmail" : {
@@ -287,17 +249,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-01T10:55:54.307111+01:00"
+						"dateAndTimeString" : "2024-01-16T09:44:46.711944+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "eBrivLDMDQC/F8PCBxmiIg=="
+					"uidString" : "QFca0G3LDQCMKbHGDz6aLw=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# To do"
+				"code" : "Metacello new\n\t\trepository: 'github://feenkcom/feenk-stories:main/src';\n\t\tbaseline: 'FeenkEmbracingVariabilityVAMOS2024';\n\t\tload."
 			},
 			{
 				"__type" : "textSnippet",
@@ -335,40 +294,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : ""
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T10:01:26.891388+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-31T16:21:13.202026+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Ax7HHG7LDQCJZN7vA4CqJQ=="
-				},
-				"code" : "FkEmbracingVariabilitySlideshow new."
 			},
 			{
 				"__type" : "textSnippet",
