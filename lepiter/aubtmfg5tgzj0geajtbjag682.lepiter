@@ -324,7 +324,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T13:23:09.174287+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:32.055454+02:00"
 					}
 				},
 				"uid" : {
@@ -334,7 +334,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GT for Pharo"
+				"string" : "##GT for Pharo"
 			},
 			{
 				"__type" : "textSnippet",
@@ -399,7 +399,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T13:22:56.412697+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:37.030484+02:00"
 					}
 				},
 				"uid" : {
@@ -409,7 +409,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GT for social media"
+				"string" : "##GT for social media"
 			},
 			{
 				"__type" : "textSnippet",
@@ -436,7 +436,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T13:22:51.380842+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:40.429467+02:00"
 					}
 				},
 				"uid" : {
@@ -446,7 +446,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GT for Gemstone"
+				"string" : "##GT for Gemstone"
 			},
 			{
 				"__type" : "textSnippet",
@@ -454,7 +454,7 @@
 					"__type" : "snippets",
 					"items" : [
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -467,7 +467,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T07:12:19.810983+02:00"
+									"dateAndTimeString" : "2024-04-24T13:50:29.418689+02:00"
 								}
 							},
 							"editEmail" : {
@@ -478,14 +478,127 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T07:12:26.30691+02:00"
+									"dateAndTimeString" : "2024-04-24T13:50:32.472796+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "6WytczLTDQCK1dv1DGEktw=="
+								"uidString" : "H+qbAzjTDQCWAT0YDGEktw=="
 							},
-							"code" : "P3Client new url: 'postgresql://scott2:tiger@stfx.eu:6543/f1db?sslmode=require'"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Exploring GitHub through GraphQL |db=2j9m7db2i4oz116bexd7wbdxo}}"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-24T13:50:17.525981+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-24T18:24:43.487581+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FXDmAjjTDQCVxWpSDGEktw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##GT for GraphQL"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T07:12:19.810983+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T15:53:39.93105+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6WytczLTDQCK1dv1DGEktw=="
+										},
+										"code" : "P3Client new url: 'postgresql://scott2:tiger@stfx.eu:6543/f1db?sslmode=require'"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T15:53:40.896417+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T15:53:44.801889+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2+ksvDnTDQCX6Zl4DGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "With Pharo:"
 						},
 						{
 							"__type" : "textSnippet",
@@ -524,6 +637,74 @@
 											"__type" : "uid",
 											"uidString" : "p+G2iDfTDQCSbdfkDGEktw=="
 										}
+									},
+									{
+										"__type" : "postgresqlSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T15:54:38.040674+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T15:54:45.371918+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Rd+UvznTDQCYvhb4DGEktw=="
+										},
+										"code" : "select * from drivers"
+									},
+									{
+										"__type" : "postgresqlSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T15:53:31.716815+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T15:54:35.452749+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "MtOguznTDQCXkA1NDGEktw=="
+										},
+										"code" : "select * from races"
 									}
 								]
 							},
@@ -546,7 +727,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T13:16:01.106193+02:00"
+									"dateAndTimeString" : "2024-04-24T15:52:51.171409+02:00"
 								}
 							},
 							"uid" : {
@@ -556,7 +737,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "With dedicated snippets"
+							"string" : "With dedicated snippets:"
 						},
 						{
 							"__type" : "textSnippet",
@@ -616,7 +797,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T13:22:48.061791+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:46.212294+02:00"
 					}
 				},
 				"uid" : {
@@ -626,50 +807,13 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GT for PostgreSQL"
+				"string" : "##GT for PostgreSQL"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T07:39:29.024787+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T07:39:39.814308+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "PDbJ1DLTDQCOjqLnDGEktw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtPage:Exploring the execution of a Python LampSort algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}"
-						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -706,6 +850,112 @@
 								"__type" : "textStyle"
 							},
 							"string" : "{{gtPage:Inspecting Python objects with custom inspectors|db=2j9m7db2i4oz116bexd7wbdxo}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T18:26:07.777157+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T18:26:08.155117+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yjRf3TvTDQCnnwvODGEktw=="
+										},
+										"code" : "GtLSPPythonModel onDirectory: PBPlatform current workingDirectory"
+									},
+									{
+										"__type" : "pythonSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T13:52:49.390122+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T13:52:50.322185+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "cbXzCzjTDQCXWN/SDGEktw=="
+										},
+										"code" : "import lampsort3\rfrom gtoolkit_bridge import reset_signals, get_signals\r\rreset_signals()\rresult = lampsort3.LampSort(numbers.copy()).sort()\rassert result == sorted(numbers)\rget_signals()"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:39:29.024787+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:39:39.814308+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "PDbJ1DLTDQCOjqLnDGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Exploring the execution of a Python LampSort algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}"
 						}
 					]
 				},
@@ -728,7 +978,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T13:22:44.107669+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:47.442608+02:00"
 					}
 				},
 				"uid" : {
@@ -738,7 +988,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GT for Python"
+				"string" : "##GT for Python"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1448,7 +1698,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T07:03:00.346258+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:49.606191+02:00"
 					}
 				},
 				"uid" : {
@@ -1458,7 +1708,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Moldable Development"
+				"string" : "##Moldable Development"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1523,7 +1773,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T13:22:32.973957+02:00"
+						"dateAndTimeString" : "2024-04-24T18:24:50.704682+02:00"
 					}
 				},
 				"uid" : {
@@ -1533,7 +1783,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "GT as a case study"
+				"string" : "##GT as a case study"
 			},
 			{
 				"__type" : "textSnippet",
