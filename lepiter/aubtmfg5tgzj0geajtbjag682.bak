@@ -42,7 +42,7 @@
 								"uidString" : "f78J4DLTDQCPZsCjDGEktw=="
 							},
 							"code" : "GtPresenterSlideShow create: FkWhatIsGlamorousToolkitUKSTUG2024Show new\r",
-							"elementHeight" : 543,
+							"elementHeight" : 400,
 							"codeHeight" : 63,
 							"codeVisible" : false
 						},
@@ -105,7 +105,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:58:06.258495+02:00"
+									"dateAndTimeString" : "2024-04-24T19:46:05.460752+02:00"
 								}
 							},
 							"uid" : {
@@ -115,7 +115,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Example"
+							"string" : "{{gtPage:Executable domain-driven design: the Ludo game case study|db=2j9m7db2i4oz116bexd7wbdxo}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -195,6 +195,74 @@
 											"__type" : "textStyle"
 										},
 										"string" : "MessageTally"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T19:52:58.192074+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T19:53:11.377725+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "KN3vEz3TDQCvuxn5DGEktw=="
+										},
+										"code" : "textSnippets := (LeDatabasesRegistry default defaultLogicalDatabase pages flatCollect: #allChildrenBreadthFirst) select: #isTextSnippet"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T19:53:13.87492+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T19:53:19.33404+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "qyTfFD3TDQCvxD2ZDGEktw=="
+										},
+										"code" : "textSnippets do: [ :aTextSnippet | \n\t| ast |\n\tast := LeParser parseWithErrors: aTextSnippet string.\n\taVisitor := LeBlockLinksVisitor new.\n\taVisitor addVisitor: LePageLinkAnnotationVisitor new.\n\tast acceptVisitor: aVisitor ]"
 									},
 									{
 										"__type" : "textSnippet",
@@ -342,7 +410,7 @@
 					"__type" : "snippets",
 					"items" : [
 						{
-							"__type" : "textSnippet",
+							"__type" : "gemstoneSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -355,7 +423,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:41:49.08441+02:00"
+									"dateAndTimeString" : "2024-04-24T19:07:25.55625+02:00"
 								}
 							},
 							"editEmail" : {
@@ -366,56 +434,87 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:48:37.566578+02:00"
+									"dateAndTimeString" : "2024-04-24T19:44:52.083135+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "yukY/yzTDQCg8p25DGEktw=="
+								"uidString" : "hCgPcTzTDQCr6aMaDGEktw=="
 							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
+							"code" : "'Hello', ' World'",
+							"sessionName" : "connector5:5"
+						},
+						{
+							"__type" : "gemstoneSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
 							},
-							"string" : "{{gtPage:Browsing a BlueSky user from a dedicated snippet|db=e05zlf1q3ncmqem0wxh2hsy2}}"
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:47:29.974765+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:47:31.480353+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "6KlfAD3TDQCvcg+SDGEktw=="
+							},
+							"code" : "Object",
+							"sessionName" : "connector5:5"
+						},
+						{
+							"__type" : "gemstoneSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:41:54.547442+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:41:55.861293+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "q21h7DzTDQCs5ydgDGEktw=="
+							},
+							"code" : "1/0",
+							"sessionName" : "connector5:5"
 						}
 					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T07:41:07.802264+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T18:24:37.030484+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Fnqs2jLTDQCOrZlIDGEktw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##GT for social media"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -852,78 +951,79 @@
 							"string" : "{{gtPage:Inspecting Python objects with custom inspectors|db=2j9m7db2i4oz116bexd7wbdxo}}"
 						},
 						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T18:26:07.777157+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T18:26:08.155117+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "yjRf3TvTDQCnnwvODGEktw=="
-							},
-							"code" : "GtLSPPythonModel onDirectory: PBPlatform current workingDirectory"
-						},
-						{
-							"__type" : "pythonSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T13:52:49.390122+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T13:52:50.322185+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "cbXzCzjTDQCXWN/SDGEktw=="
-							},
-							"code" : "import lampsort3\rfrom gtoolkit_bridge import reset_signals, get_signals\r\rreset_signals()\rresult = lampsort3.LampSort(numbers.copy()).sort()\rassert result == sorted(numbers)\rget_signals()"
-						},
-						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T18:26:07.777157+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T18:26:08.155117+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yjRf3TvTDQCnnwvODGEktw=="
+										},
+										"code" : "GtLSPPythonModel onDirectory: PBPlatform current workingDirectory"
+									},
+									{
+										"__type" : "pythonSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T13:52:49.390122+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T13:52:50.322185+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "cbXzCzjTDQCXWN/SDGEktw=="
+										},
+										"code" : "import lampsort3\rfrom gtoolkit_bridge import reset_signals, get_signals\r\rreset_signals()\rresult = lampsort3.LampSort(numbers.copy()).sort()\rassert result == sorted(numbers)\rget_signals()"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -988,6 +1088,159 @@
 					"__type" : "textStyle"
 				},
 				"string" : "##GT for Python"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "blueskyPostSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:48:47.658142+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:48:47.658142+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7AUBBT3TDQCvpaSdDGEktw=="
+							},
+							"string" : "Glamorous Toolkit enables Moldable Development.\n\ngtoolkit.com\n\n1/",
+							"files" : [ ]
+						},
+						{
+							"__type" : "blueskyPostSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:49:19.883722+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T19:49:19.883722+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Sr/sBj3TDQCvqeJIDGEktw=="
+							},
+							"parentPostDict" : {
+								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
+								"cid" : "bafyreia7dgpr56poa5qrwvskhmrvk346qpfza2rlgwk22ylgsj3ati7uja",
+								"displayName" : "Tudor Girba",
+								"handle" : "tudorgirba.com",
+								"timeStamp" : "2024-04-24T19:50:19.589326+02:00",
+								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvhb2fsdc25"
+							},
+							"string" : "Moldable Development is a way of programming through custom tools built for each problem.\n\n2/",
+							"files" : [ ]
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T00:41:49.08441+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T00:48:37.566578+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "yukY/yzTDQCg8p25DGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Browsing a BlueSky user from a dedicated snippet|db=e05zlf1q3ncmqem0wxh2hsy2}}"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-24T07:41:07.802264+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-24T18:24:37.030484+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Fnqs2jLTDQCOrZlIDGEktw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##GT for social media"
 			},
 			{
 				"__type" : "textSnippet",
