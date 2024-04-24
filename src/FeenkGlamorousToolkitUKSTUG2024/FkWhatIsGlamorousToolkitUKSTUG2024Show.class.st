@@ -119,15 +119,14 @@ FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide001Title: aSlide [
 	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
 	^ aSlide title
 		priority: 1;
-		titleWithFormat: ('moldable development' asRopedText 
-			fontSize: 80;
-			fontName: 'Desyrel';
+		titleWithFormat: ('glamoroustoolkit' asRopedText 
+			fontSize: 70;
+			glamorousRegularFont;
 			thin;
 			in: [:t | (t from: 'glamorous' size + 1 to: t size) bold]; yourself);
 		subtitleWithFormat: ('@girba' asRopedText 
-			fontSize: 50;
-			foreground: Color gray;
-			fontName: 'Desyrel')
+			fontSize: 40;
+			glamorousRegularFont)
 ]
 
 { #category : #accessing }
@@ -163,7 +162,7 @@ FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide002FeenkSlideFor: aSlide [
 
 { #category : #accessing }
 FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide003GTSlideFor: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	^ aSlide title
 		priority: 3;
 		titleWithFormat: ('glamoroustoolkit' asRopedText 
@@ -174,50 +173,8 @@ FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide003GTSlideFor: aSlide [
 ]
 
 { #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide011PackageJson: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Software assessment'>
-	^ aSlide element
-		priority: 11;
-		element: [ | aPager |
-			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
-			aPager maximized.
-			aPager addAptitude: BrShadowAptitude new beLarge ]
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide012Mold1: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Mold 1'>
-	^ aSlide filePicture
-		priority: 12;
-		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-1.png')
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide013Mold2: arg1 [
-	<gtSlide>
-	<gtSlideNote: 'Mold 2'>
-	| tmp1 |
-	tmp1 := arg1 filePicture.
-	tmp1 priority: 13.
-	^ tmp1
-		fileReference: (GtResourcesUtility
-				resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-2.png')
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide014Mold3: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Mold 3'>
-	^ aSlide filePicture
-		priority: 14;
-		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/craft-3.png')
-]
-
-{ #category : #accessing }
 FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide015React: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	<gtSlideNote: 'Software assessment'>
 	^ aSlide element
 		priority: 15;
@@ -225,109 +182,6 @@ FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide015React: aSlide [
 			aPager := GtPager createWrappedOn: ('zooniverse' asFileReference gtDefaultInspectorTool asElement).
 			aPager maximized.
 			aPager addAptitude: BrShadowAptitude new beLarge ]
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide021GitHubAPiSlideFor: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		priority: 21;
-		pageNamed: 'Working with a REST API: the GitHub case study' from: 'Glamorous Toolkit Book'
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide025PostgreSQLSlideFor: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		priority: 25;
-		pageNamed: 'Playing with PostgreSQL' from: 'default'
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide028PythonSlideFor: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		priority: 28;
-		pageNamed: 'Working with Python' from: 'default'
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide035DependenciesBaseline: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Software assessment: Baselines'>
-	^ aSlide element
-		priority: 35;
-		element: [ | aPager |
-			aPager := GtPager
-					createWrappedOn: (GtCoder forMethod: BaselineOfGToolkit >> #baseline:).
-			aPager maximized.
-			aPager addAptitude: BrShadowAptitude new beLarge ]
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide041Jenkins: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Jenkins'>
-	^ aSlide lepiterPage
-		priority: 41;
-		pageNamed: 'Glamorous Toolkit Jenkins Server' from: 'default'
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide051KMSystemDocumentation: aSlide [
-	<gtSlide>
-	^ aSlide lepiterPage
-		priority: 51;
-		pageNamed: 'Documenting the domain: the Ludo game case study' from: 'Glamorous Toolkit Book';
-		maximized: true
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide061PKM: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Private knowledge management.'>
-	^ aSlide lepiterPage
-		priority: 61;
-		pageNamed: 'Moldable Development @ YOW ''23' from: 'default'
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide100Empty: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'All these perspectives are correct. And they are all wrong.
-
-These perspectives are not distinct tools. There are no tools. There is just a fluid environment. We do not go to tools. Tools come to us. And we can make them come to us in our terms, in our context.
-
-Molding the environment to every single problem transforms everything, starting with the very act of programming.'>
-	^ aSlide empty
-		priority: 100
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide12150percent1: aSlide [
-	<gtSlide>
-	<gtSlideNote: '50 percent 1'>
-	^ aSlide filePicture
-		priority: 121;
-		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/50percent-1.png')
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide12250percent1: aSlide [
-	<gtSlide>
-	<gtSlideNote: '50 percent 2'>
-	^ aSlide filePicture
-		priority: 122;
-		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/50percent-2.png')
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide12350percent1: aSlide [
-	<gtSlide>
-	<gtSlideNote: '50 percent 3'>
-	^ aSlide filePicture
-		priority: 123;
-		fileReference: (GtResourcesUtility resourceAtPath: 'feenkcom/gtoolkit-demos/doc/moldable-development/50percent-3.png')
 ]
 
 { #category : #accessing }
@@ -346,24 +200,6 @@ FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide132ViewedObjects: aSlide [
 	^ aSlide element
 		priority: 132;
 		element: [ self objectsViewed ]
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide151WardleyMapFullWithoutRoles: aSlide [
-	<gtSlide>
-	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
-	^ aSlide element
-		priority: 151;
-		element: [ self wardleyMapElementFullWithoutRoles ]
-]
-
-{ #category : #accessing }
-FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide152WardleyMapFullWithRoles: aSlide [
-	<gtSlide>
-	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
-	^ aSlide element
-		priority: 152;
-		element: [ self wardleyMapElementFullWithRoles ]
 ]
 
 { #category : #accessing }

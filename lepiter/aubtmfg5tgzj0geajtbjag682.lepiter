@@ -10,6 +10,77 @@
 					"__type" : "snippets",
 					"items" : [
 						{
+							"__type" : "elementSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:42:37.801229+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:19:40.791436+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "f78J4DLTDQCPZsCjDGEktw=="
+							},
+							"code" : "GtPresenterSlideShow create: FkWhatIsGlamorousToolkitUKSTUG2024Show new\r",
+							"elementHeight" : 543,
+							"codeHeight" : 63,
+							"codeVisible" : false
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:27:04.949472+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:27:09.945533+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "p2blrzfTDQCULX9ZDGEktw=="
+							},
+							"code" : "#gtView gtPragmas"
+						},
+						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -60,7 +131,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:50:13.224+02:00"
+									"dateAndTimeString" : "2024-04-24T13:42:47.073653+02:00"
 								}
 							},
 							"editEmail" : {
@@ -71,17 +142,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:52:18.850785+02:00"
+									"dateAndTimeString" : "2024-04-24T13:42:48.946359+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "dXklHS3TDQCuIMBJDGEktw=="
+								"uidString" : "fhYN6DfTDQCU0mSDDGEktw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Rewrite"
+							"string" : "{{gtPage:Rewriting Pharo code|db=2j9m7db2i4oz116bexd7wbdxo}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -209,7 +280,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:50:09.74789+02:00"
+									"dateAndTimeString" : "2024-04-24T13:42:13.091807+02:00"
 								}
 							},
 							"editEmail" : {
@@ -220,7 +291,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T00:50:12.447306+02:00"
+									"dateAndTimeString" : "2024-04-24T13:42:13.478035+02:00"
 								}
 							},
 							"uid" : {
@@ -230,7 +301,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Moldable exceptions"
+							"string" : "{{gtPage:Usages of moldable exceptions in Glamorous Toolkit|db=2j9m7db2i4oz116bexd7wbdxo}}"
 						}
 					]
 				},
@@ -253,7 +324,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:50:04.797138+02:00"
+						"dateAndTimeString" : "2024-04-24T13:23:09.174287+02:00"
 					}
 				},
 				"uid" : {
@@ -263,13 +334,51 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Pharo"
+				"string" : "GT for Pharo"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T00:41:49.08441+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T00:48:37.566578+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "yukY/yzTDQCg8p25DGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Browsing a BlueSky user from a dedicated snippet|db=e05zlf1q3ncmqem0wxh2hsy2}}"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -279,7 +388,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:41:49.08441+02:00"
+						"dateAndTimeString" : "2024-04-24T07:41:07.802264+02:00"
 					}
 				},
 				"editEmail" : {
@@ -290,17 +399,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:48:37.566578+02:00"
+						"dateAndTimeString" : "2024-04-24T13:22:56.412697+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "yukY/yzTDQCg8p25DGEktw=="
+					"uidString" : "Fnqs2jLTDQCOrZlIDGEktw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtPage:Browsing a BlueSky user from a dedicated snippet|db=e05zlf1q3ncmqem0wxh2hsy2}}"
+				"string" : "GT for social media"
 			},
 			{
 				"__type" : "textSnippet",
@@ -327,7 +436,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:39:40.990463+02:00"
+						"dateAndTimeString" : "2024-04-24T13:22:51.380842+02:00"
 					}
 				},
 				"uid" : {
@@ -337,13 +446,156 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Gemstone"
+				"string" : "GT for Gemstone"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:12:19.810983+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:12:26.30691+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "6WytczLTDQCK1dv1DGEktw=="
+							},
+							"code" : "P3Client new url: 'postgresql://scott2:tiger@stfx.eu:6543/f1db?sslmode=require'"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "postgresqlLoginSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T13:16:07.587907+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-24T13:16:07.587907+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "p+G2iDfTDQCSbdfkDGEktw=="
+										}
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:15:55.377623+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:16:01.106193+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+Om3hzfTDQCRXgrADGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "With dedicated snippets"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T01:14:06.10579+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T01:14:06.658862+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "b5r2JyzTDQCRBkolDGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Using P3 to interact with the PostgreSQL Relational Database|db=exalrjcx7if2khjdnt9apw3eg}}"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -353,7 +605,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-23T23:41:39.734341+02:00"
+						"dateAndTimeString" : "2024-04-24T07:12:08.095187+02:00"
 					}
 				},
 				"editEmail" : {
@@ -364,23 +616,98 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:12:12.167001+02:00"
+						"dateAndTimeString" : "2024-04-24T13:22:48.061791+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "b5r2JyzTDQCRBkolDGEktw=="
+					"uidString" : "taf6cjLTDQCKSkDZDGEktw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtPage:Working with the PostgreSQL relational database|db=2j9m7db2i4oz116bexd7wbdxo}}"
+				"string" : "GT for PostgreSQL"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:39:29.024787+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T07:39:39.814308+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "PDbJ1DLTDQCOjqLnDGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Exploring the execution of a Python LampSort algorithm|db=2j9m7db2i4oz116bexd7wbdxo}}"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T00:12:35.158259+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T00:12:35.665187+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "VxWOlizTDQCRmIaaDGEktw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtPage:Inspecting Python objects with custom inspectors|db=2j9m7db2i4oz116bexd7wbdxo}}"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -390,7 +717,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:12:35.158259+02:00"
+						"dateAndTimeString" : "2024-04-24T07:39:21.86706+02:00"
 					}
 				},
 				"editEmail" : {
@@ -401,23 +728,706 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:12:35.665187+02:00"
+						"dateAndTimeString" : "2024-04-24T13:22:44.107669+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "VxWOlizTDQCRmIaaDGEktw=="
+					"uidString" : "rghc1DLTDQCOJoX9DGEktw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtPage:Inspecting Python objects with custom inspectors|db=2j9m7db2i4oz116bexd7wbdxo}}"
+				"string" : "GT for Python"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "wardleyMap",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T06:57:39.471616+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T06:57:39.471616+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "rYU0PzLTDQCJGUq+DGEktw=="
+							},
+							"wardleyMapDictionary" : {
+								"edges" : [
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "0d5e1f40-32d3-0d00-8921-dea80c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "475e1f40-32d3-0d00-8929-73930c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "2a5e1f40-32d3-0d00-8925-d5d40c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : true,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "2a5e1f40-32d3-0d00-8925-d5d40c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : true,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "3f5e1f40-32d3-0d00-8928-61b70c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "475e1f40-32d3-0d00-8929-73930c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "3f5e1f40-32d3-0d00-8928-61b70c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : true,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "475e1f40-32d3-0d00-8929-73930c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "0d5e1f40-32d3-0d00-8921-dea80c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "385e1f40-32d3-0d00-8927-96820c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.0,
+											"red" : 0.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "995d1f40-32d3-0d00-891e-46170c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.0,
+											"red" : 0.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "165d1f40-32d3-0d00-891d-f4af0c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "0d5e1f40-32d3-0d00-8921-dea80c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "235e1f40-32d3-0d00-8924-4af30c6124b7"
+										},
+										"width" : 1.0
+									}
+								],
+								"nodes" : [
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.0,
+											"red" : 0.0
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "165d1f40-32d3-0d00-891d-f4af0c6124b7"
+										},
+										"label" : {
+											"text" : "developers",
+											"x" : -0.08333333333333333,
+											"y" : -1.0833333333333333
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.32,
+										"y" : 0.07999999999999996
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.0,
+											"red" : 0.0
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "995d1f40-32d3-0d00-891e-46170c6124b7"
+										},
+										"label" : {
+											"text" : "business",
+											"x" : 0.5,
+											"y" : -0.9166666666666666
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.45,
+										"y" : 0.07999999999999996
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
+										},
+										"label" : {
+											"text" : "specific problem",
+											"x" : -4.75,
+											"y" : -0.5833333333333334
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.3524967320261438,
+										"y" : 0.22507295173961836
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "0d5e1f40-32d3-0d00-8921-dea80c6124b7"
+										},
+										"label" : {
+											"text" : "decision",
+											"x" : 2.4166666666666665,
+											"y" : -0.9999999999999988
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.4443398692810457,
+										"y" : 0.29915450804339694
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
+										},
+										"label" : {
+											"text" : "manual inspection",
+											"x" : -0.3333333333333333,
+											"y" : 2.4166666666666665
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.18,
+										"y" : 0.63
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"label" : {
+											"text" : "specific coding",
+											"x" : -0.5833333333333334,
+											"y" : 2.4166666666666665
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.4222222222222222,
+										"y" : 0.63
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "235e1f40-32d3-0d00-8924-4af30c6124b7"
+										},
+										"label" : {
+											"text" : "synthetization",
+											"x" : 4.833333333333333,
+											"y" : -0.75
+										},
+										"pipeline" : {
+											"inner_nodes" : [
+												{
+													"__type" : "uuid",
+													"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
+												},
+												{
+													"__type" : "uuid",
+													"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+												}
+											],
+											"is_visible" : true,
+											"x" : 0.16999999999999998,
+											"y" : 0.43222222222222223
+										},
+										"width" : 12,
+										"x" : 0.32,
+										"y" : 0.63
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "2a5e1f40-32d3-0d00-8925-d5d40c6124b7"
+										},
+										"label" : {
+											"text" : "manual  views",
+											"x" : -4.333333333333333,
+											"y" : 0.4166666666666667
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.24,
+										"y" : 0.42000000000000004
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+										},
+										"label" : {
+											"text" : "generated views",
+											"x" : 5.75,
+											"y" : 0.3333333333333333
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.8100653594771242,
+										"y" : 0.42000000000000004
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "385e1f40-32d3-0d00-8927-96820c6124b7"
+										},
+										"label" : {
+											"text" : "information",
+											"x" : 4.5,
+											"y" : -0.5833333333333331
+										},
+										"pipeline" : {
+											"inner_nodes" : [
+												{
+													"__type" : "uuid",
+													"uuid" : "2a5e1f40-32d3-0d00-8925-d5d40c6124b7"
+												},
+												{
+													"__type" : "uuid",
+													"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+												}
+											],
+											"is_visible" : true,
+											"x" : 0.22999999999999998,
+											"y" : 0.8200653594771242
+										},
+										"width" : 12,
+										"x" : 0.49866666666666665,
+										"y" : 0.42000000000000004
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.7497556207233627,
+											"green" : 0.7497556207233627,
+											"red" : 0.7497556207233627
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "3f5e1f40-32d3-0d00-8928-61b70c6124b7"
+										},
+										"label" : {
+											"text" : "rigid",
+											"x" : 0.5,
+											"y" : 2.3333333333333335
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.53,
+										"y" : 0.83
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "475e1f40-32d3-0d00-8929-73930c6124b7"
+										},
+										"label" : {
+											"text" : "moldable",
+											"x" : 0.5833333333333334,
+											"y" : 2.25
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.7130718954248366,
+										"y" : 0.83
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 1.0,
+											"green" : 0.030303030303030304,
+											"red" : 0.030303030303030304
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "4e5e1f40-32d3-0d00-892a-f5a80c6124b7"
+										},
+										"label" : {
+											"text" : "tools",
+											"x" : -1.8333333333333333,
+											"y" : -0.25
+										},
+										"pipeline" : {
+											"inner_nodes" : [
+												{
+													"__type" : "uuid",
+													"uuid" : "3f5e1f40-32d3-0d00-8928-61b70c6124b7"
+												},
+												{
+													"__type" : "uuid",
+													"uuid" : "475e1f40-32d3-0d00-8929-73930c6124b7"
+												}
+											],
+											"is_visible" : true,
+											"x" : 0.52,
+											"y" : 0.7230718954248366
+										},
+										"width" : 12,
+										"x" : 0.6,
+										"y" : 0.83
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.030303030303030304,
+											"green" : 0.030303030303030304,
+											"red" : 1.0
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
+										},
+										"label" : {
+											"text" : "hypothesis",
+											"x" : -1.5,
+											"y" : -1.3333333333333333
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.2770885416666666,
+										"y" : 0.38169347798977427
+									}
+								]
+							},
+							"snippetHeight" : 470
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -427,7 +1437,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:32:44.753018+02:00"
+						"dateAndTimeString" : "2024-04-24T07:02:57.961488+02:00"
 					}
 				},
 				"editEmail" : {
@@ -438,23 +1448,61 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:34:38.04611+02:00"
+						"dateAndTimeString" : "2024-04-24T07:03:00.346258+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "zxKn3izTDQCTndN/DGEktw=="
+					"uidString" : "DtCgUTLTDQCJMFIHDGEktw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtPage:About Glamorous Toolkit for AT Protocol|db=e05zlf1q3ncmqem0wxh2hsy2}}"
+				"string" : "Moldable Development"
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "elementSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:21:55.458647+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-24T13:21:56.999815+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "t/BynTfTDQCSv6hUDGEktw=="
+							},
+							"code" : "GtImage treemapWithAllExtensions",
+							"elementHeight" : 364,
+							"codeHeight" : 50,
+							"codeVisible" : false
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -464,7 +1512,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:37:00.264202+02:00"
+						"dateAndTimeString" : "2024-04-24T13:22:29.653156+02:00"
 					}
 				},
 				"editEmail" : {
@@ -475,17 +1523,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:37:01.548993+02:00"
+						"dateAndTimeString" : "2024-04-24T13:22:32.973957+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "VNzh7SzTDQCgmWN8DGEktw=="
+					"uidString" : "/BIemTfTDQCStOorDGEktw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtPage:Mapping Moldable Development|db=2j9m7db2i4oz116bexd7wbdxo}}"
+				"string" : "GT as a case study"
 			},
 			{
 				"__type" : "textSnippet",
@@ -570,7 +1618,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:37:10.628609+02:00"
+						"dateAndTimeString" : "2024-04-24T07:11:22.357776+02:00"
 					}
 				},
 				"editEmail" : {
@@ -581,7 +1629,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-24T00:37:11.006777+02:00"
+						"dateAndTimeString" : "2024-04-24T07:11:22.357776+02:00"
 					}
 				},
 				"uid" : {
@@ -591,7 +1639,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Code"
+				"string" : ""
 			}
 		]
 	},
