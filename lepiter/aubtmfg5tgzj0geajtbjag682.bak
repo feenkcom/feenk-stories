@@ -5,47 +5,47 @@
 		"__type" : "snippets",
 		"items" : [
 			{
+				"__type" : "elementSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-24T07:42:37.801229+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-24T13:19:40.791436+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "f78J4DLTDQCPZsCjDGEktw=="
+				},
+				"code" : "GtPresenterSlideShow create: FkWhatIsGlamorousToolkitUKSTUG2024Show new\r",
+				"elementHeight" : 497,
+				"codeHeight" : 63,
+				"codeVisible" : false
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [
-						{
-							"__type" : "elementSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T07:42:37.801229+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T13:19:40.791436+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "f78J4DLTDQCPZsCjDGEktw=="
-							},
-							"code" : "GtPresenterSlideShow create: FkWhatIsGlamorousToolkitUKSTUG2024Show new\r",
-							"elementHeight" : 400,
-							"codeHeight" : 63,
-							"codeVisible" : false
-						},
 						{
 							"__type" : "pharoSnippet",
 							"children" : {
@@ -163,7 +163,76 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-04-24T19:52:58.192074+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-04-24T19:53:11.377725+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "KN3vEz3TDQCvuxn5DGEktw=="
+													},
+													"code" : "textSnippets := (LeDatabasesRegistry default defaultLogicalDatabase pages flatCollect: #allChildrenBreadthFirst) select: #isTextSnippet"
+												},
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-04-24T19:53:13.87492+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-04-24T19:53:19.33404+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "qyTfFD3TDQCvxD2ZDGEktw=="
+													},
+													"code" : "textSnippets do: [ :aTextSnippet | \n\t| ast |\n\tast := LeParser parseWithErrors: aTextSnippet string.\n\taVisitor := LeBlockLinksVisitor new.\n\taVisitor addVisitor: LePageLinkAnnotationVisitor new.\n\tast acceptVisitor: aVisitor ]"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -197,74 +266,6 @@
 										"string" : "MessageTally"
 									},
 									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-24T19:52:58.192074+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-24T19:53:11.377725+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "KN3vEz3TDQCvuxn5DGEktw=="
-										},
-										"code" : "textSnippets := (LeDatabasesRegistry default defaultLogicalDatabase pages flatCollect: #allChildrenBreadthFirst) select: #isTextSnippet"
-									},
-									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-24T19:53:13.87492+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-24T19:53:19.33404+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "qyTfFD3TDQCvxD2ZDGEktw=="
-										},
-										"code" : "textSnippets do: [ :aTextSnippet | \n\t| ast |\n\tast := LeParser parseWithErrors: aTextSnippet string.\n\taVisitor := LeBlockLinksVisitor new.\n\taVisitor addVisitor: LePageLinkAnnotationVisitor new.\n\tast acceptVisitor: aVisitor ]"
-									},
-									{
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
@@ -289,7 +290,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-24T00:58:41.042122+02:00"
+												"dateAndTimeString" : "2024-04-24T19:53:37.555861+02:00"
 											}
 										},
 										"uid" : {
@@ -299,7 +300,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Bloc"
+										"string" : "Bloc specialized profiler"
 									}
 								]
 							},
@@ -434,7 +435,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T19:44:52.083135+02:00"
+									"dateAndTimeString" : "2024-04-24T22:48:29.105056+02:00"
 								}
 							},
 							"uid" : {
@@ -504,14 +505,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T19:41:55.861293+02:00"
+									"dateAndTimeString" : "2024-04-24T22:48:47.490318+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "q21h7DzTDQCs5ydgDGEktw=="
 							},
-							"code" : "1/0",
+							"code" : "1+2",
 							"sessionName" : "connector5:5"
 						}
 					]
@@ -735,7 +736,8 @@
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "p+G2iDfTDQCSbdfkDGEktw=="
-										}
+										},
+										"postgresqlUrl" : "postgresql://scott2@stfx.eu:6543/f1db?sslmode=require"
 									},
 									{
 										"__type" : "postgresqlSnippet",
@@ -1014,7 +1016,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-24T13:52:50.322185+02:00"
+												"dateAndTimeString" : "2024-04-24T21:39:47.075945+02:00"
 											}
 										},
 										"uid" : {
@@ -1126,6 +1128,14 @@
 								"__type" : "uid",
 								"uidString" : "7AUBBT3TDQCvpaSdDGEktw=="
 							},
+							"postDict" : {
+								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
+								"cid" : "bafyreidlz67sfjrqayh4jymbke57n47ipa4aupvptxwkqu7luuoxugdedu",
+								"displayName" : "Tudor Girba",
+								"handle" : "tudorgirba.com",
+								"timeStamp" : "2024-04-24T21:41:22.82959+02:00",
+								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhlgrbf2n"
+							},
 							"string" : "Glamorous Toolkit enables Moldable Development.\n\ngtoolkit.com\n\n1/",
 							"files" : [ ]
 						},
@@ -1161,13 +1171,21 @@
 								"__type" : "uid",
 								"uidString" : "Sr/sBj3TDQCvqeJIDGEktw=="
 							},
-							"parentPostDict" : {
+							"postDict" : {
 								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
-								"cid" : "bafyreia7dgpr56poa5qrwvskhmrvk346qpfza2rlgwk22ylgsj3ati7uja",
+								"cid" : "bafyreifs3dtzfkkgnl3p5oykkwkikcomzonzbchggtdfhk3x6ntnxqedq4",
 								"displayName" : "Tudor Girba",
 								"handle" : "tudorgirba.com",
-								"timeStamp" : "2024-04-24T19:50:19.589326+02:00",
-								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvhb2fsdc25"
+								"timeStamp" : "2024-04-24T21:41:36.352142+02:00",
+								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhxnec22j"
+							},
+							"parentPostDict" : {
+								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
+								"cid" : "bafyreidlz67sfjrqayh4jymbke57n47ipa4aupvptxwkqu7luuoxugdedu",
+								"displayName" : "Tudor Girba",
+								"handle" : "tudorgirba.com",
+								"timeStamp" : "2024-04-24T21:41:22.82959+02:00",
+								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhlgrbf2n"
 							},
 							"string" : "Moldable Development is a way of programming through custom tools built for each problem.\n\n2/",
 							"files" : [ ]
@@ -1550,6 +1568,42 @@
 											"uuid" : "235e1f40-32d3-0d00-8924-4af30c6124b7"
 										},
 										"width" : 1.0
+									},
+									{
+										"arrow" : true,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.5004887585532747,
+											"red" : 0.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "acaa8fc8-3ed3-0d00-be5b-20080c6124b7"
+										},
+										"width" : 1.0
+									},
+									{
+										"arrow" : false,
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.5004887585532747,
+											"red" : 0.0
+										},
+										"from" : {
+											"__type" : "uuid",
+											"uuid" : "acaa8fc8-3ed3-0d00-be5b-20080c6124b7"
+										},
+										"to" : {
+											"__type" : "uuid",
+											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+										},
+										"width" : 1.0
 									}
 								],
 								"nodes" : [
@@ -1687,7 +1741,7 @@
 										},
 										"label" : {
 											"text" : "specific coding",
-											"x" : -0.5833333333333334,
+											"x" : 0.5,
 											"y" : 2.4166666666666665
 										},
 										"pipeline" : {
@@ -1723,11 +1777,15 @@
 												{
 													"__type" : "uuid",
 													"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+												},
+												{
+													"__type" : "uuid",
+													"uuid" : "acaa8fc8-3ed3-0d00-be5b-20080c6124b7"
 												}
 											],
 											"is_visible" : true,
 											"x" : 0.16999999999999998,
-											"y" : 0.43222222222222223
+											"y" : 0.71751953125
 										},
 										"width" : 12,
 										"x" : 0.32,
@@ -1771,8 +1829,8 @@
 										},
 										"label" : {
 											"text" : "generated views",
-											"x" : 5.75,
-											"y" : 0.3333333333333333
+											"x" : 3.5,
+											"y" : -1.75
 										},
 										"pipeline" : {
 											"is_visible" : false
@@ -1924,6 +1982,30 @@
 										"width" : 12,
 										"x" : 0.2770885416666666,
 										"y" : 0.38169347798977427
+									},
+									{
+										"color" : {
+											"alpha" : 1.0,
+											"blue" : 0.0,
+											"green" : 0.5004887585532747,
+											"red" : 0.0
+										},
+										"height" : 12,
+										"id" : {
+											"__type" : "uuid",
+											"uuid" : "acaa8fc8-3ed3-0d00-be5b-20080c6124b7"
+										},
+										"label" : {
+											"text" : "AI generated",
+											"x" : 0.6666666666666666,
+											"y" : 2.9166666666666665
+										},
+										"pipeline" : {
+											"is_visible" : false
+										},
+										"width" : 12,
+										"x" : 0.70751953125,
+										"y" : 0.63
 									}
 								]
 							},

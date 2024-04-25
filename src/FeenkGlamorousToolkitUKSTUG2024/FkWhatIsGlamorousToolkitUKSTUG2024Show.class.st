@@ -206,7 +206,7 @@ FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide132ViewedObjects: aSlide [
 FkWhatIsGlamorousToolkitUKSTUG2024Show >> slide201GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
-		priority: 201;
+		priority: 301;
 		titleWithFormat: ('gtoolkit.com' asRopedText 
 			fontSize: 70;
 			glamorousRegularFont;
