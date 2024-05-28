@@ -14,7 +14,7 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsRaw [
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent ];
-			layout: (BlGridLayout new columnCount: 5).
+			layout: (BlGridLayout new columnCount: 4).
 
 	self objectsToInspect
 		do: [ :x | 
@@ -32,18 +32,18 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsRaw [
 
 { #category : #accessing }
 FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
-	^ {21 / 2 gtPreviewFor: GtPhlowView empty.
-		1024 * 1024 gtIntegerFor: GtPhlowView empty.
+	^ {"21 / 2 gtPreviewFor: GtPhlowView empty.
+		1024 * 1024 gtIntegerFor: GtPhlowView empty."
 		Color orange gtPreviewFor: GtPhlowView empty.
-		(Character value: 127876) gtPreviewFor: GtPhlowView empty.
+		"(Character value: 127876) gtPreviewFor: GtPhlowView empty.
 		DateAndTime now gtViewDetailsIn: GtPhlowView empty.
 		(BlVector x: -26 y: 19) gtDegreeFor: GtPhlowView empty.
 		FileLocator imageDirectory gtTreeFor: GtPhlowView empty.
-		BaselineOfGToolkitInspector gtMapFor: GtPhlowView empty.
+		BaselineOfGToolkitInspector gtMapFor: GtPhlowView empty."
 		(MessageTally new
 			spyEvery: 1 on: [ 5 timesRepeat: [ #gtView gtReferences contents ] ];
 			yourself) gtGroupedByMethodFor: GtPhlowView empty.
-		DAPThreadModel >> #gtStackFor: gtBytecodeFor: GtPhlowView empty.
+		"DAPThreadModel >> #gtStackFor: gtBytecodeFor: GtPhlowView empty."
 		(AsyncPromiseExamples >> #rejectedPromiseWithOtherwise) gtExample returnValue
 			gtFullPromiseTreeFor: GtPhlowView empty.
 		Path * 'feenkcom' / 'gtoolkit' / 'doc' / 'gtoolkit.png'
@@ -51,7 +51,7 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
 		BlBezierElementExamples new curveWithAnchors gtLiveFor: GtPhlowView empty.
 		GtGraphCircleNeighbourhoodExamples new
 			emptyNeighborhoodWithThreeCirclesAndSpace gtPreviewFor: GtPhlowView empty.
-		GtWhatMakesBlocSpecialExplanation new sampleText gtTextFor: GtPhlowView empty.
+		GtWhatMakesBlocSpecialExplanation new sampleText gtTextAttributesFor: GtPhlowView empty.
 		(BlLayoutChildNodeWithTransformationExamples >> #scaleTransformation)
 			gtExample returnValue transformation gtPreviewFor: GtPhlowView empty.
 		(GtPharoMethodCoderUpdateExamples >> #collapsedMethodCoderCheckCollapsedText)
@@ -68,12 +68,12 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
 			returnValue gtLiveFor: GtPhlowView empty.
 		(BlCompositionTiledLayerExamples >> #smallTiledLayer) gtExample returnValue
 			gtPreviewFor: GtPhlowView empty.
-		(GtLudoRecordingGameExamples >> #gameShowingAllMoves6) gtExample returnValue
-			gtPositionsFor: GtPhlowView empty.
+		(GtLudoRecordingGameExamples >> #moveInitialJumpingAndCapturing) gtExample returnValue
+			moveOnBoardFor: GtPhlowView empty.
 		GtMonitorSpaceRunner new gtLiveFor: GtPhlowView empty.
-		(IceRepository repositories
+		"(IceRepository repositories
 			detect: [ :aRepository | aRepository name = 'gtoolkit-examples' ])
-			gtPackagesFor: GtPhlowView empty.
+			gtPackagesFor: GtPhlowView empty."
 		(GtDiffBuilder
 			computeDifferencesFrom: GtDiffElementExamples new originalString
 			to: GtDiffElementExamples new newString
@@ -84,10 +84,10 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
 		(GtRlLoadedConsolidatedBaselineEvent
 			readFromFile: FileLocator gtResource / 'feenkcom/gtoolkit/doc/loader'
 					/ 'loader-log-example.txt') gtMapFor: GtPhlowView empty.
-		(GtRlReleaserSignalsLogReader
+		"(GtRlReleaserSignalsLogReader
 			readFromFile: FileLocator gtResource / 'feenkcom/gtoolkit/doc/releaser'
 					/ 'releaser-log-example.txt')
-			gtViewGroupedByActionTypeFor: GtPhlowView empty}.
+			gtViewGroupedByActionTypeFor: GtPhlowView empty"}.
 ]
 
 { #category : #accessing }
@@ -98,7 +98,7 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsViewed [
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent ];
-			layout: (BlGridLayout new columnCount: 5).
+			layout: (BlGridLayout new columnCount: 4).
 
 	self objectsToInspect
 		do: [ :view | 
