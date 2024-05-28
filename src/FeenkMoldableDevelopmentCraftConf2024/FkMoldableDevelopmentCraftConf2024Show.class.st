@@ -307,12 +307,10 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 		nodeWithName: 'EXPLORATION'
 		ifFound: [ :aNode | 
 			aNode
-				decorators: {GtWardleyMapAction new
+				decorators: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							action: [ :aButton | 
-								aButton phlow
-									spawnTool: (GtPhlowValuableTool new
-											valuable: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]) ]}]
+							stencil: [ 
+								GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]}]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'DEVX'
@@ -322,12 +320,22 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 				label: 'Maximize';
 				icon: BrGlamorousVectorIcons inspect;
 				stencil: [ BlElement new
+						layout: BlFrameLayout new;
 						geometry: BlCircleGeometry new;
 						background: (Color blue alpha: 0.5);
 						size: 100 @ 100;
 						constraintsDo: [ :c | 
 							c frame horizontal alignCenter.
-							c frame vertical alignCenter ] ]}]
+							c frame vertical alignCenter ];
+						addChild: (BlElement new 
+							geometry: BlCircleGeometry new;
+							background: (Color black alpha: 0.6);
+							size: 50@50;
+							constraintsDo: [ :c | 
+								c frame horizontal alignCenter.
+								c frame vertical alignCenter ];
+							addAptitude: (BrGlamorousWithMaximizerAptitude new
+								preferredBackground: (Color red alpha: 0.5))) ]}]
 		ifNone: [  ].
 	^ element
 ]
