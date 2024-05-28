@@ -314,6 +314,21 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 									spawnTool: (GtPhlowValuableTool new
 											valuable: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]) ]}]
 		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'DEVX'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+				label: 'Maximize';
+				icon: BrGlamorousVectorIcons inspect;
+				stencil: [ BlElement new
+						geometry: BlCircleGeometry new;
+						background: (Color blue alpha: 0.5);
+						size: 100 @ 100;
+						constraintsDo: [ :c | 
+							c frame horizontal alignCenter.
+							c frame vertical alignCenter ] ]}]
+		ifNone: [  ].
 	^ element
 ]
 
