@@ -39,7 +39,7 @@
 				"code" : "GtPresenterSlideShow create: FkWhatIsGlamorousToolkitUKSTUG2024Show new\r",
 				"elementHeight" : 497,
 				"codeHeight" : 63,
-				"codeVisible" : false
+				"codeVisible" : true
 			},
 			{
 				"__type" : "textSnippet",
@@ -435,14 +435,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T22:48:29.105056+02:00"
+									"dateAndTimeString" : "2024-04-24T22:49:05.136129+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "hCgPcTzTDQCr6aMaDGEktw=="
 							},
-							"code" : "'Hello', ' World'",
+							"code" : "('Hello', ' World') size",
 							"sessionName" : "connector5:5"
 						},
 						{
@@ -470,14 +470,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T19:47:31.480353+02:00"
+									"dateAndTimeString" : "2024-04-24T22:49:14.946547+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "6KlfAD3TDQCvcg+SDGEktw=="
 							},
-							"code" : "Object",
+							"code" : "Object gtSubclasses",
 							"sessionName" : "connector5:5"
 						},
 						{
@@ -1614,6 +1614,9 @@
 											"green" : 0.0,
 											"red" : 0.0
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1637,6 +1640,9 @@
 											"blue" : 0.0,
 											"green" : 0.0,
 											"red" : 0.0
+										},
+										"evolve" : {
+											"is_evolve_target" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1662,6 +1668,9 @@
 											"green" : 0.030303030303030304,
 											"red" : 1.0
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1685,6 +1694,9 @@
 											"blue" : 0.030303030303030304,
 											"green" : 0.030303030303030304,
 											"red" : 1.0
+										},
+										"evolve" : {
+											"is_evolve_target" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1710,6 +1722,9 @@
 											"green" : 0.7497556207233627,
 											"red" : 0.7497556207233627
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1734,6 +1749,9 @@
 											"green" : 0.030303030303030304,
 											"red" : 0.030303030303030304
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1757,6 +1775,9 @@
 											"blue" : 1.0,
 											"green" : 0.030303030303030304,
 											"red" : 0.030303030303030304
+										},
+										"evolve" : {
+											"is_evolve_target" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1798,6 +1819,9 @@
 											"green" : 0.7497556207233627,
 											"red" : 0.7497556207233627
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1822,6 +1846,9 @@
 											"green" : 0.030303030303030304,
 											"red" : 0.030303030303030304
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1845,6 +1872,9 @@
 											"blue" : 1.0,
 											"green" : 0.030303030303030304,
 											"red" : 0.030303030303030304
+										},
+										"evolve" : {
+											"is_evolve_target" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1882,6 +1912,9 @@
 											"green" : 0.7497556207233627,
 											"red" : 0.7497556207233627
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1906,6 +1939,9 @@
 											"green" : 0.030303030303030304,
 											"red" : 0.030303030303030304
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1929,6 +1965,9 @@
 											"blue" : 1.0,
 											"green" : 0.030303030303030304,
 											"red" : 0.030303030303030304
+										},
+										"evolve" : {
+											"is_evolve_target" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1966,6 +2005,9 @@
 											"green" : 0.030303030303030304,
 											"red" : 1.0
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -1990,6 +2032,9 @@
 											"green" : 0.5004887585532747,
 											"red" : 0.0
 										},
+										"evolve" : {
+											"is_evolve_target" : false
+										},
 										"height" : 12,
 										"id" : {
 											"__type" : "uuid",
@@ -2009,7 +2054,7 @@
 									}
 								]
 							},
-							"snippetHeight" : 470
+							"snippetHeight" : 648
 						}
 					]
 				},
