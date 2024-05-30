@@ -114,6 +114,19 @@ FkMoldableDevelopmentCraftConf2024Show >> objectsViewed [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> pagerWithPageNamed: pageName from: dbName [
+	| page book |
+	book := LeDatabasesRegistry defaultLogicalDatabase databaseNamed: dbName.
+	page := book pageNamed: pageName.
+	^ page asPhlowTool
+		asElementDo: [ :e | 
+			| aPager |
+			aPager := GtPager createWrappedOn: e.
+			aPager addAptitude: BrShadowAptitude new.
+			aPager ]
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentCraftConf2024Show >> slide001Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
@@ -309,33 +322,27 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 			aNode
 				decorators: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							stencil: [ 
-								GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]}]
+							stencil: [ self
+									pagerWithPageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects'
+									from: 'Glamorous Toolkit Book' ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
-		nodeWithName: 'DEVX'
+		nodeWithName: 'CONVERSATION'
 		ifFound: [ :aNode | 
 			aNode
 				decorators: {GtWardleyMapMaximizerAction new
-				label: 'Maximize';
-				icon: BrGlamorousVectorIcons inspect;
-				stencil: [ BlElement new
-						layout: BlFrameLayout new;
-						geometry: BlCircleGeometry new;
-						background: (Color blue alpha: 0.5);
-						size: 100 @ 100;
-						constraintsDo: [ :c | 
-							c frame horizontal alignCenter.
-							c frame vertical alignCenter ];
-						addChild: (BlElement new 
-							geometry: BlCircleGeometry new;
-							background: (Color black alpha: 0.6);
-							size: 50@50;
-							constraintsDo: [ :c | 
-								c frame horizontal alignCenter.
-								c frame vertical alignCenter ];
-							addAptitude: (BrGlamorousWithMaximizerAptitude new
-								preferredBackground: (Color red alpha: 0.5))) ]}]
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ self
+									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
+									from: 'Glamorous Toolkit Book' ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'DEVELOPER EXPERIENCE'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
 		ifNone: [  ].
 	^ element
 ]
@@ -1359,8 +1366,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.4557038834951456,
-			"y" : 0.041275828638397155,
+			"x" : 0.4288152791417525,
+			"y" : 0.04127582863839715,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1370,36 +1377,6 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			},
 			"pipeline" : {
 				"is_visible" : false
-			},
-			"evolve" : {
-				"is_evolve_target" : false
-			}
-		},
-		{
-			"id" : "57340433-e5d5-0d00-be3a-87920bf47be3",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.65,
-			"y" : 0.9,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : -5.416666666666667,
-				"y" : -0.5833333333333334,
-				"text" : "CONCEPT OF SYSTEM"
-			},
-			"pipeline" : {
-				"inner_nodes" : [
-					"65350433-e5d5-0d00-be41-a11d0bf47be3",
-					"6f350433-e5d5-0d00-be42-b56e0bf47be3"
-				],
-				"x" : 0.51,
-				"y" : 0.75,
-				"is_visible" : true
 			},
 			"evolve" : {
 				"is_evolve_target" : false
@@ -1443,22 +1420,22 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.65,
-			"y" : 0.78,
+			"x" : 0.6448783610755442,
+			"y" : 0.81521106917422,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 0.5,
-				"y" : -1.0833333333333333,
-				"text" : "DEVX"
+				"y" : -1.0,
+				"text" : "DEVELOPER EXPERIENCE"
 			},
 			"pipeline" : {
 				"inner_nodes" : [
-					"8e350433-e5d5-0d00-be45-6c660bf47be3",
-					"98350433-e5d5-0d00-be46-c06d0bf47be3"
+					"98350433-e5d5-0d00-be46-c06d0bf47be3",
+					"8e350433-e5d5-0d00-be45-6c660bf47be3"
 				],
-				"x" : 0.54,
-				"y" : 0.78,
+				"x" : 0.5348783610755442,
+				"y" : 0.7787195902688859,
 				"is_visible" : true
 			},
 			"evolve" : {
@@ -1503,8 +1480,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.55,
-			"y" : 0.33999999999999997,
+			"x" : 0.5512804097311139,
+			"y" : 0.36347404611614664,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1517,8 +1494,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 					"b8350433-e5d5-0d00-be49-8f340bf47be3",
 					"c3350433-e5d5-0d00-be4a-a52f0bf47be3"
 				],
-				"x" : 0.3,
-				"y" : 0.67,
+				"x" : 0.3012804097311139,
+				"y" : 0.671280409731114,
 				"is_visible" : true
 			},
 			"evolve" : {
@@ -1533,22 +1510,22 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.54,
-			"y" : 0.65,
+			"x" : 0.5438412291933421,
+			"y" : 0.6695617050967889,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.6666666666666666,
-				"y" : -1.1666666666666667,
+				"x" : 0.3333333333333333,
+				"y" : -0.8333333333333334,
 				"text" : "ANALYSIS"
 			},
 			"pipeline" : {
 				"inner_nodes" : [
-					"cf350433-e5d5-0d00-be4b-dab10bf47be3",
-					"da350433-e5d5-0d00-be4c-c4f90bf47be3"
+					"da350433-e5d5-0d00-be4c-c4f90bf47be3",
+					"cf350433-e5d5-0d00-be4b-dab10bf47be3"
 				],
-				"x" : 0.39,
-				"y" : 0.79,
+				"x" : 0.3938412291933419,
+				"y" : 0.7887195902688864,
 				"is_visible" : true
 			},
 			"evolve" : {
@@ -1564,7 +1541,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.54,
-			"y" : 0.48,
+			"y" : 0.5021699324430273,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1580,54 +1557,6 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"x" : 0.36,
 				"y" : 0.73,
 				"is_visible" : true
-			},
-			"evolve" : {
-				"is_evolve_target" : false
-			}
-		},
-		{
-			"id" : "65350433-e5d5-0d00-be41-a11d0bf47be3",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.52,
-			"y" : 0.9,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 0.4166666666666667,
-				"y" : 2.4166666666666665,
-				"text" : "Predictable system"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			},
-			"evolve" : {
-				"is_evolve_target" : false
-			}
-		},
-		{
-			"id" : "6f350433-e5d5-0d00-be42-b56e0bf47be3",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.74,
-			"y" : 0.9,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 1.6666666666666667,
-				"y" : 2.4166666666666665,
-				"text" : "Real world system"
-			},
-			"pipeline" : {
-				"is_visible" : false
 			},
 			"evolve" : {
 				"is_evolve_target" : false
@@ -1670,8 +1599,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -1.8333333333333333,
-				"y" : -1.75,
+				"x" : -2.0833333333333335,
+				"y" : -1.3333333333333333,
 				"text" : "Moldable Development"
 			},
 			"pipeline" : {
@@ -1689,8 +1618,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.77,
-			"y" : 0.78,
+			"x" : 0.7687195902688859,
+			"y" : 0.81521106917422,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1713,8 +1642,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.55,
-			"y" : 0.78,
+			"x" : 0.5448783610755442,
+			"y" : 0.81521106917422,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1785,8 +1714,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.31,
-			"y" : 0.33999999999999997,
+			"x" : 0.3112804097311139,
+			"y" : 0.36347404611614664,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1809,8 +1738,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.66,
-			"y" : 0.33999999999999997,
+			"x" : 0.661280409731114,
+			"y" : 0.36347404611614664,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1833,8 +1762,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.78,
-			"y" : 0.65,
+			"x" : 0.7787195902688864,
+			"y" : 0.6695617050967889,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1857,8 +1786,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.4,
-			"y" : 0.65,
+			"x" : 0.4038412291933419,
+			"y" : 0.6695617050967889,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1882,12 +1811,12 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.72,
-			"y" : 0.48,
+			"y" : 0.5021699324430273,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -0.08333333333333333,
-				"y" : 2.5,
+				"x" : 1.1666666666666667,
+				"y" : 2.5833333333333335,
 				"text" : "Belief based"
 			},
 			"pipeline" : {
@@ -1906,13 +1835,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.37,
-			"y" : 0.48,
+			"y" : 0.5021699324430273,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : -0.25,
 				"y" : 2.5,
-				"text" : "Inspectable"
+				"text" : "Evidence based"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -1979,8 +1908,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 1.0
 			},
-			"x" : 0.54,
-			"y" : 0.33999999999999997,
+			"x" : 0.4875032010243278,
+			"y" : 0.36347404611614664,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2005,7 +1934,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"x" : 0.57,
-			"y" : 0.48,
+			"y" : 0.5021699324430273,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2029,8 +1958,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5364693947208737,
-			"y" : 0.04324314643139423,
+			"x" : 0.5928074228898879,
+			"y" : 0.045851373777632744,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2057,7 +1986,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "83350433-e5d5-0d00-be44-2b950bf47be3",
@@ -2069,7 +2004,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "ad350433-e5d5-0d00-be48-e4d90bf47be3",
@@ -2081,31 +2022,49 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "da350433-e5d5-0d00-be4c-c4f90bf47be3",
 			"to" : "cf350433-e5d5-0d00-be4b-dab10bf47be3",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 1.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : true,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "98350433-e5d5-0d00-be46-c06d0bf47be3",
 			"to" : "8e350433-e5d5-0d00-be45-6c660bf47be3",
 			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
 				"alpha" : 1.0,
-				"red" : 0.0
+				"red" : 1.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : true,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "7a350433-e5d5-0d00-be43-6fc90bf47be3",
@@ -2117,7 +2076,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "a3350433-e5d5-0d00-be47-72cc0bf47be3",
@@ -2129,7 +2094,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "cf350433-e5d5-0d00-be4b-dab10bf47be3",
@@ -2141,7 +2112,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "da350433-e5d5-0d00-be4c-c4f90bf47be3",
@@ -2153,7 +2130,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3",
@@ -2165,7 +2148,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "b8350433-e5d5-0d00-be49-8f340bf47be3",
@@ -2177,7 +2166,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "cf350433-e5d5-0d00-be4b-dab10bf47be3",
@@ -2189,7 +2184,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "da350433-e5d5-0d00-be4c-c4f90bf47be3",
@@ -2201,43 +2202,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "98350433-e5d5-0d00-be46-c06d0bf47be3",
-			"to" : "65350433-e5d5-0d00-be41-a11d0bf47be3",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "8e350433-e5d5-0d00-be45-6c660bf47be3",
-			"to" : "6f350433-e5d5-0d00-be42-b56e0bf47be3",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
-		},
-		{
-			"from" : "65350433-e5d5-0d00-be41-a11d0bf47be3",
-			"to" : "6f350433-e5d5-0d00-be42-b56e0bf47be3",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.0,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "83350433-e5d5-0d00-be44-2b950bf47be3",
@@ -2249,7 +2220,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"width" : 1.0,
-			"arrow" : true
+			"arrow" : true,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "a3350433-e5d5-0d00-be47-72cc0bf47be3",
@@ -2261,7 +2238,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"width" : 1.0,
-			"arrow" : true
+			"arrow" : true,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "b8350433-e5d5-0d00-be49-8f340bf47be3",
@@ -2273,7 +2256,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"width" : 1.0,
-			"arrow" : true
+			"arrow" : true,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "f1350433-e5d5-0d00-be4e-9ee00bf47be3",
@@ -2285,7 +2274,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"width" : 1.0,
-			"arrow" : true
+			"arrow" : true,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		},
 		{
 			"from" : "0d84d79b-e7d5-0d00-be61-18a50bf47be3",
@@ -2297,7 +2292,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"width" : 1.0,
-			"arrow" : false
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
 		}
 	]
 }'.

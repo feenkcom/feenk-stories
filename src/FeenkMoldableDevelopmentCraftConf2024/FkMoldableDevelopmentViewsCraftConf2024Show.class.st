@@ -56,12 +56,12 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
 			gtExample returnValue transformation gtPreviewFor: GtPhlowView empty.
 		(GtPharoMethodCoderUpdateExamples >> #collapsedMethodCoderCheckCollapsedText)
 			gtExample returnValue gtStepsMondrianTreeFor: GtPhlowView empty.
-		(BaselineOfGToolkitInspector
+"		(BaselineOfGToolkitInspector
 			gtRlProjectWithRepository: 'github://feenkcom/brick:main/src')
-			gtProjectMapFor: GtPhlowView empty.
+			gtProjectMapFor: GtPhlowView empty."
 		(BlFocusFinderExamples >> #focusFinderDownOnSegment_2_child_41) gtExample
 			returnValue gtPreviewFor: GtPhlowView empty.
-		BlDevKeyboard new gtLiveFor: GtPhlowView empty.
+		"BlDevKeyboard new gtLiveFor: GtPhlowView empty."
 		(GtGraphTreemapLayoutExamples >> #squarifyWithSevenNodes) gtExample
 			returnValue gtPreviewFor: GtPhlowView empty.
 		(BrTextEditorSelecterExamples >> #select_moveOneRight_at_6) gtExample
@@ -70,7 +70,7 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
 			gtPreviewFor: GtPhlowView empty.
 		(GtLudoRecordingGameExamples >> #moveInitialJumpingAndCapturing) gtExample returnValue
 			moveOnBoardFor: GtPhlowView empty.
-		GtMonitorSpaceRunner new gtLiveFor: GtPhlowView empty.
+		"GtMonitorSpaceRunner new gtLiveFor: GtPhlowView empty."
 		"(IceRepository repositories
 			detect: [ :aRepository | aRepository name = 'gtoolkit-examples' ])
 			gtPackagesFor: GtPhlowView empty."
@@ -78,9 +78,9 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> objectsToInspect [
 			computeDifferencesFrom: GtDiffElementExamples new originalString
 			to: GtDiffElementExamples new newString
 			using: GtLineDiffSplitter new) gtTextView: GtPhlowView empty.
-		(BlCompositionPainterExamples
+		"(BlCompositionPainterExamples
 			>> #paintOverlappingSimpleElementsWantingLayerInbetweenOtherElementsInParentWithTransformation)
-			gtExample returnValue gtPreviewFor: GtPhlowView empty.
+			gtExample returnValue gtPreviewFor: GtPhlowView empty."
 		(GtRlLoadedConsolidatedBaselineEvent
 			readFromFile: FileLocator gtResource / 'feenkcom/gtoolkit/doc/loader'
 					/ 'loader-log-example.txt') gtMapFor: GtPhlowView empty.
