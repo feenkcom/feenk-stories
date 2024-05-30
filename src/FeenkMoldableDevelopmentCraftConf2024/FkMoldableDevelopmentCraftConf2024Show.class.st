@@ -317,6 +317,14 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 	json := self wardleyMapJsonMoldableDevelopmentWithTension.
 	element := self wardleyMapElementForJson: json.
 	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'INVESTIGATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkDbMigrationCraftConf2024Show new ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'EXPLORATION'
 		ifFound: [ :aNode | 
 			aNode
