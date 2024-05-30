@@ -330,9 +330,9 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 			aNode
 				decorators: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							stencil: [ self
+							stencil: [ (self
 									pagerWithPageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects'
-									from: 'Glamorous Toolkit Book' ]} ]
+									from: 'Glamorous Toolkit Book') maximized ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'CONVERSATION'
@@ -342,6 +342,16 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ self
 									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
+									from: 'Glamorous Toolkit Book' ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'ANALYSIS'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ self
+									pagerWithPageNamed: 'Executable domain-driven design: the Ludo game case study'
 									from: 'Glamorous Toolkit Book' ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
@@ -1399,7 +1409,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.55,
-			"y" : 0.24,
+			"y" : 0.2598653706417932,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1428,8 +1438,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6448783610755442,
-			"y" : 0.81521106917422,
+			"x" : 0.6400754054105195,
+			"y" : 0.8549418104578065,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1442,8 +1452,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 					"98350433-e5d5-0d00-be46-c06d0bf47be3",
 					"8e350433-e5d5-0d00-be45-6c660bf47be3"
 				],
-				"x" : 0.5348783610755442,
-				"y" : 0.7787195902688859,
+				"x" : 0.5300754054105196,
+				"y" : 0.7739166346038613,
 				"is_visible" : true
 			},
 			"evolve" : {
@@ -1463,8 +1473,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.583333333333333,
-				"y" : -0.25,
+				"x" : 7.333333333333333,
+				"y" : -0.5,
 				"text" : "INVESTIGATION"
 			},
 			"pipeline" : {
@@ -1488,8 +1498,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5512804097311139,
-			"y" : 0.36347404611614664,
+			"x" : 0.5504799171202766,
+			"y" : 0.3941750734716453,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1502,8 +1512,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 					"b8350433-e5d5-0d00-be49-8f340bf47be3",
 					"c3350433-e5d5-0d00-be4a-a52f0bf47be3"
 				],
-				"x" : 0.3012804097311139,
-				"y" : 0.671280409731114,
+				"x" : 0.3004799171202765,
+				"y" : 0.6704799171202767,
 				"is_visible" : true
 			},
 			"evolve" : {
@@ -1519,12 +1529,12 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.5438412291933421,
-			"y" : 0.6695617050967889,
+			"y" : 0.7110983891659931,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.3333333333333333,
-				"y" : -0.8333333333333334,
+				"x" : 1.0833333333333333,
+				"y" : -0.75,
 				"text" : "ANALYSIS"
 			},
 			"pipeline" : {
@@ -1549,7 +1559,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.54,
-			"y" : 0.5021699324430273,
+			"y" : 0.5382887881553787,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1579,7 +1589,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.72,
-			"y" : 0.24,
+			"y" : 0.2598653706417932,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1603,7 +1613,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.16,
-			"y" : 0.24,
+			"y" : 0.2598653706417932,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1626,8 +1636,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.7687195902688859,
-			"y" : 0.81521106917422,
+			"x" : 0.7639166346038613,
+			"y" : 0.8549418104578065,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1650,8 +1660,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5448783610755442,
-			"y" : 0.81521106917422,
+			"x" : 0.5400754054105196,
+			"y" : 0.8549418104578065,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1722,8 +1732,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.3112804097311139,
-			"y" : 0.36347404611614664,
+			"x" : 0.3104799171202765,
+			"y" : 0.3941750734716453,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1746,8 +1756,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.661280409731114,
-			"y" : 0.36347404611614664,
+			"x" : 0.6604799171202766,
+			"y" : 0.3941750734716453,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1771,7 +1781,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.7787195902688864,
-			"y" : 0.6695617050967889,
+			"y" : 0.7110983891659931,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1795,7 +1805,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.4038412291933419,
-			"y" : 0.6695617050967889,
+			"y" : 0.7110983891659931,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1819,7 +1829,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.72,
-			"y" : 0.5021699324430273,
+			"y" : 0.5382887881553787,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1843,7 +1853,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 0.0
 			},
 			"x" : 0.37,
-			"y" : 0.5021699324430273,
+			"y" : 0.5382887881553787,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1867,7 +1877,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"x" : 0.4,
-			"y" : 0.24,
+			"y" : 0.2598653706417932,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1917,7 +1927,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"x" : 0.4875032010243278,
-			"y" : 0.36347404611614664,
+			"y" : 0.3941750734716453,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1942,7 +1952,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"red" : 1.0
 			},
 			"x" : 0.57,
-			"y" : 0.5021699324430273,
+			"y" : 0.5382887881553787,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
