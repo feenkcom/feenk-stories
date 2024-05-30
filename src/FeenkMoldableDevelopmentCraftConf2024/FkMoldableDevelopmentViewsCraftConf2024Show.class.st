@@ -130,3 +130,34 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide132ViewedObjects: aSlide [
 		priority: 132;
 		element: [ self objectsViewed ]
 ]
+
+{ #category : #accessing }
+FkMoldableDevelopmentViewsCraftConf2024Show >> slide201LudoInspectors: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Viewed objects'>
+	^ aSlide element
+		priority: 202;
+		element: [ GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3 ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectors: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Viewed objects'>
+	| scripter element |
+	^ aSlide element
+		priority: 202;
+		element: [ scripter := GtInspectorScripterExamples new
+					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
+					WithPlaygroundTextAndDoit: 'self moves last'.
+			element := scripter elementWithoutParent.
+			GtPresenterElementExplosion new
+				layerQuery: BlElementLazyQuery new // GtPagerPageElement
+					label: 'Flow composition';
+				layerQuery: BlElementLazyQuery new // #tool
+					label: 'Composable snippets and views';
+				layerQuery: BlElementLazyQuery new // GtPhlowCompositeViewElementId
+							// [ :each | each phlow isViewContent ]
+					label: 'Embeddable content';
+				explode: element ]
+]
