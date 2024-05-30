@@ -250,16 +250,32 @@ FkMoldableDevelopmentCraftConf2024Show >> slide015React: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentCraftConf2024Show >> slide110WardleyMapWithActions: aSlide [
+FkMoldableDevelopmentCraftConf2024Show >> slide111WardleyMapWithActions: aSlide [
 	<gtSlide>
 	^ aSlide element
-		priority: 110;
-		element: [ self wardleyMapElementMoldableDevelopmentWithTension ]
+		priority: 111;
+		element: [ self wardleyMapElementMoldableDevelopmentWithTension01 ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> slide112WardleyMapWithActions: aSlide [
+	<gtSlide>
+	^ aSlide element
+		priority: 112;
+		element: [ self wardleyMapElementMoldableDevelopmentWithTension02 ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> slide113WardleyMapWithActions: aSlide [
+	<gtSlide>
+	^ aSlide element
+		priority: 113;
+		element: [ self wardleyMapElementMoldableDevelopmentWithTension03 ]
 ]
 
 { #category : #accessing }
 FkMoldableDevelopmentCraftConf2024Show >> slide201GTSlideFor: aSlide [
-	"<gtSlide>"
+	<gtSlide>
 	^ aSlide title
 		priority: 301;
 		titleWithFormat: ('gtoolkit.com' asRopedText 
@@ -271,11 +287,26 @@ FkMoldableDevelopmentCraftConf2024Show >> slide201GTSlideFor: aSlide [
 
 { #category : #accessing }
 FkMoldableDevelopmentCraftConf2024Show >> slide211TreemapOfExtensionsAndExamples: aSlide [
-	"<gtSlide>"
+	<gtSlide>
 	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
 	^ aSlide element
-		priority: 211;
+		priority: 311;
 		element: [ GtImage treemapWithAllExtensions ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> slide401Title: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
+	^ aSlide title
+		priority: 401;
+		titleWithFormat: ('moldable development' asRopedText 
+			fontSize: 70;
+			glamorousCodeFont;
+			bold);
+		subtitleWithFormat: ('@girba' asRopedText 
+			fontSize: 40;
+			glamorousCodeFont)
 ]
 
 { #category : #accessing }
@@ -311,7 +342,117 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementFullWithoutRoles [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWithTension [
+FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWithTension01 [
+	<gtExample>
+	| json element |
+	json := self wardleyMapJsonMoldableDevelopmentWithTension01.
+	element := self wardleyMapElementForJson: json.
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'INVESTIGATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkDbMigrationCraftConf2024Show new ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'EXPLORATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ (self
+									pagerWithPageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects'
+									from: 'Glamorous Toolkit Book') maximized ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'CONVERSATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ (self
+									pagerWithPageNamed: 'Executable domain-driven design: the Ludo game case study'
+									from: 'Glamorous Toolkit Book') maximized]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'ANALYSIS'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ self
+									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
+									from: 'Glamorous Toolkit Book' ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'DEVELOPER EXPERIENCE'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
+		ifNone: [  ].
+	^ element
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWithTension02 [
+	<gtExample>
+	| json element |
+	json := self wardleyMapJsonMoldableDevelopmentWithTension02.
+	element := self wardleyMapElementForJson: json.
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'INVESTIGATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkDbMigrationCraftConf2024Show new ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'EXPLORATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ (self
+									pagerWithPageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects'
+									from: 'Glamorous Toolkit Book') maximized ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'CONVERSATION'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ (self
+									pagerWithPageNamed: 'Executable domain-driven design: the Ludo game case study'
+									from: 'Glamorous Toolkit Book') maximized]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'ANALYSIS'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ self
+									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
+									from: 'Glamorous Toolkit Book' ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'DEVELOPER EXPERIENCE'
+		ifFound: [ :aNode | 
+			aNode
+				decorators: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
+		ifNone: [  ].
+	^ element
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWithTension03 [
 	<gtExample>
 	| json element |
 	json := self wardleyMapJsonMoldableDevelopmentWithTension.
@@ -340,9 +481,9 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 			aNode
 				decorators: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							stencil: [ self
-									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
-									from: 'Glamorous Toolkit Book' ]} ]
+							stencil: [ (self
+									pagerWithPageNamed: 'Executable domain-driven design: the Ludo game case study'
+									from: 'Glamorous Toolkit Book') maximized]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'ANALYSIS'
@@ -351,7 +492,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementMoldableDevelopmentWi
 				decorators: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ self
-									pagerWithPageNamed: 'Executable domain-driven design: the Ludo game case study'
+									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
 									from: 'Glamorous Toolkit Book' ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
@@ -1373,7 +1514,6 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonFullWithoutRoles [
 
 { #category : #accessing }
 FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithTension [
-	<gtExample>
 	^ '{
 	"nodes" : [
 		{
@@ -1422,7 +1562,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 					"7a350433-e5d5-0d00-be43-6fc90bf47be3",
 					"83350433-e5d5-0d00-be44-2b950bf47be3"
 				],
-				"x" : 0.15,
+				"x" : 0.19609475032010243,
 				"y" : 0.73,
 				"is_visible" : true
 			},
@@ -1612,13 +1752,13 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.16,
+			"x" : 0.20609475032010244,
 			"y" : 0.2598653706417932,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -2.0833333333333335,
-				"y" : -1.3333333333333333,
+				"x" : -6.833333333333333,
+				"y" : 0.4166666666666667,
 				"text" : "Moldable Development"
 			},
 			"pipeline" : {
@@ -2320,6 +2460,854 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 		}
 	]
 }'.
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithTension01 [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "72330433-e5d5-0d00-be39-f20a0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.4288152791417525,
+			"y" : 0.04127582863839715,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.9166666666666666,
+				"y" : -1.0833333333333333,
+				"text" : "Business people"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "ed340433-e5d5-0d00-be3b-99d80bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.55,
+			"y" : 0.2598653706417932,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.16666666666666666,
+				"y" : -1.25,
+				"text" : "EXPLORATION"
+			},
+			"pipeline" : {
+				"inner_nodes" : [ ],
+				"x" : 0.47500000000000003,
+				"y" : 0.625,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "05350433-e5d5-0d00-be3c-6bd40bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6400754054105195,
+			"y" : 0.8549418104578065,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : -1.0,
+				"text" : "DEVELOPER EXPERIENCE"
+			},
+			"pipeline" : {
+				"inner_nodes" : [ ],
+				"x" : 0.5650754054105196,
+				"y" : 0.7150754054105195,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.51,
+			"y" : 0.12,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 7.333333333333333,
+				"y" : -0.5,
+				"text" : "INVESTIGATION"
+			},
+			"pipeline" : {
+				"inner_nodes" : [ ],
+				"x" : 0.435,
+				"y" : 0.585,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "1c350433-e5d5-0d00-be3e-af930bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5504799171202766,
+			"y" : 0.3941750734716453,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.25,
+				"y" : -1.1666666666666667,
+				"text" : "CONVERSATION"
+			},
+			"pipeline" : {
+				"inner_nodes" : [ ],
+				"x" : 0.47547991712027654,
+				"y" : 0.6254799171202765,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "26350433-e5d5-0d00-be3f-06420bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5438412291933421,
+			"y" : 0.7110983891659931,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.0833333333333333,
+				"y" : -0.75,
+				"text" : "ANALYSIS"
+			},
+			"pipeline" : {
+				"inner_nodes" : [ ],
+				"x" : 0.4688412291933421,
+				"y" : 0.6188412291933421,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "31350433-e5d5-0d00-be40-eaa30bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.54,
+			"y" : 0.5382887881553787,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.6666666666666667,
+				"y" : -1.0,
+				"text" : "SYSTEM AWARENESS"
+			},
+			"pipeline" : {
+				"inner_nodes" : [ ],
+				"x" : 0.465,
+				"y" : 0.615,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "0d84d79b-e7d5-0d00-be61-18a50bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5928074228898879,
+			"y" : 0.045851373777632744,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : -1.3333333333333333,
+				"text" : "Developers"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "72330433-e5d5-0d00-be39-f20a0bf47be3",
+			"to" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "0d84d79b-e7d5-0d00-be61-18a50bf47be3",
+			"to" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"to" : "ed340433-e5d5-0d00-be3b-99d80bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "ed340433-e5d5-0d00-be3b-99d80bf47be3",
+			"to" : "1c350433-e5d5-0d00-be3e-af930bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "1c350433-e5d5-0d00-be3e-af930bf47be3",
+			"to" : "31350433-e5d5-0d00-be40-eaa30bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "31350433-e5d5-0d00-be40-eaa30bf47be3",
+			"to" : "26350433-e5d5-0d00-be3f-06420bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "26350433-e5d5-0d00-be3f-06420bf47be3",
+			"to" : "05350433-e5d5-0d00-be3c-6bd40bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		}
+	]
+}'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithTension02 [
+	^ '{
+	"nodes" : [
+		{
+			"id" : "72330433-e5d5-0d00-be39-f20a0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.4288152791417525,
+			"y" : 0.04127582863839715,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.9166666666666666,
+				"y" : -1.0833333333333333,
+				"text" : "Business people"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "ed340433-e5d5-0d00-be3b-99d80bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.55,
+			"y" : 0.2598653706417932,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.16666666666666666,
+				"y" : -1.25,
+				"text" : "EXPLORATION"
+			},
+			"pipeline" : {
+				"inner_nodes" : [
+					"7a350433-e5d5-0d00-be43-6fc90bf47be3"
+				],
+				"x" : 0.54,
+				"y" : 0.73,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "05350433-e5d5-0d00-be3c-6bd40bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6400754054105195,
+			"y" : 0.8549418104578065,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : -1.0,
+				"text" : "DEVELOPER EXPERIENCE"
+			},
+			"pipeline" : {
+				"inner_nodes" : [
+					"98350433-e5d5-0d00-be46-c06d0bf47be3"
+				],
+				"x" : 0.5300754054105196,
+				"y" : 0.6500754054105196,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.51,
+			"y" : 0.12,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 7.333333333333333,
+				"y" : -0.5,
+				"text" : "INVESTIGATION"
+			},
+			"pipeline" : {
+				"inner_nodes" : [
+					"ad350433-e5d5-0d00-be48-e4d90bf47be3"
+				],
+				"x" : 0.5,
+				"y" : 0.71,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "1c350433-e5d5-0d00-be3e-af930bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5504799171202766,
+			"y" : 0.3941750734716453,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.25,
+				"y" : -1.1666666666666667,
+				"text" : "CONVERSATION"
+			},
+			"pipeline" : {
+				"inner_nodes" : [
+					"c3350433-e5d5-0d00-be4a-a52f0bf47be3"
+				],
+				"x" : 0.5404799171202765,
+				"y" : 0.6704799171202767,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "26350433-e5d5-0d00-be3f-06420bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5438412291933421,
+			"y" : 0.7110983891659931,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.0833333333333333,
+				"y" : -0.75,
+				"text" : "ANALYSIS"
+			},
+			"pipeline" : {
+				"inner_nodes" : [
+					"da350433-e5d5-0d00-be4c-c4f90bf47be3"
+				],
+				"x" : 0.3938412291933419,
+				"y" : 0.5538412291933421,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "31350433-e5d5-0d00-be40-eaa30bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.54,
+			"y" : 0.5382887881553787,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.6666666666666667,
+				"y" : -1.0,
+				"text" : "SYSTEM AWARENESS"
+			},
+			"pipeline" : {
+				"inner_nodes" : [
+					"e6350433-e5d5-0d00-be4d-edbb0bf47be3"
+				],
+				"x" : 0.53,
+				"y" : 0.73,
+				"is_visible" : true
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "7a350433-e5d5-0d00-be43-6fc90bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.72,
+			"y" : 0.2598653706417932,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 7.333333333333333,
+				"y" : 0.4166666666666667,
+				"text" : "Manual inspection"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "98350433-e5d5-0d00-be46-c06d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5400754054105196,
+			"y" : 0.8549418104578065,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -5.833333333333333,
+				"y" : 0.4166666666666667,
+				"text" : "Monolithic tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "ad350433-e5d5-0d00-be48-e4d90bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7,
+			"y" : 0.12,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.25,
+				"y" : 0.5,
+				"text" : "Gut feel driven"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6604799171202766,
+			"y" : 0.3941750734716453,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 5.333333333333333,
+				"y" : 0.5,
+				"text" : "Data centric"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "da350433-e5d5-0d00-be4c-c4f90bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.4038412291933419,
+			"y" : 0.7110983891659931,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -4.833333333333333,
+				"y" : 0.5,
+				"text" : "Manual views"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.72,
+			"y" : 0.5382887881553787,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.1666666666666667,
+				"y" : 2.5833333333333335,
+				"text" : "Belief based"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		},
+		{
+			"id" : "0d84d79b-e7d5-0d00-be61-18a50bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5928074228898879,
+			"y" : 0.045851373777632744,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : -1.3333333333333333,
+				"text" : "Developers"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_evolve_target" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "72330433-e5d5-0d00-be39-f20a0bf47be3",
+			"to" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "ad350433-e5d5-0d00-be48-e4d90bf47be3",
+			"to" : "7a350433-e5d5-0d00-be43-6fc90bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "7a350433-e5d5-0d00-be43-6fc90bf47be3",
+			"to" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "da350433-e5d5-0d00-be4c-c4f90bf47be3",
+			"to" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3",
+			"to" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "da350433-e5d5-0d00-be4c-c4f90bf47be3",
+			"to" : "98350433-e5d5-0d00-be46-c06d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "0d84d79b-e7d5-0d00-be61-18a50bf47be3",
+			"to" : "12350433-e5d5-0d00-be3d-327d0bf47be3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		}
+	]
+}'
 ]
 
 { #category : #accessing }

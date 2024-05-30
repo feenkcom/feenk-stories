@@ -34,17 +34,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-28T20:31:22.257541+02:00"
+									"dateAndTimeString" : "2024-05-30T11:54:42.695642+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "qUAM9dfVDQC5aE1JC/R74w=="
 							},
-							"code" : "(GtPager\r\tcreateWrappedOn: (GtPresenterSlideShow create: FkMoldableDevelopmentCraftConf2024Show new))\r\tmaximized",
-							"elementHeight" : 565,
-							"codeHeight" : 90,
-							"codeVisible" : true
+							"code" : "GtPresenterSlideShow create: FkMoldableDevelopmentCraftConf2024Show new",
+							"elementHeight" : 536,
+							"codeHeight" : 45,
+							"codeVisible" : false
 						}
 					]
 				},

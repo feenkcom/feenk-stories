@@ -34,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-28T20:31:22.257541+02:00"
+									"dateAndTimeString" : "2024-05-30T11:54:42.695642+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "qUAM9dfVDQC5aE1JC/R74w=="
 							},
-							"code" : "(GtPager\r\tcreateWrappedOn: (GtPresenterSlideShow create: FkMoldableDevelopmentCraftConf2024Show new))\r\tmaximized",
+							"code" : "GtPresenterSlideShow create: FkMoldableDevelopmentCraftConf2024Show new",
 							"elementHeight" : 565,
 							"codeHeight" : 90,
 							"codeVisible" : true
@@ -109,48 +109,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-28T21:15:49.405856+02:00"
+									"dateAndTimeString" : "2024-05-30T10:55:37.483155+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "YqgbMurVDQCNIu79BowArA=="
 							},
-							"code" : "Metacello new\r\trepository: 'github://feenkcom/feenk-stories:main/src';\r\tbaseline: 'FeenkMoldableDevelopmentCraftConf2024';\r\tload."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-28T21:11:55.764957+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-28T21:15:36.9853+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "TDnsJOrVDQCLaNdkBowArA=="
-							},
-							"code" : "#BaselineOfFeenkMoldableDevelopmentCraftConf2024 asClass loadDependencies"
+							"code" : "Metacello new\r\trepository: 'github://feenkcom/feenk-stories:main/src';\r\tbaseline: 'FeenkMoldableDevelopmentCraftConf2024';\r\tload.\r#BaselineOfFeenkMoldableDevelopmentCraftConf2024 asClass loadDependencies"
 						}
 					]
 				},
