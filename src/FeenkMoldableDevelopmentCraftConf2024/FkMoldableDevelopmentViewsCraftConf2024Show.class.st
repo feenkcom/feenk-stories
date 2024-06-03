@@ -141,7 +141,7 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide201LudoInspectors: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectors: aSlide [
+FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectorsExploded: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
 	| scripter element |
@@ -149,7 +149,7 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectors: aSlide [
 		priority: 202;
 		element: [ scripter := GtInspectorScripterExamples new
 					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
-					WithPlaygroundTextAndDoit: 'self moves last'.
+					withPlaygroundTextAndDoit: 'self moves last'.
 			element := scripter elementWithoutParent.
 			GtPresenterElementExplosion new
 				layerQuery: BlElementLazyQuery new // GtPagerPageElement

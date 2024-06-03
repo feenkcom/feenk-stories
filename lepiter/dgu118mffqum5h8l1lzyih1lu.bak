@@ -42,9 +42,9 @@
 								"uidString" : "qUAM9dfVDQC5aE1JC/R74w=="
 							},
 							"code" : "GtPresenterSlideShow create: FkMoldableDevelopmentCraftConf2024Show new",
-							"elementHeight" : 565,
-							"codeHeight" : 90,
-							"codeVisible" : true
+							"elementHeight" : 605,
+							"codeHeight" : 45,
+							"codeVisible" : false
 						}
 					]
 				},
