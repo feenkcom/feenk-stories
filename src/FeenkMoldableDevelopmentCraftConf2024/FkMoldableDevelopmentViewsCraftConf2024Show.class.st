@@ -152,6 +152,8 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectorsExploded: a
 					withPlaygroundTextAndDoit: 'self moves last'.
 			element := scripter elementWithoutParent.
 			GtPresenterElementExplosion new
+				preferredLayerExtent: 800 @ 400;
+				baseLabelString: 'Frame';
 				layerQuery: BlElementLazyQuery new // GtPagerPageElement
 					label: 'Flow composition';
 				layerQuery: BlElementLazyQuery new // #tool
