@@ -1985,9 +1985,9 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 7.333333333333333,
+				"x" : 4.166666666666667,
 				"y" : 0.4166666666666667,
-				"text" : "Manual inspection"
+				"text" : "Ad hoc"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -2033,7 +2033,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.25,
+				"x" : 6.0,
 				"y" : 0.5,
 				"text" : "Gut feel driven"
 			},
@@ -2059,7 +2059,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"label" : {
 				"x" : 5.333333333333333,
 				"y" : 0.5,
-				"text" : "Data centric"
+				"text" : "\"Data centric\""
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -2105,8 +2105,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.1666666666666667,
-				"y" : 2.5833333333333335,
+				"x" : 5.0,
+				"y" : 0.4166666666666667,
 				"text" : "Belief based"
 			},
 			"pipeline" : {
@@ -2493,9 +2493,9 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 7.333333333333333,
+				"x" : 4.166666666666667,
 				"y" : 0.4166666666666667,
-				"text" : "Manual inspection"
+				"text" : "Ad hoc"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -2613,7 +2613,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.25,
+				"x" : 6.0,
 				"y" : 0.5,
 				"text" : "Gut feel driven"
 			},
@@ -2637,8 +2637,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.833333333333333,
-				"y" : 0.4166666666666667,
+				"x" : -4.416666666666667,
+				"y" : 0.3333333333333333,
 				"text" : "Model centric"
 			},
 			"pipeline" : {
@@ -2663,7 +2663,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"label" : {
 				"x" : 5.333333333333333,
 				"y" : 0.5,
-				"text" : "Data centric"
+				"text" : "\"Data centric\""
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -2733,8 +2733,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.1666666666666667,
-				"y" : 2.5833333333333335,
+				"x" : 5.0,
+				"y" : 0.4166666666666667,
 				"text" : "Belief based"
 			},
 			"pipeline" : {
@@ -2757,9 +2757,9 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapJsonMoldableDevelopmentWithT
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -0.25,
-				"y" : 2.5,
-				"text" : "Evidence based"
+				"x" : -3.9166666666666665,
+				"y" : 0.4166666666666667,
+				"text" : "Inspectable"
 			},
 			"pipeline" : {
 				"is_visible" : false
