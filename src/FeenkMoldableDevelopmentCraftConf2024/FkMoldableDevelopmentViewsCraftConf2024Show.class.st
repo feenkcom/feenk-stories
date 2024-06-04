@@ -135,14 +135,13 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide132ViewedObjects: aSlide [
 FkMoldableDevelopmentViewsCraftConf2024Show >> slide201LudoInspectors: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
-	| scripter |
 	^ aSlide element
 		priority: 201;
-		element: [  "GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"scripter := GtInspectorScripterExamples
+		element: [  GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"scripter := GtInspectorScripterExamples
 					new
 					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
 					withPlaygroundTextAndDoit: 'self moves last'.
-			scripter elementWithoutParent ]
+			scripter elementWithoutParent "]
 ]
 
 { #category : #accessing }
