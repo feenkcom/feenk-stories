@@ -219,7 +219,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-28T15:17:47.638812+02:00"
+									"dateAndTimeString" : "2024-06-04T15:28:42.397617+02:00"
 								}
 							},
 							"uid" : {
@@ -229,7 +229,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Mapping Moldable Development @ CraftConf 2024]]"
+							"string" : "[[Explaining Decision Making @ CraftConf 2024]]"
 						}
 					]
 				},

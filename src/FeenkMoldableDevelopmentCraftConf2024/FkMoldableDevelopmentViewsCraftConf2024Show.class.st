@@ -135,9 +135,14 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide132ViewedObjects: aSlide [
 FkMoldableDevelopmentViewsCraftConf2024Show >> slide201LudoInspectors: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
+	| scripter |
 	^ aSlide element
-		priority: 202;
-		element: [ GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3 ]
+		priority: 201;
+		element: [  "GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"scripter := GtInspectorScripterExamples
+					new
+					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
+					withPlaygroundTextAndDoit: 'self moves last'.
+			scripter elementWithoutParent ]
 ]
 
 { #category : #accessing }
@@ -152,14 +157,14 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectorsExploded: a
 					withPlaygroundTextAndDoit: 'self moves last'.
 			element := scripter elementWithoutParent.
 			GtPresenterElementExplosion new
-				preferredLayerExtent: 800 @ 400;
-				baseLabelString: 'Frame';
-				layerQuery: BlElementLazyQuery new // GtPagerPageElement
-					label: 'Flow composition';
-				layerQuery: BlElementLazyQuery new // #tool
-					label: 'Composable snippets and views';
-				layerQuery: BlElementLazyQuery new // GtPhlowCompositeViewElementId
-							// [ :each | each phlow isViewContent ]
-					label: 'Embeddable content';
-				explode: element ]
+						preferredLayerExtent: 800 @ 400;
+						baseLabelString: 'Frame';
+						layerQuery: BlElementLazyQuery new // GtPagerPageElement
+							label: 'Flow composition';
+						layerQuery: BlElementLazyQuery new // #tool
+							label: 'Composable snippets and views';
+						layerQuery: BlElementLazyQuery new // GtPhlowCompositeViewElementId
+									// [ :each | each phlow isViewContent ]
+							label: 'Embeddable content';
+						explode: element ]
 ]

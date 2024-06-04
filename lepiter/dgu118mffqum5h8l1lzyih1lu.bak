@@ -44,7 +44,7 @@
 							"code" : "GtPresenterSlideShow create: FkMoldableDevelopmentCraftConf2024Show new",
 							"elementHeight" : 605,
 							"codeHeight" : 45,
-							"codeVisible" : false
+							"codeVisible" : true
 						}
 					]
 				},

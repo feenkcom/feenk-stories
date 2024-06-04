@@ -87,6 +87,12 @@
 								"__type" : "uuid",
 								"uuid" : "72330433-e5d5-0d00-be39-f20a0bf47be3"
 							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
 							"to" : {
 								"__type" : "uuid",
 								"uuid" : "12350433-e5d5-0d00-be3d-327d0bf47be3"
@@ -105,6 +111,12 @@
 								"__type" : "uuid",
 								"uuid" : "83350433-e5d5-0d00-be44-2b950bf47be3"
 							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
 							"to" : {
 								"__type" : "uuid",
 								"uuid" : "b8350433-e5d5-0d00-be49-8f340bf47be3"
@@ -121,25 +133,13 @@
 							},
 							"from" : {
 								"__type" : "uuid",
-								"uuid" : "ad350433-e5d5-0d00-be48-e4d90bf47be3"
-							},
-							"to" : {
-								"__type" : "uuid",
-								"uuid" : "7a350433-e5d5-0d00-be43-6fc90bf47be3"
-							},
-							"width" : 1.0
-						},
-						{
-							"arrow" : false,
-							"color" : {
-								"alpha" : 1.0,
-								"blue" : 0.0,
-								"green" : 0.0,
-								"red" : 0.0
-							},
-							"from" : {
-								"__type" : "uuid",
 								"uuid" : "da350433-e5d5-0d00-be4c-c4f90bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -158,6 +158,12 @@
 							"from" : {
 								"__type" : "uuid",
 								"uuid" : "98350433-e5d5-0d00-be46-c06d0bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -177,6 +183,12 @@
 								"__type" : "uuid",
 								"uuid" : "7a350433-e5d5-0d00-be43-6fc90bf47be3"
 							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
 							"to" : {
 								"__type" : "uuid",
 								"uuid" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3"
@@ -193,97 +205,13 @@
 							},
 							"from" : {
 								"__type" : "uuid",
-								"uuid" : "a3350433-e5d5-0d00-be47-72cc0bf47be3"
-							},
-							"to" : {
-								"__type" : "uuid",
-								"uuid" : "83350433-e5d5-0d00-be44-2b950bf47be3"
-							},
-							"width" : 1.0
-						},
-						{
-							"arrow" : false,
-							"color" : {
-								"alpha" : 1.0,
-								"blue" : 0.0,
-								"green" : 0.0,
-								"red" : 0.0
-							},
-							"from" : {
-								"__type" : "uuid",
 								"uuid" : "cf350433-e5d5-0d00-be4b-dab10bf47be3"
 							},
-							"to" : {
-								"__type" : "uuid",
-								"uuid" : "f1350433-e5d5-0d00-be4e-9ee00bf47be3"
-							},
-							"width" : 1.0
-						},
-						{
-							"arrow" : false,
-							"color" : {
-								"alpha" : 1.0,
-								"blue" : 0.0,
-								"green" : 0.0,
-								"red" : 0.0
-							},
-							"from" : {
-								"__type" : "uuid",
-								"uuid" : "da350433-e5d5-0d00-be4c-c4f90bf47be3"
-							},
-							"to" : {
-								"__type" : "uuid",
-								"uuid" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3"
-							},
-							"width" : 1.0
-						},
-						{
-							"arrow" : false,
-							"color" : {
-								"alpha" : 1.0,
-								"blue" : 0.0,
-								"green" : 0.0,
-								"red" : 0.0
-							},
-							"from" : {
-								"__type" : "uuid",
-								"uuid" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3"
-							},
-							"to" : {
-								"__type" : "uuid",
-								"uuid" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3"
-							},
-							"width" : 1.0
-						},
-						{
-							"arrow" : false,
-							"color" : {
-								"alpha" : 1.0,
-								"blue" : 0.0,
-								"green" : 0.0,
-								"red" : 0.0
-							},
-							"from" : {
-								"__type" : "uuid",
-								"uuid" : "b8350433-e5d5-0d00-be49-8f340bf47be3"
-							},
-							"to" : {
-								"__type" : "uuid",
-								"uuid" : "f1350433-e5d5-0d00-be4e-9ee00bf47be3"
-							},
-							"width" : 1.0
-						},
-						{
-							"arrow" : false,
-							"color" : {
-								"alpha" : 1.0,
-								"blue" : 0.0,
-								"green" : 0.0,
-								"red" : 0.0
-							},
-							"from" : {
-								"__type" : "uuid",
-								"uuid" : "cf350433-e5d5-0d00-be4b-dab10bf47be3"
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -303,6 +231,12 @@
 								"__type" : "uuid",
 								"uuid" : "da350433-e5d5-0d00-be4c-c4f90bf47be3"
 							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
 							"to" : {
 								"__type" : "uuid",
 								"uuid" : "98350433-e5d5-0d00-be46-c06d0bf47be3"
@@ -320,6 +254,12 @@
 							"from" : {
 								"__type" : "uuid",
 								"uuid" : "98350433-e5d5-0d00-be46-c06d0bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -338,6 +278,12 @@
 							"from" : {
 								"__type" : "uuid",
 								"uuid" : "8e350433-e5d5-0d00-be45-6c660bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -356,6 +302,12 @@
 							"from" : {
 								"__type" : "uuid",
 								"uuid" : "65350433-e5d5-0d00-be41-a11d0bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -374,6 +326,12 @@
 							"from" : {
 								"__type" : "uuid",
 								"uuid" : "83350433-e5d5-0d00-be44-2b950bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -393,6 +351,12 @@
 								"__type" : "uuid",
 								"uuid" : "a3350433-e5d5-0d00-be47-72cc0bf47be3"
 							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
 							"to" : {
 								"__type" : "uuid",
 								"uuid" : "833a0433-e5d5-0d00-be50-c2590bf47be3"
@@ -410,6 +374,12 @@
 							"from" : {
 								"__type" : "uuid",
 								"uuid" : "b8350433-e5d5-0d00-be49-8f340bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
 							},
 							"to" : {
 								"__type" : "uuid",
@@ -429,9 +399,159 @@
 								"__type" : "uuid",
 								"uuid" : "f1350433-e5d5-0d00-be4e-9ee00bf47be3"
 							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
 							"to" : {
 								"__type" : "uuid",
 								"uuid" : "fd3a0433-e5d5-0d00-be52-e2e90bf47be3"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "c3350433-e5d5-0d00-be4a-a52f0bf47be3"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "f1350433-e5d5-0d00-be4e-9ee00bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "b8350433-e5d5-0d00-be49-8f340bf47be3"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "da350433-e5d5-0d00-be4c-c4f90bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "e6350433-e5d5-0d00-be4d-edbb0bf47be3"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "f1350433-e5d5-0d00-be4e-9ee00bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "cf350433-e5d5-0d00-be4b-dab10bf47be3"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "a3350433-e5d5-0d00-be47-72cc0bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "83350433-e5d5-0d00-be44-2b950bf47be3"
+							},
+							"width" : 1.0
+						},
+						{
+							"arrow" : false,
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"from" : {
+								"__type" : "uuid",
+								"uuid" : "ad350433-e5d5-0d00-be48-e4d90bf47be3"
+							},
+							"label" : {
+								"is_visible" : false,
+								"text" : "Edge label",
+								"x" : 0.5,
+								"y" : 0.5
+							},
+							"to" : {
+								"__type" : "uuid",
+								"uuid" : "7a350433-e5d5-0d00-be43-6fc90bf47be3"
 							},
 							"width" : 1.0
 						}
@@ -481,8 +601,8 @@
 							},
 							"label" : {
 								"text" : "CONCEPT OF SYSTEM",
-								"x" : -5.416666666666667,
-								"y" : -0.5833333333333334
+								"x" : -0.4166666666666667,
+								"y" : -1.0833333333333333
 							},
 							"pipeline" : {
 								"inner_nodes" : [
@@ -496,12 +616,12 @@
 									}
 								],
 								"is_visible" : true,
-								"x" : 0.51,
-								"y" : 0.75
+								"x" : 0.5321445221445221,
+								"y" : 0.7721445221445221
 							},
 							"width" : 12,
-							"x" : 0.65,
-							"y" : 0.9
+							"x" : 0.6721445221445221,
+							"y" : 0.8876373626373627
 						},
 						{
 							"color" : {
@@ -535,12 +655,12 @@
 									}
 								],
 								"is_visible" : true,
-								"x" : 0.15,
-								"y" : 0.73
+								"x" : 0.18041362530413627,
+								"y" : 0.7604136253041374
 							},
 							"width" : 12,
-							"x" : 0.55,
-							"y" : 0.24
+							"x" : 0.5738674906407957,
+							"y" : 0.24274725274725278
 						},
 						{
 							"color" : {
@@ -558,7 +678,7 @@
 								"uuid" : "05350433-e5d5-0d00-be3c-6bd40bf47be3"
 							},
 							"label" : {
-								"text" : "DEVX",
+								"text" : "DEVELOPMENT EXPERIENCE",
 								"x" : 0.5,
 								"y" : -1.0833333333333333
 							},
@@ -598,8 +718,8 @@
 							},
 							"label" : {
 								"text" : "INVESTIGATION",
-								"x" : 4.666666666666667,
-								"y" : -1.8333333333333333
+								"x" : 4.5,
+								"y" : -0.9166666666666666
 							},
 							"pipeline" : {
 								"inner_nodes" : [
@@ -652,12 +772,12 @@
 									}
 								],
 								"is_visible" : true,
-								"x" : 0.3,
-								"y" : 0.67
+								"x" : 0.3571776155717762,
+								"y" : 0.7271776155717753
 							},
 							"width" : 12,
-							"x" : 0.55,
-							"y" : 0.33999999999999997
+							"x" : 0.6071776155717754,
+							"y" : 0.37846153846153835
 						},
 						{
 							"color" : {
@@ -676,8 +796,8 @@
 							},
 							"label" : {
 								"text" : "ANALYSIS",
-								"x" : 0.6666666666666666,
-								"y" : -1.1666666666666667
+								"x" : 0.4166666666666667,
+								"y" : -0.8333333333333334
 							},
 							"pipeline" : {
 								"inner_nodes" : [
@@ -715,7 +835,7 @@
 							},
 							"label" : {
 								"text" : "SYSTEM AWARENESS",
-								"x" : 1.6666666666666667,
+								"x" : 0.4166666666666667,
 								"y" : -1.0
 							},
 							"pipeline" : {
@@ -730,12 +850,12 @@
 									}
 								],
 								"is_visible" : true,
-								"x" : 0.36,
-								"y" : 0.73
+								"x" : 0.36983317874474053,
+								"y" : 0.7398331787447373
 							},
 							"width" : 12,
-							"x" : 0.54,
-							"y" : 0.48
+							"x" : 0.5498331787447382,
+							"y" : 0.5157142857142858
 						},
 						{
 							"color" : {
@@ -761,8 +881,8 @@
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.52,
-							"y" : 0.9
+							"x" : 0.5421445221445221,
+							"y" : 0.8876373626373627
 						},
 						{
 							"color" : {
@@ -788,8 +908,8 @@
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.74,
-							"y" : 0.9
+							"x" : 0.7621445221445221,
+							"y" : 0.8876373626373627
 						},
 						{
 							"color" : {
@@ -807,16 +927,16 @@
 								"uuid" : "7a350433-e5d5-0d00-be43-6fc90bf47be3"
 							},
 							"label" : {
-								"text" : "Manual inspection",
-								"x" : 7.333333333333333,
+								"text" : "Ad hoc ",
+								"x" : 3.75,
 								"y" : 0.4166666666666667
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.72,
-							"y" : 0.24
+							"x" : 0.7504136253041374,
+							"y" : 0.24274725274725278
 						},
 						{
 							"color" : {
@@ -835,15 +955,15 @@
 							},
 							"label" : {
 								"text" : "Moldable Development",
-								"x" : -1.8333333333333333,
-								"y" : -1.75
+								"x" : -2.3333333333333335,
+								"y" : -1.8333333333333333
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.16,
-							"y" : 0.24
+							"x" : 0.19041362530413627,
+							"y" : 0.24274725274725278
 						},
 						{
 							"color" : {
@@ -862,8 +982,8 @@
 							},
 							"label" : {
 								"text" : "Composable micro tools (tools as plugins)",
-								"x" : 12.75,
-								"y" : 0.16666666666666666
+								"x" : 12.333333333333334,
+								"y" : 0.5
 							},
 							"pipeline" : {
 								"is_visible" : false
@@ -970,15 +1090,15 @@
 							},
 							"label" : {
 								"text" : "Model centric",
-								"x" : -4.833333333333333,
-								"y" : 0.4166666666666667
+								"x" : -4.416666666666667,
+								"y" : 0.3333333333333333
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.31,
-							"y" : 0.33999999999999997
+							"x" : 0.3671776155717762,
+							"y" : 0.37846153846153835
 						},
 						{
 							"color" : {
@@ -997,15 +1117,15 @@
 							},
 							"label" : {
 								"text" : "Data centric",
-								"x" : 5.333333333333333,
-								"y" : 0.5
+								"x" : 5.5,
+								"y" : 0.4166666666666667
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.66,
-							"y" : 0.33999999999999997
+							"x" : 0.7171776155717753,
+							"y" : 0.37846153846153835
 						},
 						{
 							"color" : {
@@ -1024,8 +1144,8 @@
 							},
 							"label" : {
 								"text" : "Generated views",
-								"x" : 6.666666666666667,
-								"y" : 0.5
+								"x" : 6.083333333333333,
+								"y" : 0.4166666666666667
 							},
 							"pipeline" : {
 								"is_visible" : false
@@ -1078,15 +1198,15 @@
 							},
 							"label" : {
 								"text" : "Belief based",
-								"x" : -0.08333333333333333,
-								"y" : 2.5
+								"x" : 0.16666666666666666,
+								"y" : 2.3333333333333335
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.72,
-							"y" : 0.48
+							"x" : 0.7298331787447373,
+							"y" : 0.5157142857142858
 						},
 						{
 							"color" : {
@@ -1105,15 +1225,15 @@
 							},
 							"label" : {
 								"text" : "Inspectable",
-								"x" : -0.25,
-								"y" : 2.5
+								"x" : -0.08333333333333333,
+								"y" : 2.4166666666666665
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.37,
-							"y" : 0.48
+							"x" : 0.3798331787447405,
+							"y" : 0.5157142857142858
 						},
 						{
 							"color" : {
@@ -1144,7 +1264,7 @@
 							},
 							"width" : 12,
 							"x" : 0.4,
-							"y" : 0.24
+							"y" : 0.24274725274725278
 						},
 						{
 							"color" : {
@@ -1206,7 +1326,7 @@
 							},
 							"width" : 12,
 							"x" : 0.54,
-							"y" : 0.33999999999999997
+							"y" : 0.37846153846153835
 						},
 						{
 							"color" : {
@@ -1229,15 +1349,15 @@
 							},
 							"label" : {
 								"text" : "Inspectable",
-								"x" : 63.083333333333336,
-								"y" : 2.6666666666666665
+								"x" : 72.33333333333333,
+								"y" : 2.0833333333333335
 							},
 							"pipeline" : {
 								"is_visible" : false
 							},
 							"width" : 12,
-							"x" : 0.57,
-							"y" : 0.48
+							"x" : 0.4957907542579075,
+							"y" : 0.5157142857142858
 						}
 					],
 					"notes" : [
@@ -1253,8 +1373,8 @@
 								"uuid" : "9f3b0433-e5d5-0d00-be53-42160bf47be3"
 							},
 							"label" : "Tools are like cattle not pets (DevX as Code)",
-							"x" : 0.87,
-							"y" : 0.8200000000000001
+							"x" : 0.8672706903823849,
+							"y" : 0.8280834119597901
 						},
 						{
 							"color" : {
@@ -1268,8 +1388,8 @@
 								"uuid" : "d93b0433-e5d5-0d00-be54-f1a10bf47be3"
 							},
 							"label" : "MTTRH  (mean time to right hypothesis)",
-							"x" : 0.68,
-							"y" : 0.07999999999999996
+							"x" : 0.5584714075697698,
+							"y" : 0.07469709917528261
 						},
 						{
 							"color" : {
@@ -1283,8 +1403,8 @@
 								"uuid" : "f13b0433-e5d5-0d00-be55-b8b70bf47be3"
 							},
 							"label" : "MTTQ (mean time to question)",
-							"x" : 0.63,
-							"y" : 0.62
+							"x" : 0.6126779763544552,
+							"y" : 0.328223979185399
 						},
 						{
 							"color" : {
@@ -1298,8 +1418,8 @@
 								"uuid" : "fe3b0433-e5d5-0d00-be56-08700bf47be3"
 							},
 							"label" : "MTTE (mean time to evidence)",
-							"x" : 0.66,
-							"y" : 0.20999999999999996
+							"x" : 0.5781134933938048,
+							"y" : 0.1919251711177488
 						},
 						{
 							"color" : {
@@ -1312,9 +1432,9 @@
 								"__type" : "uuid",
 								"uuid" : "093c0433-e5d5-0d00-be57-ff650bf47be3"
 							},
-							"label" : "MTTA(mean time to answer)",
-							"x" : 0.62,
-							"y" : 0.45999999999999996
+							"label" : "MTTA (mean time to answer)",
+							"x" : 0.5497763007448101,
+							"y" : 0.46144226263168864
 						},
 						{
 							"color" : {
@@ -1328,8 +1448,8 @@
 								"uuid" : "153c0433-e5d5-0d00-be58-58020bf47be3"
 							},
 							"label" : "+Observability",
-							"x" : 0.47,
-							"y" : 0.53
+							"x" : 0.4987363661669393,
+							"y" : 0.5612875439505332
 						},
 						{
 							"color" : {
@@ -1343,8 +1463,8 @@
 								"uuid" : "203c0433-e5d5-0d00-be59-07080bf47be3"
 							},
 							"label" : "+Plugins (eg, VS Code)",
-							"x" : 0.67,
-							"y" : 0.83
+							"x" : 0.6607407407407407,
+							"y" : 0.8209729187562688
 						},
 						{
 							"color" : {
@@ -1358,8 +1478,8 @@
 								"uuid" : "2c3c0433-e5d5-0d00-be5a-d51a0bf47be3"
 							},
 							"label" : "eg, honeycomb.io, gtoolkit.com",
-							"x" : 0.54,
-							"y" : 0.7
+							"x" : 0.5534157880508246,
+							"y" : 0.6970998159313105
 						},
 						{
 							"color" : {
@@ -1373,8 +1493,8 @@
 								"uuid" : "373c0433-e5d5-0d00-be5b-c8130bf47be3"
 							},
 							"label" : "eg, Wardley Mapping",
-							"x" : 0.4,
-							"y" : 0.4
+							"x" : 0.4352125929211868,
+							"y" : 0.42226046270680173
 						},
 						{
 							"color" : {
@@ -1388,8 +1508,8 @@
 								"uuid" : "433c0433-e5d5-0d00-be5c-68740bf47be3"
 							},
 							"label" : "eg, Scientific method",
-							"x" : 0.4,
-							"y" : 0.16000000000000003
+							"x" : 0.45309100621600623,
+							"y" : 0.1671701129566148
 						},
 						{
 							"color" : {
@@ -1402,9 +1522,9 @@
 								"__type" : "uuid",
 								"uuid" : "4e3c0433-e5d5-0d00-be5d-cd890bf47be3"
 							},
-							"label" : "eg, system's diagrams",
-							"x" : 0.79,
-							"y" : 0.5
+							"label" : "eg, system diagrams",
+							"x" : 0.7885208948396282,
+							"y" : 0.5671340945914668
 						},
 						{
 							"color" : {
@@ -1418,12 +1538,27 @@
 								"uuid" : "5a3c0433-e5d5-0d00-be5e-edfc0bf47be3"
 							},
 							"label" : "ie, contextual & evolving",
-							"x" : 0.83,
-							"y" : 0.95
+							"x" : 0.8625675321626026,
+							"y" : 0.9173330073442546
+						},
+						{
+							"color" : {
+								"alpha" : 1.0,
+								"blue" : 0.0,
+								"green" : 0.0,
+								"red" : 0.0
+							},
+							"id" : {
+								"__type" : "uuid",
+								"uuid" : "a5c6d5f5-71d6-0d00-8ee2-123b04eb5638"
+							},
+							"label" : "MTTDT (mean time to dedicated tool)",
+							"x" : 0.7647705893632282,
+							"y" : 0.7518297132554945
 						}
 					]
 				},
-				"snippetHeight" : 717
+				"snippetHeight" : 728
 			}
 		]
 	},
@@ -1446,12 +1581,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-05-28T15:17:48.531885+02:00"
+			"dateAndTimeString" : "2024-06-04T15:28:42.385863+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Mapping Moldable Development @ CraftConf 2024"
+		"title" : "Explaining Decision Making @ CraftConf 2024"
 	},
 	"uid" : {
 		"__type" : "uuid",
