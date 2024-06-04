@@ -22,17 +22,3 @@ FeenkStoriesHomeSection >> tocCard [
 		databaseName: 'feenkcom/feenk-stories/lepiter';
 		yourself
 ]
-
-{ #category : #accessing }
-FeenkStoriesHomeSection >> vamosCard [
-	<gtSectionCard>
-	<gtExample>
-	<notest>
-	^ GtHomeCard page
-		title: 'VAMOS';
-		description: 'Slideshow for VAMOS 2024';
-		priority: 20;
-		pageName: 'VAMOS 2024';
-		databaseName: 'feenkcom/feenk-stories/lepiter';
-		yourself
-]
