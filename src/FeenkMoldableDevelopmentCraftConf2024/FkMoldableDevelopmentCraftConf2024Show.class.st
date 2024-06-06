@@ -135,10 +135,10 @@ FkMoldableDevelopmentCraftConf2024Show >> slide001Title: aSlide [
 		titleWithFormat: ('moldable development' asRopedText 
 			fontSize: 70;
 			glamorousCodeFont;
-			bold);
+			bold)";
 		subtitleWithFormat: ('@girba' asRopedText 
 			fontSize: 40;
-			glamorousCodeFont)
+			glamorousCodeFont)"
 ]
 
 { #category : #accessing }

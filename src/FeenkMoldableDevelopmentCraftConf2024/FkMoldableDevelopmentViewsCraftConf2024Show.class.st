@@ -163,8 +163,9 @@ FkMoldableDevelopmentViewsCraftConf2024Show >> slide202LudoInspectorsExploded: a
 							label: 'Flow composition';
 						layerQuery: BlElementLazyQuery new // #tool
 							label: 'Composable snippets and views';
-						layerQuery: BlElementLazyQuery new // GtPhlowCompositeViewElementId
-									// [ :each | each phlow isViewContent ]
+						layerQuery: BlElementLazyQuery new
+									// [ :each | each phlow isViewContent or: [ 
+						each class = LePharoSnippetElement ] ]
 							label: 'Embeddable content';
 						explode: element ]
 ]
