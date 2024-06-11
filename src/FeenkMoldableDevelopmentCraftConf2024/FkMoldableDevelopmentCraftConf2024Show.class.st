@@ -373,7 +373,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementWithActionsFromJson: 
 		nodeWithName: 'INVESTIGATION'
 		ifFound: [ :aNode | 
 			aNode
-				decorators: {GtWardleyMapMaximizerAction new
+				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ GtPresenterSlideShow create: FkDbMigrationCraftConf2024Show new ]} ]
 		ifNone: [  ].
@@ -381,7 +381,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementWithActionsFromJson: 
 		nodeWithName: 'EXPLORATION'
 		ifFound: [ :aNode | 
 			aNode
-				decorators: {GtWardleyMapMaximizerAction new
+				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ (self
 									pagerWithPageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects'
@@ -391,7 +391,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementWithActionsFromJson: 
 		nodeWithName: 'CONVERSATION'
 		ifFound: [ :aNode | 
 			aNode
-				decorators: {GtWardleyMapMaximizerAction new
+				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ (self
 									pagerWithPageNamed: 'Executable domain-driven design: the Ludo game case study'
@@ -401,7 +401,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementWithActionsFromJson: 
 		nodeWithName: 'ANALYSIS'
 		ifFound: [ :aNode | 
 			aNode
-				decorators: {GtWardleyMapMaximizerAction new
+				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ self
 									pagerWithPageNamed: 'Analyzing Ruby on Rails: the Whitehall case study'
@@ -411,7 +411,7 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementWithActionsFromJson: 
 		nodeWithName: 'DEVELOPMENT EXPERIENCE'
 		ifFound: [ :aNode | 
 			aNode
-				decorators: {GtWardleyMapMaximizerAction new
+				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
 		ifNone: [  ].

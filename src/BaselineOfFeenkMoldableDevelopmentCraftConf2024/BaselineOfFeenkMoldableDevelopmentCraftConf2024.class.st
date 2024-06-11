@@ -17,9 +17,7 @@ BaselineOfFeenkMoldableDevelopmentCraftConf2024 class >> loadAtProtoSources [
 
 { #category : #accessing }
 BaselineOfFeenkMoldableDevelopmentCraftConf2024 class >> loadDependencies [
-"	self loadGt4AtProto.
-	self loadAtProtoSources."
-	self loadF1Demo
+	self loadWhitehallSources
 ]
 
 { #category : #accessing }
@@ -38,6 +36,16 @@ BaselineOfFeenkMoldableDevelopmentCraftConf2024 class >> loadGt4AtProto [
 		baseline: 'Gt4AtProto';
 		load.
 	#BaselineOfGt4AtProto asClass loadLepiter
+]
+
+{ #category : #accessing }
+BaselineOfFeenkMoldableDevelopmentCraftConf2024 class >> loadWhitehallSources [
+	| rootDirectory |
+	rootDirectory := 'whitehall' asFileReference.
+	rootDirectory ensureDeleteAll.
+	IceRepositoryCreator
+		fromUrl: 'git@github.com:alphagov/whitehall.git'
+		to: rootDirectory.
 ]
 
 { #category : #accessing }
