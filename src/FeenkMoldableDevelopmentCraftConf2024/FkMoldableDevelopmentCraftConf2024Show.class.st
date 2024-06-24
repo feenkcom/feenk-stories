@@ -315,13 +315,8 @@ FkMoldableDevelopmentCraftConf2024Show >> wardleyMapElementForJson: json [
 	model := GtWardleyMapFromDictionaryImporter importMapFromJSONString: json.
 	aWardleyMapViewModel := GtWardleyMapViewModel new.
 	aWardleyMapViewModel wardleyMapModel: model.
-	aWardleyMapElement := GtWardleyMapElement new.
+	aWardleyMapElement := GtWardleyMapElement withDefaultSections.
 	aWardleyMapElement wardleyMapViewModel: aWardleyMapViewModel.
-	aWardleyMapElement
-		evolutionSections: {'genesis'.
-				'custom built'.
-				'product (+rental)'.
-				'commodity'}.
 	^ aWardleyMapElement
 ]
 
