@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:19:22.080792+01:00"
+						"dateAndTimeString" : "2024-07-04T22:00:59.648452+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "WrtThW3LDQCRZRHkA1p5Fg=="
 				},
-				"code" : "Metacello new\n\t\trepository: 'github://feenkcom/feenk-stories:main/src';\n\t\tbaseline: 'FeenkGlamorousToolkitESUG2023';\n\t\tload."
+				"code" : "Metacello new\n\trepository: 'github://feenkcom/feenk-stories:main/src';\n\tbaseline: 'FeenkGlamorousToolkitESUG2023';\n\tload."
 			},
 			{
 				"__type" : "textSnippet",

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-03T00:14:43.230951+02:00"
+						"dateAndTimeString" : "2024-01-16T09:23:35.395762+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-03T00:17:40.134855+02:00"
+						"dateAndTimeString" : "2024-01-16T09:23:41.565648+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "BqEUx6zYDQC8zo3yC8iH3g=="
+					"uidString" : "T46Dc23LDQCQLiqCA1p5Fg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Slideshows for ESUG 2024. TBD"
+				"string" : "Slideshows for ESUG 2023."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:00:42.226612+02:00"
+						"dateAndTimeString" : "2024-01-16T09:19:05.969895+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,122 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:01:05.019502+02:00"
+						"dateAndTimeString" : "2024-01-16T09:19:22.080792+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sl17I9PYDQCwre4RDNwjJA=="
+					"uidString" : "WrtThW3LDQCRZRHkA1p5Fg=="
 				},
-				"code" : "Metacello new\n\trepository: 'github://feenkcom/feenk-stories:main/src';\n\tbaseline: 'FeenkGlamorousToolkitESUG2024';\n\tload."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:01:07.361652+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:01:15.665332+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "euX6JNPYDQCw4RtgDNwjJA=="
-				},
-				"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass loadDependencies."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:01:16.060946+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:01:21.718483+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Kqd/JdPYDQCxJ08EDNwjJA=="
-				},
-				"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass setupPythonDebugMode."
+				"code" : "Metacello new\n\t\trepository: 'github://feenkcom/feenk-stories:main/src';\n\t\tbaseline: 'FeenkGlamorousToolkitESUG2023';\n\t\tload."
 			},
 			{
 				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:08:51.017487+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:09:01.226321+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "oLqdQNPYDQCyUAWCDNwjJA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "#Moldable Debugging slideshow"
-			},
-			{
-				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [
@@ -199,7 +94,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-07-04T22:33:24.081764+02:00"
+									"dateAndTimeString" : "2024-01-16T09:21:17.070883+01:00"
 								}
 							},
 							"editEmail" : {
@@ -210,14 +105,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-07-04T22:33:28.250676+02:00"
+									"dateAndTimeString" : "2024-01-16T09:23:46.501655+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "/+lqmNPYDQCz+1XGDNwjJA=="
+								"uidString" : "/yskjW3LDQCSjNCjA1p5Fg=="
 							},
-							"code" : "GtPresenterSlideShow openInSpace:#GtEsug2024MoldableDebugging asClass ."
+							"code" : "GtPresenterSlideShow openInSpace:#FkGt10ESUG2023Show asClass ."
 						}
 					]
 				},
@@ -229,7 +124,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:08:47.249448+02:00"
+						"dateAndTimeString" : "2024-01-16T09:24:03.396548+01:00"
 					}
 				},
 				"editEmail" : {
@@ -240,14 +135,89 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:16:45.237288+02:00"
+						"dateAndTimeString" : "2024-01-16T09:24:23.795601+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "5jVkQNPYDQCySw41DNwjJA=="
+					"uidString" : "MxkOl23LDQCUCrUEA1p5Fg=="
 				},
-				"code" : "#GtEsug2024MoldableDebugging asClass new."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Glamorous Toolkit 1.0"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-01-16T09:21:00.084906+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-01-16T09:21:16.375707+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "If0gjG3LDQCSPHShA1p5Fg=="
+							},
+							"code" : "#Esug2023GsIntegrationSlideshow asClass show."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-16T09:19:32.991699+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-16T09:25:23.404274+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cAzwhm3LDQCRvXR4A1p5Fg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# GemStone integration"
 			}
 		]
 	},
@@ -259,7 +229,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-07-03T00:14:43.196147+02:00"
+			"dateAndTimeString" : "2024-01-16T09:14:07.076802+01:00"
 		}
 	},
 	"editEmail" : {
@@ -270,15 +240,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-07-03T00:14:43.196147+02:00"
+			"dateAndTimeString" : "2024-01-16T09:14:07.076802+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "ESUG 2024"
+		"title" : "ESUG 2023"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "581814c7-acd8-0d00-bccd-52420bc887de"
+		"uuid" : "16fd8273-6dcb-0d00-902d-593a035a7916"
 	}
 }
