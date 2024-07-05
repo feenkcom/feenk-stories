@@ -30,6 +30,14 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadMapper [
 ]
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadNeoCsv [
+	Metacello new
+		repository: 'github://svenvc/NeoCSV/repository';
+		baseline: 'NeoCSV';
+		load.
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadRustLspModel [
 	GtLSPRustModel downloadExecutable.
 ]
