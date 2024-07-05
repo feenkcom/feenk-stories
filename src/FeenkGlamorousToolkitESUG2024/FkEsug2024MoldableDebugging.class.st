@@ -1,5 +1,5 @@
 Class {
-	#name : #GtEsug2024MoldableDebugging,
+	#name : #FkEsug2024MoldableDebugging,
 	#superclass : #DatabaseHolder,
 	#traits : 'TGtSlideShow',
 	#classTraits : 'TGtSlideShow classTrait',
@@ -7,7 +7,7 @@ Class {
 }
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> assertionFailurePage [
+FkEsug2024MoldableDebugging >> assertionFailurePage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -23,7 +23,7 @@ GtEsug2024MoldableDebugging >> assertionFailurePage [
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> contextExtensionsPage [
+FkEsug2024MoldableDebugging >> contextExtensionsPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -58,7 +58,7 @@ ZnClient new
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> debuggingGemStonePage [
+FkEsug2024MoldableDebugging >> debuggingGemStonePage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -71,7 +71,7 @@ GtEsug2024MoldableDebugging >> debuggingGemStonePage [
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> debuggingPythonPage [
+FkEsug2024MoldableDebugging >> debuggingPythonPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -88,7 +88,7 @@ tfactorial.factorial(5,1)';
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> debuggingSmaCCPage [
+FkEsug2024MoldableDebugging >> debuggingSmaCCPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -113,7 +113,7 @@ GtEsug2024MoldableDebugging >> debuggingSmaCCPage [
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> developingInPlaygroundPage [
+FkEsug2024MoldableDebugging >> developingInPlaygroundPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -131,7 +131,7 @@ action := MyAction new.');
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> extensionMechanismsPage [
+FkEsug2024MoldableDebugging >> extensionMechanismsPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -158,7 +158,7 @@ GtEsug2024MoldableDebugging >> extensionMechanismsPage [
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> phlowApiErrorPage [
+FkEsug2024MoldableDebugging >> phlowApiErrorPage [
 	<lePage>
 	<gtExample>
 	<noTest>
@@ -174,7 +174,7 @@ viewBuilder
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide010Title: aSlide [
+FkEsug2024MoldableDebugging >> slide010Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Andrei Chis. I work at feenk, and today I want to talk about how we approach debugging in Glamorous Toolkit.'>
 	
@@ -192,7 +192,7 @@ GtEsug2024MoldableDebugging >> slide010Title: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide020FromFullDebuggerToSmaCC: aSlide [
+FkEsug2024MoldableDebugging >> slide020FromFullDebuggerToSmaCC: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>
 
@@ -202,7 +202,7 @@ GtEsug2024MoldableDebugging >> slide020FromFullDebuggerToSmaCC: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide030DebuggingGemStone: aSlide [
+FkEsug2024MoldableDebugging >> slide030DebuggingGemStone: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>
 
@@ -212,7 +212,7 @@ GtEsug2024MoldableDebugging >> slide030DebuggingGemStone: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide040DebuggingPython: aSlide [
+FkEsug2024MoldableDebugging >> slide040DebuggingPython: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -222,7 +222,7 @@ GtEsug2024MoldableDebugging >> slide040DebuggingPython: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide050ExtensionMechanismInspector: aSlide [
+FkEsug2024MoldableDebugging >> slide050ExtensionMechanismInspector: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -236,7 +236,7 @@ GtEsug2024MoldableDebugging >> slide050ExtensionMechanismInspector: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide051ExtensionMechanismCount: aSlide [
+FkEsug2024MoldableDebugging >> slide051ExtensionMechanismCount: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -246,7 +246,7 @@ GtEsug2024MoldableDebugging >> slide051ExtensionMechanismCount: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide060ContextExtensions: aSlide [
+FkEsug2024MoldableDebugging >> slide060ContextExtensions: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -256,7 +256,7 @@ GtEsug2024MoldableDebugging >> slide060ContextExtensions: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide070AssertionFailure: aSlide [
+FkEsug2024MoldableDebugging >> slide070AssertionFailure: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -266,7 +266,7 @@ GtEsug2024MoldableDebugging >> slide070AssertionFailure: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide080PhlowApiError: aSlide [
+FkEsug2024MoldableDebugging >> slide080PhlowApiError: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -279,7 +279,7 @@ GtEsug2024MoldableDebugging >> slide080PhlowApiError: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide090ZincTooManyRedirects: aSlide [
+FkEsug2024MoldableDebugging >> slide090ZincTooManyRedirects: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -289,7 +289,7 @@ GtEsug2024MoldableDebugging >> slide090ZincTooManyRedirects: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide100DevelopingInPlayground: aSlide [
+FkEsug2024MoldableDebugging >> slide100DevelopingInPlayground: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -299,7 +299,7 @@ GtEsug2024MoldableDebugging >> slide100DevelopingInPlayground: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide110ShowingFalingAssertionsInCoder: aSlide [
+FkEsug2024MoldableDebugging >> slide110ShowingFalingAssertionsInCoder: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -311,7 +311,7 @@ GtEsug2024MoldableDebugging >> slide110ShowingFalingAssertionsInCoder: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide120ExampleToPlayground: aSlide [
+FkEsug2024MoldableDebugging >> slide120ExampleToPlayground: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 	"database pageBuilder title: 'PageOne'; add."
@@ -323,7 +323,7 @@ GtEsug2024MoldableDebugging >> slide120ExampleToPlayground: aSlide [
 ]
 
 { #category : #slide }
-GtEsug2024MoldableDebugging >> slide999EndTitle: aSlide [
+FkEsug2024MoldableDebugging >> slide999EndTitle: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>
 	
@@ -341,7 +341,7 @@ GtEsug2024MoldableDebugging >> slide999EndTitle: aSlide [
 ]
 
 { #category : #pages }
-GtEsug2024MoldableDebugging >> zincRedirectsErrorPage [
+FkEsug2024MoldableDebugging >> zincRedirectsErrorPage [
 	<lePage>
 	<gtExample>
 	<noTest>

@@ -134,14 +134,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-04T22:01:21.718483+02:00"
+						"dateAndTimeString" : "2024-07-05T14:41:32.459697+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Kqd/JdPYDQCxJ08EDNwjJA=="
 				},
-				"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass setupPythonDebugMode."
+				"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupAssertionError;\r\tsetupGemStoneSession;\r\tsetupPythonDebugMode."
 			},
 			{
 				"__type" : "textSnippet",
