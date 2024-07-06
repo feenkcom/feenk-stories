@@ -5,6 +5,13 @@ Class {
 }
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> installPandasInPython [
+	PBApplication isRunning ifFalse: [ self error ].
+	
+	PBApplication uniqueInstance installModule: 'pandas'.
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadDependencies [
 	self loadRustLspModel.
 	self loadMapper.

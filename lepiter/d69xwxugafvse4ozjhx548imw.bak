@@ -134,14 +134,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-05T14:41:32.459697+02:00"
+						"dateAndTimeString" : "2024-07-06T10:18:11.334281+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Kqd/JdPYDQCxJ08EDNwjJA=="
 				},
-				"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupAssertionError;\r\tsetupGemStoneSession;\r\tsetupPythonDebugMode."
+				"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupAssertionError;\r\tsetupGemStoneSession;\r\tsetupPythonDebugMode\r\t;"
 			},
 			{
 				"__type" : "textSnippet",
@@ -359,7 +359,76 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-07-05T16:39:34.942754+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-07-05T16:39:47.867997+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2lDnxOLYDQCGPMb9DNwjJA=="
+							},
+							"code" : "#FkEsug2024Gt4GemStone asClass new."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-07-05T16:39:53.228096+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-07-05T16:39:58.488242+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "CFn+xeLYDQCIlbdhDNwjJA=="
+							},
+							"code" : "GtPresenterSlideShow openInSpace:#FkEsug2024Gt4GemStone asClass ."
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -391,40 +460,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "#Gt4GemStone slideshow"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-05T16:39:34.942754+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-05T16:39:34.942754+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2lDnxOLYDQCGPMb9DNwjJA=="
-				},
-				"code" : ""
 			}
 		]
 	},
