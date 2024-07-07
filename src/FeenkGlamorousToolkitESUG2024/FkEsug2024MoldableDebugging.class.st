@@ -40,7 +40,7 @@ FkEsug2024MoldableDebugging >> contextExtensionsPage [
 		t translateBy: 10@5.
 		t rotateBy: 25.
 		t shearBy: 2@3 ].
-element globalPointToLocal: 10@10';
+element parentPointToLocal: 10@10';
 			yourself);
 	addSnippet: (LeTextSnippet new
 		string: '#Debugging Actions';
@@ -328,7 +328,7 @@ FkEsug2024MoldableDebugging >> slide999EndTitle: aSlide [
 	<gtSlideNote: ''>
 	
 	^ aSlide title
-		priority: 1;
+		priority: 999;
 		titleWithFormat: ('moldable debugging' asRopedText 
 			fontSize: 80;
 			glamorousRegularFont;

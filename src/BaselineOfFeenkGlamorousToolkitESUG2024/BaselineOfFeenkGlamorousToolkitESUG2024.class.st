@@ -5,6 +5,21 @@ Class {
 }
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> importMovieCollectionInGemStone [
+	| dataFile |
+	
+	dataFile := FileLocator gtResource 
+		/ 'feenkcom' 
+		/ 'gtoolkit-demos' 
+		/ 'data' 
+		/ 'imdb' 
+		/ 'Movies.csv'.
+		
+	GtRmMovieCollectionGemstoneImporter new
+		importFromCsvFile: dataFile
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> installPandasInPython [
 	PBApplication isRunning ifFalse: [ self error ].
 	
@@ -62,6 +77,20 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupAssertionError [
 ]
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupDebuggerOpenFullScreen [
+	| targetMethod newSourceCode |
+	targetMethod := GtMoldableDebugger >> #open:titled:.
+
+	newSourceCode := targetMethod sourceCode
+		copyReplaceAll: 'aSpace extent: 1200 @ 600.'
+		with: 'aSpace extent: 1680@940.'.
+	
+	targetMethod methodClass 
+		compile: newSourceCode 
+		classified: targetMethod category
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupGemStoneSession [
 	| connector |
 	connector := GtGemStoneSessionRegistry default propertiesFile addNewConnector.
@@ -84,6 +113,20 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupPythonDebugMode [
 	pbApplication start.
 	
 	PBApplication uniqueInstance: pbApplication
+]
+
+{ #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupRemoveMatricContextExtension [
+	| targetMethod newSourceCode |
+	targetMethod := BlMatrix>>#gtMatrixFor:.
+
+	newSourceCode := targetMethod sourceCode
+		copyReplaceAll: '<gtContextView>'
+		with: '"<gtContextView>"'.
+	
+	targetMethod methodClass 
+		compile: newSourceCode 
+		classified: targetMethod category
 ]
 
 { #category : #accessing }
