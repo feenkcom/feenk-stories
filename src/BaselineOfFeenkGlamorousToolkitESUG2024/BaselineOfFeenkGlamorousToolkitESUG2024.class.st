@@ -31,6 +31,7 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadDependencies [
 	self loadRustLspModel.
 	self loadMapper.
 	self loadGt4LLM.
+	self loadNeoCsv.
 ]
 
 { #category : #accessing }
@@ -116,7 +117,7 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupPythonDebugMode [
 ]
 
 { #category : #accessing }
-BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupRemoveMatricContextExtension [
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupRemoveMatrixContextExtension [
 	| targetMethod newSourceCode |
 	targetMethod := BlMatrix>>#gtMatrixFor:.
 

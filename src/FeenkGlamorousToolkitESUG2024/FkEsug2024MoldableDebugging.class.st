@@ -40,7 +40,7 @@ FkEsug2024MoldableDebugging >> contextExtensionsPage [
 		t translateBy: 10@5.
 		t rotateBy: 25.
 		t shearBy: 2@3 ].
-element parentPointToLocal: 10@10';
+element transformation inverseTransformPoint: 10@10';
 			yourself);
 	addSnippet: (LeTextSnippet new
 		string: '#Debugging Actions';
@@ -64,8 +64,11 @@ FkEsug2024MoldableDebugging >> debuggingGemStonePage [
 	<noTest>
 	
 	^ (LePage named: 'Debugging GemStone code')
+	addSnippet: (LePharoSnippet new
+		code: 'data := GtRmMovieCollection basicData';
+		yourself);
 	addSnippet: (LeGemStoneSnippet new
-		code: '1 printString';
+		code: 'GtRmMovieCollection fromFullData: data';
 		yourself);
 	yourself
 ]
