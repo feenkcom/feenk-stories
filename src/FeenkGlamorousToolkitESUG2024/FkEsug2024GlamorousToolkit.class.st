@@ -107,8 +107,22 @@ FkEsug2024GlamorousToolkit >> rewritePharoCodePage [
 	<noTest>
 	
 	^ (LePage named: 'Working with a rewrite')
+	addSnippet: (LeTextSnippet new
+			string: '{{gtMethod:GtPrefixTree>>#childrenDo:|expanded}}');
+	yourself
+]
+
+{ #category : #pages }
+FkEsug2024GlamorousToolkit >> shellBasedAnalysisPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Performing an analysis using the shell')
 	addSnippet: (LePharoSnippet new
 			code: '');
+	"addSnippet: (LeShellScriptSnippet new
+		code: 'ls');"
 	yourself
 ]
 
@@ -133,15 +147,14 @@ FkEsug2024GlamorousToolkit >> slide01Title: aSlide [
 	
 	^ aSlide title
 		priority: 1;
-		titleWithFormat: ('Glamorous Toolkit' asRopedText 
+		titleWithFormat: ('glamoroustoolkit' asRopedText 
 			fontSize: 80;
 			glamorousRegularFont;
 			thin;
-			"in: [:t | (t from: 1  to: 'Glamorous' size) bold];" yourself);
-		subtitleWithFormat: ('Andrei Chiș' asRopedText 
-			fontSize: 60;
-			glamorousRegularFont;
-			bold)
+			in: [:t | (t from: 1  to: 'glamorous' size) bold]; yourself);
+		subtitleWithFormat: ('andrei.chis@feenk.com' asRopedText 
+			fontSize: 40;
+			glamorousRegularFont)
 ]
 
 { #category : #slides }
@@ -205,13 +218,13 @@ FkEsug2024GlamorousToolkit >> slide07VisualizingTokenization: aSlide [
 	^ aSlide lepiterPage
 		priority: 7;
 		startPage: ((LeDatabase databaseNamed: 'gt4llm-lepiter')
-			pageNamed: 'Visualizing tokenization')
+			pageNamed: 'Accessing a tokenizer written in Python')
 ]
 
 { #category : #slides }
 FkEsug2024GlamorousToolkit >> slide08LlmZnUrlViews: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
+	"<gtSlide>
+	<gtSlideNote: '.'>"
 
 	^ aSlide lepiterPage
 		priority: 8;
@@ -219,24 +232,23 @@ FkEsug2024GlamorousToolkit >> slide08LlmZnUrlViews: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide09WardleyMap: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide labelAndElement
-		priority: 9;
-		newFadedText: 'Wardley Map';
-		element: [ GtWorld new root ]
-]
-
-{ #category : #slides }
-FkEsug2024GlamorousToolkit >> slide11ShellScript: aSlide [
+FkEsug2024GlamorousToolkit >> slide110ShellBasicLs: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
 		priority: 11;
 		startPage: (self db pageNamed:  'Working with a shell script')
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide111ShellScriptAnalysis: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 11.1;
+		startPage: (self db pageNamed:  'Performing an analysis using the shell')
 ]
 
 { #category : #slides }
@@ -261,14 +273,45 @@ FkEsug2024GlamorousToolkit >> slide13RewriteRustCode: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide15GitTool: aSlide [
+FkEsug2024GlamorousToolkit >> slide140ChatLLM: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 14;
+		startPage: ((LeDatabase databaseNamed: 'gt4llm-lepiter')
+			pageNamed: 'Getting a tutor to create a view')
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide141WardleyMap: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide labelAndElement
+		priority: 14.1;
+		newFadedText: 'Wardley Map';
+		element: [ GtWorld new root ]
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide150GitTool: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide labelAndElement
 		priority: 15;
-		newFadedText: 'Git';
-		element: [ GtGitPhlowTool new ]
+		element: [ GtGitStencil new  ]
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide151GitToolCommandLog: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide labelAndElement
+		priority: 15.1;
+		element: [ GtGitStencil new  ]
 ]
 
 { #category : #slides }
@@ -313,7 +356,27 @@ FkEsug2024GlamorousToolkit >> slide19ViewUsingd3: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide201LudoInspectors: aSlide [
+FkEsug2024GlamorousToolkit >> slide210GenericDebuggers: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 21;
+		element: [ GtRawDebuggersLiveSlide new asElement ]
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide211Customebuggers: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 21.1;
+		element: [ GtCustomDebuggersLiveSlide new asElement ]
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide221LudoInspectors: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
 
@@ -329,7 +392,7 @@ FkEsug2024GlamorousToolkit >> slide201LudoInspectors: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide202LudoInspectorsExploded: aSlide [
+FkEsug2024GlamorousToolkit >> slide222LudoInspectorsExploded: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
 	| scripter element |
