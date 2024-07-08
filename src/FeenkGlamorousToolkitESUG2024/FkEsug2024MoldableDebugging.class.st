@@ -46,13 +46,10 @@ element transformation inverseTransformPoint: 10@10';
 		string: '#Debugging Actions';
 		yourself);
 	addSnippet: (LePharoSnippet new
-			code: 'ZnServer startDefaultOn: 1701.
-
-ZnClient new
-	url: ZnServer default localUrl / #echo;
-	timeout: 2;
-	queryAt: #delay put: 10;
-	get';
+			code: 'ZnClient new 
+	url: ''https://www.gmail.com'';
+	maxNumberOfRedirects: 3;
+	get ';
 			yourself);
 	yourself
 ]
@@ -195,6 +192,33 @@ FkEsug2024MoldableDebugging >> slide010Title: aSlide [
 ]
 
 { #category : #slide }
+FkEsug2024MoldableDebugging >> slide012feenk: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Specifically, I want to talk about Glamorous Toolkit v1.0 which has been 6 years in the making. What is Glamorous Toolkit? Different people look at it and see different things. Let''s go through these.'>
+	^ aSlide title
+		priority: 1.2;
+		titleWithFormat: ('feenk' asRopedText 
+			fontSize: 80;
+			glamorousRegularFont;
+			thin;
+			in: [:t | (t from: 1 to: 'feenk' size) bold]; yourself)
+]
+
+{ #category : #slide }
+FkEsug2024MoldableDebugging >> slide013gt: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide title
+		priority: 1.3;
+		titleWithFormat: ('glamoroustoolkit' asRopedText 
+			fontSize: 80;
+			glamorousRegularFont;
+			thin;
+			in: [:t | (t from: 'glamorous' size + 1  to: 'glamoroustoolkit' size) bold]; yourself)
+]
+
+{ #category : #slide }
 FkEsug2024MoldableDebugging >> slide020FromFullDebuggerToSmaCC: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>
@@ -222,6 +246,18 @@ FkEsug2024MoldableDebugging >> slide040DebuggingPython: aSlide [
 	^ aSlide lepiterPage
 		priority: 4;
 		startPage: (self db pageNamed: 'Debugging Python code')
+]
+
+{ #category : #slide }
+FkEsug2024MoldableDebugging >> slide049CustomUIs: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	
+	^ aSlide labelAndElement
+		priority: 4.9;
+		element: [ GtLanguageDebuggersLiveSlide new asElement ]";
+		newFadedText: 'Yet, when we change the view, the differences are obvious.'."
 ]
 
 { #category : #slide }
@@ -283,8 +319,8 @@ FkEsug2024MoldableDebugging >> slide080PhlowApiError: aSlide [
 
 { #category : #slide }
 FkEsug2024MoldableDebugging >> slide090ZincTooManyRedirects: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
+	"<gtSlide>
+	<gtSlideNote: '.'>"
 
 	^ aSlide lepiterPage
 		priority: 9;
@@ -323,6 +359,26 @@ FkEsug2024MoldableDebugging >> slide120ExampleToPlayground: aSlide [
 		newFadedText: 'Playing with examples in a playground';
 		element: [ 
 			(GtCoderElement forMethod: LeDatabaseReloadInEmptyDatabaseExamples>>#databaseWithMonitorStoppedAndExplicitLinkAndPagesRemoved) createInPager maximized ]
+]
+
+{ #category : #slide }
+FkEsug2024MoldableDebugging >> slide150GenericDebuggers: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 15;
+		element: [ GtRawDebuggersLiveSlide new asElement ]
+]
+
+{ #category : #slide }
+FkEsug2024MoldableDebugging >> slide151Customebuggers: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 15;
+		element: [ GtCustomDebuggersLiveSlide new asElement ]
 ]
 
 { #category : #slide }
