@@ -117,13 +117,12 @@ FkEsug2024MoldableDebugging >> developingInPlaygroundPage [
 	
 	^ (LePage named: 'Developing in the playground')
 	addSnippet: (LePharoSnippet new
-			code: 'message := ''Hello''.
-action := MyAction new.');
+			code: 'messageContent := ''Hello''.
+action := MyInformAction new.');
 	addSnippet: (LePharoSnippet new
 			code: 'action 
 	label: ''Inform''
-	priority: 2
-	message: message');
+	body: messageContent');
 	yourself
 ]
 
