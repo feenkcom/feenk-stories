@@ -78,10 +78,7 @@ FkEsug2024MoldableDebugging >> debuggingPythonPage [
 	^ (LePage named: 'Debugging Python code')
 	
 	addSnippet: (LePythonSnippet new
-			code: 'import. gtoolkit_bridge
-gtoolkit_bridge.reset_signals()
-import gtoolkit_bridge.PythonBridge.tfactorial as tfactorial
-pbbreak()
+			code: 'import gtoolkit_bridge.PythonBridge.tfactorial as tfactorial
 tfactorial.factorial(5,1)';
 			yourself);
 	yourself
