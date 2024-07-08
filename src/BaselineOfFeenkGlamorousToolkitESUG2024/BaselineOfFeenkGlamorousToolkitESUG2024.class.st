@@ -27,10 +27,14 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> installPandasInPython [
 ]
 
 { #category : #accessing }
-BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadDependencies [
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadDependenciesForGtPresentation [
 	self loadRustLspModel.
 	self loadMapper.
 	self loadGt4LLM.
+]
+
+{ #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadDependenciesForMoldableDebugging [
 	self loadNeoCsv.
 ]
 
@@ -78,6 +82,29 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupAssertionError [
 ]
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupCloneGtoolkitBoxer [
+	| rootDirectory |
+	rootDirectory := 'gtoolkit-boxer' asFileReference.
+	rootDirectory ensureDeleteAll.
+	IceRepositoryCreator
+		fromUrl: 'git@github.com:feenkcom/gtoolkit-boxer.git'
+		to: rootDirectory.
+]
+
+{ #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupCopyMoviesPythonFile [
+	| sourecFile |
+	sourecFile := FileLocator gtResource 
+		/ 'feenkcom' 
+		/ 'gt4python' 
+		/ 'data' 
+		/ 'python' 
+		/ 'movie.py'.
+		
+	sourecFile copyTo: PBPlatform current workingDirectory / sourecFile basename.
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupDebuggerOpenFullScreen [
 	| targetMethod newSourceCode |
 	targetMethod := GtMoldableDebugger >> #open:titled:.
@@ -111,6 +138,16 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupPythonDebugMode [
 	
 	pbApplication := PBApplication new.
 	pbApplication settings serverDebugMode: true.
+	pbApplication start.
+	
+	PBApplication uniqueInstance: pbApplication
+]
+
+{ #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupPythonMode [
+	| pbApplication |
+	
+	pbApplication := PBApplication new.
 	pbApplication start.
 	
 	PBApplication uniqueInstance: pbApplication

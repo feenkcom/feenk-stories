@@ -90,11 +90,13 @@ FkEsug2024GlamorousToolkit >> moviesDemoInPythonPage [
 	/ ''data'' 
 	/ ''imdb'' 
 	/ ''Movies.csv'' ');
+	addSnippet: (LePharoSnippet new
+		code: 'fileName := dataFile fullName');
 	addSnippet: (LePythonSnippet new
-		code: 'Gimport movie
+		code: 'import movie
 import pandas
 
-movie.MovieCollection(pandas.read_csv(csvFile))');
+movie.MovieCollection(pandas.read_csv(fileName))');
 	yourself
 ]
 
@@ -185,13 +187,14 @@ FkEsug2024GlamorousToolkit >> slide05RustViews: aSlide [
 
 { #category : #slides }
 FkEsug2024GlamorousToolkit >> slide06ViewsInDifferentRuntimesOverview: aSlide [
-	"<gtSlide>
-	<gtSlideNote: '.'>"
-
-	^ aSlide lepiterPage
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
 		priority: 6;
-		startPage: (LeDatabase gtBook
-			pageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects')
+		newFadedText: 'Objects in Pharo, GemStone, Python and Rust can have custom views written in the same language as the object';
+		element: [ 
+			GtDifferentLanguageInspectorsLiveSlide new asElement ]
 ]
 
 { #category : #slides }
@@ -311,8 +314,8 @@ FkEsug2024GlamorousToolkit >> slide19ViewUsingd3: aSlide [
 
 { #category : #slides }
 FkEsug2024GlamorousToolkit >> slide201LudoInspectors: aSlide [
-	"<gtSlide>
-	<gtSlideNote: 'Viewed objects'>"
+	<gtSlide>
+	<gtSlideNote: 'Viewed objects'>
 
 	^ aSlide element
 		priority: 201;
@@ -327,8 +330,8 @@ FkEsug2024GlamorousToolkit >> slide201LudoInspectors: aSlide [
 
 { #category : #slides }
 FkEsug2024GlamorousToolkit >> slide202LudoInspectorsExploded: aSlide [
-	"<gtSlide>
-	<gtSlideNote: 'Viewed objects'>"
+	<gtSlide>
+	<gtSlideNote: 'Viewed objects'>
 	| scripter element |
 	
 	^ aSlide element
