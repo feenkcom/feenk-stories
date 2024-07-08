@@ -20,6 +20,398 @@ FkEsug2024GlamorousToolkit >> d3UrlPage [
 ]
 
 { #category : #pages }
+FkEsug2024GlamorousToolkit >> differentSnippetsPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Different snippets')
+	addSnippet: (LeShellScriptSnippet new
+			code: './gtoolkit-vm-builder \
+--release \
+    --app-name ''GlamorousToolkit'' \
+    --identifier ''com.gtoolkit'' \
+    --author "feenk gmbh <contact@feenk.com>" \
+    --libraries-versions libraries.version \
+    --libraries boxer clipboard filewatcher gleam glutin pixels process skia winit test-library cairo crypto freetype git sdl2 ssl');
+	addSnippet: (LePharoRewriteSnippet new
+		search: '``@any isNil
+	ifTrue: [ ^ self ].';
+		replace: '``@any ifNil: [ ^ self ].';
+		yourself);
+	addSnippet: (LeYoutubeReferenceSnippet new
+			youtubeUrl: 'https://youtu.be/lqogvp1dGpk');
+	addSnippet: (LeWardleyMapSnippet new
+	wardleyMap: (GtWardleyMapFromDictionaryImporter new
+			importWardleyMapFrom: (STONJSON
+					fromString: '{
+	"title" : {
+		"text" : "\rMoldable Development\r",
+		"is_visible" : false
+	},
+	"nodes" : [
+		{
+			"id" : "2a48cb82-25d9-0d00-a768-e3c6088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.1,
+			"y" : 0.9,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Development Practices"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "6e48cb82-25d9-0d00-a769-023f088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.3,
+			"y" : 0.19999999999999996,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Programming Languages"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "b648cb82-25d9-0d00-a76a-8ae0088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.9,
+			"y" : 0.8,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Problem Domain"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "be48cb82-25d9-0d00-a76b-9146088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7,
+			"y" : 0.35655737704918034,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.25,
+				"y" : -0.75,
+				"text" : "Customization Frameworks"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "c048cb82-25d9-0d00-a76c-9f18088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.2,
+			"y" : 0.25,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Frameworks and Libraries"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "c148cb82-25d9-0d00-a76d-fc75088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.8302233902759528,
+			"y" : 0.04672131147540986,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Moldable Tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "c348cb82-25d9-0d00-a76e-826a088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7,
+			"y" : 0.7,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "Developer Skills"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "c548cb82-25d9-0d00-a76f-3b18088563e2",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.85,
+			"y" : 0.6,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "User Feedback"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "c548cb82-25d9-0d00-a76f-3b18088563e2",
+			"to" : "c148cb82-25d9-0d00-a76d-fc75088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "c548cb82-25d9-0d00-a76f-3b18088563e2",
+			"to" : "be48cb82-25d9-0d00-a76b-9146088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "c348cb82-25d9-0d00-a76e-826a088563e2",
+			"to" : "c148cb82-25d9-0d00-a76d-fc75088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "c348cb82-25d9-0d00-a76e-826a088563e2",
+			"to" : "6e48cb82-25d9-0d00-a769-023f088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "c348cb82-25d9-0d00-a76e-826a088563e2",
+			"to" : "c048cb82-25d9-0d00-a76c-9f18088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "c148cb82-25d9-0d00-a76d-fc75088563e2",
+			"to" : "b648cb82-25d9-0d00-a76a-8ae0088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "be48cb82-25d9-0d00-a76b-9146088563e2",
+			"to" : "b648cb82-25d9-0d00-a76a-8ae0088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "2a48cb82-25d9-0d00-a768-e3c6088563e2",
+			"to" : "c148cb82-25d9-0d00-a76d-fc75088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "2a48cb82-25d9-0d00-a768-e3c6088563e2",
+			"to" : "be48cb82-25d9-0d00-a76b-9146088563e2",
+			"color" : {
+				"green" : 0.5004887585532747,
+				"blue" : 0.5004887585532747,
+				"alpha" : 1.0,
+				"red" : 0.5004887585532747
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		}
+	]
+}')));
+	yourself
+]
+
+{ #category : #pages }
 FkEsug2024GlamorousToolkit >> esugUrlPage [
 	<lePage>
 	<gtExample>
@@ -32,6 +424,20 @@ FkEsug2024GlamorousToolkit >> esugUrlPage [
 			code: 'WebBrowser openOn: znUrl');
 	addSnippet: (LeTextSnippet new
 			string: '[https://youtu.be/lqogvp1dGpk](https://youtu.be/lqogvp1dGpk)');
+	yourself
+]
+
+{ #category : #pages }
+FkEsug2024GlamorousToolkit >> gitCliLoggingPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Logging git commands')
+	addSnippet: (LePharoSnippet new
+			code: 'MemoryLogger startFor: GtGitCliSignal');
+	addSnippet: (LePharoSnippet new
+			code: 'MemoryLogger instance');
 	yourself
 ]
 
@@ -120,9 +526,51 @@ FkEsug2024GlamorousToolkit >> shellBasedAnalysisPage [
 	
 	^ (LePage named: 'Performing an analysis using the shell')
 	addSnippet: (LePharoSnippet new
-			code: '');
-	"addSnippet: (LeShellScriptSnippet new
-		code: 'ls');"
+			code: '| data |
+data := NeoCSVData new.
+
+data 
+	data: (((Smalltalk allClasses 
+		sorted: [ :each | each methods size ] descending)
+		first: 20)
+			collect: [ :aClass |
+				{aClass name. aClass methods size. aClass linesOfCode }]).
+String streamContents: [:aStream |
+	data writeOn: aStream ]');
+	addSnippet: (LePharoSnippet new
+		code: 'code := thisSnippet previousSibling code');
+	addSnippet: (LeShellScriptSnippet new
+		bindingName: 'result';
+		code: '
+./GlamorousToolkit.app/Contents/MacOS/GlamorousToolkit-cli  GlamorousToolkit.image eval $code');
+		
+	addSnippet: (LePharoSnippet new
+		code: 'obtainedString := (result trimBoth: [ :char | char = $'']) trimBoth.');
+	addSnippet: (LePharoSnippet new
+		code: 'returnedData := (NeoCSVReader on: obtainedString readStream)
+	upToEnd');
+	addSnippet: (LePharoSnippet new
+		code: 'dataGroup := GtPlotterDataGroup new values: returnedData.
+GtPlotterScatterChart new
+		with: dataGroup;
+		valueX: [ :array | array second asInteger ];
+		scaleX: GtPlotterLinearScale new;
+		titleX: ''Number of methods'';
+		ticksX: 10;
+		valueY: [ :array | array third asInteger ];
+		scaleY: GtPlotterLinearScale new;
+		titleY: ''Lines of Code'';
+		ticksY: 10;
+		withProjectionAxis;
+		dotElement: [ :aGtPlotterContext |
+			BlElement new
+				geometry: BlEllipseGeometry new;
+				size: 10 asPoint;
+				aptitude: (BrGlamorousWithTooltipAptitude 
+					content: [ BrLabel new
+						text: (aGtPlotterContext originalValue first);
+						aptitude: (BrGlamorousLabelAptitude new 
+							padding: (BlInsets all: 1)) ])].');
 	yourself
 ]
 
@@ -309,13 +757,13 @@ FkEsug2024GlamorousToolkit >> slide151GitToolCommandLog: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
-	^ aSlide labelAndElement
+	^ aSlide lepiterPage
 		priority: 15.1;
-		element: [ GtGitStencil new  ]
+		startPage: (self db pageNamed:  'Logging git commands')
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide16GWebViewEsugUrl: aSlide [
+FkEsug2024GlamorousToolkit >> slide16WebViewEsugUrl: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -356,6 +804,19 @@ FkEsug2024GlamorousToolkit >> slide19ViewUsingd3: aSlide [
 ]
 
 { #category : #slides }
+FkEsug2024GlamorousToolkit >> slide20DifferentSnippets: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 6;
+		newFadedText: 'Tools can be expressed as snippets and combined to form custom workflows';
+		element: [ 
+			GtDifferentSnippetsLiveSlide new 
+				page: (self db pageNamed: 'Different snippets') ]
+]
+
+{ #category : #slides }
 FkEsug2024GlamorousToolkit >> slide210GenericDebuggers: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
@@ -381,7 +842,7 @@ FkEsug2024GlamorousToolkit >> slide221LudoInspectors: aSlide [
 	<gtSlideNote: 'Viewed objects'>
 
 	^ aSlide element
-		priority: 201;
+		priority: 22.1;
 		element: [  "GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"
 			|scripter|
 			scripter := GtInspectorScripterExamples
@@ -398,7 +859,7 @@ FkEsug2024GlamorousToolkit >> slide222LudoInspectorsExploded: aSlide [
 	| scripter element |
 	
 	^ aSlide element
-		priority: 202;
+		priority: 22.2;
 		element: [ scripter := GtInspectorScripterExamples new
 					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
 					withPlaygroundTextAndDoit: 'self moves last'.
@@ -415,6 +876,20 @@ FkEsug2024GlamorousToolkit >> slide222LudoInspectorsExploded: aSlide [
 						each class = LePharoSnippetElement ] ]
 							label: 'Embeddable content';
 						explode: element ]
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide99End: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide title
+		priority: 999;
+		titleWithFormat: ('gtoolkit.com' asRopedText 
+			fontSize: 80;
+			glamorousRegularFont;
+			thin;
+			bold; yourself)
 ]
 
 { #category : #pages }

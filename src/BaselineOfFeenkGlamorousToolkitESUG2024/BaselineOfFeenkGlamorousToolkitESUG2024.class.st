@@ -31,6 +31,7 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadDependenciesForGtPresentati
 	self loadRustLspModel.
 	self loadMapper.
 	self loadGt4LLM.
+	self loadNeoCsv.
 ]
 
 { #category : #accessing }
