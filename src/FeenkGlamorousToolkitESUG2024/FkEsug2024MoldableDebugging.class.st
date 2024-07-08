@@ -78,8 +78,8 @@ FkEsug2024MoldableDebugging >> debuggingPythonPage [
 	^ (LePage named: 'Debugging Python code')
 	
 	addSnippet: (LePythonSnippet new
-			code: 'import gtoolkit_bridge.PythonBridge.tfactorial as tfactorial
-tfactorial.factorial(5,1)';
+			code: 'import tfactorial
+tfactorial.factorial(3,1)';
 			yourself);
 	yourself
 ]
