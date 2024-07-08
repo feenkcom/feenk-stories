@@ -1,6 +1,8 @@
 Class {
 	#name : #FkEsug2024GlamorousToolkit,
 	#superclass : #DatabaseHolder,
+	#traits : 'TGtSlideShow',
+	#classTraits : 'TGtSlideShow classTrait',
 	#category : #FeenkGlamorousToolkitESUG2024
 }
 
@@ -123,7 +125,7 @@ FkEsug2024GlamorousToolkit >> shellCodePage [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide010Title: aSlide [
+FkEsug2024GlamorousToolkit >> slide01Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Andrei Chis. I work at feenk, and today I want to talk about how Glamorous Toolkit.'>
 	
@@ -141,7 +143,7 @@ FkEsug2024GlamorousToolkit >> slide010Title: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide020MoviesDemoInGt: aSlide [
+FkEsug2024GlamorousToolkit >> slide02MoviesDemoInGt: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
@@ -151,23 +153,23 @@ FkEsug2024GlamorousToolkit >> slide020MoviesDemoInGt: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide030MoviesDemoInGemStone: aSlide [
+FkEsug2024GlamorousToolkit >> slide03MoviesDemoInGemStone: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
 		priority: 3;
-		startPage: (self db pageNamed: 'Movies Demo in Glamorous GemStone')
+		startPage: (self db pageNamed: 'Movies Demo in GemStone')
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide040MoviesDemoInPython: aSlide [
+FkEsug2024GlamorousToolkit >> slide04MoviesDemoInPython: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
 		priority: 4;
-		startPage: (self db pageNamed: 'Movies Demo in Glamorous Python')
+		startPage: (self db pageNamed: 'Movies Demo in Python')
 ]
 
 { #category : #slides }
@@ -277,32 +279,32 @@ FkEsug2024GlamorousToolkit >> slide16GWebViewEsugUrl: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide16YoutubeUrl: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 16;
-		startPage: (self db pageNamed:  'What about youtube?')
-]
-
-{ #category : #slides }
 FkEsug2024GlamorousToolkit >> slide17YoutubeUrl: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
 		priority: 17;
-		startPage: (self db pageNamed:  'What about d3?')
+		startPage: (self db pageNamed:  'What about youtube?')
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide18ViewUsingd3: aSlide [
+FkEsug2024GlamorousToolkit >> slide18D3Url: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
 		priority: 18;
+		startPage: (self db pageNamed:  'What about d3?')
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide19ViewUsingd3: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 19;
 		startPage: (LeDatabase gtBook
 			pageNamed: 'Using d3 to create views for local objects')
 ]
