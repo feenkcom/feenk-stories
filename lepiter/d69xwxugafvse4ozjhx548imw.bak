@@ -532,14 +532,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-08T16:30:12.338206+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.546661+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "A3JI+h7ZDQCFUDI4CIVj4g=="
 										},
-										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tloadDependenciesForGtPresentation."
+										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tloadDependenciesForGtPresentation"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -566,7 +566,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:22:37.088033+02:00"
+												"dateAndTimeString" : "2024-07-09T09:33:12.862701+02:00"
 											}
 										},
 										"uid" : {
@@ -600,7 +600,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:22:41.389619+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.560975+02:00"
 											}
 										},
 										"uid" : {
@@ -634,14 +634,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-08T16:31:36.787413+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.569603+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "01mxAR/ZDQCF0OnQCIVj4g=="
 										},
-										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupCloneGtoolkitBoxer."
+										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupCloneGtoolkitBoxer"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -668,7 +668,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:22:26.047768+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.598763+02:00"
 											}
 										},
 										"uid" : {

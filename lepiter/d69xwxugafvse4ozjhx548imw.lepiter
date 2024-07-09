@@ -532,7 +532,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:24:19.322335+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.546661+02:00"
 											}
 										},
 										"uid" : {
@@ -566,14 +566,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:22:37.088033+02:00"
+												"dateAndTimeString" : "2024-07-09T09:34:16.1032+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "XBBsIS3ZDQC5h1yvD1QKFA=="
 										},
-										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupGemStoneSession;\r\tsetupPythonDebugMode;\r\tsetupStartD3ViewsServer"
+										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupGemStoneSession;\r\tsetupPythonDebugMode;\r\tsetupStartD3ViewsServer;\r\tsetupConvertgt4git"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -600,7 +600,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:22:41.389619+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.560975+02:00"
 											}
 										},
 										"uid" : {
@@ -634,7 +634,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:24:17.427833+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.569603+02:00"
 											}
 										},
 										"uid" : {
@@ -668,7 +668,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-09T09:22:26.047768+02:00"
+												"dateAndTimeString" : "2024-07-09T09:31:36.598763+02:00"
 											}
 										},
 										"uid" : {
