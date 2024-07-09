@@ -93,6 +93,11 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupCloneGtoolkitBoxer [
 ]
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupConvertgt4git [
+	GtIceRepositorySwitcher new switch: 'gt4git'
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupCopyMoviesPythonFile [
 	| sourecFile |
 	sourecFile := FileLocator gtResource 
