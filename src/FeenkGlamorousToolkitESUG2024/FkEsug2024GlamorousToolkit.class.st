@@ -589,7 +589,7 @@ FkEsug2024GlamorousToolkit >> shellCodePage [
 ]
 
 { #category : #slides }
-FkEsug2024GlamorousToolkit >> slide01Title: aSlide [
+FkEsug2024GlamorousToolkit >> slide010Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Andrei Chis. I work at feenk, and today I want to talk about how Glamorous Toolkit.'>
 	
@@ -603,6 +603,30 @@ FkEsug2024GlamorousToolkit >> slide01Title: aSlide [
 		subtitleWithFormat: ('andrei.chis@feenk.com' asRopedText 
 			fontSize: 40;
 			glamorousRegularFont)
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide011RawInspectors: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 1.1;
+		newFadedText: 'Consider how different objects looks quite simlar in the inspector';
+		element: [ 
+			GtInspectorFullRawLiveSlide new  ]
+]
+
+{ #category : #slides }
+FkEsug2024GlamorousToolkit >> slide012CustomInspectors: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+	
+	^ aSlide labelAndElement
+		priority: 1.2;
+		newFadedText: 'Yet, when we change the view the difference is obvious';
+		element: [ 
+			GtInspectorFullCustomLiveSlide new  ]
 ]
 
 { #category : #slides }
