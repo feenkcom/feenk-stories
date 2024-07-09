@@ -555,6 +555,40 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-07-09T09:22:34.726171+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-07-09T09:22:37.088033+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "XBBsIS3ZDQC5h1yvD1QKFA=="
+										},
+										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupGemStoneSession;\r\tsetupPythonDebugMode;\r\tsetupStartD3ViewsServer"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
 												"dateAndTimeString" : "2024-07-08T16:34:46.312446+02:00"
 											}
 										},
@@ -566,14 +600,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-08T17:03:06.797269+02:00"
+												"dateAndTimeString" : "2024-07-09T09:22:41.389619+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "9085DR/ZDQCF73mTCIVj4g=="
 										},
-										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupGemStoneSession;\r\tsetupPythonDebugMode;\r\tsetupCopyMoviesPythonFile;\r\tinstallPandasInPython"
+										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tsetupCopyMoviesPythonFile;\r\tinstallPandasInPython"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -634,14 +668,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-08T17:14:29.044962+02:00"
+												"dateAndTimeString" : "2024-07-09T09:22:26.047768+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "bg3mmh/ZDQCJOQOxCIVj4g=="
 										},
-										"code" : "\"Should only be done onece\"\r#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \ts\r\timportMovieCollectionInGemStone"
+										"code" : "\"Should only be done once\"\r#BaselineOfFeenkGlamorousToolkitESUG2024 asClass\r\timportMovieCollectionInGemStone"
 									}
 								]
 							},

@@ -169,6 +169,12 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupRemoveMatrixContextExtensi
 ]
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupStartD3ViewsServer [
+	GtD3WebViewServer createDefaultWithNewZnServer.
+	GtD3WebViewServer defaultInstance start.
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 >> baseline: spec [
 	<baseline>
 	spec

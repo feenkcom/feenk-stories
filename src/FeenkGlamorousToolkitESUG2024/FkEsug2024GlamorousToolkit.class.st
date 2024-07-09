@@ -809,7 +809,7 @@ FkEsug2024GlamorousToolkit >> slide20DifferentSnippets: aSlide [
 	<gtSlideNote: '.'>
 	
 	^ aSlide labelAndElement
-		priority: 6;
+		priority: 20;
 		newFadedText: 'Tools can be expressed as snippets and combined to form custom workflows';
 		element: [ 
 			GtDifferentSnippetsLiveSlide new 
