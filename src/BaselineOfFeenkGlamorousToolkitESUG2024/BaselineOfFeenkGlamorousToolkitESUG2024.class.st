@@ -71,6 +71,20 @@ BaselineOfFeenkGlamorousToolkitESUG2024 class >> loadRustLspModel [
 ]
 
 { #category : #accessing }
+BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupAllowStoneCodeSync [
+	| strategy sessionStrategy codeSync |
+	strategy := GtGemStoneCodeSyncCustomClassStrategy new.
+	strategy valuable: [ :aClass :aSession | true ].
+	
+	sessionStrategy := GtGemStoneCodeSyncDefaultSessionStrategy new.
+	codeSync := GtGemStoneCodeSync new
+		defaultClassStrategy: strategy;
+		sessionStrategy: sessionStrategy.
+		
+	GtGemStoneSessionRegistry default codeSync: codeSync
+]
+
+{ #category : #accessing }
 BaselineOfFeenkGlamorousToolkitESUG2024 class >> setupAssertionError [
 	| newSourceCode |
 	
