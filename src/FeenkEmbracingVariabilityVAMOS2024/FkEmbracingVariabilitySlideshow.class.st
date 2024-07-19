@@ -316,7 +316,7 @@ Here we see a page in the Glamorous Toolkit book that explains the various kinds
 		newFadedText: 'You can embed examples within live documentation.';
 		element: [ (GtPager
 				createWrappedOn: (LePagePhlowTool
-						page: (self gtBook pageNamed: 'Documenting the domain: the Ludo game case study')))
+						page: (self gtBook pageNamed: 'Executable domain-driven design: the Ludo game case study')))
 				maximized ]
 ]
 
