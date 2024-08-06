@@ -132,8 +132,8 @@ FkModernizingLegacyESynergy2024Show >> slide001Title: aSlide [
 	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
 	^ aSlide title
 		priority: 1;
-		titleWithFormat: ('moldable development' asRopedText 
-			fontSize: 70;
+		titleWithFormat: ('modernizing legacy systems' asRopedText 
+			fontSize: 50;
 			glamorousCodeFont;
 			bold)";
 		subtitleWithFormat: ('@girba' asRopedText 
@@ -300,8 +300,8 @@ FkModernizingLegacyESynergy2024Show >> slide401Title: aSlide [
 	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
 	^ aSlide title
 		priority: 401;
-		titleWithFormat: ('moldable development' asRopedText 
-			fontSize: 70;
+		titleWithFormat: ('modernizing legacy systems' asRopedText 
+			fontSize: 50;
 			glamorousCodeFont;
 			bold);
 		subtitleWithFormat: ('@girba' asRopedText 
@@ -318,22 +318,6 @@ FkModernizingLegacyESynergy2024Show >> wardleyMapElementForJson: json [
 	aWardleyMapElement := GtWardleyMapElement withDefaultSections.
 	aWardleyMapElement wardleyMapViewModel: aWardleyMapViewModel.
 	^ aWardleyMapElement
-]
-
-{ #category : #accessing }
-FkModernizingLegacyESynergy2024Show >> wardleyMapElementFullWithRoles [
-	<gtExample>
-	| json |
-	json := self wardleyMapJsonFullWithRoles.
-	^ self wardleyMapElementForJson: json
-]
-
-{ #category : #accessing }
-FkModernizingLegacyESynergy2024Show >> wardleyMapElementFullWithoutRoles [
-	<gtExample>
-	| json |
-	json := self wardleyMapJsonFullWithoutRoles.
-	^ self wardleyMapElementForJson: json
 ]
 
 { #category : #accessing }
@@ -379,8 +363,8 @@ FkModernizingLegacyESynergy2024Show >> wardleyMapElementWithActionsFromJson: jso
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ (self
-									pagerWithPageNamed: 'Identifying an editor bug by inspecting wrapped Rust objects'
-									from: 'Glamorous Toolkit Book') maximized ]} ]
+									pagerWithPageNamed: 'How are toggles defined and used?'
+									from: 'feenkcom/gt4edx/lepiter') maximized ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'CONVERSATION'
@@ -391,6 +375,14 @@ FkModernizingLegacyESynergy2024Show >> wardleyMapElementWithActionsFromJson: jso
 							stencil: [ (self
 									pagerWithPageNamed: 'Cozy Corner - Step By Step'
 									from: 'feenkcom/uhmo/lepiter') maximized ]} ]
+		ifNone: [  ].
+	element wardleyMapViewModel wardleyMapModel
+		nodeWithName: 'INFORMATION'
+		ifFound: [ :aNode | 
+			aNode
+				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
+							icon: BrGlamorousVectorIcons inspect;
+							stencil: [ GtPresenterSlideShow create: FkDbMigrationCraftConf2024Show new ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'SYNTHETIZATION'
@@ -3375,33 +3367,4 @@ FkModernizingLegacyESynergy2024Show >> wardleyMapJsonMoldableDevelopmentWithTens
 		}
 	]
 }'.
-]
-
-{ #category : #accessing }
-FkModernizingLegacyESynergy2024Show >> x_slide022GitHubGraphQLSlideFor: aSlide [
-	"<gtSlide>"
-	^ aSlide lepiterPage
-		priority: 22;
-		pageNamed: 'Exploring GitHub through GraphQL ' from: 'Glamorous Toolkit Book'
-]
-
-{ #category : #accessing }
-FkModernizingLegacyESynergy2024Show >> x_slide051Docker: aSlide [
-	"<gtSlide>"
-	<gtSlideNote: 'Docker'>
-	^ aSlide element
-		priority: 51;
-		element: [ | aPager |
-			aPager := GtPager
-					createWrappedOn: (GtCoder forMethod: LeServerInDockerExamples>>#server).
-			aPager addAptitude: BrShadowAptitude new beLarge ]
-]
-
-{ #category : #accessing }
-FkModernizingLegacyESynergy2024Show >> x_slide101ATProto: aSlide [
-"	<gtSlide>"
-	<gtSlideNote: 'AT Proto'>
-	^ aSlide lepiterPage
-		priority: 101;
-		pageNamed: 'Browsing a BlueSky user from a dedicated snippet' from: 'gt4atproto-lepiter'
 ]
