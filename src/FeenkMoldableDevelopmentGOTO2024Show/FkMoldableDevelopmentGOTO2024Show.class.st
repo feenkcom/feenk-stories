@@ -8,7 +8,7 @@ Class {
 
 { #category : #'as yet unclassified' }
 FkMoldableDevelopmentGOTO2024Show class >> canvasCoordinates [
-	^ ((Array new: 10) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-597.9999999999998@ -667.0)); at: 2 put: ((1018.0117187499995@555.44921875)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((442.0@ -669.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((791.0@ -1178.0)); at: 2 put: ((714.3203125@341.8046875)); yourself)); at: 4 put: (#slide401Title:->((Array new: 2) at: 1 put: ((-572.9999999999998@ -1187.0)); at: 2 put: ((443.31640624999983@349.0585937500002)); yourself)); at: 5 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1458.9999999999998@ -673.0000000000002)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 6 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((455.0@131.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 7 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-629.9999999999998@137.0)); at: 2 put: ((442.93749999999983@340.1562499999999)); yourself)); at: 8 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-628.0@583.0)); at: 2 put: ((550.6640625@334.1054687499999)); yourself)); at: 9 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((-38.0@ -1184.9999999999995)); at: 2 put: ((717.6289062499999@345.765625)); yourself)); at: 10 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-129.0@135.0)); at: 2 put: ((477.61328125000006@342.5078125)); yourself)); yourself)
+	^ ((Array new: 10) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-619.9999999999998@ -672.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((449.0@ -656.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((791.0@ -1178.0)); at: 2 put: ((714.3203125@341.8046875)); yourself)); at: 4 put: (#slide401Title:->((Array new: 2) at: 1 put: ((-572.9999999999998@ -1187.0)); at: 2 put: ((443.31640624999983@349.0585937500002)); yourself)); at: 5 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1458.9999999999998@ -673.0000000000002)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 6 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((586.0@54.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 7 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-570.9999999999998@49.0)); at: 2 put: ((442.93749999999983@340.1562499999999)); yourself)); at: 8 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-628.0@583.0)); at: 2 put: ((550.6640625@334.1054687499999)); yourself)); at: 9 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((-38.0@ -1184.9999999999995)); at: 2 put: ((717.6289062499999@345.765625)); yourself)); at: 10 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((2.0@52.0)); at: 2 put: ((477.61328125000006@342.5078125)); yourself)); yourself)
 ]
 
 { #category : #accessing }
@@ -149,32 +149,12 @@ FkMoldableDevelopmentGOTO2024Show >> slide001Title: aSlide [
 { #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide002FeenkSlideFor: aSlide [
 	<gtSlide>
-	^ aSlide element
+	^ aSlide text
 		priority: 2;
-		element: [ | form |
-			form := PNGReadWriter
-					formFromFileNamed: (GtResourceReference path: Path * 'feenkcom' / 'gtoolkit' / 'doc' / 'feenk.png')
-							fullName.
-			BlElement new
-				constraintsDo: [ :c | 
-					c horizontal matchParent.
-					c vertical matchParent ];
-				layout: BlLinearLayout horizontal;
-				addChild: (BlElement new
-						constraintsDo: [ :c | 
-							c horizontal matchParent.
-							c vertical fitContent.
-							c linear vertical alignCenter ];
-						layout: BlLinearLayout vertical;
-						addChild: (BrVerticalPane new
-								constraintsDo: [ :c | c linear horizontal alignCenter ];
-								addChild: (form asElement asScalableElement
-										maxScale: 0.2;
-										constraintsDo: [ :c | 
-											c horizontal matchParent.
-											c vertical matchParent ]);
-								hExact: 200;
-								vExact: 200)) ]
+		horizontalWeight: 1;
+		newTextWithFormat: ('fee' asRopedText
+				fontSize: 80;
+				fontName: 'Desyrel'), ('nk' asRopedText fontSize: 60; fontName: 'Helvetica'; bold)
 ]
 
 { #category : #accessing }
