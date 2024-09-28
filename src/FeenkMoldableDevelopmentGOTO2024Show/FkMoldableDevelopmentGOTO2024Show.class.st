@@ -8,7 +8,7 @@ Class {
 
 { #category : #'as yet unclassified' }
 FkMoldableDevelopmentGOTO2024Show class >> canvasCoordinates [
-	^ ((Array new: 10) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-619.9999999999998@ -672.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((449.0@ -656.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((791.0@ -1178.0)); at: 2 put: ((714.3203125@341.8046875)); yourself)); at: 4 put: (#slide401Title:->((Array new: 2) at: 1 put: ((-572.9999999999998@ -1187.0)); at: 2 put: ((443.31640624999983@349.0585937500002)); yourself)); at: 5 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1458.9999999999998@ -673.0000000000002)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 6 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((586.0@54.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 7 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-570.9999999999998@49.0)); at: 2 put: ((442.93749999999983@340.1562499999999)); yourself)); at: 8 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-628.0@583.0)); at: 2 put: ((550.6640625@334.1054687499999)); yourself)); at: 9 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((-38.0@ -1184.9999999999995)); at: 2 put: ((717.6289062499999@345.765625)); yourself)); at: 10 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((2.0@52.0)); at: 2 put: ((477.61328125000006@342.5078125)); yourself)); yourself)
+	^ ((Array new: 10) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-619.9999999999998@ -672.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((449.0@ -656.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((791.0@ -1178.0)); at: 2 put: ((714.3203125@341.8046875)); yourself)); at: 4 put: (#slide401Title:->((Array new: 2) at: 1 put: ((-572.9999999999998@ -1187.0)); at: 2 put: ((443.31640624999983@349.0585937500002)); yourself)); at: 5 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1445.9999999999998@ -649.0000000000002)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 6 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((586.0@54.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 7 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-570.9999999999998@49.0)); at: 2 put: ((442.93749999999983@340.1562499999999)); yourself)); at: 8 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-628.0@583.0)); at: 2 put: ((550.6640625@334.1054687499999)); yourself)); at: 9 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((-38.0@ -1184.9999999999995)); at: 2 put: ((717.6289062499999@345.765625)); yourself)); at: 10 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((2.0@52.0)); at: 2 put: ((477.61328125000006@342.5078125)); yourself)); yourself)
 ]
 
 { #category : #accessing }
@@ -153,8 +153,8 @@ FkMoldableDevelopmentGOTO2024Show >> slide002FeenkSlideFor: aSlide [
 		priority: 2;
 		horizontalWeight: 1;
 		newTextWithFormat: ('fee' asRopedText
-				fontSize: 80;
-				fontName: 'Desyrel'), ('nk' asRopedText fontSize: 60; fontName: 'Helvetica'; bold)
+				fontSize: 100;
+				fontName: 'Desyrel'), ('nk' asRopedText fontSize: 75; fontName: 'Helvetica'; bold)
 ]
 
 { #category : #accessing }
@@ -235,6 +235,14 @@ FkMoldableDevelopmentGOTO2024Show >> slide015React: aSlide [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> slide110WardleyMapWithActions: aSlide [
+	<gtSlide>
+	^ aSlide element
+		priority: 110;
+		element: [ self wardleyMapElementMoldableDevelopmentWithTension00 ]
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide111WardleyMapWithActions: aSlide [
 	<gtSlide>
 	^ aSlide element
@@ -302,6 +310,14 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementForJson: json [
 	aWardleyMapElement := GtWardleyMapElement withDefaultSections.
 	aWardleyMapElement wardleyMapViewModel: aWardleyMapViewModel.
 	^ aWardleyMapElement
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementMoldableDevelopmentWithTension00 [
+	<gtExample>
+	| json |
+	json := self wardleyMapJsonMoldableDevelopmentWithTension00.
+	^ self wardleyMapElementWithActionsFromJson: json
 ]
 
 { #category : #accessing }
@@ -1401,6 +1417,170 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonFullWithoutRoles [
 		}
 	]
 }'.
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTension00 [
+	^ '{
+	"title" : {
+		"text" : "Tudor, Simon - Moldable Development - 14.06.2024",
+		"is_visible" : false
+	},
+	"nodes" : [
+		{
+			"id" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.52,
+			"y" : 0.07999999999999996,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 3.9166666666666665,
+				"y" : 0.5833333333333334,
+				"text" : "Decision"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "3c4ef338-44db-0d00-ac14-6c30006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.46,
+			"y" : 0.040000000000000036,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -0.16666666666666666,
+				"y" : -1.0833333333333333,
+				"text" : "Business"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "494ef338-44db-0d00-ac15-f0ab006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.56,
+			"y" : 0.040000000000000036,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.16666666666666666,
+				"y" : -0.9166666666666666,
+				"text" : "Engineering"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "f82089e0-31df-0d00-9ffc-190c0d0e8350",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7172745278489115,
+			"y" : 0.9290608423099705,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "System"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "494ef338-44db-0d00-ac15-f0ab006f725a",
+			"to" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "3c4ef338-44db-0d00-ac14-6c30006f725a",
+			"to" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"to" : "f82089e0-31df-0d00-9ffc-190c0d0e8350",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		}
+	]
+}'
 ]
 
 { #category : #accessing }
