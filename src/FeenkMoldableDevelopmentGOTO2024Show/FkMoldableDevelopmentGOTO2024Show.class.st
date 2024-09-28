@@ -275,6 +275,14 @@ FkMoldableDevelopmentGOTO2024Show >> slide114WardleyMapWithActions: aSlide [
 ]
 
 { #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> slide115WardleyMapWithActions: aSlide [
+	<gtSlide>
+	^ aSlide element
+		priority: 115;
+		element: [ self wardleyMapElementMoldableDevelopmentWithTension05 ]
+]
+
+{ #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide201GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
@@ -309,7 +317,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementForJson: json [
 	aWardleyMapViewModel wardleyMapModel: model.
 	aWardleyMapElement := GtWardleyMapElement withDefaultSections.
 	aWardleyMapElement wardleyMapViewModel: aWardleyMapViewModel.
-	^ aWardleyMapElement
+	^ aWardleyMapElement 
 ]
 
 { #category : #accessing }
@@ -349,6 +357,14 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementMoldableDevelopmentWithTen
 	<gtExample>
 	| json |
 	json := self wardleyMapJsonMoldableDevelopmentWithTension04.
+	^ self wardleyMapElementWithActionsFromJson: json
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementMoldableDevelopmentWithTension05 [
+	<gtExample>
+	| json |
+	json := self wardleyMapJsonMoldableDevelopmentWithTension05.
 	^ self wardleyMapElementWithActionsFromJson: json
 ]
 
@@ -410,7 +426,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
 		ifNone: [  ].
-	^ element
+	^ element size: 1100 @ 700; asCanvassableElement
 ]
 
 { #category : #accessing }
@@ -4474,6 +4490,922 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			},
 			"width" : 1.0,
 			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		}
+	]
+}'
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTension05 [
+	^ '{
+	"title" : {
+		"text" : "Tudor, Simon - Moldable Development - 14.06.2024",
+		"is_visible" : false
+	},
+	"nodes" : [
+		{
+			"id" : "7a4cf338-44db-0d00-ac0e-e9ae006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.5518703241895262,
+			"y" : 0.26400266355921254,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5833333333333334,
+				"y" : -1.0,
+				"text" : "EXPLORATION"
+			},
+			"pipeline" : {
+				"is_visible" : true,
+				"x" : 0.2586284289276808,
+				"y" : 0.7518703241895262,
+				"inner_nodes" : [
+					"9e4ef338-44db-0d00-ac19-42e6006f725a",
+					"ab4ef338-44db-0d00-ac1a-497d006f725a"
+				]
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "414df338-44db-0d00-ac0f-d195006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6986913506322315,
+			"y" : 0.790824975459579,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.25,
+				"y" : -0.9166666666666666,
+				"text" : "DEVELOPMENT EXPERIENCE"
+			},
+			"pipeline" : {
+				"is_visible" : true,
+				"x" : 0.5309685943111726,
+				"y" : 0.7904087614101416,
+				"inner_nodes" : [
+					"b94ef338-44db-0d00-ac1b-ec92006f725a",
+					"44d2bb3b-44db-0d00-ac2f-58b7006f725a",
+					"8904bf72-51df-0d00-980a-4bb20d0e8350"
+				]
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "df4df338-44db-0d00-ac10-8f29006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.52,
+			"y" : 0.1507283272760268,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 3.6666666666666665,
+				"y" : -0.8333333333333334,
+				"text" : "ASSESSMENT"
+			},
+			"pipeline" : {
+				"is_visible" : true,
+				"x" : 0.32,
+				"y" : 0.72,
+				"inner_nodes" : [
+					"d54ef338-44db-0d00-ac1d-5388006f725a",
+					"e64ef338-44db-0d00-ac1e-4378006f725a"
+				]
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "0d4ef338-44db-0d00-ac11-cfb0006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.55,
+			"y" : 0.38175973016729625,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5833333333333334,
+				"y" : -0.9166666666666666,
+				"text" : "CONVERSATION"
+			},
+			"pipeline" : {
+				"is_visible" : true,
+				"x" : 0.31,
+				"y" : 0.68,
+				"inner_nodes" : [
+					"f54ef338-44db-0d00-ac1f-9e51006f725a",
+					"024ff338-44db-0d00-ac20-f060006f725a"
+				]
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.52,
+			"y" : 0.07999999999999996,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 3.9166666666666665,
+				"y" : 0.5833333333333334,
+				"text" : "Decision"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "3c4ef338-44db-0d00-ac14-6c30006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.46,
+			"y" : 0.040000000000000036,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -0.16666666666666666,
+				"y" : -1.0833333333333333,
+				"text" : "Business"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "494ef338-44db-0d00-ac15-f0ab006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.56,
+			"y" : 0.040000000000000036,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.16666666666666666,
+				"y" : -0.9166666666666666,
+				"text" : "Engineering"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "554ef338-44db-0d00-ac16-880b006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.5490052582510236,
+			"y" : 0.6628780905222306,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 1.5833333333333333,
+				"y" : -0.75,
+				"text" : "SYNTHETIZATION"
+			},
+			"pipeline" : {
+				"is_visible" : true,
+				"x" : 0.4317453350756072,
+				"y" : 0.7944378201024328,
+				"inner_nodes" : [
+					"3f4ff338-44db-0d00-ac24-e4fb006f725a",
+					"4e4ff338-44db-0d00-ac25-2bbd006f725a",
+					"d742feb2-95df-0d00-9459-0b89038a80c3"
+				]
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "6f4ef338-44db-0d00-ac18-1d72006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.536504018443009,
+			"y" : 0.5356950863380432,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.3333333333333333,
+				"y" : -1.0,
+				"text" : "INFORMATION"
+			},
+			"pipeline" : {
+				"is_visible" : true,
+				"x" : 0.286504018443009,
+				"y" : 0.8044297546786046,
+				"inner_nodes" : [
+					"5e4ff338-44db-0d00-ac26-a588006f725a",
+					"6e4ff338-44db-0d00-ac27-b96f006f725a"
+				]
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "9e4ef338-44db-0d00-ac19-42e6006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.7418703241895261,
+			"y" : 0.26400266355921254,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 4.166666666666667,
+				"y" : 0.4166666666666667,
+				"text" : "Ad hoc"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "ab4ef338-44db-0d00-ac1a-497d006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.2686284289276808,
+			"y" : 0.26400266355921254,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -6.5,
+				"y" : 0.4166666666666667,
+				"text" : "Moldable Development"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "b94ef338-44db-0d00-ac1b-ec92006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7804087614101416,
+			"y" : 0.790824975459579,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 8.083333333333334,
+				"y" : 0.3333333333333333,
+				"text" : "Composable micro tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "d54ef338-44db-0d00-ac1d-5388006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.33,
+			"y" : 0.1507283272760268,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -5.833333333333333,
+				"y" : 0.4166666666666667,
+				"text" : "Hypothesis driven"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "e64ef338-44db-0d00-ac1e-4378006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.71,
+			"y" : 0.1507283272760268,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.0,
+				"y" : 0.5,
+				"text" : "Gut feel driven"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "f54ef338-44db-0d00-ac1f-9e51006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"x" : 0.32,
+			"y" : 0.38175973016729625,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -4.416666666666667,
+				"y" : 0.3333333333333333,
+				"text" : "Model centric"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "024ff338-44db-0d00-ac20-f060006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.67,
+			"y" : 0.38175973016729625,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.0,
+				"y" : 0.5,
+				"text" : "\"Data centric\""
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.6661584806155136,
+			"y" : 0.6628780905222306,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 3.25,
+				"y" : -1.4166666666666572,
+				"text" : "Specific coding"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.4417453350756072,
+			"y" : 0.6628780905222306,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -6.0,
+				"y" : 0.5,
+				"text" : "Manual inspection"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "5e4ff338-44db-0d00-ac26-a588006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.296504018443009,
+			"y" : 0.5356950863380432,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -4.5,
+				"y" : 0.5,
+				"text" : "Manual views"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "6e4ff338-44db-0d00-ac27-b96f006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7944297546786045,
+			"y" : 0.5356950863380432,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.416666666666667,
+				"y" : 0.4166666666666667,
+				"text" : "Generated views"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "44d2bb3b-44db-0d00-ac2f-58b7006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.5409685943111726,
+			"y" : 0.790824975459579,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : -5.25,
+				"y" : 0.4166666666666667,
+				"text" : "Monolithic tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "f82089e0-31df-0d00-9ffc-190c0d0e8350",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"x" : 0.7172745278489115,
+			"y" : 0.9290608423099705,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.5,
+				"y" : 2.0,
+				"text" : "System"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "8904bf72-51df-0d00-980a-4bb20d0e8350",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.6255351712548015,
+			"y" : 0.790824975459579,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.8333333333333334,
+				"y" : 2.25,
+				"text" : "Plugin-based tools"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "d742feb2-95df-0d00-9459-0b89038a80c3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.8504398826979472,
+				"alpha" : 1.0,
+				"red" : 0.8504398826979472
+			},
+			"x" : 0.7844378201024328,
+			"y" : 0.6628780905222306,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 6.333333333333333,
+				"y" : 0.5833333333333334,
+				"text" : "LLM-aided coding"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		}
+	],
+	"edges" : [
+		{
+			"from" : "ab4ef338-44db-0d00-ac1a-497d006f725a",
+			"to" : "f54ef338-44db-0d00-ac1f-9e51006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "e64ef338-44db-0d00-ac1e-4378006f725a",
+			"to" : "9e4ef338-44db-0d00-ac19-42e6006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "9e4ef338-44db-0d00-ac19-42e6006f725a",
+			"to" : "024ff338-44db-0d00-ac20-f060006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "d54ef338-44db-0d00-ac1d-5388006f725a",
+			"to" : "ab4ef338-44db-0d00-ac1a-497d006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"to" : "df4df338-44db-0d00-ac10-8f29006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "494ef338-44db-0d00-ac15-f0ab006f725a",
+			"to" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "3c4ef338-44db-0d00-ac14-6c30006f725a",
+			"to" : "2f4ef338-44db-0d00-ac13-4de2006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "f54ef338-44db-0d00-ac1f-9e51006f725a",
+			"to" : "6e4ff338-44db-0d00-ac27-b96f006f725a",
+			"color" : {
+				"green" : 0.030303030303030304,
+				"blue" : 0.030303030303030304,
+				"alpha" : 1.0,
+				"red" : 1.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "024ff338-44db-0d00-ac20-f060006f725a",
+			"to" : "5e4ff338-44db-0d00-ac26-a588006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "5e4ff338-44db-0d00-ac26-a588006f725a",
+			"to" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
+			"to" : "44d2bb3b-44db-0d00-ac2f-58b7006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "6e4ff338-44db-0d00-ac27-b96f006f725a",
+			"to" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
+			"to" : "b94ef338-44db-0d00-ac1b-ec92006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
+			"to" : "8904bf72-51df-0d00-980a-4bb20d0e8350",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "f82089e0-31df-0d00-9ffc-190c0d0e8350",
+			"to" : "414df338-44db-0d00-ac0f-d195006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.0,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
+			"to" : "d742feb2-95df-0d00-9459-0b89038a80c3",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.8504398826979472,
+				"alpha" : 1.0,
+				"red" : 0.8504398826979472
+			},
+			"width" : 1.0,
+			"arrow" : true,
 			"label" : {
 				"x" : 0.5,
 				"y" : 0.5,
