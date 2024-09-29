@@ -8,7 +8,7 @@ Class {
 
 { #category : #'as yet unclassified' }
 FkMoldableDevelopmentGOTO2024Show class >> canvasCoordinates [
-	^ ((Array new: 10) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-619.9999999999998@ -672.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((449.0@ -656.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((791.0@ -1178.0)); at: 2 put: ((714.3203125@341.8046875)); yourself)); at: 4 put: (#slide401Title:->((Array new: 2) at: 1 put: ((-572.9999999999998@ -1187.0)); at: 2 put: ((443.31640624999983@349.0585937500002)); yourself)); at: 5 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1445.9999999999998@ -649.0000000000002)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 6 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((586.0@54.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 7 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-570.9999999999998@49.0)); at: 2 put: ((442.93749999999983@340.1562499999999)); yourself)); at: 8 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-628.0@583.0)); at: 2 put: ((550.6640625@334.1054687499999)); yourself)); at: 9 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((-38.0@ -1184.9999999999995)); at: 2 put: ((717.6289062499999@345.765625)); yourself)); at: 10 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((2.0@52.0)); at: 2 put: ((477.61328125000006@342.5078125)); yourself)); yourself)
+	^ ((Array new: 12) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-619.9999999999998@ -672.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((449.0@ -656.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((-602.0@ -1171.0)); at: 2 put: ((766.0234375@341.8046875)); yourself)); at: 4 put: (#slide401Title:->((Array new: 2) at: 1 put: ((-9.999999999999773@572.9999999999998)); at: 2 put: ((538.8671874999998@349.0585937500002)); yourself)); at: 5 put: (#slide110WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-606.0@100.0)); at: 2 put: ((558.01171875@330.64062500000006)); yourself)); at: 6 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1445.9999999999998@ -649.0000000000002)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 7 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((1079.0@91.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 8 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((26.000000000000227@96.0)); at: 2 put: ((442.93749999999983@340.1562499999999)); yourself)); at: 9 put: (#slide115WardleyMapWithActions:->((Array new: 2) at: 1 put: ((1802.0@96.0)); at: 2 put: ((477.40234374999955@310.61328125000006)); yourself)); at: 10 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-628.0@583.0)); at: 2 put: ((550.6640625@334.1054687499999)); yourself)); at: 11 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((536.0@90.0)); at: 2 put: ((477.61328125000006@342.5078125)); yourself)); at: 12 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((233.0@ -1180.9999999999995)); at: 2 put: ((717.6289062499999@345.765625)); yourself)); yourself)
 ]
 
 { #category : #accessing }
@@ -138,23 +138,25 @@ FkMoldableDevelopmentGOTO2024Show >> slide001Title: aSlide [
 	^ aSlide title
 		priority: 1;
 		titleWithFormat: ('moldable development' asRopedText 
-			fontSize: 50;
+			fontSize: 60;
 			glamorousCodeFont;
 			bold);
 		subtitleWithFormat: ('@girba' asRopedText 
-			fontSize: 40;
+			fontSize: 50;
 			glamorousCodeFont)
 ]
 
 { #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide002FeenkSlideFor: aSlide [
 	<gtSlide>
-	^ aSlide text
+	^ aSlide element
 		priority: 2;
-		horizontalWeight: 1;
-		newTextWithFormat: ('fee' asRopedText
-				fontSize: 100;
-				fontName: 'Desyrel'), ('nk' asRopedText fontSize: 75; fontName: 'Helvetica'; bold)
+		element: [ 
+		BrVerticalPane new 
+			matchParent
+			alignCenter;
+			addChild: 
+		(BrGlamorousVectorIcons feenk asElement size: 500@500) ]
 ]
 
 { #category : #accessing }
@@ -297,15 +299,14 @@ FkMoldableDevelopmentGOTO2024Show >> slide201GTSlideFor: aSlide [
 { #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide401Title: aSlide [
 	<gtSlide>
-	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
 	^ aSlide title
 		priority: 401;
 		titleWithFormat: ('moldable development' asRopedText 
-			fontSize: 50;
+			fontSize: 60;
 			glamorousCodeFont;
 			bold);
 		subtitleWithFormat: ('@girba' asRopedText 
-			fontSize: 40;
+			fontSize: 50;
 			glamorousCodeFont)
 ]
 
@@ -424,7 +425,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
 		ifNone: [  ].
-	^ element size: 1100 @ 700; asCanvassableElement
+	^ element size: 1000 @ 600; asCanvassableElement
 ]
 
 { #category : #accessing }
