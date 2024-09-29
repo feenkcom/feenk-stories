@@ -77,6 +77,40 @@
 				"elementHeight" : 556,
 				"codeHeight" : 50,
 				"codeVisible" : true
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-29T21:43:44.135123+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-29T21:43:48.506814+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ryf+CqnfDQCG4vvLA4qAww=="
+				},
+				"code" : "GtPresenterCanvas create: FkMoldableDevelopmentGOTO2024Show new"
 			}
 		]
 	},

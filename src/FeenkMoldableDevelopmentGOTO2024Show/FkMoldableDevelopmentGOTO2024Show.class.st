@@ -156,7 +156,7 @@ FkMoldableDevelopmentGOTO2024Show >> slide002FeenkSlideFor: aSlide [
 			matchParent
 			alignCenter;
 			addChild: 
-		(BrGlamorousVectorIcons feenk asElement size: 500@500) ]
+		(BrGlamorousVectorIcons feenk asElement size: 300@300) ]
 ]
 
 { #category : #accessing }
