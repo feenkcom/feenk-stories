@@ -137,13 +137,13 @@ FkMoldableDevelopmentGOTO2024Show >> slide001Title: aSlide [
 	<gtSlideNote: 'My name is Tudor Girba. I am the CEO of feenk and today I want to talk about Glamorous Toolkit.'>
 	^ aSlide title
 		priority: 1;
-		titleWithFormat: ('modernizing legacy systems' asRopedText 
+		titleWithFormat: ('moldable development' asRopedText 
 			fontSize: 50;
 			glamorousCodeFont;
-			bold)";
+			bold);
 		subtitleWithFormat: ('@girba' asRopedText 
 			fontSize: 40;
-			glamorousCodeFont)"
+			glamorousCodeFont)
 ]
 
 { #category : #accessing }
@@ -396,9 +396,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							stencil: [ (self
-									pagerWithPageNamed: 'Cozy Corner - Step By Step'
-									from: 'feenkcom/uhmo/lepiter') maximized ]} ]
+							stencil: [ GtPresenterSlideShow create: FkExplainingTokenizationShow new ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'INFORMATION'
