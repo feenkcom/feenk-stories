@@ -379,6 +379,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
+							tooltip: 'Data pipeline';
 							stencil: [ GtPresenterSlideShow create: FkDataPipelinePerformance2024Show new ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
@@ -387,6 +388,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
+							tooltip: 'AWS CardDemo';
 							stencil: [ (self
 									pagerWithPageNamed: 'Exploring AWS CardDemo'
 									from: 'feenkcom/gt4cobol/lepiter') maximized ]} ]
@@ -397,6 +399,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
+							tooltip: 'Tokenization';
 							stencil: [ GtPresenterSlideShow create: FkExplainingTokenizationShow new ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
@@ -405,7 +408,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							stencil: [ GtPresenterSlideShow create: FkDbMigrationCraftConf2024Show new ]} ]
+							tooltip: 'Architecture diagram';
+							stencil: [ GtPresenterSlideShow create: FkArchitectureDiagramShow new ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'SYNTHETIZATION'
