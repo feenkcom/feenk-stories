@@ -274,7 +274,16 @@ FkMoldableDevelopmentCraftConf2024Show >> slide113WardleyMapWithActions: aSlide 
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentCraftConf2024Show >> slide201GTSlideFor: aSlide [
+FkMoldableDevelopmentCraftConf2024Show >> slide211TreemapOfExtensionsAndExamples: aSlide [
+	<gtSlide>
+	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
+	^ aSlide element
+		priority: 311;
+		element: [ GtImage treemapWithAllExtensions ]
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentCraftConf2024Show >> slide301GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: 301;
@@ -283,15 +292,6 @@ FkMoldableDevelopmentCraftConf2024Show >> slide201GTSlideFor: aSlide [
 			glamorousRegularFont;
 			thin;
 			in: [:t | (t from: 'g' size + 1 to: t size) bold]; yourself)
-]
-
-{ #category : #accessing }
-FkMoldableDevelopmentCraftConf2024Show >> slide211TreemapOfExtensionsAndExamples: aSlide [
-	<gtSlide>
-	<text: 'There are thousands of extensions in Glamorous Toolkit out of the box.'>
-	^ aSlide element
-		priority: 311;
-		element: [ GtImage treemapWithAllExtensions ]
 ]
 
 { #category : #accessing }

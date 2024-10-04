@@ -8,7 +8,7 @@ Class {
 
 { #category : #'as yet unclassified' }
 FkMoldableDevelopmentGOTO2024Show class >> canvasCoordinates [
-	^ ((Array new: 12) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-560.9999999999998@208.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((504.0@167.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((-538.0@ -279.0)); at: 2 put: ((766.0234375@341.8046875)); yourself)); at: 4 put: (#slide110WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-524.0@836.0)); at: 2 put: ((558.01171875@330.640625)); yourself)); at: 5 put: (#slide401Title:->((Array new: 2) at: 1 put: ((77.00000000000023@1268.9999999999998)); at: 2 put: ((538.8671874999998@349.0585937500002)); yourself)); at: 6 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1516.9999999999998@139.99999999999977)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 7 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((1171.0@825.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 8 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((65.00000000000023@833.0)); at: 2 put: ((442.9374999999998@340.15625)); yourself)); at: 9 put: (#slide115WardleyMapWithActions:->((Array new: 2) at: 1 put: ((723.0@1284.0)); at: 2 put: ((588.0703124999995@310.61328125)); yourself)); at: 10 put: (#slide201GTSlideFor:->((Array new: 2) at: 1 put: ((-552.0@1261.0)); at: 2 put: ((550.6640625@334.10546875)); yourself)); at: 11 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((462.0@ -234.99999999999955)); at: 2 put: ((717.62890625@345.765625)); yourself)); at: 12 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((592.0@838.0)); at: 2 put: ((477.61328125@342.5078125)); yourself)); yourself)
+	^ ((Array new: 12) at: 1 put: (#slide003CustomTools:->((Array new: 2) at: 1 put: ((-560.9999999999998@208.0)); at: 2 put: ((975.4296874999998@514.5234375)); yourself)); at: 2 put: (#slide004Thousands:->((Array new: 2) at: 1 put: ((504.0@167.0)); at: 2 put: ((971.63671875@539.234375)); yourself)); at: 3 put: (#slide001Title:->((Array new: 2) at: 1 put: ((-538.0@ -279.0)); at: 2 put: ((766.0234375@341.8046875)); yourself)); at: 4 put: (#slide110WardleyMapWithActions:->((Array new: 2) at: 1 put: ((-524.0@836.0)); at: 2 put: ((558.01171875@330.640625)); yourself)); at: 5 put: (#slide401Title:->((Array new: 2) at: 1 put: ((77.00000000000023@1268.9999999999998)); at: 2 put: ((538.8671874999998@349.0585937500002)); yourself)); at: 6 put: (#slide005ThousandsPerSystem:->((Array new: 2) at: 1 put: ((1516.9999999999998@139.99999999999977)); at: 2 put: ((975.5781250000002@551.3398437500002)); yourself)); at: 7 put: (#slide114WardleyMapWithActions:->((Array new: 2) at: 1 put: ((1171.0@825.0)); at: 2 put: ((652.0273437500002@328.33984375)); yourself)); at: 8 put: (#slide111WardleyMapWithActions:->((Array new: 2) at: 1 put: ((65.00000000000023@833.0)); at: 2 put: ((442.9374999999998@340.15625)); yourself)); at: 9 put: (#slide515WardleyMapWithActions:->((Array new: 2) at: 1 put: ((723.0@1284.0)); at: 2 put: ((588.0703124999995@310.61328125)); yourself)); at: 10 put: (#slide301GTSlideFor:->((Array new: 2) at: 1 put: ((-552.0@1261.0)); at: 2 put: ((550.6640625@334.10546875)); yourself)); at: 11 put: (#slide002FeenkSlideFor:->((Array new: 2) at: 1 put: ((462.0@ -234.99999999999955)); at: 2 put: ((717.62890625@345.765625)); yourself)); at: 12 put: (#slide112WardleyMapWithActions:->((Array new: 2) at: 1 put: ((592.0@838.0)); at: 2 put: ((477.61328125@342.5078125)); yourself)); yourself)
 ]
 
 { #category : #accessing }
@@ -262,7 +262,7 @@ FkMoldableDevelopmentGOTO2024Show >> slide112WardleyMapWithActions: aSlide [
 
 { #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide113WardleyMapWithActions: aSlide [
-	"<gtSlide>"
+	<gtSlide>
 	^ aSlide element
 		priority: 113;
 		element: [ self wardleyMapElementMoldableDevelopmentWithTension03 ]
@@ -277,15 +277,23 @@ FkMoldableDevelopmentGOTO2024Show >> slide114WardleyMapWithActions: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentGOTO2024Show >> slide115WardleyMapWithActions: aSlide [
+FkMoldableDevelopmentGOTO2024Show >> slide201GTSlideFor: aSlide [
 	<gtSlide>
-	^ aSlide element
-		priority: 515;
-		element: [ self wardleyMapElementMoldableDevelopmentWithTension05 ]
+	^ aSlide text
+		priority: 201;
+		horizontalWeight: 1;
+		newTextWithFormat: ('feenk [fiːŋk]
+verb
+feel and think concomitantly.' asRopedText
+				fontSize: 40;
+				glamorousCodeFont;
+				in: [ :t | 
+					(t from: 1 to: 'feenk' size) bold; fontSize: 60 ];
+				yourself)
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentGOTO2024Show >> slide201GTSlideFor: aSlide [
+FkMoldableDevelopmentGOTO2024Show >> slide301GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
 		priority: 301;
@@ -308,6 +316,14 @@ FkMoldableDevelopmentGOTO2024Show >> slide401Title: aSlide [
 		subtitleWithFormat: ('@girba' asRopedText 
 			fontSize: 50;
 			glamorousCodeFont)
+]
+
+{ #category : #accessing }
+FkMoldableDevelopmentGOTO2024Show >> slide515WardleyMapWithActions: aSlide [
+	<gtSlide>
+	^ aSlide element
+		priority: 515;
+		element: [ self wardleyMapElementMoldableDevelopmentWithTension05 ]
 ]
 
 { #category : #accessing }
@@ -408,7 +424,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							tooltip: 'Architecture diagram';
+							tooltip: 'Diagram';
 							stencil: [ GtPresenterSlideShow create: FkArchitectureDiagramShow new ]} ]
 		ifNone: [  ].
 	element wardleyMapViewModel wardleyMapModel
@@ -417,6 +433,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
+							tooltip: 'Custom chat';
 							stencil: [ self
 									pagerWithPageNamed: 'Creating a post tutor'
 									from: 'default' ]} ]
@@ -426,10 +443,11 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 		ifFound: [ :aNode | 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
+							tooltip: 'Micro tools';
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
 		ifNone: [  ].
-	^ element size: 1000 @ 600; asCanvassableElement
+	^ element size: 960 @ 600; asCanvassableElement
 ]
 
 { #category : #accessing }
@@ -1527,7 +1545,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.0
 			},
 			"x" : 0.7172745278489115,
-			"y" : 0.9290608423099705,
+			"y" : 0.9185713318204601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1798,19 +1816,19 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5490052582510236,
+			"x" : 0.529213591584357,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.5833333333333333,
+				"x" : 1.4166666666666667,
 				"y" : -0.75,
 				"text" : "SYNTHETIZATION"
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.47400525825102363,
-				"y" : 0.6240052582510236,
+				"x" : 0.454213591584357,
+				"y" : 0.604213591584357,
 				"inner_nodes" : [ ]
 			},
 			"evolve" : {
@@ -1853,7 +1871,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.0
 			},
 			"x" : 0.7172745278489115,
-			"y" : 0.9290608423099705,
+			"y" : 0.9185713318204601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -1979,13 +1997,13 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			}
 		},
 		{
-			"from" : "0d4ef338-44db-0d00-ac11-cfb0006f725a",
-			"to" : "6f4ef338-44db-0d00-ac18-1d72006f725a",
+			"from" : "6f4ef338-44db-0d00-ac18-1d72006f725a",
+			"to" : "0d4ef338-44db-0d00-ac11-cfb0006f725a",
 			"color" : {
-				"green" : 0.030303030303030304,
-				"blue" : 0.030303030303030304,
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
 				"alpha" : 1.0,
-				"red" : 1.0
+				"red" : 0.0
 			},
 			"width" : 1.0,
 			"arrow" : false,
@@ -2241,19 +2259,19 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5490052582510236,
+			"x" : 0.529213591584357,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.5833333333333333,
+				"x" : 1.4166666666666667,
 				"y" : -0.75,
 				"text" : "SYNTHETIZATION"
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.4317453350756072,
-				"y" : 0.5590052582510237,
+				"x" : 0.3119536684089405,
+				"y" : 0.539213591584357,
 				"inner_nodes" : [
 					"4e4ff338-44db-0d00-ac25-2bbd006f725a"
 				]
@@ -2371,7 +2389,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.4417453350756072,
+			"x" : 0.3219536684089405,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
@@ -2444,7 +2462,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.0
 			},
 			"x" : 0.7172745278489115,
-			"y" : 0.9290608423099705,
+			"y" : 0.9185713318204601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2674,7 +2692,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 	^ '{
 	"title" : {
 		"text" : "Tudor, Simon - Moldable Development - 14.06.2024",
-		"is_visible" : true
+		"is_visible" : false
 	},
 	"nodes" : [
 		{
@@ -2686,12 +2704,12 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 1.0
 			},
 			"x" : 0.5518703241895262,
-			"y" : 0.2558814333131154,
+			"y" : 0.26400266355921254,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.16666666666666666,
-				"y" : -1.25,
+				"x" : 0.5833333333333334,
+				"y" : -1.0,
 				"text" : "EXPLORATION"
 			},
 			"pipeline" : {
@@ -2715,22 +2733,23 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.7230191355233967,
-			"y" : 0.6080972949223934,
+			"x" : 0.6986913506322315,
+			"y" : 0.790824975459579,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -3.0,
-				"y" : -1.0,
+				"x" : 0.25,
+				"y" : -0.9166666666666666,
 				"text" : "DEVELOPMENT EXPERIENCE"
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.7012630885493287,
-				"y" : 0.7865675322167998,
+				"x" : 0.5309685943111726,
+				"y" : 0.7904087614101416,
 				"inner_nodes" : [
 					"b94ef338-44db-0d00-ac1b-ec92006f725a",
-					"44d2bb3b-44db-0d00-ac2f-58b7006f725a"
+					"44d2bb3b-44db-0d00-ac2f-58b7006f725a",
+					"8904bf72-51df-0d00-980a-4bb20d0e8350"
 				]
 			},
 			"evolve" : {
@@ -2750,8 +2769,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.583333333333333,
-				"y" : -0.75,
+				"x" : 3.6666666666666665,
+				"y" : -0.8333333333333334,
 				"text" : "ASSESSMENT"
 			},
 			"pipeline" : {
@@ -2776,12 +2795,12 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 1.0
 			},
 			"x" : 0.55,
-			"y" : 0.36281019292640293,
+			"y" : 0.38175973016729625,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 0.6666666666666666,
-				"y" : -1.1666666666666667,
+				"x" : 0.5833333333333334,
+				"y" : -0.9166666666666666,
 				"text" : "CONVERSATION"
 			},
 			"pipeline" : {
@@ -2791,36 +2810,6 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"inner_nodes" : [
 					"f54ef338-44db-0d00-ac1f-9e51006f725a",
 					"024ff338-44db-0d00-ac20-f060006f725a"
-				]
-			},
-			"evolve" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "224ef338-44db-0d00-ac12-5d0e006f725a",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.9198435972629521,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.628719590268886,
-			"y" : 0.840830743303438,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 6.416666666666667,
-				"y" : -1.0,
-				"text" : "DEVELOPMENT ENVIRONMENT"
-			},
-			"pipeline" : {
-				"is_visible" : true,
-				"x" : 0.49871959026888607,
-				"y" : 0.7187195902688861,
-				"inner_nodes" : [
-					"114ff338-44db-0d00-ac21-48e3006f725a",
-					"204ff338-44db-0d00-ac22-3ad5006f725a"
 				]
 			},
 			"evolve" : {
@@ -2907,19 +2896,19 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5848567307222141,
-			"y" : 0.7197267022449108,
+			"x" : 0.529213591584357,
+			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 4.083333333333333,
+				"x" : 1.4166666666666667,
 				"y" : -0.75,
 				"text" : "SYNTHETIZATION"
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.4048567307222141,
-				"y" : 0.6915233973888808,
+				"x" : 0.3119536684089405,
+				"y" : 0.643866813948847,
 				"inner_nodes" : [
 					"3f4ff338-44db-0d00-ac24-e4fb006f725a",
 					"4e4ff338-44db-0d00-ac25-2bbd006f725a"
@@ -2937,8 +2926,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.539064837905237,
-			"y" : 0.49508893510755747,
+			"x" : 0.536504018443009,
+			"y" : 0.5356950863380432,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2948,8 +2937,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.2890648379052369,
-				"y" : 0.8069905741408324,
+				"x" : 0.286504018443009,
+				"y" : 0.8044297546786046,
 				"inner_nodes" : [
 					"5e4ff338-44db-0d00-ac26-a588006f725a",
 					"6e4ff338-44db-0d00-ac27-b96f006f725a"
@@ -2968,7 +2957,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.624633431085044
 			},
 			"x" : 0.7418703241895261,
-			"y" : 0.2558814333131154,
+			"y" : 0.26400266355921254,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -2992,7 +2981,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 1.0
 			},
 			"x" : 0.2686284289276808,
-			"y" : 0.2558814333131154,
+			"y" : 0.26400266355921254,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -3015,14 +3004,14 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.7765675322167997,
-			"y" : 0.6080972949223934,
+			"x" : 0.7804087614101416,
+			"y" : 0.790824975459579,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 8.083333333333334,
 				"y" : 0.3333333333333333,
-				"text" : "Composable & contextual"
+				"text" : "Composable micro tools"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -3088,7 +3077,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 1.0
 			},
 			"x" : 0.32,
-			"y" : 0.36281019292640293,
+			"y" : 0.38175973016729625,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -3112,61 +3101,13 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.624633431085044
 			},
 			"x" : 0.67,
-			"y" : 0.36281019292640293,
+			"y" : 0.38175973016729625,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 6.0,
 				"y" : 0.5,
 				"text" : "\"Data centric\""
-			},
-			"pipeline" : {
-				"is_visible" : false
-			},
-			"evolve" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "114ff338-44db-0d00-ac21-48e3006f725a",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.9198435972629521,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"x" : 0.5087195902688861,
-			"y" : 0.840830743303438,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : -4.166666666666667,
-				"y" : 0.5,
-				"text" : "Moldable"
-			},
-			"pipeline" : {
-				"is_visible" : false
-			},
-			"evolve" : {
-				"is_visible" : false
-			}
-		},
-		{
-			"id" : "204ff338-44db-0d00-ac22-3ad5006f725a",
-			"color" : {
-				"green" : 0.624633431085044,
-				"blue" : 0.624633431085044,
-				"alpha" : 1.0,
-				"red" : 0.624633431085044
-			},
-			"x" : 0.7087195902688861,
-			"y" : 0.840830743303438,
-			"width" : 12,
-			"height" : 12,
-			"label" : {
-				"x" : 6.166666666666667,
-				"y" : 0.4166666666666667,
-				"text" : "Institutionalized"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -3183,13 +3124,13 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6815233973888808,
-			"y" : 0.7197267022449108,
+			"x" : 0.633866813948847,
+			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.833333333333333,
-				"y" : 0.41666666666667596,
+				"x" : 3.25,
+				"y" : -1.4166666666666572,
 				"text" : "Specific coding"
 			},
 			"pipeline" : {
@@ -3207,8 +3148,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.41485673072221413,
-			"y" : 0.7197267022449108,
+			"x" : 0.3219536684089405,
+			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -3231,8 +3172,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.2990648379052369,
-			"y" : 0.49508893510755747,
+			"x" : 0.296504018443009,
+			"y" : 0.5356950863380432,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -3255,8 +3196,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.7969905741408324,
-			"y" : 0.49508893510755747,
+			"x" : 0.7944297546786045,
+			"y" : 0.5356950863380432,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -3279,14 +3220,14 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.7112630885493287,
-			"y" : 0.6080972949223934,
+			"x" : 0.5409685943111726,
+			"y" : 0.790824975459579,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -3.0,
-				"y" : 0.5833333333333334,
-				"text" : "Fixed"
+				"x" : -5.25,
+				"y" : 0.4166666666666667,
+				"text" : "Monolithic tools"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -3303,14 +3244,38 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6404499439820741,
-			"y" : 0.9371820725560677,
+			"x" : 0.7172745278489115,
+			"y" : 0.9185713318204601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
 				"x" : 0.5,
 				"y" : 2.0,
 				"text" : "System"
+			},
+			"pipeline" : {
+				"is_visible" : false
+			},
+			"evolve" : {
+				"is_visible" : false
+			}
+		},
+		{
+			"id" : "8904bf72-51df-0d00-980a-4bb20d0e8350",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"x" : 0.6255351712548015,
+			"y" : 0.790824975459579,
+			"width" : 12,
+			"height" : 12,
+			"label" : {
+				"x" : 0.8333333333333334,
+				"y" : 2.25,
+				"text" : "Plugin-based tools"
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -3448,78 +3413,6 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			}
 		},
 		{
-			"from" : "114ff338-44db-0d00-ac21-48e3006f725a",
-			"to" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.9198435972629521,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false,
-			"label" : {
-				"x" : 0.5,
-				"y" : 0.5,
-				"is_visible" : false,
-				"text" : "Edge label"
-			}
-		},
-		{
-			"from" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
-			"to" : "b94ef338-44db-0d00-ac1b-ec92006f725a",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.9198435972629521,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false,
-			"label" : {
-				"x" : 0.5,
-				"y" : 0.5,
-				"is_visible" : false,
-				"text" : "Edge label"
-			}
-		},
-		{
-			"from" : "6e4ff338-44db-0d00-ac27-b96f006f725a",
-			"to" : "b94ef338-44db-0d00-ac1b-ec92006f725a",
-			"color" : {
-				"green" : 0.0,
-				"blue" : 0.9198435972629521,
-				"alpha" : 1.0,
-				"red" : 0.0
-			},
-			"width" : 1.0,
-			"arrow" : false,
-			"label" : {
-				"x" : 0.5,
-				"y" : 0.5,
-				"is_visible" : false,
-				"text" : "Edge label"
-			}
-		},
-		{
-			"from" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
-			"to" : "204ff338-44db-0d00-ac22-3ad5006f725a",
-			"color" : {
-				"green" : 0.624633431085044,
-				"blue" : 0.624633431085044,
-				"alpha" : 1.0,
-				"red" : 0.624633431085044
-			},
-			"width" : 1.0,
-			"arrow" : false,
-			"label" : {
-				"x" : 0.5,
-				"y" : 0.5,
-				"is_visible" : false,
-				"text" : "Edge label"
-			}
-		},
-		{
 			"from" : "f54ef338-44db-0d00-ac1f-9e51006f725a",
 			"to" : "6e4ff338-44db-0d00-ac27-b96f006f725a",
 			"color" : {
@@ -3557,24 +3450,6 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 		},
 		{
 			"from" : "5e4ff338-44db-0d00-ac26-a588006f725a",
-			"to" : "44d2bb3b-44db-0d00-ac2f-58b7006f725a",
-			"color" : {
-				"green" : 0.624633431085044,
-				"blue" : 0.624633431085044,
-				"alpha" : 1.0,
-				"red" : 0.624633431085044
-			},
-			"width" : 1.0,
-			"arrow" : false,
-			"label" : {
-				"x" : 0.5,
-				"y" : 0.5,
-				"is_visible" : false,
-				"text" : "Edge label"
-			}
-		},
-		{
-			"from" : "44d2bb3b-44db-0d00-ac2f-58b7006f725a",
 			"to" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
 			"color" : {
 				"green" : 0.624633431085044,
@@ -3592,11 +3467,29 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			}
 		},
 		{
-			"from" : "f82089e0-31df-0d00-9ffc-190c0d0e8350",
-			"to" : "114ff338-44db-0d00-ac21-48e3006f725a",
+			"from" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
+			"to" : "44d2bb3b-44db-0d00-ac2f-58b7006f725a",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "6e4ff338-44db-0d00-ac27-b96f006f725a",
+			"to" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
 			"color" : {
 				"green" : 0.0,
-				"blue" : 0.0,
+				"blue" : 0.9198435972629521,
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
@@ -3610,8 +3503,44 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			}
 		},
 		{
+			"from" : "3f4ff338-44db-0d00-ac24-e4fb006f725a",
+			"to" : "b94ef338-44db-0d00-ac1b-ec92006f725a",
+			"color" : {
+				"green" : 0.0,
+				"blue" : 0.9198435972629521,
+				"alpha" : 1.0,
+				"red" : 0.0
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
+			"from" : "4e4ff338-44db-0d00-ac25-2bbd006f725a",
+			"to" : "8904bf72-51df-0d00-980a-4bb20d0e8350",
+			"color" : {
+				"green" : 0.624633431085044,
+				"blue" : 0.624633431085044,
+				"alpha" : 1.0,
+				"red" : 0.624633431085044
+			},
+			"width" : 1.0,
+			"arrow" : false,
+			"label" : {
+				"x" : 0.5,
+				"y" : 0.5,
+				"is_visible" : false,
+				"text" : "Edge label"
+			}
+		},
+		{
 			"from" : "f82089e0-31df-0d00-9ffc-190c0d0e8350",
-			"to" : "204ff338-44db-0d00-ac22-3ad5006f725a",
+			"to" : "414df338-44db-0d00-ac0f-d195006f725a",
 			"color" : {
 				"green" : 0.0,
 				"blue" : 0.0,
@@ -3840,19 +3769,19 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5490052582510236,
+			"x" : 0.529213591584357,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.5833333333333333,
+				"x" : 1.4166666666666667,
 				"y" : -0.75,
 				"text" : "SYNTHETIZATION"
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.4317453350756072,
-				"y" : 0.6761584806155136,
+				"x" : 0.3119536684089405,
+				"y" : 0.643866813948847,
 				"inner_nodes" : [
 					"3f4ff338-44db-0d00-ac24-e4fb006f725a",
 					"4e4ff338-44db-0d00-ac25-2bbd006f725a"
@@ -3937,7 +3866,22 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"is_visible" : false
 			},
 			"evolve" : {
-				"is_visible" : false
+				"is_visible" : true,
+				"evolution" : 0.4686284289276808,
+				"color" : {
+					"green" : 0.0,
+					"blue" : 0.0,
+					"alpha" : 1.0,
+					"red" : 1.0
+				},
+				"width" : 12,
+				"height" : 12,
+				"label" : {
+					"x" : 0.5,
+					"y" : 2.0,
+					"text" : "Moldable Development",
+					"is_visible" : false
+				}
 			}
 		},
 		{
@@ -3985,7 +3929,22 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"is_visible" : false
 			},
 			"evolve" : {
-				"is_visible" : false
+				"is_visible" : true,
+				"evolution" : 0.53,
+				"color" : {
+					"green" : 0.0,
+					"blue" : 0.0,
+					"alpha" : 1.0,
+					"red" : 1.0
+				},
+				"width" : 12,
+				"height" : 12,
+				"label" : {
+					"x" : 0.5,
+					"y" : 2.0,
+					"text" : "Hypothesis driven",
+					"is_visible" : false
+				}
 			}
 		},
 		{
@@ -4033,7 +3992,22 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"is_visible" : false
 			},
 			"evolve" : {
-				"is_visible" : false
+				"is_visible" : true,
+				"evolution" : 0.52,
+				"color" : {
+					"green" : 0.0,
+					"blue" : 0.0,
+					"alpha" : 1.0,
+					"red" : 1.0
+				},
+				"width" : 12,
+				"height" : 12,
+				"label" : {
+					"x" : 0.5,
+					"y" : 2.0,
+					"text" : "Model centric",
+					"is_visible" : false
+				}
 			}
 		},
 		{
@@ -4068,13 +4042,13 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6661584806155136,
+			"x" : 0.633866813948847,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.5,
-				"y" : 0.3333333333333428,
+				"x" : 3.25,
+				"y" : -1.4166666666666572,
 				"text" : "Specific coding"
 			},
 			"pipeline" : {
@@ -4092,7 +4066,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.4417453350756072,
+			"x" : 0.3219536684089405,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
@@ -4189,7 +4163,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.0
 			},
 			"x" : 0.7172745278489115,
-			"y" : 0.9290608423099705,
+			"y" : 0.9185713318204601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -4713,19 +4687,19 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.5490052582510236,
+			"x" : 0.529213591584357,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 1.5833333333333333,
+				"x" : 1.4166666666666667,
 				"y" : -0.75,
 				"text" : "SYNTHETIZATION"
 			},
 			"pipeline" : {
 				"is_visible" : true,
-				"x" : 0.4317453350756072,
-				"y" : 0.7944378201024328,
+				"x" : 0.3119536684089405,
+				"y" : 0.7444378201024328,
 				"inner_nodes" : [
 					"3f4ff338-44db-0d00-ac24-e4fb006f725a",
 					"4e4ff338-44db-0d00-ac25-2bbd006f725a",
@@ -4811,7 +4785,22 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"is_visible" : false
 			},
 			"evolve" : {
-				"is_visible" : false
+				"is_visible" : true,
+				"evolution" : 0.4686284289276808,
+				"color" : {
+					"green" : 0.0,
+					"blue" : 0.0,
+					"alpha" : 1.0,
+					"red" : 1.0
+				},
+				"width" : 12,
+				"height" : 12,
+				"label" : {
+					"x" : 0.5,
+					"y" : 2.0,
+					"text" : "Moldable Development",
+					"is_visible" : false
+				}
 			}
 		},
 		{
@@ -4859,7 +4848,22 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"is_visible" : false
 			},
 			"evolve" : {
-				"is_visible" : false
+				"is_visible" : true,
+				"evolution" : 0.53,
+				"color" : {
+					"green" : 0.0,
+					"blue" : 0.0,
+					"alpha" : 1.0,
+					"red" : 1.0
+				},
+				"width" : 12,
+				"height" : 12,
+				"label" : {
+					"x" : 0.5,
+					"y" : 2.0,
+					"text" : "Hypothesis driven",
+					"is_visible" : false
+				}
 			}
 		},
 		{
@@ -4907,7 +4911,22 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"is_visible" : false
 			},
 			"evolve" : {
-				"is_visible" : false
+				"is_visible" : true,
+				"evolution" : 0.52,
+				"color" : {
+					"green" : 0.0,
+					"blue" : 0.0,
+					"alpha" : 1.0,
+					"red" : 1.0
+				},
+				"width" : 12,
+				"height" : 12,
+				"label" : {
+					"x" : 0.5,
+					"y" : 2.0,
+					"text" : "Model centric",
+					"is_visible" : false
+				}
 			}
 		},
 		{
@@ -4942,7 +4961,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.0
 			},
-			"x" : 0.6661584806155136,
+			"x" : 0.633866813948847,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
@@ -4966,7 +4985,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.624633431085044
 			},
-			"x" : 0.4417453350756072,
+			"x" : 0.3219536684089405,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
@@ -5063,7 +5082,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"red" : 0.0
 			},
 			"x" : 0.7172745278489115,
-			"y" : 0.9290608423099705,
+			"y" : 0.9185713318204601,
 			"width" : 12,
 			"height" : 12,
 			"label" : {
@@ -5110,7 +5129,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 				"alpha" : 1.0,
 				"red" : 0.8504398826979472
 			},
-			"x" : 0.7844378201024328,
+			"x" : 0.7344378201024327,
 			"y" : 0.6628780905222306,
 			"width" : 12,
 			"height" : 12,
