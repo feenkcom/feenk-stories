@@ -12,7 +12,8 @@ FkExplainingTokenizationShow >> karpathyTokenizationVideoSlideFor: aSlide [
 	^ aSlide element
 		priority: 001;
 		element: [ GtWebViewElement new
-		url: 'https://youtu.be/zduSFxRajkE?si=1__f6guqVJyPGFor&t=353';
+		url: 'file:///Users/girba/Movies/Movies/andrej-karpathy-lets-build-the-GPT-tokenizer.html';
+		"url: 'https://youtu.be/zduSFxRajkE?si=1__f6guqVJyPGFor&t=353';"
 		margin: (BlInsets all: 100) ]
 ]
 
