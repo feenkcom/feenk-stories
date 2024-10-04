@@ -3129,8 +3129,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 3.25,
-				"y" : -1.4166666666666572,
+				"x" : 5.833333333333333,
+				"y" : 0.4166666666666761,
 				"text" : "Specific coding"
 			},
 			"pipeline" : {
@@ -4047,8 +4047,8 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 3.25,
-				"y" : -1.4166666666666572,
+				"x" : 5.833333333333333,
+				"y" : 0.4166666666666761,
 				"text" : "Specific coding"
 			},
 			"pipeline" : {
