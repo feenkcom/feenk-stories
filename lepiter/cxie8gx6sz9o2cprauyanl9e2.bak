@@ -129,6 +129,80 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-07-03T00:14:38.300547+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-02T20:58:01.697842+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wWHJxqzYDQC8iGzeC8iH3g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[ESUG 2024]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-02T20:58:02.18509+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-12-02T20:58:27.284348+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lPT6s7DkDQCl6Bh0Dz5S2A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[DevX Working Group 2024]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-05-27T23:29:49.952915+02:00"
 					}
 				},
@@ -166,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:31:45.776576+01:00"
+						"dateAndTimeString" : "2024-04-23T18:09:15.814733+02:00"
 					}
 				},
 				"editEmail" : {
@@ -177,91 +251,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:31:51.977057+01:00"
+						"dateAndTimeString" : "2024-04-23T18:09:28.250379+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "l3Gdsm3LDQCg21+FD9kBhQ=="
+					"uidString" : "j4k2gyfTDQCQU/hyDGEktw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[IDE Summit 2020]] "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-03T00:14:38.300547+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-07-03T00:14:42.088589+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wWHJxqzYDQC8iGzeC8iH3g=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[ESUG 2024]]"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:13:59.916512+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-16T09:14:05.497394+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cbYVc23LDQCP8sjFA1p5Fg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[ESUG 2023]]"
+				"string" : "[[UKSTUG 2024]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -314,7 +314,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-23T18:09:15.814733+02:00"
+						"dateAndTimeString" : "2024-01-16T09:13:59.916512+01:00"
 					}
 				},
 				"editEmail" : {
@@ -325,17 +325,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-23T18:09:28.250379+02:00"
+						"dateAndTimeString" : "2024-01-16T09:14:05.497394+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "j4k2gyfTDQCQU/hyDGEktw=="
+					"uidString" : "cbYVc23LDQCP8sjFA1p5Fg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[UKSTUG 2024]]"
+				"string" : "[[ESUG 2023]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-16T09:31:45.776576+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-16T09:31:51.977057+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "l3Gdsm3LDQCg21+FD9kBhQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[IDE Summit 2020]] "
 			},
 			{
 				"__type" : "textSnippet",
