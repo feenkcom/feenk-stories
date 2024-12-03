@@ -86,7 +86,9 @@ FeenkMoldableDevelopmentDevX2024 >> slide015SingleObjectAllViewsSlide: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: 1.5;
-		element: [ (GtGraphTreemapLayoutExamples >> #squarifyWithSevenNodes) gtExample returnValue  gtViewsFor: GtPhlowView empty  ];
+		element: [ 
+			(GtPager createWrappedOn: (GtInspector newOn: (GtGraphTreemapLayoutExamples >> #squarifyWithSevenNodes) gtExample returnValue))
+				maximized  ];
 		newFadedText: 'Every object can have multiple domain-specific views'.
 ]
 
@@ -96,7 +98,7 @@ FeenkMoldableDevelopmentDevX2024 >> slide02TreeMapPageSlide: aSlide [
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
-		priority: 5;
+		priority: 2;
 		startPage: (LeDatabase gtBook
 			pageNamed: 'Explaining the squarified treemap algorithm')
 ]
@@ -108,49 +110,55 @@ FeenkMoldableDevelopmentDevX2024 >> slide03ToolsAsSnippetsSlide: aSlide [
 
 	^ aSlide lepiterPage
 		priority: 3;
-		startPage: (self db pageNamed: 'Tools  as composable snippets')
+		startPage: (LeDatabasesRegistry uniqueInstance defaultLogicalDatabase
+			pageNamed: 'Tools as composable snippets')
 ]
 
 { #category : #'as yet unclassified' }
-FeenkMoldableDevelopmentDevX2024 >> slide5DifferentSnippets: aSlide [
+FeenkMoldableDevelopmentDevX2024 >> slide5TokenizationExplanation: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 	
-	^ aSlide labelAndElement
+	^ aSlide lepiterPage
 		priority: 5;
-		newFadedText: 'Tools can be expressed as snippets and combined to form custom workflows';
-		element: [ 
-			GtDifferentSnippetsLiveSlide new 
-				page: (self db pageNamed: 'Different snippets') ]
+		startPage: (LeDatabasesRegistry uniqueInstance defaultLogicalDatabase
+			pageNamed: 'Explaining Andrej Karpathy''s tokenization explanation')
 ]
 
 { #category : #'as yet unclassified' }
-FeenkMoldableDevelopmentDevX2024 >> slide61LudoInspectors: aSlide [
+FeenkMoldableDevelopmentDevX2024 >> slide61TreeMapInspectors: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
 
 	^ aSlide element
 		priority: 6;
-		element: [  "GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"
-			|scripter|
+		element: [  
+			(GtPager createWrappedOn: (GtInspector newOn: GtGraphTreemapLayoutExamples new squarifyWithSevenNodes))
+			"|scripter|
 			scripter := GtInspectorScripterExamples
 					new
-					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
-					withPlaygroundTextAndDoit: 'self moves last'.
-			scripter elementWithoutParent ]
+					scriptedInspectorInPagerOn: GtGraphTreemapLayoutExamples new squarifyWithSevenNodes
+					withPlaygroundTextAndDoit: 'firstStep withPreviousAndNextSteps at: 6'.
+			scripter elementWithoutParent" ]
 ]
 
 { #category : #'as yet unclassified' }
 FeenkMoldableDevelopmentDevX2024 >> slide62LudoInspectorsExploded: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'Viewed objects'>
-	| scripter element |
 	
 	^ aSlide element
 		priority: 6.2;
-		element: [ scripter := GtInspectorScripterExamples new
+		element: [ 
+			| scripter element |
+			"scripter := GtInspectorScripterExamples
+					new
 					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
-					withPlaygroundTextAndDoit: 'self moves last'.
+					withPlaygroundTextAndDoit: 'self moves last'."
+			
+		scripter := GtInspectorScripterExamples new
+					scriptedInspectorInPagerOn: GtGraphTreemapLayoutExamples new squarifyWithSevenNodes
+					withPlaygroundTextAndDoit: 'firstStep withPreviousAndNextSteps at: 6'.
 			element := scripter elementWithoutParent.
 			GtPresenterElementExplosion new
 						preferredLayerExtent: 800 @ 400;
