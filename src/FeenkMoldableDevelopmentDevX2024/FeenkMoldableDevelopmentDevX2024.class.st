@@ -45,7 +45,12 @@ FeenkMoldableDevelopmentDevX2024 >> slide011RawSingleInspector: aSlide [
 		priority: 1.1;
 		newFadedText: 'Basic inspectors allow us to understand how an object is implemented';
 		element: [ 
-			 (GtGraphTreemapLayoutExamples >> #squarifyWithSevenNodes) gtExample returnValue gtRawFor: GtPhlowView empty.  ]
+			BrVerticalPane new 
+					aptitude: BrShadowAptitude; 
+					background: Color white;
+					margin: (BlInsets all: 20);
+					matchParent;
+					addChild: ((GtGraphTreemapLayoutExamples >> #squarifyWithSevenNodes) gtExample returnValue gtRawFor: GtPhlowView empty) asElement  ]
 ]
 
 { #category : #'as yet unclassified' }
@@ -172,6 +177,28 @@ FeenkMoldableDevelopmentDevX2024 >> slide62LudoInspectorsExploded: aSlide [
 						each class = LePharoSnippetElement ] ]
 							label: 'Embeddable content';
 						explode: element ]
+]
+
+{ #category : #'as yet unclassified' }
+FeenkMoldableDevelopmentDevX2024 >> slide7VisualLanguage: aSlide [
+	<gtSlide>
+	
+	^ aSlide text
+		priority: 7;
+		newText: ('glamorous toolkit: a uniform environment made out of visual and interactive operators that can be combined inexpensively in many ways' asRopedText 
+			fontSize: 64;
+			in: [:t | (t from: 1 to: 'glamorous toolkit' size) bold];
+			"glamorousRegularFont;"
+			yourself);
+		newText: ('moldable development: a way of programming through custom tools built for each problem.' asRopedText 
+			fontSize: 64;
+			in: [:t | (t from: 1 to: 'moldable development' size) bold];
+			yourself);
+		newText: ('development experience: empower developers to make systems explainable through tools tailored for each problem' asRopedText 
+			fontSize: 64;
+			in: [:t | (t from: 1 to: 'development experience' size) bold];
+			"glamorousRegularFont;"
+			yourself)
 ]
 
 { #category : #'as yet unclassified' }
