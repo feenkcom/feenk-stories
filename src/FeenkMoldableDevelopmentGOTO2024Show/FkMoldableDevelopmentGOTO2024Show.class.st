@@ -269,14 +269,6 @@ FkMoldableDevelopmentGOTO2024Show >> slide113WardleyMapWithActions: aSlide [
 ]
 
 { #category : #accessing }
-FkMoldableDevelopmentGOTO2024Show >> slide114WardleyMapWithActions: aSlide [
-	<gtSlide>
-	^ aSlide element
-		priority: 114;
-		element: [ self wardleyMapElementMoldableDevelopmentWithTension04 ]
-]
-
-{ #category : #accessing }
 FkMoldableDevelopmentGOTO2024Show >> slide201GTSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide text
@@ -433,12 +425,12 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 			aNode
 				wardleyMapDecoratorModels: {GtWardleyMapMaximizerAction new
 							icon: BrGlamorousVectorIcons inspect;
-							tooltip: 'Custom chat';
+							tooltip: 'REST API';
 							stencil: [ self
-									pagerWithPageNamed: 'Creating a post tutor'
-									from: 'default' ]} ]
+									pagerWithPageNamed: 'Working with a REST API: the GitHub case study'
+									from: 'Glamorous Toolkit Book' ]} ]
 		ifNone: [  ].
-	element wardleyMapViewModel wardleyMapModel
+	"element wardleyMapViewModel wardleyMapModel
 		nodeWithName: 'DEVELOPMENT EXPERIENCE'
 		ifFound: [ :aNode | 
 			aNode
@@ -446,7 +438,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapElementWithActionsFromJson: json 
 							tooltip: 'Micro tools';
 							icon: BrGlamorousVectorIcons inspect;
 							stencil: [ GtPresenterSlideShow create: FkMoldableDevelopmentViewsCraftConf2024Show new ]} ]
-		ifNone: [  ].
+		ifNone: [  ]."
 	^ element size: 960 @ 600; asCanvassableElement
 ]
 
@@ -2418,9 +2410,9 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.5,
+				"x" : -3.25,
 				"y" : 0.5,
-				"text" : "Manual views"
+				"text" : "Manual "
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -3129,7 +3121,7 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 5.833333333333333,
+				"x" : 6.166666666666667,
 				"y" : 0.4166666666666761,
 				"text" : "Specific coding"
 			},
@@ -3177,9 +3169,9 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.5,
+				"x" : -3.25,
 				"y" : 0.5,
-				"text" : "Manual views"
+				"text" : "Manual "
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -3201,9 +3193,9 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.416666666666667,
+				"x" : 5.0,
 				"y" : 0.4166666666666667,
-				"text" : "Generated views"
+				"text" : "Generated "
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -5014,9 +5006,9 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : -4.5,
+				"x" : -3.25,
 				"y" : 0.5,
-				"text" : "Manual views"
+				"text" : "Manual "
 			},
 			"pipeline" : {
 				"is_visible" : false
@@ -5038,9 +5030,9 @@ FkMoldableDevelopmentGOTO2024Show >> wardleyMapJsonMoldableDevelopmentWithTensio
 			"width" : 12,
 			"height" : 12,
 			"label" : {
-				"x" : 6.416666666666667,
+				"x" : 5.0,
 				"y" : 0.4166666666666667,
-				"text" : "Generated views"
+				"text" : "Generated "
 			},
 			"pipeline" : {
 				"is_visible" : false
