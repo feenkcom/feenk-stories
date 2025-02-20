@@ -167,7 +167,7 @@ FkMoldableDevelopmentGOTO2024Show >> slide003CustomTools: aSlide [
 		horizontalWeight: 1;
 		newTextWithFormat: ('moldable development is
 programming through
-custom tools
+contextual tools
 a
 b' asRopedText
 				fontSize: 60;
@@ -188,7 +188,7 @@ FkMoldableDevelopmentGOTO2024Show >> slide004Thousands: aSlide [
 		newTextWithFormat: ('moldable development is
 programming through
 thousands of
-custom tools
+contextual tools
 b' asRopedText
 				fontSize: 60;
 				glamorousCodeFont;
@@ -211,7 +211,7 @@ FkMoldableDevelopmentGOTO2024Show >> slide005ThousandsPerSystem: aSlide [
 		newTextWithFormat: ('moldable development is
 programming through
 thousands of
-custom tools
+contextual tools
 per system' asRopedText
 				fontSize: 60;
 				glamorousCodeFont;
