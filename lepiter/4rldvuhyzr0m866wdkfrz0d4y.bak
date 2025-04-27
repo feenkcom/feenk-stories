@@ -44,7 +44,7 @@
 							"code" : "GtPresenterSlideShow create: FkMoldableDevelopmentGOTO2024Show new",
 							"elementHeight" : 416,
 							"codeHeight" : 45,
-							"codeVisible" : true
+							"codeVisible" : false
 						},
 						{
 							"__type" : "pharoSnippet",
