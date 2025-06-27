@@ -177,7 +177,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-27T10:42:50.911871+02:00"
+						"dateAndTimeString" : "2025-06-27T16:31:18.075893+02:00"
 					}
 				},
 				"uid" : {
@@ -187,7 +187,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[ESUG 2025]]"
+				"string" : "[[ESUG 2025]]]"
 			},
 			{
 				"__type" : "textSnippet",

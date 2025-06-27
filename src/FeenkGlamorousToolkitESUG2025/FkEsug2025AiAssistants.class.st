@@ -7,6 +7,18 @@ Class {
 }
 
 { #category : #pages }
+FkEsug2025AiAssistants >> emptyStartPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Web Page')
+	addSnippet: (LePharoSnippet new
+			code: '');
+	yourself
+]
+
+{ #category : #pages }
 FkEsug2025AiAssistants >> esugUrlPage [
 	<lePage>
 	<gtExample>
@@ -37,4 +49,14 @@ FkEsug2025AiAssistants >> slide010Title: aSlide [
 		subtitleWithFormat: ('andrei.chis@feenk.com' asRopedText 
 			fontSize: 40;
 			glamorousRegularFont)
+]
+
+{ #category : #slides }
+FkEsug2025AiAssistants >> slide02InitialExploration: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 2;
+		startPage: (self database pageNamed:  'Web Page')
 ]
