@@ -52,11 +52,100 @@ FkEsug2025AiAssistants >> slide010Title: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2025AiAssistants >> slide02InitialExploration: aSlide [
+FkEsug2025AiAssistants >> slide02GihubIssuesExploration: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
 		priority: 2;
 		startPage: (self database pageNamed:  'Exploring GitHub issues')
+]
+
+{ #category : #slides }
+FkEsug2025AiAssistants >> slide03WardleyMapExploration: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 3;
+		startPage: (self database pageNamed:  'Wardley Map exploration')
+]
+
+{ #category : #slides }
+FkEsug2025AiAssistants >> slide04DevelopABlogTutor: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 4;
+		startPage: (LeDatabase gtBook
+			pageNamed: 'Building an LLM assistant for editing blog posts')
+]
+
+{ #category : #slides }
+FkEsug2025AiAssistants >> slide051ChatInspectors: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Chat Inspectors'>
+
+	^ aSlide element
+		priority: 5.1;
+		element: [  "GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"
+			|scripter|
+			scripter := GtInspectorScripterExamples
+					new
+					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
+					withPlaygroundTextAndDoit: 'self moves last'.
+			scripter elementWithoutParent ]
+]
+
+{ #category : #slides }
+FkEsug2025AiAssistants >> slide052CharInspectorsExploded: aSlide [
+	<gtSlide>
+	<gtSlideNote: 'Chat Inspectors'>
+	
+	
+	^ aSlide element
+		priority: 5.2;
+		element: [ | scripter element |
+		scripter := GtInspectorScripterExamples new
+					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
+					withPlaygroundTextAndDoit: 'self moves last'.
+			element := scripter elementWithoutParent.
+			GtPresenterElementExplosion new
+						preferredLayerExtent: 800 @ 400;
+						baseLabelString: 'Frame';
+						layerQuery: BlElementLazyQuery new // GtPagerPageElement
+							label: 'Flow composition';
+						layerQuery: BlElementLazyQuery new // #tool
+							label: 'Composable snippets and views';
+						layerQuery: BlElementLazyQuery new
+									// [ :each | each phlow isViewContent or: [ 
+						each class = LePharoSnippetElement ] ]
+							label: 'Embeddable content';
+						explode: element ]
+]
+
+{ #category : #slides }
+FkEsug2025AiAssistants >> slide99End: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide title
+		priority: 999;
+		titleWithFormat: ('gtoolkit.com' asRopedText 
+			fontSize: 80;
+			glamorousRegularFont;
+			thin;
+			bold; yourself)
+]
+
+{ #category : #pages }
+FkEsug2025AiAssistants >> wardleyMapExplorationPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Wardley Map exploration')
+	addSnippet: (LeTextSnippet string: 'Let''s use an AI assistant to create a Wardley Map.');
+	yourself
 ]
