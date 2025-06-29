@@ -4,6 +4,11 @@ Class {
 	#category : #BaselineOfFeenkGlamorousToolkitESUG2025
 }
 
+{ #category : #configuring }
+BaselineOfFeenkGlamorousToolkitESUG2025 class >> enableLlmIntegration [
+	GtLlmFeatures beExperimental
+]
+
 { #category : #loading }
 BaselineOfFeenkGlamorousToolkitESUG2025 class >> loadLepiterKnowledgeBase [
 	| currentProperties |

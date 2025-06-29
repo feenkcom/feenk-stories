@@ -215,14 +215,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-07-08T16:28:24.645687+02:00"
+												"dateAndTimeString" : "2025-06-27T16:39:49.035699+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "euX6JNPYDQCw4RtgDNwjJA=="
 										},
-										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tloadDependenciesForMoldableDebugging."
+										"code" : "#BaselineOfFeenkGlamorousToolkitESUG2024 asClass \r\tloadDependenciesForMoldableDebugging"
 									},
 									{
 										"__type" : "pharoSnippet",
