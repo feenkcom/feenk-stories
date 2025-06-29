@@ -7,18 +7,6 @@ Class {
 }
 
 { #category : #pages }
-FkEsug2025AiAssistants >> emptyStartPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	
-	^ (LePage named: 'Web Page')
-	addSnippet: (LePharoSnippet new
-			code: '');
-	yourself
-]
-
-{ #category : #pages }
 FkEsug2025AiAssistants >> esugUrlPage [
 	<lePage>
 	<gtExample>
@@ -31,6 +19,18 @@ FkEsug2025AiAssistants >> esugUrlPage [
 			code: 'WebBrowser openOn: znUrl');
 	addSnippet: (LeTextSnippet new
 			string: '[https://youtu.be/lqogvp1dGpk](https://youtu.be/lqogvp1dGpk)');
+	yourself
+]
+
+{ #category : #pages }
+FkEsug2025AiAssistants >> initialGithubExplorationPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Exploring GitHub issues')
+	addSnippet: (LePharoSnippet new
+			code: '":Get the list of opened issues from the gtoolkit project in the feenkcom organization on github"');
 	yourself
 ]
 
@@ -58,5 +58,5 @@ FkEsug2025AiAssistants >> slide02InitialExploration: aSlide [
 
 	^ aSlide lepiterPage
 		priority: 2;
-		startPage: (self database pageNamed:  'Web Page')
+		startPage: (self database pageNamed:  'Exploring GitHub issues')
 ]
