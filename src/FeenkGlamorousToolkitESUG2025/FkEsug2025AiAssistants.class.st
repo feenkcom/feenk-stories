@@ -7,22 +7,6 @@ Class {
 }
 
 { #category : #pages }
-FkEsug2025AiAssistants >> esugUrlPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	
-	^ (LePage named: 'Web Page')
-	addSnippet: (LePharoSnippet new
-			code: 'znUrl := ZnUrl fromString: ''https://esug.org/2024-Conference/call2024.html''');
-	addSnippet: (LePharoSnippet new
-			code: 'WebBrowser openOn: znUrl');
-	addSnippet: (LeTextSnippet new
-			string: '[https://youtu.be/lqogvp1dGpk](https://youtu.be/lqogvp1dGpk)');
-	yourself
-]
-
-{ #category : #pages }
 FkEsug2025AiAssistants >> initialGithubExplorationPage [
 	<lePage>
 	<gtExample>
@@ -30,7 +14,7 @@ FkEsug2025AiAssistants >> initialGithubExplorationPage [
 	
 	^ (LePage named: 'Exploring GitHub issues')
 	addSnippet: (LePharoSnippet new
-			code: '":Get the list of opened issues from the gtoolkit project in the feenkcom organization on github"');
+			code: '":Generate the code to get the list of opened issues from the gtoolkit project in the feenkcom organization on github"');
 	yourself
 ]
 
@@ -106,7 +90,8 @@ FkEsug2025AiAssistants >> slide052CharInspectorsExploded: aSlide [
 	
 	^ aSlide element
 		priority: 5.2;
-		element: [ | scripter element |
+		element: [ 
+		| scripter element |
 		scripter := GtInspectorScripterExamples new
 					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
 					withPlaygroundTextAndDoit: 'self moves last'.
@@ -146,6 +131,8 @@ FkEsug2025AiAssistants >> wardleyMapExplorationPage [
 	<noTest>
 	
 	^ (LePage named: 'Wardley Map exploration')
-	addSnippet: (LeTextSnippet string: 'Let''s use an AI assistant to create a Wardley Map.');
+	addSnippet: ((LeTextSnippet string: 'Let''s use an AI assistant to create a Wardley Map.')
+		addSnippet: (LeTextSnippet string: '`A Wardley map is a map for business strategy. Components are positioned within a value chain and anchored by the user need, with movement described by an evolution axis.`');
+		yourself);
 	yourself
 ]

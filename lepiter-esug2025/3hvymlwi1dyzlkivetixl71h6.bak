@@ -186,7 +186,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-06-27T17:25:16.651911+02:00"
+												"dateAndTimeString" : "2025-06-29T19:52:24.579611+02:00"
 											}
 										},
 										"uid" : {
@@ -196,7 +196,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Use the inspect button from the in place chat to inspect it in a new page"
+										"string" : "Use the inspect button from the in-place chat to inspect it in a new pane"
 									},
 									{
 										"__type" : "textSnippet",
@@ -270,7 +270,7 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2025-06-27T17:03:52.081093+02:00"
+																		"dateAndTimeString" : "2025-06-29T19:57:24.191126+02:00"
 																	}
 																},
 																"uid" : {
@@ -281,6 +281,43 @@
 																	"__type" : "textStyle"
 																},
 																"string" : "We have messages as objects, and views"
+															},
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-29T19:57:24.44723+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-29T19:57:35.031731+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "/zhpYRv1DQCwpJ+yBQY0Tw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "The message object is snippet specific"
 															}
 														]
 													},
@@ -319,7 +356,45 @@
 													"__type" : "textSnippet",
 													"children" : {
 														"__type" : "snippets",
-														"items" : [ ]
+														"items" : [
+															{
+																"__type" : "textSnippet",
+																"children" : {
+																	"__type" : "snippets",
+																	"items" : [ ]
+																},
+																"createEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"createTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-29T19:59:27.761435+02:00"
+																	}
+																},
+																"editEmail" : {
+																	"__type" : "email",
+																	"emailString" : "<unknown>"
+																},
+																"editTime" : {
+																	"__type" : "time",
+																	"time" : {
+																		"__type" : "dateAndTime",
+																		"dateAndTimeString" : "2025-06-29T19:59:43.477601+02:00"
+																	}
+																},
+																"uid" : {
+																	"__type" : "uid",
+																	"uidString" : "CsWOaBv1DQCyCJIIBQY0Tw=="
+																},
+																"paragraphStyle" : {
+																	"__type" : "textStyle"
+																},
+																"string" : "The assistant is specific to the snippet"
+															}
+														]
 													},
 													"createEmail" : {
 														"__type" : "email",
@@ -340,7 +415,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2025-06-27T17:04:06.39979+02:00"
+															"dateAndTimeString" : "2025-06-29T19:59:24.061107+02:00"
 														}
 													},
 													"uid" : {
@@ -350,7 +425,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "We have different actions in the chat"
+													"string" : "The chat has an assistant that has instructions and different actions "
 												}
 											]
 										},
@@ -1081,6 +1156,118 @@
 								"__type" : "textStyle"
 							},
 							"string" : "##Step 4: Add a new view"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-29T20:13:44.530647+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-29T20:21:13.142044+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "YBzUmxv1DQC0BZY1BQY0Tw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "We can start a chat from different places and get a chat that has a contextual assistant, with custom actions."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-29T20:21:13.454057+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2025-06-29T20:21:22.853876+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "0yOWthv1DQC33eL1BQY0Tw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "This is how we try and get the context into the conversatiom"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-29T20:13:38.172515+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-06-29T20:14:58.925112+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "kBZzmxv1DQCzoMllBQY0Tw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##Step 5: Conclusion"
 						}
 					]
 				},
@@ -1372,7 +1559,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2025-06-29T15:57:25.91524+02:00"
+												"dateAndTimeString" : "2025-06-29T15:57:37.576265+02:00"
 											}
 										},
 										"uid" : {
@@ -1382,7 +1569,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Use an action for Expl"
+										"string" : "Use an action for Explaining a node and Reviewing the current state"
 									}
 								]
 							},
