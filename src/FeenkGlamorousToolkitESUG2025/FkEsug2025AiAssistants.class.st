@@ -101,7 +101,7 @@ FkEsug2025AiAssistants >> slide052CharInspectorsExploded: aSlide [
 						baseLabelString: 'Frame';
 						layerQuery: BlElementLazyQuery new // GtPagerPageElement
 							label: 'Flow composition';
-						layerQuery: BlElementLazyQuery new // #tool
+						layerQuery: BlElementLazyQuery new // GtPhlowLabelledViewElementId
 							label: 'Composable snippets and views';
 						layerQuery: BlElementLazyQuery new
 									// [ :each | each phlow isViewContent or: [ 

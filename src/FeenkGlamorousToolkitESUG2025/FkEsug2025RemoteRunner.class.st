@@ -17,7 +17,7 @@ FkEsug2025RemoteRunner >> slide010Title: aSlide [
 			fontSize: 80;
 			glamorousRegularFont;
 			thin;
-			in: [:t | (t from: 14  to: 'thousands' size) bold]; yourself);
+			in: [:t | (t from: 14  to: 14 + 'thousands' size) bold]; yourself);
 		subtitleWithFormat: ('andrei.chis@feenk.com' asRopedText 
 			fontSize: 40;
 			glamorousRegularFont)
@@ -49,6 +49,48 @@ FkEsug2025RemoteRunner >> slide020RemoteRunnerOverview: aSlide [
 				matchParent;
 				alignCenter;
 				addChild: aContainer asScalableElement ]
+]
+
+{ #category : #slides }
+FkEsug2025RemoteRunner >> slide030RemoteRunnerUseCases: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide labelAndElement
+		priority: 3;
+		element: [ 
+			(FileLocator gtResource
+				/ 'feenkcom' / 'feenk-stories' / 'data' / 'esug2025'
+				/ 'RunnerUsecasesOverview.png') 
+					gtFigureFor:  GtPhlowView empty ]
+]
+
+{ #category : #slides }
+FkEsug2025RemoteRunner >> slide040RemoteCluster: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide labelAndElement
+		priority: 4;
+		element: [ 
+			(FileLocator gtResource
+				/ 'feenkcom' / 'feenk-stories' / 'data' / 'esug2025'
+				/ 'Cluster-Overview.png') 
+					gtFigureFor:  GtPhlowView empty ]
+]
+
+{ #category : #slides }
+FkEsug2025RemoteRunner >> slide050RemoteClusterScen: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide labelAndElement
+		priority: 5;
+		element: [ 
+			(FileLocator gtResource
+				/ 'feenkcom' / 'feenk-stories' / 'data' / 'esug2025'
+				/ 'Clusyer-Overview-Scene.png') 
+					gtFigureFor:  GtPhlowView empty ]
 ]
 
 { #category : #slides }
