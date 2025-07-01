@@ -22,3 +22,45 @@ FkEsug2025RemoteRunner >> slide010Title: aSlide [
 			fontSize: 40;
 			glamorousRegularFont)
 ]
+
+{ #category : #slides }
+FkEsug2025RemoteRunner >> slide020RemoteRunnerOverview: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide labelAndElement
+		priority: 2;
+		newFadedText: 'Remote Runner Overview';
+		element: [ 
+			| aContainer |
+			aContainer := BrFrame new
+				padding: (BlInsets all: 50);
+				background: Color white;
+				fitContent.
+	
+			aContainer addChild: ((GtFileUtility 
+				svgElementFromFileReference: FileLocator gtResource
+					/ 'feenkcom' / 'feenk-stories' / 'data' / 'esug2025'
+					/ 'RemoteRunnerOverview.svg')
+					constraintsDo: [ :c |
+						c vertical exact: 400.
+						c horizontal exact: 900. ]).
+			BrHorizontalPane new 
+				matchParent;
+				alignCenter;
+				addChild: aContainer asScalableElement ]
+]
+
+{ #category : #slides }
+FkEsug2025RemoteRunner >> slide99End: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide title
+		priority: 999;
+		titleWithFormat: ('gtoolkit.com' asRopedText 
+			fontSize: 80;
+			glamorousRegularFont;
+			thin;
+			bold; yourself)
+]
