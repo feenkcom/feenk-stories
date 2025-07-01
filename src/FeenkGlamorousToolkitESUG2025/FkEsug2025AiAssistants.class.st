@@ -14,7 +14,7 @@ FkEsug2025AiAssistants >> initialGithubExplorationPage [
 	
 	^ (LePage named: 'Exploring GitHub issues')
 	addSnippet: (LePharoSnippet new
-			code: '":Generate the code to get the list of opened issues from the gtoolkit project in the feenkcom organization on github"');
+			code: '');":Generate the code to get the list of opened issues from the gtoolkit project in the feenkcom organization on github"
 	yourself
 ]
 
