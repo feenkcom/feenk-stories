@@ -178,7 +178,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-06-29T16:11:17.286608+02:00"
+						"dateAndTimeString" : "2025-06-29T18:10:47.226846+02:00"
 					}
 				},
 				"uid" : {
@@ -188,7 +188,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "[[Glamorous Toolkit - presentation script]]"
 			}
 		]
 	},
