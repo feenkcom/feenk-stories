@@ -6,7 +6,33 @@ Class {
 	#category : #FeenkGlamorousToolkitESUG2025
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> instancesCountPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Instance Count')
+		addSnippet: (LePharoSnippet new
+			code: 'GtInstanceCounter countInstancesSummary');
+		yourself
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> referenceFinderPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Reference Finder')
+		addSnippet: (LePharoSnippet new
+			code: 'GtReferenceFinder findPathTo: BrTabGroup allInstances first');
+		addSnippet: (LePharoSnippet new
+			code: 'GtReferencePaths to: BrTabGroup allInstances first');
+		yourself
+]
+
+{ #category : #slides }
 FkEsug2025GlamorousToolkit >> slide010Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Andrei Chis. I work at feenk, and today I want to talk about how Glamorous Toolkit.'>
@@ -23,7 +49,7 @@ FkEsug2025GlamorousToolkit >> slide010Title: aSlide [
 			glamorousRegularFont)
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #slides }
 FkEsug2025GlamorousToolkit >> slide011RawInspectors: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
@@ -35,7 +61,7 @@ FkEsug2025GlamorousToolkit >> slide011RawInspectors: aSlide [
 			GtInspectorFullRawLiveSlide new  ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #slides }
 FkEsug2025GlamorousToolkit >> slide012CustomInspectors: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
