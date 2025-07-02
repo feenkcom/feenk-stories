@@ -67,47 +67,17 @@ FkEsug2025AiAssistants >> slide04DevelopABlogTutor: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2025AiAssistants >> slide051ChatInspectors: aSlide [
+FkEsug2025AiAssistants >> slide050AssistantUseCases: aSlide [
 	<gtSlide>
-	<gtSlideNote: 'Chat Inspectors'>
-
-	^ aSlide element
-		priority: 5.1;
-		element: [  "GtInspector createOn: GtLudoRecordingGameExamples new gameShowingAllMoves3"
-			|scripter|
-			scripter := GtInspectorScripterExamples
-					new
-					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
-					withPlaygroundTextAndDoit: 'self moves last'.
-			scripter elementWithoutParent ]
-]
-
-{ #category : #slides }
-FkEsug2025AiAssistants >> slide052CharInspectorsExploded: aSlide [
-	<gtSlide>
-	<gtSlideNote: 'Chat Inspectors'>
+	<gtSlideNote: ''>
 	
-	
-	^ aSlide element
-		priority: 5.2;
+	^ aSlide labelAndElement
+		priority: 5;
 		element: [ 
-		| scripter element |
-		scripter := GtInspectorScripterExamples new
-					scriptedInspectorInPagerOn: GtLudoRecordingGameExamples new gameShowingAllMoves3
-					withPlaygroundTextAndDoit: 'self moves last'.
-			element := scripter elementWithoutParent.
-			GtPresenterElementExplosion new
-						preferredLayerExtent: 800 @ 400;
-						baseLabelString: 'Frame';
-						layerQuery: BlElementLazyQuery new // GtPagerPageElement
-							label: 'Flow composition';
-						layerQuery: BlElementLazyQuery new // GtPhlowLabelledViewElementId
-							label: 'Composable snippets and views';
-						layerQuery: BlElementLazyQuery new
-									// [ :each | each phlow isViewContent or: [ 
-						each class = LePharoSnippetElement ] ]
-							label: 'Embeddable content';
-						explode: element ]
+			(FileLocator gtResource
+				/ 'feenkcom' / 'feenk-stories' / 'data' / 'esug2025'
+				/ 'AssistantsUsecasesOverview.png') 
+					gtFigureFor:  GtPhlowView empty ]
 ]
 
 { #category : #slides }
