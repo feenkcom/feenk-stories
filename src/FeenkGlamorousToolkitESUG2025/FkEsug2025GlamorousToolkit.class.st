@@ -135,7 +135,7 @@ FkEsug2025GlamorousToolkit >> slide080WorkingWithCSS: aSlide [
 	<gtSlideNote: '.'>
 
 	^ aSlide element
-		priority: 2.1;
+		priority: 8;
 		element: [
 			| pager |
 			pager := GtPager 
@@ -164,6 +164,18 @@ FkEsug2025GlamorousToolkit >> slide091WardleyMapExploration: aSlide [
 	^ aSlide lepiterPage
 		priority: 9.1;
 		startPage: (self database pageNamed:  'Wardley Map exploration')
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide90CustomTools: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide labelAndElement
+		priority: 1.1;
+		newFadedText: 'The whole system is touched by custom views that are then complemented by examples.';
+		element: [ 
+			GtTour new  treemapWithViewsAndExamples ]
 ]
 
 { #category : #slides }
