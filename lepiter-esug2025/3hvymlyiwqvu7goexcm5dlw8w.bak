@@ -320,43 +320,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-07-02T18:37:14.952055+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-07-02T18:37:21.11174+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "30VEnFb1DQCZlv7xDjNiYg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtPage:Profiling the styling of a method using the virtual machine telemetry|db=2j9m7db2i4oz116bexd7wbdxo}} (GT Book)"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2025-07-02T18:36:04.452897+02:00"
 								}
 							},

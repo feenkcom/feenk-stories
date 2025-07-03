@@ -105,3 +105,14 @@ FkEsug2025GlamorousToolkit >> slide040ReferenceFinder: aSlide [
 		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
 			pageNamed: 'Reference Finder')
 ]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide050AiAssistants: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 5;
+		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
+			pageNamed: 'Working with AI Assistants')
+]
