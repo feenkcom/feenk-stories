@@ -45,6 +45,40 @@
 								"__type" : "textStyle"
 							},
 							"string" : "{{gtClass:GtGraphTreemapSquarify}} implements a squarified tree map. {{gtClass:GtGraphTreemapLayoutExamples}} shows an example."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-07-03T22:57:20.396578+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-07-03T22:57:20.852351+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "AtZDXG71DQCgwSFUA6B0cQ=="
+							},
+							"code" : "GtGraphTreemapSquarify new"
 						}
 					]
 				},
@@ -277,12 +311,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-02T17:51:51.5246+02:00"
+			"dateAndTimeString" : "2025-07-03T22:58:51.907342+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Documentation searches"
+		"title" : "Documentation searches - Refactorings"
 	},
 	"uid" : {
 		"__type" : "uuid",

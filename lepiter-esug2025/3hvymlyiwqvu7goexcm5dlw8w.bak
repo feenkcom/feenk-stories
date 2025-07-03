@@ -209,6 +209,43 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-07-03T22:59:00.225788+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-07-03T22:59:07.894501+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ahs3Ym71DQCg0iBRA6B0cQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Documentation searches - Method Searches]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2025-07-02T17:51:23.926847+02:00"
 								}
 							},
@@ -220,7 +257,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-07-02T17:51:50.320142+02:00"
+									"dateAndTimeString" : "2025-07-03T22:58:51.918614+02:00"
 								}
 							},
 							"uid" : {
@@ -230,7 +267,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Documentation searches]]"
+							"string" : "[[Documentation searches - Refactorings]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -405,7 +442,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2025-07-03T09:39:06.850127+02:00"
+									"dateAndTimeString" : "2025-07-03T09:39:12.70818+02:00"
 								}
 							},
 							"uid" : {
@@ -415,7 +452,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[["
+							"string" : "[[Creating Views]]"
 						}
 					]
 				},

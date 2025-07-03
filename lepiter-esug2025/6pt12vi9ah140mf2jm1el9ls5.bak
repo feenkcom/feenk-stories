@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:44:13.72951+02:00"
+						"dateAndTimeString" : "2025-07-03T23:35:21.039474+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:45:55.136438+02:00"
+						"dateAndTimeString" : "2025-07-03T23:35:21.460405+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Lqg76kD1DQCY4aDKBSZdOQ=="
+					"uidString" : "/awz5G71DQCmddW+A6B0cQ=="
 				},
-				"code" : "GtReferenceFinder findPathTo: BrTabGroup allInstances first"
+				"code" : "\":Generate the code to get the data about the feenkcom organization on github\""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -52,7 +52,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:41:58.102016+02:00"
+						"dateAndTimeString" : "2025-07-03T23:35:35.980224+02:00"
 					}
 				},
 				"editEmail" : {
@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:45:53.42517+02:00"
+						"dateAndTimeString" : "2025-07-03T23:35:38.145918+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "QCgm4kD1DQCX+vz6BSZdOQ=="
+					"uidString" : "z6oX5W71DQCmmcJuA6B0cQ=="
 				},
-				"code" : "GtReferencePaths to: BrTabGroup allInstances first"
+				"code" : "\":Propose a wrapper class with the needed methods for the data about the feenkcom organization and a snippet that uses it. Also add a view to that class showing the list of repositories from the organization\""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -86,7 +86,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T23:09:45.371733+02:00"
+						"dateAndTimeString" : "2025-07-03T23:36:30.495585+02:00"
 					}
 				},
 				"editEmail" : {
@@ -97,14 +97,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T23:10:23.996126+02:00"
+						"dateAndTimeString" : "2025-07-03T23:36:52.67444+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "D0KriG71DQCh96euA6B0cQ=="
+					"uidString" : "fYBX6G71DQCmraKTA6B0cQ=="
 				},
-				"code" : "GtInstanceCounter countInstancesSummary"
+				"code" : "\":Convert this view method from a list into a columned list, and include a column showing the date when the repository was created\""
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-03T23:37:23.47336+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-03T23:37:27.608971+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ZOF/6271DQCnlSLFA6B0cQ=="
+				},
+				"code" : "\":Edit this view method and add another column showing the date when the issue was created\""
 			}
 		]
 	},
@@ -116,7 +150,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-01T17:40:54.711449+02:00"
+			"dateAndTimeString" : "2025-07-03T23:35:00.453489+02:00"
 		}
 	},
 	"editEmail" : {
@@ -127,15 +161,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-03T09:14:09.463149+02:00"
+			"dateAndTimeString" : "2025-07-03T23:35:00.453489+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Reference Finder"
+		"title" : "Working with AI Assistants - promts"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "e42626e2-40f5-0d00-97f9-d01c05265d39"
+		"uuid" : "8593f9e2-6ef5-0d00-a669-c2e303a07471"
 	}
 }

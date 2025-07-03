@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T09:39:14.847243+02:00"
+						"dateAndTimeString" : "2025-07-03T23:50:26.064025+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T09:39:14.847243+02:00"
+						"dateAndTimeString" : "2025-07-03T23:51:14.378764+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "MVoQNmP1DQCWCy3xA6B0cQ=="
+					"uidString" : "pUQlGm/1DQCqkgd6A6B0cQ=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "githubIssues := GtDemoGithubIssuesList new\n\tinitializeWithOrganization: 'feenkcom' repository: 'gtoolkit'.\ngithubIssues fetchOpenIssues.\ngithubIssues"
 			}
 		]
 	},

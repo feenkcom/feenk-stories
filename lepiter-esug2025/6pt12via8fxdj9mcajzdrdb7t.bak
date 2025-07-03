@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:44:13.72951+02:00"
+						"dateAndTimeString" : "2025-07-03T23:41:21.508887+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:45:55.136438+02:00"
+						"dateAndTimeString" : "2025-07-03T23:41:21.879783+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Lqg76kD1DQCY4aDKBSZdOQ=="
+					"uidString" : "8QGw+W71DQCpa/yCA6B0cQ=="
 				},
-				"code" : "GtReferenceFinder findPathTo: BrTabGroup allInstances first"
+				"code" : "url := 'https://api.github.com/orgs/feenkcom'.\rjson := ZnClient new get: url.\rdictionary := STONJSON fromString: json."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -52,7 +52,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:41:58.102016+02:00"
+						"dateAndTimeString" : "2025-07-03T23:41:29.235534+02:00"
 					}
 				},
 				"editEmail" : {
@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:45:53.42517+02:00"
+						"dateAndTimeString" : "2025-07-03T23:43:00.418733+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "QCgm4kD1DQCX+vz6BSZdOQ=="
+					"uidString" : "QOol+m71DQCpeNqqA6B0cQ=="
 				},
-				"code" : "GtReferencePaths to: BrTabGroup allInstances first"
+				"code" : "GhDemoOrganization new rawData: dictionary."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -86,7 +86,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T23:09:45.371733+02:00"
+						"dateAndTimeString" : "2025-07-03T23:50:26.064025+02:00"
 					}
 				},
 				"editEmail" : {
@@ -97,14 +97,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T23:10:23.996126+02:00"
+						"dateAndTimeString" : "2025-07-03T23:51:00.753839+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "D0KriG71DQCh96euA6B0cQ=="
+					"uidString" : "pUQlGm/1DQCqkgd6A6B0cQ=="
 				},
-				"code" : "GtInstanceCounter countInstancesSummary"
+				"code" : "| list |\nlist := GtDemoGithubIssuesList new\n\tinitializeWithOrganization: 'feenkcom' repository: 'gtoolkit'.\nlist fetchOpenIssues.\nlist"
 			}
 		]
 	},
@@ -116,7 +116,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-01T17:40:54.711449+02:00"
+			"dateAndTimeString" : "2025-07-03T09:39:14.80624+02:00"
 		}
 	},
 	"editEmail" : {
@@ -127,15 +127,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-03T09:14:09.463149+02:00"
+			"dateAndTimeString" : "2025-07-03T09:39:14.80624+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Reference Finder"
+		"title" : "Creating Views"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "e42626e2-40f5-0d00-97f9-d01c05265d39"
+		"uuid" : "09b90f36-63f5-0d00-960a-a2e403a07471"
 	}
 }

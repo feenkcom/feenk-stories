@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:44:13.72951+02:00"
+						"dateAndTimeString" : "2025-07-03T22:59:11.627713+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,14 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:45:55.136438+02:00"
+						"dateAndTimeString" : "2025-07-03T22:59:17.740458+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Lqg76kD1DQCY4aDKBSZdOQ=="
+					"uidString" : "6RnlYm71DQChOJjbA6B0cQ=="
 				},
-				"code" : "GtReferenceFinder findPathTo: BrTabGroup allInstances first"
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The method {{gtMethod:BlockClosure>>#asAsyncFuture}} creates a future that can be executed asynchronously. "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -52,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:41:58.102016+02:00"
+						"dateAndTimeString" : "2025-07-03T22:59:26.944042+02:00"
 					}
 				},
 				"editEmail" : {
@@ -63,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-01T16:45:53.42517+02:00"
+						"dateAndTimeString" : "2025-07-03T22:59:27.243284+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "QCgm4kD1DQCX+vz6BSZdOQ=="
+					"uidString" : "aMzOY271DQChRTGZA6B0cQ=="
 				},
-				"code" : "GtReferencePaths to: BrTabGroup allInstances first"
+				"code" : "#asAsyncFuture gtReferences"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -86,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T23:09:45.371733+02:00"
+						"dateAndTimeString" : "2025-07-03T22:59:38.427299+02:00"
 					}
 				},
 				"editEmail" : {
@@ -97,14 +100,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-07-03T23:10:23.996126+02:00"
+						"dateAndTimeString" : "2025-07-03T22:59:38.798305+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "D0KriG71DQCh96euA6B0cQ=="
+					"uidString" : "mAV+ZG71DQChUseDA6B0cQ=="
 				},
-				"code" : "GtInstanceCounter countInstancesSummary"
+				"code" : "#asAsyncFuture leReferences"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-03T22:59:50.194592+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-03T22:59:50.531096+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "q5MxZW71DQChX+rDA6B0cQ=="
+				},
+				"code" : "GtSearchCodeUnitReferencesFilter literal: #asAsyncFuture"
 			}
 		]
 	},
@@ -116,7 +153,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-01T17:40:54.711449+02:00"
+			"dateAndTimeString" : "2025-07-03T22:59:11.576929+02:00"
 		}
 	},
 	"editEmail" : {
@@ -127,15 +164,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-03T09:14:09.463149+02:00"
+			"dateAndTimeString" : "2025-07-03T22:59:11.576929+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Reference Finder"
+		"title" : "Documentation searches - Method Searches"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "e42626e2-40f5-0d00-97f9-d01c05265d39"
+		"uuid" : "7952e462-6ef5-0d00-a137-545503a07471"
 	}
 }

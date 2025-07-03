@@ -7,32 +7,6 @@ Class {
 }
 
 { #category : #slides }
-FkEsug2025GlamorousToolkit >> instancesCountPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	
-	^ (LePage named: 'Instance Count')
-		addSnippet: (LePharoSnippet new
-			code: 'GtInstanceCounter countInstancesSummary');
-		yourself
-]
-
-{ #category : #slides }
-FkEsug2025GlamorousToolkit >> referenceFinderPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	
-	^ (LePage named: 'Reference Finder')
-		addSnippet: (LePharoSnippet new
-			code: 'GtReferenceFinder findPathTo: BrTabGroup allInstances first');
-		addSnippet: (LePharoSnippet new
-			code: 'GtReferencePaths to: BrTabGroup allInstances first');
-		yourself
-]
-
-{ #category : #slides }
 FkEsug2025GlamorousToolkit >> slide010Title: aSlide [
 	<gtSlide>
 	<gtSlideNote: 'My name is Andrei Chis. I work at feenk, and today I want to talk about how Glamorous Toolkit.'>
@@ -74,14 +48,41 @@ FkEsug2025GlamorousToolkit >> slide012CustomInspectors: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2025GlamorousToolkit >> slide020DocumentationSearches: aSlide [
+FkEsug2025GlamorousToolkit >> slide021ClassReferencesInDocumentation: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide element
+		priority: 2.1;
+		element: [
+			| pager |
+			pager := GtPager 
+				createWrappedOn: (GtPharoBehaviorCoder 
+					forClass: GtGraphTreemapSquarify) asElement.
+			pager maximized.
+			pager ]
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide022MethodSearches: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
-		priority: 2;
+		priority: 2.2;
 		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
-			pageNamed: 'Documentation searches')
+			pageNamed: 'Documentation searches - Method Searches')
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide023DocumentationRefactorings: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 2.3;
+		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
+			pageNamed: 'Documentation searches - Refactorings')
 ]
 
 { #category : #slides }
@@ -104,17 +105,6 @@ FkEsug2025GlamorousToolkit >> slide040ReferenceFinder: aSlide [
 		priority: 4;
 		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
 			pageNamed: 'Reference Finder')
-]
-
-{ #category : #slides }
-FkEsug2025GlamorousToolkit >> slide050AiAssistants: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 5;
-		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
-			pageNamed: 'Working with AI Assistants')
 ]
 
 { #category : #slides }
@@ -144,10 +134,36 @@ FkEsug2025GlamorousToolkit >> slide080WorkingWithCSS: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
-	^ aSlide classCoder
-		priority: 8;
-		class: GtCSSFileSamples;
-		expandHeader: false
+	^ aSlide element
+		priority: 2.1;
+		element: [
+			| pager |
+			pager := GtPager 
+				createWrappedOn: (GtPharoBehaviorCoder 
+					forClass: GtCSSFileSamples) asElement.
+			pager maximized.
+			pager ]
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide090AiAssistants: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 9;
+		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
+			pageNamed: 'Working with AI Assistants')
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide091WardleyMapExploration: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 9.1;
+		startPage: (self database pageNamed:  'Wardley Map exploration')
 ]
 
 { #category : #slides }
@@ -162,4 +178,17 @@ FkEsug2025GlamorousToolkit >> slide99End: aSlide [
 			glamorousRegularFont;
 			thin;
 			bold; yourself)
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> wardleyMapExplorationPage [
+	<lePage>
+	<gtExample>
+	<noTest>
+	
+	^ (LePage named: 'Wardley Map exploration')
+	addSnippet: ((LeTextSnippet string: 'Let''s use an AI assistant to create a Wardley Map.')
+		addSnippet: (LeTextSnippet string: '`A Wardley map is a map for business strategy. Components are positioned within a value chain and anchored by the user need, with movement described by an evolution axis.`');
+		yourself);
+	yourself
 ]
