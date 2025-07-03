@@ -129,12 +129,23 @@ FkEsug2025GlamorousToolkit >> slide060CreatingViews: aSlide [
 ]
 
 { #category : #slides }
-FkEsug2025GlamorousToolkit >> slide070WorkingWithCSS: aSlide [
+FkEsug2025GlamorousToolkit >> slide070DelphiTransformations: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 7;
+		startPage: ((LeDatabase gtBook)
+			pageNamed: 'Transforming Delphi code into C# (at syntax level)')
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide080WorkingWithCSS: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide classCoder
-		priority: 7;
+		priority: 8;
 		class: GtCSSFileSamples;
-		expandHeader: true
+		expandHeader: false
 ]
