@@ -72,3 +72,14 @@ FkEsug2025GlamorousToolkit >> slide012CustomInspectors: aSlide [
 		element: [ 
 			GtInspectorFullCustomLiveSlide new  ]
 ]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide020DocumentationSearches: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 2;
+		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
+			pageNamed: 'Documentation searches')
+]
