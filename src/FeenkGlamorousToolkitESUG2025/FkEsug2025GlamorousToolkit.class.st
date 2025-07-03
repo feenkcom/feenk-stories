@@ -58,7 +58,7 @@ FkEsug2025GlamorousToolkit >> slide011RawInspectors: aSlide [
 		priority: 1.1;
 		newFadedText: 'Consider how different objects looks quite simlar in the inspector';
 		element: [ 
-			GtInspectorFullRawLiveSlide new  ]
+			GtInspectorFullRawLiveEsug2025Slide new  ]
 ]
 
 { #category : #slides }
@@ -70,7 +70,7 @@ FkEsug2025GlamorousToolkit >> slide012CustomInspectors: aSlide [
 		priority: 1.2;
 		newFadedText: 'Yet, when we change the view the difference is obvious';
 		element: [ 
-			GtInspectorFullCustomLiveSlide new  ]
+			GtInspectorFullCustomLiveEsug2025Slide new  ]
 ]
 
 { #category : #slides }
@@ -148,4 +148,18 @@ FkEsug2025GlamorousToolkit >> slide080WorkingWithCSS: aSlide [
 		priority: 8;
 		class: GtCSSFileSamples;
 		expandHeader: false
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide99End: aSlide [
+	<gtSlide>
+	<gtSlideNote: ''>
+	
+	^ aSlide title
+		priority: 999;
+		titleWithFormat: ('gtoolkit.com' asRopedText 
+			fontSize: 80;
+			glamorousRegularFont;
+			thin;
+			bold; yourself)
 ]
