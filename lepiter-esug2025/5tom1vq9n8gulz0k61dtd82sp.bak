@@ -1,0 +1,175 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T17:19:55.140217+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T17:25:17.623148+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Oli2h1X1DQCfGGb8DjNiYg=="
+				},
+				"code" : "{\r\t'git@github.com:feenkcom/gtoolkit-maestro-rs.git'.\r\t'git@github.com:feenkcom/gtoolkit-vm.git'.\r\t'git@github.com:feenkcom/libwinit30.git'.\r\t'git@github.com:feenkcom/libskia.git'.\r\t'git@github.com:feenkcom/libwebview.git'.\r\t'git@github.com:feenkcom/shared-library-builder-rs.git'.\r\t'git@github.com:feenkcom/libwinit.git'.\t\r\t'git@github.com:feenkcom/libfilewatcher.git'.\r\t'git@github.com:feenkcom/libcairo.git'.\r\t'git@github.com:feenkcom/libopenssl.git'.\r\t'git@github.com:feenkcom/libgit2.git'.\r\t'git@github.com:feenkcom/libclipboard.git'.\r\t'git@github.com:feenkcom/libpixels.git'.\r\t'git@github.com:feenkcom/libglutin.git'.\r\t'git@github.com:feenkcom/libgleam.git'.\r\t'git@github.com:feenkcom/libboxer.git'\r}"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:48:36.247891+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T17:25:44.964849+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9BclQVT1DQCTpW1rDjNiYg=="
+				},
+				"code" : "allDirectories := (FileLocator imageDirectory \r\t/ 'pharo-local' \r\t/ 'iceberg' \r\t/ 'feenkcom') children \r\t\tselect: [ :each | each isDirectory ].\rdirectories := allDirectories select: [ :each | \r\t(each basename beginsWith: 'gt4') or: [\r\t\t(each basename beginsWith: 'gtoolkit') or: [\r\t\t\t(each basename beginsWith: 'lib') or: [\r\t\t\t#(filewatcher sparta fenster 'pharo-telemetry' 'bloc-pac' xdoc brick bloc lepiter 'iceberg-git-cli' 'deeptraversal') includes: each basename asLowercase  ] ] ]  ]"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:56:01.766286+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T16:54:25.108586+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "yi2zW1T1DQCWcJWdDjNiYg=="
+				},
+				"code" : "data := directories collect: [ :each |\r\texternalProcess := (GtExternalProcessBuilder \r\t\tnew: IceGitCliPlatform current gitExecutable)\r\t\t\tworkingDirectory: each absolutePath fullName;\r\t\t\targs: #(\r\t\t\t\t'rev-list' '--count' 'HEAD'  '--since=1.year' '--no-merges');\r\t\t\tpipeStdin;\r\t\t\tpipeStdout;\r\t\t\tpipeStderr;\r\t\t\tspawn.\r\texternalProcess waitAsyncWithOutput stdoutString ]"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:58:17.091923+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-02T15:59:21.525092+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "chXEY1T1DQCXjXBQDjNiYg=="
+				},
+				"code" : "data sumNumbers: [ :each | each asInteger ]"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-07-02T16:53:07.027995+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-07-02T16:53:07.027995+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Counting GT commings in the last year"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "29917f39-54f5-0d00-8f50-6b660e336262"
+	}
+}
