@@ -83,3 +83,25 @@ FkEsug2025GlamorousToolkit >> slide020DocumentationSearches: aSlide [
 		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
 			pageNamed: 'Documentation searches')
 ]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide030Profiling: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 3;
+		startPage: ((LeDatabase gtBook)
+			pageNamed: 'Profiling the styling of a method using the virtual machine telemetry')
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide040ReferenceFinder: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 4;
+		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
+			pageNamed: 'Reference Finder')
+]

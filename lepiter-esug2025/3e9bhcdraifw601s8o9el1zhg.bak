@@ -116,7 +116,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-01T16:41:58.101989+02:00"
+			"dateAndTimeString" : "2025-07-01T17:40:54.711449+02:00"
 		}
 	},
 	"editEmail" : {
@@ -127,12 +127,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2025-07-01T16:41:58.101989+02:00"
+			"dateAndTimeString" : "2025-07-03T09:14:09.463149+02:00"
 		}
 	},
 	"pageType" : {
-		"__type" : "unnamedPage",
-		"defaultTitle" : "Page"
+		"__type" : "namedPage",
+		"title" : "Reference Finder"
 	},
 	"uid" : {
 		"__type" : "uuid",
