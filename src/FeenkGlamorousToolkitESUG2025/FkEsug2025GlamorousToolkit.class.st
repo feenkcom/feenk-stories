@@ -116,3 +116,25 @@ FkEsug2025GlamorousToolkit >> slide050AiAssistants: aSlide [
 		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
 			pageNamed: 'Working with AI Assistants')
 ]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide060CreatingViews: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 6;
+		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
+			pageNamed: 'Creating Views')
+]
+
+{ #category : #slides }
+FkEsug2025GlamorousToolkit >> slide070WorkingWithCSS: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide classCoder
+		priority: 7;
+		class: GtCSSFileSamples;
+		expandHeader: true
+]
