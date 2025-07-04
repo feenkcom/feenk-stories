@@ -172,7 +172,7 @@ FkEsug2025GlamorousToolkit >> slide90CustomTools: aSlide [
 	<gtSlideNote: '.'>
 
 	^ aSlide labelAndElement
-		priority: 1.1;
+		priority: 90;
 		newFadedText: 'The whole system is touched by custom views that are then complemented by examples.';
 		element: [ 
 			GtTour new  treemapWithViewsAndExamples ]
