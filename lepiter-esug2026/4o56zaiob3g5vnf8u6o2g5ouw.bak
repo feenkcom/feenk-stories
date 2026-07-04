@@ -18,40 +18,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T13:37:29.657806+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T13:37:29.657806+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "xNuh4KzlR5CZYELtNEQUbQ=="
-				},
-				"code" : "datasetLocation := FileLocator home / 'Downloads'.\rdirectory :=  datasetLocation / 'Geolife Trajectories 1.3-3'."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2026-07-01T21:54:20.237027+02:00"
 					}
 				},
@@ -63,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T13:37:29.661993+02:00"
+						"dateAndTimeString" : "2026-07-01T22:35:20.001818+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "AuJJWUdzTBi857HgdgpKFA=="
 				},
-				"code" : "localImporter := GtRmGeolifeLocalImporter new\r\tusersCount:  2.\rgeoLife := localImporter importFromDirectory: directory.\rgeoLife users."
+				"code" : "datasetLocation := FileLocator home / 'Downloads'.\rdirectory :=  datasetLocation / 'Geolife Trajectories 1.3-3'.\rlocalImporter := GtRmGeolifeLocalImporter new\r\tusersCount:  2.\rgeoLife := localImporter importFromDirectory: directory.\rgeoLife users."
 			},
 			{
 				"__type" : "pharoSnippet",

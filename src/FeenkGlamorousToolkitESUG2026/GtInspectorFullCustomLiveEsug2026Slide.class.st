@@ -26,7 +26,7 @@ GtInspectorFullCustomLiveEsug2026Slide >> create [
 	DateAndTime now gtViewDetailsIn: GtPhlowView empty.
 	(BlVector x: -26 y: 19) gtDegreeFor: GtPhlowView empty.
 	 FileLocator imageDirectory gtTreeFor: GtPhlowView empty.
-	BaselineOfGToolkitInspector  gtMapFor: GtPhlowView empty.
+	BaselineOfGToolkitInspector  gtPackagesMapFor: GtPhlowView empty.
 	(BaselineOfGToolkitInspector 
 		gtRlProjectWithRepository: 'github://feenkcom/brick:main/src')  gtProjectMapFor: GtPhlowView empty.
 	(DAPThreadModel>>#gtStackFor: ) gtBytecodeFor: GtPhlowView empty.

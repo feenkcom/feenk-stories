@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:46:53.356278+02:00"
+						"dateAndTimeString" : "2026-07-02T15:29:06.621024+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,12 +29,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:46:53.356278+02:00"
+						"dateAndTimeString" : "2026-07-02T15:29:06.621024+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "avtv9DdyQ+mGkQ+vyYVsJg=="
+					"uidString" : "s5AsnDhGQxKpsqnV0okIdQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:35:00.757162+02:00"
+						"dateAndTimeString" : "2026-07-02T15:29:27.569498+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,48 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:35:01.760695+02:00"
+						"dateAndTimeString" : "2026-07-02T15:29:38.866294+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "2E7NDyPuSD+e/6FlgD6ZIA=="
+					"uidString" : "SKJ0BcnMSAaqjDZzqFbB+A=="
 				},
-				"code" : "githubIssues := GtDemoGithubIssuesList new\n\tinitializeWithOrganization: 'feenkcom' repository: 'gtoolkit'.\ngithubIssues fetchOpenIssues.\ngithubIssues"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:37:07.04918+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:37:52.245702+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4MXppOqwQ4mieKlHcg6MGA=="
-				},
-				"code" : "GhRepos"
+				"code" : "directory := FileLocator home / 'Downloads' / 'Geolife Trajectories 1.3-3'.\rgemstoneImporter := GtRmGeolifeGemstoneImporter new\r\tusersCount:  25.\r\rgemstoneImporter importFromDirectory: directory "
 			}
 		]
 	},
@@ -119,7 +85,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-30T15:46:53.143137+02:00"
+			"dateAndTimeString" : "2026-07-02T15:29:06.404044+02:00"
 		}
 	},
 	"editEmail" : {
@@ -130,15 +96,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-30T15:46:53.143137+02:00"
+			"dateAndTimeString" : "2026-07-02T15:29:06.404044+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Moldable Agent Harness"
+		"title" : "GemStone Replication"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "198d5769-11cb-42af-aab8-a038ac422c2f"
+		"uuid" : "aa50ced3-a783-4623-9292-1897efcd359d"
 	}
 }

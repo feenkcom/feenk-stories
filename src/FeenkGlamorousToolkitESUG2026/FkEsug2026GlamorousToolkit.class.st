@@ -49,22 +49,6 @@ FkEsug2026GlamorousToolkit >> slide012CustomInspectors: aSlide [
 ]
 
 { #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide021ClassReferencesInDocumentation: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide element
-		priority: 2.1;
-		element: [
-			| pager |
-			pager := GtPager 
-				createWrappedOn: (GtPharoBehaviorCoder 
-					forClass: GtGraphTreemapSquarify) asElement.
-			pager maximized.
-			pager ]
-]
-
-{ #category : 'slides' }
 FkEsug2026GlamorousToolkit >> slide021TreePager: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
@@ -72,7 +56,7 @@ FkEsug2026GlamorousToolkit >> slide021TreePager: aSlide [
 	^ aSlide lepiterPage
 		priority: 2.1;
 		startPage: ((LeDatabase databaseNamed: 'ESUG 2026')
-			pageNamed: 'Tree Pager')
+			pageNamed: 'Pager Flow')
 ]
 
 { #category : 'slides' }
