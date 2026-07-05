@@ -3,8 +3,9 @@ Class {
 	#superclass : 'Object',
 	#traits : 'TDatabaseHolder + TGtSlideShow',
 	#classTraits : 'TDatabaseHolder classTrait + TGtSlideShow classTrait',
-	#category : 'FeenkGlamorousToolkitESUG2026',
-	#package : 'FeenkGlamorousToolkitESUG2026'
+	#category : 'FeenkGlamorousToolkitESUG2026-Presentations',
+	#package : 'FeenkGlamorousToolkitESUG2026',
+	#tag : 'Presentations'
 }
 
 { #category : 'slides' }

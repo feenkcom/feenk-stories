@@ -4,8 +4,9 @@ Class {
 	#instVars : [
 		'rawData'
 	],
-	#category : 'FeenkGlamorousToolkitESUG2026',
-	#package : 'FeenkGlamorousToolkitESUG2026'
+	#category : 'FeenkGlamorousToolkitESUG2026-Utils',
+	#package : 'FeenkGlamorousToolkitESUG2026',
+	#tag : 'Utils'
 }
 
 { #category : 'views' }
@@ -73,10 +74,14 @@ GtEsug06GithubOrganization >> repositories [
 			self httpClient 
 				get: trimmedUrl
 				onSuccess: [ :result | 
-					[
 						(STON fromString: result) collect: [ :each  |
-							GtEsug06GithubRepository new rawData: each ]
-					] on: Error do: [ :e | #() ] ]
+							GtEsug06GithubRepository new rawData: each ] ]
 				onError: [ #() ] ]
 		ifAbsent: [ {} ]
+]
+
+{ #category : 'accessing' }
+GtEsug06GithubOrganization >> repositoryNamed: aName [
+	^ self repositories detect: [ :each |
+		each name = aName ]
 ]

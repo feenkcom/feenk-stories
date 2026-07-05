@@ -4,13 +4,19 @@ Class {
 	#instVars : [
 		'rawData'
 	],
-	#category : 'FeenkGlamorousToolkitESUG2026',
-	#package : 'FeenkGlamorousToolkitESUG2026'
+	#category : 'FeenkGlamorousToolkitESUG2026-Utils',
+	#package : 'FeenkGlamorousToolkitESUG2026',
+	#tag : 'Utils'
 }
 
 { #category : 'accessing' }
 GtEsug06GithubRepository >> description [
 	^ rawData at: 'description'
+]
+
+{ #category : 'accessing' }
+GtEsug06GithubRepository >> gtDisplayOn: stream [
+	stream nextPutAll: self name
 ]
 
 { #category : 'views' }
@@ -25,6 +31,13 @@ GtEsug06GithubRepository >> gtRawDataFor: aView [
 		column: 'Property' text: #key; 
 		column: 'Value' text: #value;
 		send: [ :each | each value ] 
+]
+
+{ #category : 'accessing' }
+GtEsug06GithubRepository >> httpClient [
+	^ ZnClient new
+		setBearerAuthentication: GtGitHubTokenHolder token;
+		yourself
 ]
 
 { #category : 'accessing' }

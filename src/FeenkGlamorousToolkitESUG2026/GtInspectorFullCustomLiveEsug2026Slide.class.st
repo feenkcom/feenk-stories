@@ -5,8 +5,9 @@ Class {
 		'page',
 		'container'
 	],
-	#category : 'FeenkGlamorousToolkitESUG2026',
-	#package : 'FeenkGlamorousToolkitESUG2026'
+	#category : 'FeenkGlamorousToolkitESUG2026-Utils',
+	#package : 'FeenkGlamorousToolkitESUG2026',
+	#tag : 'Utils'
 }
 
 { #category : 'accessing' }

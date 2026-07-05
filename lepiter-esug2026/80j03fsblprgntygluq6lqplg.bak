@@ -5,43 +5,6 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T14:54:54.042581+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T14:54:54.042581+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "kjdu/irsQY6zgwk0OmxdFQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -66,14 +29,154 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T14:55:00.343416+02:00"
+						"dateAndTimeString" : "2026-07-05T16:13:29.041434+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "evmN4cVqTs2nXH5pTPx9qQ=="
 				},
-				"code" : "githubIssues := GtDemoGithubIssuesList new\n\tinitializeWithOrganization: 'feenkcom' repository: 'gtoolkit'.\ngithubIssues fetchOpenIssues.\ngithubIssues"
+				"code" : "json := ZnClient new get: 'https://api.github.com/orgs/feenkcom'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-05T16:13:47.256344+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-05T16:13:47.573017+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "NV2B1LhRSrelJ4/yLj/lZg=="
+				},
+				"code" : "dictionary := STON fromString: json."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-05T16:13:35.440145+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-05T17:14:50.402562+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mCGo4bVGSg6bDUFF0MFIxg=="
+				},
+				"code" : "organization := GtEsug06GithubOrganization new\r\trawData: dictionary."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-05T17:14:39.235272+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-05T17:15:52.599741+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "77zAcYquT1+n5+jsxn66YA=="
+							},
+							"code" : "agent := GtL gt\r\taddNewObject: (organization repositoryNamed: 'gtoolkit') reason: 'Initi al object';\r\tsendMarkdown: 'Extend the repository object that you have in storage with the logic for computing the list of github issues attached to the repository. \n\nCreate an entity to model a github issues, similar to the entity for modeling a repository. \n\nAdd a view to the repository showing the list of issues. For each issue show the title of the issue and the user that created it.\n\nCreate in a separate class examples for the repository and the issue entity. Ensure that the examples are green.'"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-05T17:14:31.092195+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-05T17:14:37.918571+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "67QhJo7FRM2FaoOeANNfCg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Manual chat creation"
 			}
 		]
 	},
