@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "textSnippet",
+				"__type" : "gemstoneSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:29:06.621024+02:00"
+						"dateAndTimeString" : "2026-07-06T11:10:04.788072+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,20 +29,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:29:06.621024+02:00"
+						"dateAndTimeString" : "2026-07-06T11:10:06.063364+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "s5AsnDhGQxKpsqnV0okIdQ=="
+					"uidString" : "cQQNFwBNR1OGJjNayOJE3A=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "GtRmGeolife defaultInstance",
+				"sessionIdentifier" : {
+					"__type" : "gtGemStoneDefaultSessionIdentifier"
+				}
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "gemstoneSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:29:27.569498+02:00"
+						"dateAndTimeString" : "2026-07-06T18:58:16.536874+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,14 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T20:12:45.756379+02:00"
+						"dateAndTimeString" : "2026-07-06T20:23:17.117543+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SKJ0BcnMSAaqjDZzqFbB+A=="
+					"uidString" : "lRVfsko3TGCgw0R+gGR/+w=="
 				},
-				"code" : "directory := FileLocator home / 'Downloads' / 'Geolife Trajectories 1.3-3'.\rgemstoneImporter := GtRmGeolifeGemstoneImporter new\r\tusersCount:  2.\r\rgemstoneImporter importFromDirectory: directory "
+				"code" : "user := GtRmGeolife defaultInstance users items first.\rtrajectory := user trajectories items third.\rtrajectory distance.\rtrajectory",
+				"sessionIdentifier" : {
+					"__type" : "gtGemStoneDefaultSessionIdentifier"
+				}
 			}
 		]
 	},
