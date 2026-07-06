@@ -1722,7 +1722,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-07-06T22:41:31.404135+03:00"
+												"dateAndTimeString" : "2026-07-06T22:54:26.845922+03:00"
 											}
 										},
 										"uid" : {
@@ -1732,7 +1732,82 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Open a GemStone snippet and inspect a trajectory."
+										"string" : "Open a GemStone snippet and inspect all trajectories."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2026-07-06T22:58:37.759004+03:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2026-07-06T22:58:39.467195+03:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "YtN0i6y2QnOuhzi/8U1Xdw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "\"What is the filename of the trajectory with the longest distance? How long is it? How many points?\""
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-06T22:54:30.54981+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-06T22:59:03.813291+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "aqWRP+CVRoO9tgmkWkaKhA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Ask it to find the longest trajectory"
 									},
 									{
 										"__type" : "textSnippet",

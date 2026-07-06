@@ -1614,7 +1614,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2026-07-06T21:56:30.696376+03:00"
+															"dateAndTimeString" : "2026-07-06T22:42:46.387268+03:00"
 														}
 													},
 													"uid" : {
@@ -1624,7 +1624,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "Use summarizers to look at what the LLM did"
+													"string" : "Use summarizers to look at what the LLM did."
 												}
 											]
 										},
@@ -1722,7 +1722,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-07-06T22:41:31.404135+03:00"
+												"dateAndTimeString" : "2026-07-06T22:54:26.845922+03:00"
 											}
 										},
 										"uid" : {
@@ -1732,7 +1732,82 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Open a GemStone snippet and inspect a trajectory."
+										"string" : "Open a GemStone snippet and inspect all trajectories."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2026-07-06T22:58:37.759004+03:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2026-07-06T22:58:39.467195+03:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "YtN0i6y2QnOuhzi/8U1Xdw=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "\"What is the filename of the trajectory with the longest distance? How long is it? How many points?\""
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-06T22:54:30.54981+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-06T22:59:00.901096+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "aqWRP+CVRoO9tgmkWkaKhA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Ask it to find the longest trajectoy"
 									},
 									{
 										"__type" : "textSnippet",
@@ -1834,7 +1909,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-07-06T22:42:19.216123+03:00"
+												"dateAndTimeString" : "2026-07-06T22:42:35.936751+03:00"
 											}
 										},
 										"uid" : {
@@ -1844,7 +1919,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Show that the content of the view is sent correctly for the "
+										"string" : "Show that the content of the view is sent correctly for the remote object."
 									},
 									{
 										"__type" : "textSnippet",
@@ -1871,7 +1946,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-07-06T22:42:21.827944+03:00"
+												"dateAndTimeString" : "2026-07-06T22:42:29.777888+03:00"
 											}
 										},
 										"uid" : {
@@ -1881,7 +1956,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Ask t"
+										"string" : "Ask it about the distance of the current path."
 									}
 								]
 							},
