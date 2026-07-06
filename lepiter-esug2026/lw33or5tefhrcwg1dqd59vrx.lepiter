@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-06T22:59:17.874794+03:00"
+						"dateAndTimeString" : "2026-07-06T23:18:20.884353+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "EA6bt+TRSZGVJP7c/LJ9uA=="
 				},
-				"code" : "user := GtRmGeolife defaultInstance users items first.\rtrajectories := user trajectories .",
+				"code" : "\ruser := GtRmGeolife defaultInstance users items first.\rtrajectories := user trajectories .",
 				"sessionIdentifier" : {
 					"__type" : "gtGemStoneDefaultSessionIdentifier"
 				}
@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-06T22:59:20.143527+03:00"
+						"dateAndTimeString" : "2026-07-06T23:18:22.331672+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ut/EilXxRWqhqLIxpZAcBQ=="
 				},
-				"code" : "trajectories items third.",
+				"code" : "\rtrajectories items third.",
 				"sessionIdentifier" : {
 					"__type" : "gtGemStoneDefaultSessionIdentifier"
 				}

@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-06T20:03:59.582936+03:00"
+						"dateAndTimeString" : "2026-07-06T20:23:17.117543+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "lRVfsko3TGCgw0R+gGR/+w=="
 				},
-				"code" : "user := GtRmGeolife defaultInstance users items first.\rtrajectory := user trajectories items third.",
+				"code" : "user := GtRmGeolife defaultInstance users items first.\rtrajectory := user trajectories items third.\rtrajectory distance.\rtrajectory",
 				"sessionIdentifier" : {
 					"__type" : "gtGemStoneDefaultSessionIdentifier"
 				}

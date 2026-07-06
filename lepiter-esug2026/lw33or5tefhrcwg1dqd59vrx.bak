@@ -29,14 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-06T21:59:51.626302+03:00"
+						"dateAndTimeString" : "2026-07-06T22:59:17.874794+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "EA6bt+TRSZGVJP7c/LJ9uA=="
 				},
-				"code" : "user := GtRmGeolife defaultInstance users items first.\rtrajectory := user trajectories items third.",
+				"code" : "user := GtRmGeolife defaultInstance users items first.\rtrajectories := user trajectories .",
+				"sessionIdentifier" : {
+					"__type" : "gtGemStoneDefaultSessionIdentifier"
+				}
+			},
+			{
+				"__type" : "gemstoneSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-06T22:59:13.985895+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-06T22:59:20.143527+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ut/EilXxRWqhqLIxpZAcBQ=="
+				},
+				"code" : "trajectories items third.",
 				"sessionIdentifier" : {
 					"__type" : "gtGemStoneDefaultSessionIdentifier"
 				}

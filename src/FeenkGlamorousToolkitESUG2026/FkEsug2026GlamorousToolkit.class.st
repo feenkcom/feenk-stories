@@ -1,12 +1,17 @@
 Class {
 	#name : 'FkEsug2026GlamorousToolkit',
 	#superclass : 'Object',
-	#traits : 'TDatabaseHolder + TGtSlideShow',
-	#classTraits : 'TDatabaseHolder classTrait + TGtSlideShow classTrait',
+	#traits : 'TGtSlideShow',
+	#classTraits : 'TGtSlideShow classTrait',
 	#category : 'FeenkGlamorousToolkitESUG2026-Presentations',
 	#package : 'FeenkGlamorousToolkitESUG2026',
 	#tag : 'Presentations'
 }
+
+{ #category : 'accessing' }
+FkEsug2026GlamorousToolkit >> presentationDatabase [
+	^ LeDatabase databaseNamed: 'feenkcom/feenk-stories/lepiter-esug2026'
+]
 
 { #category : 'slides' }
 FkEsug2026GlamorousToolkit >> slide010Title: aSlide [
@@ -50,118 +55,82 @@ FkEsug2026GlamorousToolkit >> slide012CustomInspectors: aSlide [
 ]
 
 { #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide021TreePager: aSlide [
+FkEsug2026GlamorousToolkit >> slide110PagerFlow: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
-		priority: 2.1;
-		startPage: ((LeDatabase databaseNamed: 'ESUG 2026')
+		priority: 110;
+		startPage: ((self presentationDatabase)
 			pageNamed: 'Pager Flow')
 ]
 
 { #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide023DocumentationRefactorings: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 2.3;
-		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
-			pageNamed: 'Documentation searches - Refactorings')
-]
-
-{ #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide030Profiling: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 3;
-		startPage: ((LeDatabase gtBook)
-			pageNamed: 'Profiling the styling of a method using the virtual machine telemetry')
-]
-
-{ #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide040ReferenceFinder: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 4;
-		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
-			pageNamed: 'Reference Finder')
-]
-
-{ #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide060CreatingViews: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 6;
-		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
-			pageNamed: 'Creating Views')
-]
-
-{ #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide070DelphiTransformations: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
-
-	^ aSlide lepiterPage
-		priority: 7;
-		startPage: ((LeDatabase gtBook)
-			pageNamed: 'Transforming Delphi code into C# (at syntax level)')
-]
-
-{ #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide080WorkingWithCSS: aSlide [
+FkEsug2026GlamorousToolkit >> slide211IncrementalParsingEditing: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide element
-		priority: 8;
+		priority: 211;
 		element: [
-			| pager |
-			pager := GtPager 
-				createWrappedOn: (GtPharoBehaviorCoder 
-					forClass: GtCSSFileSamples) asElement.
-			pager maximized.
-			pager ]
+			 GtPagerSettings usedPager
+				createWrappedOn: [GtCoder forMethod: LeCodeSnippet>>#initialize] asStencil]
 ]
 
 { #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide090AiAssistants: aSlide [
+FkEsug2026GlamorousToolkit >> slide212IncrementalParsingExample: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide element
+		priority: 212;
+		element: [
+			 GtPagerSettings usedPager
+				createWrappedOn: [GtCoder forMethod: GtPharoIncrementalParserFullUpdateAstComparisonExamples>>#comparisonFromIncrementalParsingPage] asStencil]
+]
+
+{ #category : 'slides' }
+FkEsug2026GlamorousToolkit >> slide310GemStoneReplication: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
-		priority: 9;
-		startPage: ((LeDatabase databaseNamed: 'ESUG 2025')
-			pageNamed: 'Working with AI Assistants')
+		priority: 310;
+		startPage: ((self presentationDatabase)
+			pageNamed: 'GemStone Replication')
 ]
 
 { #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide091WardleyMapExploration: aSlide [
+FkEsug2026GlamorousToolkit >> slide410BasicLLMAgents: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
 	^ aSlide lepiterPage
-		priority: 9.1;
-		startPage: (self database pageNamed:  'Wardley Map exploration')
+		priority: 410;
+		startPage: ((self presentationDatabase)
+			pageNamed: 'Basic LLM agents in GT')
 ]
 
 { #category : 'slides' }
-FkEsug2026GlamorousToolkit >> slide90CustomTools: aSlide [
+FkEsug2026GlamorousToolkit >> slide420BasicLLMAgents: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
-	^ aSlide labelAndElement
-		priority: 90;
-		newFadedText: 'The whole system is touched by custom views that are then complemented by examples.';
-		element: [ 
-			GtTour new  treemapWithViewsAndExamples ]
+	^ aSlide lepiterPage
+		priority: 420;
+		startPage: ((self presentationDatabase)
+			pageNamed: 'Developing with LLM agents in the presence of  objects')
+]
+
+{ #category : 'slides' }
+FkEsug2026GlamorousToolkit >> slide430BasicLLMAgents: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 430;
+		startPage: ((self presentationDatabase)
+			pageNamed: 'Exploring GemStone objects using LLMs')
 ]
 
 { #category : 'slides' }
@@ -176,17 +145,4 @@ FkEsug2026GlamorousToolkit >> slide99End: aSlide [
 			glamorousRegularFont;
 			thin;
 			bold; yourself)
-]
-
-{ #category : 'slides' }
-FkEsug2026GlamorousToolkit >> wardleyMapExplorationPage [
-	<lePage>
-	<gtExample>
-	<noTest>
-	
-	^ (LePage named: 'Wardley Map exploration')
-	addSnippet: ((LeTextSnippet string: 'Let''s use an AI assistant to create a Wardley Map.')
-		addSnippet: (LeTextSnippet string: '`A Wardley map is a map for business strategy. Components are positioned within a value chain and anchored by the user need, with movement described by an evolution axis.`');
-		yourself);
-	yourself
 ]
