@@ -119,6 +119,43 @@
 					"__type" : "snippets",
 					"items" : [
 						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-06T08:27:09.760782+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-06T08:27:17.542828+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "9c74SNI0RUK3ma41DSkujA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "{{gtMethod:GtPharoIncrementalParserFullUpdateAstComparisonExamples>>#comparisonFromIncrementalParsingPage}}"
+						},
+						{
 							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -411,12 +448,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-07-02T13:45:45.424796+02:00"
+			"dateAndTimeString" : "2026-07-06T08:20:48.767972+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Incremental Parsing"
+		"title" : "Incremental Parsing - Presentation utils"
 	},
 	"uid" : {
 		"__type" : "uuid",

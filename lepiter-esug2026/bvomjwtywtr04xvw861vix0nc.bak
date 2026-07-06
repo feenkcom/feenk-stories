@@ -348,14 +348,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-02T18:32:55.546475+02:00"
+									"dateAndTimeString" : "2026-07-02T18:33:09.593036+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "uci1kyHnQ4yyql9J+h+33Q=="
 							},
-							"code" : "GtL gt\r\tpageObjectExplanation: thisSnippet page;\r\tsendMarkdown: 'The attached page named \"Incremental Parsing\" contains an example of code creating an initialAst and an example of how an incremental parser creates a new AST for an updated code. The incremental parser has the goal of creating a new AST and preserving the id of AST nodes that logically represent the same node also in the new code. So the new AST will have new objects as nodes, but the id will be the same for nodes that were also present in the old AST.\r\t\r\t\r\t Your goal is to create a new object, GtIncrementalParserFullUpdateAstComparison, with the goal of highlighting what changed in the new AST. It should take the initial and the updated AST. For the new AST it should create a new tree of ast nodes of type GtIncrementalParserAstNodeComparison that should have the new ast node, a flag indicating if they are new nodes or reused nodes, and if reused the old reused AST node. These two objects should have the same superclass and views like SmaCCParseNode>>#gtTreeFor: and SmaCCParseNode>>#gtExploreFor: with the difference that the rows should have a green color in case the ast node in the new AST match a node in the old ast.\r\t \r\t \r\t \r\t \r\t \r\t and has a columned tree view that can expand the two ASTs at once to show what nodes differ and what nodes are common. Name the main object GtDemoFullAstComparison; this should have the two AST nodes and iterate over their nodes. This should then create a node comparison structure. When two AST nodes at the same position are equal it should create a GtDemoEqualAstNodeComparison that has the two nodes. When they differ it shold be a GtDemoDifferentAstNodeComparison. The tree structure should endwhen the nodes differe. A GtDemoDifferentAstNodeComparison node should have views that shows the two ASTs'"
+							"code" : "GtL gt\r\tpageObjectExplanation: thisSnippet page;\r\tsendMarkdown: 'The attached page named \"Incremental Parsing\" contains an example of code creating an initialAst and an example of how an incremental parser creates a new AST for an updated code. The incremental parser has the goal of creating a new AST and preserving the id of AST nodes that logically represent the same node also in the new code. So the new AST will have new objects as nodes, but the id will be the same for nodes that were also present in the old AST.\r\t\r\t\r\t Your goal is to create a new object, GtIncrementalParserFullUpdateAstComparison, with the goal of highlighting what changed in the new AST. It should take the initial and the updated AST. For the new AST it should create a new tree of ast nodes of type GtIncrementalParserAstNodeComparison that should have the new ast node, a flag indicating if they are new nodes or reused nodes, and if reused the old reused AST node. These two objects should have the same superclass and views like SmaCCParseNode>>#gtTreeFor: and SmaCCParseNode>>#gtExploreFor: with the difference that the rows should have a green color in case the ast node in the new AST match a node in the old ast.\r\t \r\t \r\t '"
 						}
 					]
 				},
@@ -411,12 +411,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-07-02T13:45:45.424796+02:00"
+			"dateAndTimeString" : "2026-07-06T08:20:48.767972+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Incremental Parsing"
+		"title" : "Incremental Parsing - Presentation utils"
 	},
 	"uid" : {
 		"__type" : "uuid",

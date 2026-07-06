@@ -8,43 +8,6 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:42:39.908739+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:42:39.908739+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "FBRcbhxuQgqjPh5k7WndCA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "#Part 1: Intro"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -259,7 +222,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-01T22:38:42.413014+02:00"
+									"dateAndTimeString" : "2026-07-06T08:16:07.230104+02:00"
 								}
 							},
 							"uid" : {
@@ -269,7 +232,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "1. Linear phlow"
+							"string" : "##1.1 Linear phlow"
 						},
 						{
 							"__type" : "textSnippet",
@@ -408,7 +371,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-01T22:48:39.38601+02:00"
+									"dateAndTimeString" : "2026-07-06T08:16:11.573481+02:00"
 								}
 							},
 							"uid" : {
@@ -418,7 +381,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "2. Tree phlow"
+							"string" : "##2.1 Tree phlow"
 						},
 						{
 							"__type" : "textSnippet",
@@ -553,7 +516,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:43:00.655799+02:00"
+						"dateAndTimeString" : "2026-07-05T19:32:42.037015+02:00"
 					}
 				},
 				"uid" : {
@@ -563,7 +526,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Part 2: Tree Pager"
+				"string" : "#Part 1: Tree Pager"
 			},
 			{
 				"__type" : "textSnippet",
@@ -670,7 +633,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-02T14:31:12.333347+02:00"
+									"dateAndTimeString" : "2026-07-05T19:32:44.480433+02:00"
 								}
 							},
 							"uid" : {
@@ -680,7 +643,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Incremental parsing / cached attributes"
+							"string" : "##2.1 Incremental parsing / cached attributes"
 						},
 						{
 							"__type" : "textSnippet",
@@ -745,7 +708,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-06-30T15:48:44.183588+02:00"
+									"dateAndTimeString" : "2026-07-05T19:32:46.384251+02:00"
 								}
 							},
 							"uid" : {
@@ -755,7 +718,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Index on top in coder"
+							"string" : "##2.2 Index on top in coder"
 						}
 					]
 				},
@@ -778,7 +741,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:48:34.525427+02:00"
+						"dateAndTimeString" : "2026-07-05T19:32:43.300191+02:00"
 					}
 				},
 				"uid" : {
@@ -788,7 +751,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Part 3: Coder"
+				"string" : "#Part 2: Coder"
 			},
 			{
 				"__type" : "textSnippet",
@@ -890,7 +853,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-30T15:45:54.719041+02:00"
+						"dateAndTimeString" : "2026-07-05T19:33:09.659853+02:00"
 					}
 				},
 				"uid" : {
@@ -900,7 +863,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Part 5: GemStone"
+				"string" : "#Part 3: GemStone"
 			},
 			{
 				"__type" : "textSnippet",
@@ -964,7 +927,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-02T15:25:11.200766+02:00"
+						"dateAndTimeString" : "2026-07-02T15:26:41.116213+02:00"
 					}
 				},
 				"uid" : {
@@ -974,7 +937,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Part 5: mew editor "
+				"string" : "#Part 5: New editor "
 			},
 			{
 				"__type" : "textSnippet",
@@ -1072,12 +1035,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-30T15:41:02.896527+02:00"
+			"dateAndTimeString" : "2026-07-05T19:31:27.742219+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Glamorous Toolkit - presentation script"
+		"title" : "Glamorous Toolkit - Presentation script"
 	},
 	"uid" : {
 		"__type" : "uuid",
