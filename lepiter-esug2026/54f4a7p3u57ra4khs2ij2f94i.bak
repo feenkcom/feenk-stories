@@ -68,14 +68,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-06T11:12:17.638052+02:00"
+									"dateAndTimeString" : "2026-07-06T22:06:22.702395+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "TSWv6hiDQjuOgApVFYNo7A=="
 							},
-							"code" : "GtRmGeolife defaultInstance",
+							"code" : "1 GtRmGeolife defaultInstance",
 							"sessionIdentifier" : {
 								"__type" : "gtGemStoneDefaultSessionIdentifier"
 							}
@@ -143,14 +143,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-06T20:37:26.560501+03:00"
+									"dateAndTimeString" : "2026-07-06T20:38:12.985669+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "DDPu7dE3RQSZN9C3r+sYJw=="
 							},
-							"code" : "session := GtGemStoneSessionRegistry defaultSession.\rGtGemStoneSerialisationManager\n\tinstallRemoteObjectWireEncodingGbsReplicationSpec: GtGemStoneSerialisationManager gtWireReplicationSpec\n\tmaxProxyDepth: 9\n\ton: GtGemStoneSessionRegistry defaultSession."
+							"code" : "session := GtGemStoneSessionRegistry defaultSession.\rGtGemStoneSerialisationManager\n\tinstallRemoteObjectWireEncodingGbsReplicationSpec: GtGemStoneSerialisationManager gtWireReplicationSpec\n\tmaxProxyDepth: 10\n\ton: GtGemStoneSessionRegistry defaultSession."
 						}
 					]
 				},
