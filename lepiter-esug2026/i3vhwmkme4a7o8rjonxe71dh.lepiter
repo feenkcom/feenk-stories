@@ -347,6 +347,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Agents in GT]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-08T00:24:22.630649+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-08T00:24:28.259246+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "5dpYmNsuQg6HLHd7R3iVsw=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Custom extensions]]"
 									}
 								]
 							},

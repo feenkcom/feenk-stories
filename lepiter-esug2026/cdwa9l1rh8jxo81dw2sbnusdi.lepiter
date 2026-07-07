@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "gemstoneSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-06T21:59:47.682081+03:00"
+						"dateAndTimeString" : "2026-07-08T00:24:39.993413+03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-06T23:18:20.884353+03:00"
+						"dateAndTimeString" : "2026-07-08T00:24:40.834241+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "EA6bt+TRSZGVJP7c/LJ9uA=="
+					"uidString" : "vs6GBMnLRjmNw0wODqxwQw=="
 				},
-				"code" : "\ruser := GtRmGeolife defaultInstance users items first.\rtrajectories := user trajectories .",
-				"sessionIdentifier" : {
-					"__type" : "gtGemStoneDefaultSessionIdentifier"
-				}
+				"code" : "#gtView gtPragmas"
 			}
 		]
 	},
@@ -51,7 +48,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-07-06T21:59:32.106397+03:00"
+			"dateAndTimeString" : "2026-07-08T00:24:36.731069+03:00"
 		}
 	},
 	"editEmail" : {
@@ -62,15 +59,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-07-06T21:59:32.106397+03:00"
+			"dateAndTimeString" : "2026-07-08T00:24:36.731069+03:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Exploring GemStone objects using LLMs"
+		"title" : "Custom extensions"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "1d629333-cf6c-44a7-887a-dd0bdc79450a"
+		"uuid" : "26aeae9a-bb57-4373-8d1e-0efc22fd36d1"
 	}
 }

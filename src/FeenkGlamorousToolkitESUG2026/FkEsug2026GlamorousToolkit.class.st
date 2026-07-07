@@ -133,6 +133,29 @@ FkEsug2026GlamorousToolkit >> slide430BasicLLMAgents: aSlide [
 ]
 
 { #category : 'slides' }
+FkEsug2026GlamorousToolkit >> slide81CustomExtensions: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 810;
+		startPage: ((self presentationDatabase)
+			pageNamed: 'Custom extensions')
+]
+
+{ #category : 'slides' }
+FkEsug2026GlamorousToolkit >> slide90CustomTools: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide labelAndElement
+		priority: 900;
+		newFadedText: 'The whole system is touched by custom views that are then complemented by examples.';
+		element: [ 
+			GtTour new  treemapWithViewsAndExamples ]
+]
+
+{ #category : 'slides' }
 FkEsug2026GlamorousToolkit >> slide99End: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>

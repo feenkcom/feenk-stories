@@ -150,7 +150,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2026-07-07T11:07:13.622273+03:00"
+												"dateAndTimeString" : "2026-07-07T11:11:16.032458+03:00"
 											}
 										},
 										"uid" : {
@@ -160,7 +160,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Incremental parsing]]"
+										"string" : "[[Caching attributes using incremental parsing]]"
 									},
 									{
 										"__type" : "textSnippet",
