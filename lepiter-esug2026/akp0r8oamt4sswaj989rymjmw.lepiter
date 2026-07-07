@@ -64,7 +64,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T12:36:05.211582+02:00"
+						"dateAndTimeString" : "2026-07-07T21:45:21.769226+03:00"
 					}
 				},
 				"uid" : {
@@ -74,7 +74,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Rewrite rules - No explanations"
+				"string" : "#Rewrite rules - No explanation"
 			},
 			{
 				"__type" : "textSnippet",
@@ -207,7 +207,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T12:36:08.59857+02:00"
+						"dateAndTimeString" : "2026-07-07T21:45:24.662409+03:00"
 					}
 				},
 				"uid" : {
@@ -217,7 +217,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Rewrite rules - Extra explanation"
+				"string" : "#Rewrite rules - An explanation"
 			},
 			{
 				"__type" : "textSnippet",
@@ -279,7 +279,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T12:40:34.486977+02:00"
+						"dateAndTimeString" : "2026-07-07T21:45:27.239771+03:00"
 					}
 				},
 				"uid" : {
@@ -289,7 +289,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Rewrite rules - custom response"
+				"string" : "#Rewrite rules - A custom response"
 			}
 		]
 	},

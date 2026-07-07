@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T16:13:29.041434+02:00"
+						"dateAndTimeString" : "2026-07-07T16:52:22.003208+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "evmN4cVqTs2nXH5pTPx9qQ=="
 				},
-				"code" : "json := ZnClient new get: 'https://api.github.com/orgs/feenkcom'"
+				"code" : "json := ZnClient new \r\tget: 'https://api.github.com/orgs/feenkcom'"
 			},
 			{
 				"__type" : "pharoSnippet",

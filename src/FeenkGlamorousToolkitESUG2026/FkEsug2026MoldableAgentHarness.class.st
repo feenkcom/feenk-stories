@@ -32,7 +32,7 @@ FkEsug2026MoldableAgentHarness >> slide010Title: aSlide [
 	
 	^ aSlide title
 		priority: 1;
-		titleWithFormat: ('Moldable Agent Harness in Glamorous Toolkit' asRopedText 
+		titleWithFormat: ('Moldable Agent Harness' asRopedText 
 			fontSize: 64;
 			glamorousRegularFont;
 			thin;
@@ -88,8 +88,8 @@ FkEsug2026MoldableAgentHarness >> slide40WorkingWithObjects: aSlide [
 
 { #category : 'slides' }
 FkEsug2026MoldableAgentHarness >> slide41WorkingWithObjectsExamples: aSlide [
-	<gtSlide>
-	<gtSlideNote: '.'>
+	"<gtSlide>
+	<gtSlideNote: '.'>"
 
 	^ aSlide lepiterPage
 		priority: 41;

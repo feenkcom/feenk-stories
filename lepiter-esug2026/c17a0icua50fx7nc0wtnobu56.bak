@@ -2653,7 +2653,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T18:28:59.791787+02:00"
+									"dateAndTimeString" : "2026-07-05T18:33:49.165703+02:00"
 								}
 							},
 							"uid" : {
@@ -2663,7 +2663,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "And the same as humans use views and lepiter pages to understand a system, we want also LLM agents to use them.  Views and lepiter pages become skills that LLM agents can levreage to extract reason about out systems."
+							"string" : "And the same as humans use views and lepiter pages to understand a system, we want also LLM agents to use them.  Views and lepiter pages become skills that LLM agents can levreage to reason about our systems."
 						}
 					]
 				},

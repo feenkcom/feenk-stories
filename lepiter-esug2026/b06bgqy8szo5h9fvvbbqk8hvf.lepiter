@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T13:01:32.797436+02:00"
+						"dateAndTimeString" : "2026-07-07T22:09:33.516521+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ndQxdOtzQSmAWyqsjx5W8w=="
 				},
-				"code" : "agent := GtL gt\n\tsendMarkdown: 'Produce a script that builds an 160x160 element with icon that shows a simple home. Take as blueprint for the script, the icon defined in {{gtMethod:BrGlamorousVectorIcons class>>chat}} which uses {{gtClass:BlPolygonGeometry}}. Execute the code. Grade the resulting image by using getViewContent on a scale from 1 to 10.'"
+				"code" : "agent := GtL gt\n\tsendMarkdown: 'Produce a script that builds an 160x160 element with icon that shows a simple home. Take as blueprint for the script, the icon defined in {{gtMethod:BrGlamorousVectorIcons class>>chat}} which uses {{gtClass:BlPolygonGeometry}}. Make the icon large. Execute the code. Grade the resulting image by using getViewContent on a scale from 1 to 10.'"
 			}
 		]
 	},

@@ -2017,7 +2017,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T17:20:47.868361+02:00"
+									"dateAndTimeString" : "2026-07-07T22:11:05.533896+03:00"
 								}
 							},
 							"uid" : {
@@ -2027,7 +2027,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "##4.2 Working with objects - starting from examples"
+							"string" : "##4.2 [SKIP] Working with objects - starting from examples"
 						}
 					]
 				},
