@@ -2616,7 +2616,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T18:24:58.186913+02:00"
+									"dateAndTimeString" : "2026-07-07T22:30:13.689621+03:00"
 								}
 							},
 							"uid" : {
@@ -2626,7 +2626,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "In GT we approach the user interface as a language where UIs are not fixed, but composed from operators like views and lepiter pages. When integrating LLM suport into GT we do not want it to be standalone and isolated from the rest of the environment, we want it to be another operator that can be freely used."
+							"string" : "In GT we approach the user interface as a language. The user inferace is not fixed, but composable using operators like views and lepiter pages. When integrating LLM suport into GT we do not want a chat that is standalone and isolated from the rest of the environment, we want it to be another operator that can be freely used."
 						},
 						{
 							"__type" : "textSnippet",
