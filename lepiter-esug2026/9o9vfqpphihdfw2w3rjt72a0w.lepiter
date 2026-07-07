@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T20:12:25.113376+02:00"
+						"dateAndTimeString" : "2026-07-08T01:36:02.804774+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ahbm11VyQvmEWHPIjc078Q=="
 				},
-				"code" : "datasetLocation := FileLocator home / 'Downloads'.\rdirectory :=  datasetLocation / 'Geolife Trajectories 1.3-3'."
+				"code" : "datasetLocation := FileLocator home / 'Downloads'.\rdirectory := datasetLocation / 'Geolife Trajectories 1.3-3'."
 			},
 			{
 				"__type" : "pharoSnippet",
