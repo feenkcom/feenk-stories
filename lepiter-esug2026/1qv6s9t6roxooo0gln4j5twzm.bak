@@ -105,7 +105,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-06-30T15:30:20.719132+02:00"
+									"dateAndTimeString" : "2026-07-07T14:37:39.670974+03:00"
 								}
 							},
 							"uid" : {
@@ -214,14 +214,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T18:49:21.503562+02:00"
+									"dateAndTimeString" : "2026-07-05T18:49:26.592258+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "6d7QrLSOTNyKW+qlowCEtA=="
 							},
-							"code" : "#FkEsug2026GlamorousToolkit asClass new."
+							"code" : "#FkEsug2026MoldableAgentHarness asClass new."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -248,14 +248,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T18:49:23.575713+02:00"
+									"dateAndTimeString" : "2026-07-05T18:49:27.660532+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "SkmNWtj8Quy7iUUg3cMgfw=="
 							},
-							"code" : "GtPresenterSlideShow openInSpace:#FkEsug2026GlamorousToolkit asClass ."
+							"code" : "GtPresenterSlideShow openInSpace:#FkEsug2026MoldableAgentHarness asClass ."
 						}
 					]
 				},

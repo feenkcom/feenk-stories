@@ -23,6 +23,40 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-05T11:59:43.254402+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-05T11:59:43.254402+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "gSl5eprYRriqkdL+rwzXkA=="
+							},
+							"code" : "agent := GtLAgent new."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2026-07-05T11:46:14.155459+02:00"
 								}
 							},
@@ -34,14 +68,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T11:47:18.688691+02:00"
+									"dateAndTimeString" : "2026-07-05T11:59:43.256929+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "bJfvFHcEQwSFvDL4ve8JRQ=="
 							},
-							"code" : "agent := GtLAgent new.\ragent sendString: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'."
+							"code" : "agent sendString: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'."
 						}
 					]
 				},

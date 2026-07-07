@@ -70,11 +70,10 @@ FkEsug2026GlamorousToolkit >> slide211IncrementalParsingEditing: aSlide [
 	<gtSlide>
 	<gtSlideNote: '.'>
 
-	^ aSlide element
+	^ aSlide lepiterPage
 		priority: 211;
-		element: [
-			 GtPagerSettings usedPager
-				createWrappedOn: [GtCoder forMethod: LeCodeSnippet>>#initialize] asStencil]
+		startPage: ((self presentationDatabase)
+			pageNamed: 'Caching attributes using incremental parsing')
 ]
 
 { #category : 'slides' }
