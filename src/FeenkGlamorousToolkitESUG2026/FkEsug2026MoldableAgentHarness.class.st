@@ -151,6 +151,17 @@ FkEsug2026MoldableAgentHarness >> slide720ViewsAndLepiterAsSkills: aSlide [
 ]
 
 { #category : 'slides' }
+FkEsug2026MoldableAgentHarness >> slide80GtBookAgentsLLMs: aSlide [
+	<gtSlide>
+	<gtSlideNote: '.'>
+
+	^ aSlide lepiterPage
+		priority: 80;
+		startPage: (LeDatabase gtBook
+			pageNamed: 'Moldable Agent Harness: a step-by-step tutorial')
+]
+
+{ #category : 'slides' }
 FkEsug2026MoldableAgentHarness >> slide99End: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>
