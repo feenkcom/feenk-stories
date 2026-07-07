@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-07T14:45:57.60757+03:00"
+						"dateAndTimeString" : "2026-07-07T14:45:32.994278+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "HOuokGVHSs60nmrRul6AVA=="
 				},
-				"code" : "GtTreePagerFlowPanesElement compile: 'initialize\r\tsuper initialize.\r\tself matchParent.\r\r\ttoolSelectionStateHandler := GtPhlowToolSelectionStateHandler new.\r\t\r\tself\r\t\twhen: BlMouseWheelEvent\r\t\tdo: [ :anEvent | self layoutDo: [ :aLayout | aLayout mouseWheelEvent: anEvent ] ]'"
+				"code" : "\"initialization\"\rinitialize\r\tsuper initialize.\r\tself matchParent.\r\r\ttoolSelectionStateHandler := GtPhlowToolSelectionStateHandler new.\r\t\r\tself\r\t\twhen: BlMouseWheelEvent\r\t\tdo: [ :anEvent | self layoutDo: [ :aLayout | aLayout mouseWheelEvent: anEvent ] ]"
 			}
 		]
 	},
