@@ -140,14 +140,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-07T09:08:52.220413+03:00"
+									"dateAndTimeString" : "2026-07-07T16:09:35.540861+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "nge/kuPpQLOyddKapbwtJA=="
 							},
-							"code" : "plainChat := GtLChat new .\rplainChat addResponseFormatForMagritte: GtLMarkdown named: 'Markdown'.\nplainChat sendMarkdown: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'"
+							"code" : "plainChat := GtLChat new .\rplainChat markdownResponse.\nplainChat sendMarkdown: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'"
 						}
 					]
 				},

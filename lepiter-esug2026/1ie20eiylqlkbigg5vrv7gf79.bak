@@ -71,14 +71,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T12:54:49.35367+02:00"
+									"dateAndTimeString" : "2026-07-07T16:18:23.526609+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ulL+YKbQRPefy733n/bViQ=="
 							},
-							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\n\ttools: GtLTools leSearch, GtLTools gtSearch;\n\tsendMarkdown: 'What is Ludo and what is it used for in the Glamorous Toolit Book? What does the class GtLudoGame do?' "
+							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\n\ttools: GtLTools leSearch, GtLTools gtSearch;\n\tsendMarkdown: 'What is RBParseTreeRewriter and how is it used in Glamorous Toolit? What documentation is there about rewriting Pharo code?' "
 						}
 					]
 				},
@@ -143,14 +143,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T12:59:03.067367+02:00"
+									"dateAndTimeString" : "2026-07-05T19:28:38.034228+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "95YYGQqzSaqCQMRtUuzeoQ=="
 							},
-							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\r\ttools: GtLTools leSearch, GtLTools gtSearch;\n\taddResponseFormatForMagritte: GtLRewriteRule named: 'RewriteRule';\n\tsendMarkdown: 'Provide the rewrite rule for removing all `self halt` statements from methods. Look for how to rewrite Pharo code in the Lepiter documentation.'"
+							"code" : "agent := GtLAgent new\n\taddResponseFormatForMagritte: GtLMarkdown named: 'Markdown';\r\taddResponseFormatForMagritte: GtLRewriteRule named: 'RewriteRule';\r\ttools: GtLTools leSearch, GtLTools gtSearch;\n\tsendMarkdown: 'Provide the rewrite rule for removing all `self halt` statements from methods. Look for how to rewrite Pharo code in the Lepiter documentation.'"
 						}
 					]
 				},
