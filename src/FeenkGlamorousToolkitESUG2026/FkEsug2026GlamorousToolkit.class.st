@@ -160,11 +160,9 @@ FkEsug2026GlamorousToolkit >> slide99End: aSlide [
 	<gtSlide>
 	<gtSlideNote: ''>
 	
-	^ aSlide title
+	^ aSlide labelAndElement
 		priority: 999;
-		titleWithFormat: ('gtoolkit.com' asRopedText 
-			fontSize: 80;
-			glamorousRegularFont;
-			thin;
-			bold; yourself)
+		newFadedText: 'gtoolkit.com';
+		element: [ 
+			GtWebViewElement  new url: 'https://gtoolkit.com' ]
 ]

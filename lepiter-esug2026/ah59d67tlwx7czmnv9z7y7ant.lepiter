@@ -34,14 +34,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T11:59:43.254402+02:00"
+									"dateAndTimeString" : "2026-07-08T09:00:18.64666+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "gSl5eprYRriqkdL+rwzXkA=="
 							},
-							"code" : "agent := GtLAgent new."
+							"code" : "agent := GtLAgent new.\ragent markdownResponse."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -68,14 +68,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T11:59:43.256929+02:00"
+									"dateAndTimeString" : "2026-07-08T09:57:38.118608+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "bJfvFHcEQwSFvDL4ve8JRQ=="
 							},
-							"code" : "agent sendString: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'."
+							"code" : "agent sendMarkdown: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'"
 						}
 					]
 				},
@@ -98,7 +98,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T11:47:20.573128+02:00"
+						"dateAndTimeString" : "2026-07-08T08:07:18.168479+03:00"
 					}
 				},
 				"uid" : {
@@ -108,79 +108,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Agent using plain strings"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T11:46:41.495104+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-07T16:09:35.540861+03:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "nge/kuPpQLOyddKapbwtJA=="
-							},
-							"code" : "plainChat := GtLChat new .\rplainChat markdownResponse.\nplainChat sendMarkdown: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T11:46:34.309172+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-05T11:47:22.268159+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "lEaXo2JOSva3MDLiNwrAfw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "#Agent using a Markdown object"
+				"string" : "#Basic agent"
 			},
 			{
 				"__type" : "textSnippet",
@@ -238,6 +166,40 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-08T08:05:20.521498+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-08T08:05:38.432728+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "iH4tRLq7Rrqvpn6Eua3sZg=="
+							},
+							"code" : "agent := GtLAgent new\n\t\tmarkdownResponse;\n\t\taddResponseFormatForMagritte: GtLCodeTransformations\r\t\t\tnamed: 'CodeTransformations'\r\t\t"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2026-07-05T11:48:47.404902+02:00"
 								}
 							},
@@ -249,14 +211,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-05T11:48:49.046606+02:00"
+									"dateAndTimeString" : "2026-07-08T08:05:45.47589+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "oEQCCg+8Q6yv1wNgH+sa7g=="
 							},
-							"code" : "c := GtLChat new\n\t\tmarkdownResponse;\n\t\taddResponseFormatForMagritte: GtLCodeTransformations\n\t\t\tnamed: 'CodeTransformations';\n\t\tsendMarkdown: 'Create a class for a Person with a first and last name. Create a printing method. Use CodeTransformations to express the changes.'"
+							"code" : "agent sendMarkdown: 'Create a class for a Person with a first and last name. Create a printing method. Use CodeTransformations to express the changes.'"
 						}
 					]
 				},
@@ -290,6 +252,116 @@
 					"__type" : "textStyle"
 				},
 				"string" : "## Specifying code transformations as output"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-05T11:46:41.495104+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2026-07-07T16:09:35.540861+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "nge/kuPpQLOyddKapbwtJA=="
+										},
+										"code" : "plainChat := GtLChat new .\rplainChat markdownResponse.\nplainChat sendMarkdown: 'Write a script for adding `2` and `40` in Smalltalk. And a short poem about it.'"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-05T11:46:34.309172+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2026-07-05T11:47:22.268159+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lEaXo2JOSva3MDLiNwrAfw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "#Agent using a Markdown object"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-08T08:05:05.933431+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-07-08T08:05:05.933431+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "nFcCW54QRQiDfV5+L8c1Yw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},

@@ -142,7 +142,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-24T13:42:48.946359+02:00"
+									"dateAndTimeString" : "2026-07-08T08:26:14.022427+03:00"
 								}
 							},
 							"uid" : {
@@ -152,7 +152,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtPage:Rewriting Pharo code|db=2j9m7db2i4oz116bexd7wbdxo}}"
+							"string" : "{{gtPage:Using releaser|db=2j9m7db2i4oz116bexd7wbdxo}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -443,7 +443,10 @@
 								"uidString" : "hCgPcTzTDQCr6aMaDGEktw=="
 							},
 							"code" : "('Hello', ' World') size",
-							"sessionName" : "connector5:5"
+							"sessionIdentifier" : {
+								"__type" : "gtGemStoneExplicitSessionIdentifier",
+								"sessionName" : "connector5:5"
+							}
 						},
 						{
 							"__type" : "gemstoneSnippet",
@@ -478,7 +481,10 @@
 								"uidString" : "6KlfAD3TDQCvcg+SDGEktw=="
 							},
 							"code" : "Object gtSubclasses",
-							"sessionName" : "connector5:5"
+							"sessionIdentifier" : {
+								"__type" : "gtGemStoneExplicitSessionIdentifier",
+								"sessionName" : "connector5:5"
+							}
 						},
 						{
 							"__type" : "gemstoneSnippet",
@@ -513,7 +519,10 @@
 								"uidString" : "q21h7DzTDQCs5ydgDGEktw=="
 							},
 							"code" : "1+2",
-							"sessionName" : "connector5:5"
+							"sessionIdentifier" : {
+								"__type" : "gtGemStoneExplicitSessionIdentifier",
+								"sessionName" : "connector5:5"
+							}
 						}
 					]
 				},
@@ -706,6 +715,7 @@
 								"__type" : "snippets",
 								"items" : [
 									{
+										"__schema" : "4.1",
 										"__type" : "postgresqlLoginSnippet",
 										"children" : {
 											"__type" : "snippets",
@@ -733,18 +743,20 @@
 												"dateAndTimeString" : "2024-04-24T13:16:07.587907+02:00"
 											}
 										},
+										"postgresqlUrl" : "postgresql://scott2@stfx.eu:6543/f1db?sslmode=require",
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "p+G2iDfTDQCSbdfkDGEktw=="
-										},
-										"postgresqlUrl" : "postgresql://scott2@stfx.eu:6543/f1db?sslmode=require"
+										}
 									},
 									{
+										"__schema" : "4.1",
 										"__type" : "postgresqlSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
 										},
+										"code" : "select * from drivers",
 										"createEmail" : {
 											"__type" : "email",
 											"emailString" : "<unknown>"
@@ -770,15 +782,16 @@
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "Rd+UvznTDQCYvhb4DGEktw=="
-										},
-										"code" : "select * from drivers"
+										}
 									},
 									{
+										"__schema" : "4.1",
 										"__type" : "postgresqlSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
 										},
+										"code" : "select * from races",
 										"createEmail" : {
 											"__type" : "email",
 											"emailString" : "<unknown>"
@@ -804,8 +817,7 @@
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "MtOguznTDQCXkA1NDGEktw=="
-										},
-										"code" : "select * from races"
+										}
 									}
 								]
 							},
@@ -1097,6 +1109,7 @@
 					"__type" : "snippets",
 					"items" : [
 						{
+							"__schema" : "4.1",
 							"__type" : "blueskyPostSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -1124,10 +1137,7 @@
 									"dateAndTimeString" : "2024-04-24T19:48:47.658142+02:00"
 								}
 							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "7AUBBT3TDQCvpaSdDGEktw=="
-							},
+							"files" : [ ],
 							"postDict" : {
 								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
 								"cid" : "bafyreidlz67sfjrqayh4jymbke57n47ipa4aupvptxwkqu7luuoxugdedu",
@@ -1137,9 +1147,13 @@
 								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhlgrbf2n"
 							},
 							"string" : "Glamorous Toolkit enables Moldable Development.\n\ngtoolkit.com\n\n1/",
-							"files" : [ ]
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7AUBBT3TDQCvpaSdDGEktw=="
+							}
 						},
 						{
+							"__schema" : "4.1",
 							"__type" : "blueskyPostSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -1167,9 +1181,14 @@
 									"dateAndTimeString" : "2024-04-24T19:49:19.883722+02:00"
 								}
 							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Sr/sBj3TDQCvqeJIDGEktw=="
+							"files" : [ ],
+							"parentPostDict" : {
+								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
+								"cid" : "bafyreidlz67sfjrqayh4jymbke57n47ipa4aupvptxwkqu7luuoxugdedu",
+								"displayName" : "Tudor Girba",
+								"handle" : "tudorgirba.com",
+								"timeStamp" : "2024-04-24T21:41:22.82959+02:00",
+								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhlgrbf2n"
 							},
 							"postDict" : {
 								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
@@ -1179,16 +1198,11 @@
 								"timeStamp" : "2024-04-24T21:41:36.352142+02:00",
 								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhxnec22j"
 							},
-							"parentPostDict" : {
-								"avatar" : "https://cdn.bsky.app/img/avatar/plain/did:plc:3nmbcaq5ecbpnfv473c3nh3j/bafkreie24sj4u4wr3tgzdl2ne6267fh3p7marhrrdln2kifg647bh4j5tq@jpeg",
-								"cid" : "bafyreidlz67sfjrqayh4jymbke57n47ipa4aupvptxwkqu7luuoxugdedu",
-								"displayName" : "Tudor Girba",
-								"handle" : "tudorgirba.com",
-								"timeStamp" : "2024-04-24T21:41:22.82959+02:00",
-								"uri" : "at://did:plc:3nmbcaq5ecbpnfv473c3nh3j/app.bsky.feed.post/3kqvnhlgrbf2n"
-							},
 							"string" : "Moldable Development is a way of programming through custom tools built for each problem.\n\n2/",
-							"files" : [ ]
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Sr/sBj3TDQCvqeJIDGEktw=="
+							}
 						},
 						{
 							"__type" : "textSnippet",
@@ -1311,6 +1325,12 @@
 											"__type" : "uuid",
 											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "0d5e1f40-32d3-0d00-8921-dea80c6124b7"
@@ -1329,6 +1349,12 @@
 											"__type" : "uuid",
 											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "475e1f40-32d3-0d00-8929-73930c6124b7"
@@ -1346,6 +1372,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1365,6 +1397,12 @@
 											"__type" : "uuid",
 											"uuid" : "2a5e1f40-32d3-0d00-8925-d5d40c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
@@ -1382,6 +1420,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "3f5e1f40-32d3-0d00-8928-61b70c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1401,6 +1445,12 @@
 											"__type" : "uuid",
 											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "3f5e1f40-32d3-0d00-8928-61b70c6124b7"
@@ -1419,6 +1469,12 @@
 											"__type" : "uuid",
 											"uuid" : "155e1f40-32d3-0d00-8922-e8960c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
@@ -1436,6 +1492,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1454,6 +1516,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1472,6 +1540,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "0d5e1f40-32d3-0d00-8921-dea80c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1491,6 +1565,12 @@
 											"__type" : "uuid",
 											"uuid" : "995d1f40-32d3-0d00-891e-46170c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
@@ -1509,6 +1589,12 @@
 											"__type" : "uuid",
 											"uuid" : "165d1f40-32d3-0d00-891d-f4af0c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
@@ -1527,6 +1613,12 @@
 											"__type" : "uuid",
 											"uuid" : "035e1f40-32d3-0d00-8920-7a3f0c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
@@ -1544,6 +1636,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1563,6 +1661,12 @@
 											"__type" : "uuid",
 											"uuid" : "721a905d-32d3-0d00-8a40-e7530c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "235e1f40-32d3-0d00-8924-4af30c6124b7"
@@ -1580,6 +1684,12 @@
 										"from" : {
 											"__type" : "uuid",
 											"uuid" : "1c5e1f40-32d3-0d00-8923-e5e90c6124b7"
+										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
 										},
 										"to" : {
 											"__type" : "uuid",
@@ -1599,6 +1709,12 @@
 											"__type" : "uuid",
 											"uuid" : "acaa8fc8-3ed3-0d00-be5b-20080c6124b7"
 										},
+										"label" : {
+											"is_visible" : false,
+											"text" : "Edge label",
+											"x" : 0.5,
+											"y" : 0.5
+										},
 										"to" : {
 											"__type" : "uuid",
 											"uuid" : "315e1f40-32d3-0d00-8926-58330c6124b7"
@@ -1615,7 +1731,7 @@
 											"red" : 0.0
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1642,7 +1758,7 @@
 											"red" : 0.0
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1669,7 +1785,7 @@
 											"red" : 1.0
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1696,7 +1812,7 @@
 											"red" : 1.0
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1723,7 +1839,7 @@
 											"red" : 0.7497556207233627
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1750,7 +1866,7 @@
 											"red" : 0.030303030303030304
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1777,7 +1893,7 @@
 											"red" : 0.030303030303030304
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1820,7 +1936,7 @@
 											"red" : 0.7497556207233627
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1847,7 +1963,7 @@
 											"red" : 0.030303030303030304
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1874,7 +1990,7 @@
 											"red" : 0.030303030303030304
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1913,7 +2029,7 @@
 											"red" : 0.7497556207233627
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1940,7 +2056,7 @@
 											"red" : 0.030303030303030304
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1967,7 +2083,7 @@
 											"red" : 0.030303030303030304
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -1995,7 +2111,7 @@
 											"y" : 0.7230718954248366
 										},
 										"width" : 12,
-										"x" : 0.6,
+										"x" : 0.6009484666455895,
 										"y" : 0.83
 									},
 									{
@@ -2006,7 +2122,7 @@
 											"red" : 1.0
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {
@@ -2033,7 +2149,7 @@
 											"red" : 0.0
 										},
 										"evolve" : {
-											"is_evolve_target" : false
+											"is_visible" : false
 										},
 										"height" : 12,
 										"id" : {

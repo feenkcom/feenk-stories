@@ -71,14 +71,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-07T16:18:23.526609+03:00"
+									"dateAndTimeString" : "2026-07-08T08:20:49.868631+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ulL+YKbQRPefy733n/bViQ=="
 							},
-							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\n\ttools: GtLTools leSearch, GtLTools gtSearch;\n\tsendMarkdown: 'What is RBParseTreeRewriter and how is it used in Glamorous Toolit? What documentation is there about rewriting Pharo code?' "
+							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\n\ttools: GtLTools leSearch\r\t\t, GtLTools gtSearch;\n\tsendMarkdown: 'What is {{gtClass:RBParseTreeRewriter}} and how is it used in Glamorous Toolit? What documentation is there about rewriting Pharo code?' "
 						}
 					]
 				},
@@ -143,14 +143,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-07T16:19:40.732985+03:00"
+									"dateAndTimeString" : "2026-07-08T08:24:16.588024+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "95YYGQqzSaqCQMRtUuzeoQ=="
 							},
-							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\r\taddResponseFormatForMagritte: GtLRewriteRule named: 'RewriteRule';\r\ttools: GtLTools leSearch, GtLTools gtSearch;\n\tsendMarkdown: 'Provide the rewrite rule for removing all `self halt` statements from methods. Look for how to rewrite Pharo code in the Lepiter documentation.'"
+							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\r\taddResponseFormatForMagritte: GtLRewriteRule named: 'RewriteRule';\r\ttools: GtLTools leSearch,\r\t\t GtLTools gtSearch;\n\tsendMarkdown: 'Provide the rewrite rule for removing all `self halt` statements from methods. Look for how to rewrite Pharo code based on example in the Lepiter documentation.'"
 						}
 					]
 				},
