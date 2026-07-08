@@ -63,14 +63,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-07-08T14:28:39.106336+03:00"
+						"dateAndTimeString" : "2026-07-08T14:28:37.830283+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "TvLAECO2Tk+hX+KVOlK1Pg=="
 				},
-				"code" : "Object printString"
+				"code" : "Object print"
 			}
 		]
 	},

@@ -140,14 +140,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2026-07-08T02:05:22.409054+03:00"
+									"dateAndTimeString" : "2026-07-08T12:03:05.833323+03:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "bcfRN8oZSGK2CHk1vTj/Zw=="
 							},
-							"code" : "agent := GtLAgent new\n\taddResponseFormatForMagritte: GtLMarkdown named: 'Markdown';\r\taddResponseFormatForMagritte: GtLRewriteRule named: 'RewriteRule';\r\tgtPageExplanation: 'Rewriting Pharo code by example';\n\tsendMarkdown: 'Provide the rewrite rule for removing all `self halt` statements from methods.'"
+							"code" : "agent := GtLAgent new\n\tmarkdownResponse;\r\taddResponseFormatForMagritte: GtLRewriteRule named: 'RewriteRule';\r\ttools: GtLTools leSearch\r\t\t, GtLTools gtSearch;\r\tgtPageExplanation: 'Rewriting Pharo code by example';\n\tsendMarkdown: 'Provide the rewrite rule for removing all `self halt` statements from methods. Explore also the documentation and code before answering'"
 						}
 					]
 				},
